@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8588928F-2868-4248-8993-533307A05C0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mocha.OMS</RootNamespace>
+    <AssemblyName>Mocha.OMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <ReleaseVersion>1.0.*</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OMSServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OMSProtocol.cs" />
+    <Compile Include="OMSService.cs" />
+    <Compile Include="OMSClient.cs" />
+    <Compile Include="KnownResponses.cs" />
+    <Compile Include="InstanceRequestedEvent.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="IOmsProvider.cs" />
+    <Compile Include="LocalOMS.cs" />
+    <Compile Include="AttributeValueRequestedEvent.cs" />
+    <Compile Include="OMSResponse.cs" />
+    <Compile Include="OMSComponent.cs" />
+    <Compile Include="OMSComponents\OMSTabContainerComponent.cs" />
+    <Compile Include="OMSComponents\OMSSummaryComponent.cs" />
+    <Compile Include="OMSComponents\OMSDetailComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MBS.Networking\Libraries\MBS.Networking\MBS.Networking.csproj">
+      <Project>{DBD65B3F-81C8-4E44-B268-3FAB3B12AA1E}</Project>
+      <Name>MBS.Networking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Networking\Plugins\MBS.Networking.Plugins.HyperTextTransfer\MBS.Networking.Plugins.HyperTextTransfer.csproj">
+      <Project>{5743EE32-F3ED-4162-A0E3-B105503BF139}</Project>
+      <Name>MBS.Networking.Plugins.HyperTextTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mocha.Storage\Mocha.Storage.csproj">
+      <Project>{C9A3AE1D-0658-4A70-BC48-9D8DEF9C205B}</Project>
+      <Name>Mocha.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mocha.Storage.Local\Mocha.Storage.Local.csproj">
+      <Project>{A4B8D6D8-3365-49FC-8123-58B3749A5427}</Project>
+      <Name>Mocha.Storage.Local</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\CSharp\Libraries\UniversalEditor.Essential\UniversalEditor.Essential.csproj">
+      <Project>{30467E5C-05BC-4856-AADC-13906EF4CADD}</Project>
+      <Name>UniversalEditor.Essential</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\CSharp\Libraries\UniversalEditor.Core\UniversalEditor.Core.csproj">
+      <Project>{2D4737E6-6D95-408A-90DB-8DFF38147E85}</Project>
+      <Name>UniversalEditor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mocha\Mocha.csproj">
+      <Project>{AD8C4CDD-88A7-4466-8837-2072BA33E4A3}</Project>
+      <Name>Mocha</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OMSComponents\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

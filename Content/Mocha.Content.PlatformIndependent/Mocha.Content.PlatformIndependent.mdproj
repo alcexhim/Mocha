@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{00905B9B-20C4-4079-BE80-EB9F6B59E255}</ProjectGuid>
+    <ReleaseVersion>1.0.*</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>Build</type>
+          <command>cp --recursive . ../../Output/Debug</command>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>rm ../../Output/Debug/Mocha.Content.PlatformIndependent.mdproj</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Configuration\000-Classes\000-000-Tenant.xqjs" />
+    <None Include="Configuration\000-Classes\000-001-Class.xqjs" />
+    <None Include="Configuration\000-Classes\000-002-Attribute.xqjs" />
+    <None Include="Configuration\000-Classes\000-003-Relationship.xqjs" />
+    <None Include="Configuration\000-Classes\000-004-TextAttribute.xqjs" />
+    <None Include="Configuration\000-Classes\000-005-BooleanAttribute.xqjs" />
+    <None Include="Configuration\000-Classes\000-006-NumericAttribute.xqjs" />
+    <None Include="Configuration\000-Classes\000-021-DateAttribute.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-000-StringComponent.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-001-ExtractSingleInstanceStringComponent.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-002-InstanceAttributeStringComponent.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-003-TextConstantStringComponent.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-004-TranslatableTextConstantStringComponent.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-005-ConditionalStringComponent.xqjs" />
+    <None Include="Configuration\000-Classes\000-String-007-String.xqjs" />
+    <None Include="Configuration\000-Classes\001-Global.xqjs" />
+    <None Include="Configuration\000-Classes\001-Instance.xqjs" />
+    <None Include="Configuration\000-Classes\001-Language.xqjs" />
+    <None Include="Configuration\000-Classes\002-001-Prompt.xqjs" />
+    <None Include="Configuration\000-Classes\002-002-ChoicePrompt.xqjs" />
+    <None Include="Configuration\000-Classes\002-003-TextPrompt.xqjs" />
+    <None Include="Configuration\000-Classes\002-004-InstancePrompt.xqjs" />
+    <None Include="Configuration\000-Classes\002-005-ReferencePrompt.xqjs" />
+    <None Include="Configuration\000-Classes\002-Condition.xqjs" />
+    <None Include="Configuration\000-Classes\002-Method.xqjs" />
+    <None Include="Configuration\000-Classes\002-ObjectSource.xqjs" />
+    <None Include="Configuration\000-Classes\002-Task.xqjs" />
+    <None Include="Configuration\000-Classes\003-SecurityGroup.xqjs" />
+    <None Include="Configuration\000-Classes\004-TenantType.xqjs" />
+    <None Include="Configuration\000-Classes\005-LoginDeviceType.xqjs" />
+    <None Include="Configuration\000-Classes\006-LoginAuthenticationType.xqjs" />
+    <None Include="Configuration\000-Classes\007-UserLogin.xqjs" />
+    <None Include="Configuration\000-Classes\008-Measurement.xqjs" />
+    <None Include="Configuration\000-Classes\008-Style.xqjs" />
+    <None Include="Configuration\000-Classes\008-User.xqjs" />
+    <None Include="Configuration\000-Classes\009-000-Page.xqjs" />
+    <None Include="Configuration\000-Classes\009-001-PanelPageComponent.xqjs" />
+    <None Include="Configuration\000-Classes\009-002-HeadingPageComponent.xqjs" />
+    <None Include="Configuration\000-Classes\009-003-AccordionPageComponent.xqjs" />
+    <None Include="Configuration\000-Classes\009-004-TabContainerPageComponent.xqjs" />
+    <None Include="Configuration\000-Classes\009-005-RelationshipEditorPageComponent.xqjs" />
+    <None Include="Configuration\000-Classes\009-006-AttributeEditorPageComponent.xqjs" />
+    <None Include="Configuration\000-Classes\010-000-Report.xqjs" />
+    <None Include="Configuration\000-Classes\010-001-ReportField.xqjs" />
+    <None Include="Configuration\000-Classes\010-002-ReportColumn.xqjs" />
+    <None Include="Configuration\000-Classes\010-003-ReportFacet.xqjs" />
+    <None Include="Configuration\000-Classes\010-004-ReportDataSource.xqjs" />
+    <None Include="Configuration\000-Classes\010-005-ReportColumnOption.xqjs" />
+    <None Include="Configuration\000-Classes\010-006-ReportObject.xqjs" />
+    <None Include="Configuration\000-Classes\010-007-ReportPrompt.xqjs" />
+    <None Include="Configuration\000-Classes\011-DateTimeFormat.xqjs" />
+    <None Include="Configuration\000-Classes\011-File-000-File.xqjs" />
+    <None Include="Configuration\000-Classes\011-File-001-ReportFieldTypes.xqjs" />
+    <None Include="Configuration\000-Classes\012-Icon.xqjs" />
+    <None Include="Configuration\000-Classes\013-001-Menu.xqjs" />
+    <None Include="Configuration\000-Classes\013-002-MenuItem.xqjs" />
+    <None Include="Configuration\000-Classes\013-003-MenuItemCommand.xqjs" />
+    <None Include="Configuration\000-Classes\013-004-MenuItemSeparator.xqjs" />
+    <None Include="Configuration\000-Classes\013-005-MenuItemHeader.xqjs" />
+    <None Include="Configuration\000-Classes\013-006-MenuItemInstance.xqjs" />
+    <None Include="Configuration\000-Classes\015-Dashboard.xqjs" />
+    <None Include="Configuration\000-Classes\020-DataCenter.xqjs" />
+    <None Include="Configuration\000-Classes\025-000-Tenant.xqjs" />
+    <None Include="Configuration\000-Classes\025-001-Tenant-SidebarMenuItems.xqjs" />
+    <None Include="Configuration\000-Classes\030-Package.xqjs" />
+    <None Include="Configuration\003-Pages\Login Page.xqjs.exclude" />
+    <None Include="Configuration\004-Tasks\Create Class.xqjs" />
+    <None Include="Configuration\004-Tasks\Edit Class.xqjs" />
+    <None Include="Configuration\004-Tasks\Edit Method.xqjs" />
+    <None Include="Configuration\004-Tasks\Edit Standard Report.xqjs" />
+    <None Include="Configuration\004-Tasks\Edit Translatable Text Constant.xqjs" />
+    <None Include="Configuration\004-Tasks\Edit User Preferences.xqjs" />
+    <None Include="Configuration\005-Reports\010-002-Standard Report-All Objects.xqjs" />
+    <None Include="Configuration\005-Reports\010-003-Standard Report-Favorite Instances.xqjs" />
+    <None Include="Images\MainIcon.svg" />
+    <None Include="Configuration\004-Tasks\Run Report.xqjs" />
+    <None Include="Configuration\004-Tasks\View Class.xqjs" />
+    <None Include="Configuration\004-Tasks\VIew Tenant.xqjs" />
+  </ItemGroup>
+</Project>
