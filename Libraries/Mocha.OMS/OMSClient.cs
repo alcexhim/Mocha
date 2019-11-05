@@ -443,13 +443,18 @@ namespace Mocha.OMS
 							Group gCol = (oCol as Group);
 							if (gCol == null) continue;
 
+							InstanceClassIDPair iid = InstanceClassIDPair.Empty;
 							string text = String.Empty;
+							if (gCol.Properties["iid"] != null)
+							{
+								iid = new InstanceClassIDPair(gCol.Properties["iid"].Value.ToString());
+							}
 							if (gCol.Properties["text"] != null)
 							{
 								text = gCol.Properties["text"].Value.ToString();
 							}
 
-							OMSDetailComponent.OMSDetailRowColumn rrc = new OMSDetailComponent.OMSDetailRowColumn(new InstanceClassIDPair(gCol.Properties["colid"].Value.ToString()), text);
+							OMSDetailComponent.OMSDetailRowColumn rrc = new OMSDetailComponent.OMSDetailRowColumn(new InstanceClassIDPair(gCol.Properties["colid"].Value.ToString()), text, iid);
 							row.Columns.Add(rrc);
 						}
 						omsresp.Rows.Add(row);

@@ -56,6 +56,14 @@ namespace Mocha.Web.MasterPages
 				}
 				else
 				{
+					if (Request.Url.Segments.Length > 2 && Request.Url.Segments[2] == "inst/")
+					{
+						Response.Clear();
+						Response.Status = "503 Service Unavailable";
+						Response.ContentType = "application/json";
+						Response.Write("{ \"code\": 503, \"title\": \"Service Unavailable\", \"description\": \"OMS service is not running\" }");
+						Response.End();
+					}
 					aspcContent.Visible = false;
 				}
 			}

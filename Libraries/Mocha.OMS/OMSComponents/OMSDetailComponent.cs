@@ -41,11 +41,13 @@ namespace Mocha.OMS.OMSComponents
 			}
 
 			public InstanceClassIDPair ColumnInstanceID { get; set; } = InstanceClassIDPair.Empty;
+			public InstanceClassIDPair InstanceID { get; set; } = InstanceClassIDPair.Empty;
 			public string Value { get; set; } = String.Empty;
 
-			public OMSDetailRowColumn(InstanceClassIDPair columnInstanceID, string value)
+			public OMSDetailRowColumn(InstanceClassIDPair columnInstanceID, string value, InstanceClassIDPair instanceId = default(InstanceClassIDPair))
 			{
 				ColumnInstanceID = columnInstanceID;
+				InstanceID = instanceId;
 				Value = value;
 			}
 		}

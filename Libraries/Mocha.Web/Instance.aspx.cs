@@ -16,7 +16,12 @@ namespace Mocha.Web
 
 			object oCid = RouteData.Values["ClassID"];
 			object oIid = RouteData.Values["InstanceID"];
-			if (oCid == null && oIid == null) return;
+
+			if (oCid == null && oIid == null)
+			{
+				Master.PageTitle = "Welcome, New User!";
+				return;
+			}
 
 			int cid = -1, iid = -1;
 			if (!(Int32.TryParse(oCid.ToString(), out cid) && Int32.TryParse(oIid.ToString(), out iid)))
@@ -27,6 +32,35 @@ namespace Mocha.Web
 
 			OMSClient oms = (Session["OMS"] as OMSClient);
 			if (oms == null) return;
+
+			if (Request.Url.Segments.Length > 2 && Request.Url.Segments[2] == "inst/")
+			{
+				Response.Clear();
+				Response.ContentType = "application/json";
+
+				object lt = Session["LoginToken"];
+				if (lt == null || ((LoginTokenInfo)lt).IsEmpty || DateTime.Now > ((LoginTokenInfo)lt).Expires)
+				{
+					Response.Status = "401 Unauthorized";
+					Response.Write("{ \"code\": 401, \"title\": \"Unauthorized\", \"description\": \"You are not logged in\" }");
+					Response.End();
+					return;
+				}
+				
+				// send the request to the OMS
+				Instance p_inst = oms.GetInstance(new InstanceClassIDPair(cid, iid));
+				if (p_inst == null)
+				{
+					Response.Status = "404 Not Found";
+					Response.Write("{ \"code\": 404, \"title\": \"Not Found\", \"description\": \"The requested resource was not found\" }");
+					Response.End();
+					return;
+				}
+
+				Response.Write(p_inst.ToJSONString());
+				Response.End();
+				return;
+			}
 
 			Instance inst = oms.GetInstance(new InstanceClassIDPair(cid, iid));
 			if (inst == null)
@@ -77,10 +111,20 @@ namespace Mocha.Web
 					ListViewItem lvi = new ListViewItem();
 					foreach (OMSDetailComponent.OMSDetailRowColumn col in row.Columns)
 					{
-						ListViewItemColumn lvic = new ListViewItemColumn();
+						ListViewItemColumn lvic = null;
 						// Controls.ListViewItemColumnInstance lvic = new Controls.ListViewItemColumnInstance()
+						if (col.InstanceID != default(InstanceClassIDPair))
+						{
+							lvic = new Mocha.Web.Controls.ListViewItemColumnInstance();
+							(lvic as Mocha.Web.Controls.ListViewItemColumnInstance).Value = col.InstanceID.ToString();
+							(lvic as Mocha.Web.Controls.ListViewItemColumnInstance).Text = col.Value;
+						}
+						else
+						{
+							lvic = new ListViewItemColumn();
+							lvic.Value = col.Value;
+						}
 						lvic.ColumnID = "ReportColumn_" + col.ColumnInstanceID.ToString();
-						lvic.Value = col.Value;
 						lvi.Columns.Add(lvic);
 					}
 					lvReport.Items.Add(lvi);

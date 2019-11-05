@@ -257,6 +257,8 @@ namespace Mocha.OMS
 															{
 																sb.Append(',');
 																sb.Append(String.Format("\"text\":\"{0}\"", GetInstanceTitle(retvalInst)));
+																sb.Append(',');
+																sb.Append(String.Format("\"iid\":\"{0}\"", retvalInst.GetInstanceIDString()));
 															}
 															sb.Append('}');
 															if (i < instReportColumns.Length - 1)

@@ -47,6 +47,7 @@
     <Content Include="StyleSheets\mcx-instancebrowser.less" />
     <Content Include="StyleSheets\mcx.less" />
     <Content Include="ShowRelationships.aspx" />
+    <Content Include="Scripts\Instance.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -107,6 +108,7 @@
     <Folder Include="PhoenixSNS\" />
     <Folder Include="Controls\" />
     <Folder Include="StyleSheets\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mocha\Mocha.csproj">

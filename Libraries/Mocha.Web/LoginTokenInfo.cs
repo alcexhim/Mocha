@@ -9,11 +9,16 @@ namespace Mocha.Web
 		public Guid LoginToken;
 		public DateTime Expires;
 
-		public LoginTokenInfo(Guid loginToken, DateTime expires)
+		public string UserName;
+		public string TenantName;
+
+		public LoginTokenInfo(Guid loginToken, DateTime expires, string userName, string tenantName)
 		{
 			LoginToken = loginToken;
 			Expires = expires;
 			_IsValid = true;
+			UserName = userName;
+			TenantName = tenantName;
 		}
 	}
 }

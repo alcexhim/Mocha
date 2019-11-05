@@ -22,6 +22,16 @@ namespace Mocha.Web.MasterPages
 			object lt = Session["LoginToken"];
 			if (lt == null || ((LoginTokenInfo)lt).IsEmpty || DateTime.Now > ((LoginTokenInfo)lt).Expires)
 			{
+				if (Request.Url.Segments.Length > 2 && Request.Url.Segments[2] == "inst/")
+				{
+					Response.Clear();
+					Response.Status = "401 Unauthorized";
+					Response.ContentType = "application/json";
+					Response.Write("{ \"code\": 401, \"title\": \"Unauthorized\", \"description\": \"You are not logged in\" }");
+					Response.End();
+					return;
+				}
+
 				Session["LoginRedirectURL"] = Request.Path;
 				Response.Redirect(String.Format("~/{0}/account/login", CurrentTenantName));
 			}

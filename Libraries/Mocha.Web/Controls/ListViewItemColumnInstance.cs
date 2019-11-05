@@ -5,10 +5,14 @@ namespace Mocha.Web.Controls
 {
 	public class ListViewItemColumnInstance : ListViewItemColumn
 	{
+		public string Text { get; set; } = null;
+
 		public override System.Web.UI.Control RenderControl()
 		{
 			// value in this case is instance id e.g. 142$108
 			InstanceBrowser adw = new InstanceBrowser();
+			if (Text != null)
+				adw.Text = Text;
 			adw.Editable = false;
 			if (!string.IsNullOrEmpty(this.Value))
 			{

@@ -30,6 +30,7 @@ namespace Mocha.Web
 
 			string username = Request.Form["user_name"];
 			string userpass = Request.Form["user_pass"];
+			string tenant = Request.Url.Segments[1];
 
 			if (username != null)
 			{
@@ -76,7 +77,7 @@ namespace Mocha.Web
 
 						// we need to update the LoginToken in the OMS now...
 
-						LoginTokenInfo userToken = new LoginTokenInfo(Guid.NewGuid(), DateTime.Now.AddMinutes(iDuration));
+						LoginTokenInfo userToken = new LoginTokenInfo(Guid.NewGuid(), DateTime.Now.AddMinutes(iDuration), username, tenant);
 						Session["LoginToken"] = userToken;
 
 						if (Session["LoginRedirectURL"] != null)
