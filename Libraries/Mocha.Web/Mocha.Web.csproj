@@ -147,6 +147,10 @@
       <Project>{00266B21-35C9-4A7F-A6BA-D54D7FDCC25C}</Project>
       <Name>MBS.Framework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Libraries\MBS.Web.Themes\MBS.Web.Themes.csproj">
+      <Project>{18492D58-0C92-4904-AAAB-58283C66150F}</Project>
+      <Name>MBS.Web.Themes</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\MainIcon.svg" />

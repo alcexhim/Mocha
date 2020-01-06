@@ -1,6 +1,6 @@
 ﻿<%@Page Inherits="Mocha.Web.LoginPage" MasterPageFile="~/MasterPages/Blank.master" %>
 <%@MasterType VirtualPath="~/MasterPages/Blank.master" %>
-<%@Register TagPrefix="wcx" Assembly="MBS.Web" Namespace="MBS.Web.Controls" %>
+<%@Register TagPrefix="wcx" Assembly="MBS.Web.Controls" Namespace="MBS.Web.Controls" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="aspcContent">
 	<div style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 600px;"> 
