@@ -3,7 +3,7 @@ using System.Web;
 using System.Web.UI;
 
 using MBS.Web;
-using MBS.Security.Cryptography;
+using MBS.Framework.Security.Cryptography;
 using Mocha.OMS;
 
 namespace Mocha.Web

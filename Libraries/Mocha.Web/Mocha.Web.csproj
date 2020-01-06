@@ -115,22 +115,6 @@
       <Project>{AD8C4CDD-88A7-4466-8837-2072BA33E4A3}</Project>
       <Name>Mocha</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MBS.Security.Cryptography\MBS.Security.Cryptography.csproj">
-      <Project>{F5F34063-9A5A-4946-9F4C-AC286A43F29C}</Project>
-      <Name>MBS.Security.Cryptography</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MBS.Web\MBS.Web.csproj">
-      <Project>{D30649B8-EAF2-4D4D-968F-A7C65572F7FA}</Project>
-      <Name>MBS.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MBS.Web\Plugins\MBS.Web.Plugins.Less\MBS.Web.Plugins.Less.csproj">
-      <Project>{C37BE4CF-CFB6-4A7B-8CAE-6EE21E37D2FD}</Project>
-      <Name>MBS.Web.Plugins.Less</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MBS.Web\MBS.Web.Themes\MBS.Web.Themes.csproj">
-      <Project>{18492D58-0C92-4904-AAAB-58283C66150F}</Project>
-      <Name>MBS.Web.Themes</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\MBS.Networking\Libraries\MBS.Networking\MBS.Networking.csproj">
       <Project>{DBD65B3F-81C8-4E44-B268-3FAB3B12AA1E}</Project>
       <Name>MBS.Networking</Name>
@@ -146,6 +130,22 @@
     <ProjectReference Include="..\Mocha.Web.Configuration\Mocha.Web.Configuration.csproj">
       <Project>{F6598243-00B2-445E-8B1A-CC0EC9003459}</Project>
       <Name>Mocha.Web.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Libraries\MBS.Web\MBS.Web.csproj">
+      <Project>{D30649B8-EAF2-4D4D-968F-A7C65572F7FA}</Project>
+      <Name>MBS.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Libraries\MBS.Web.Controls\MBS.Web.Controls.csproj">
+      <Project>{99886629-32B3-46D3-9094-6445A33FCFA9}</Project>
+      <Name>MBS.Web.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Plugins\MBS.Web.Plugins.Less\MBS.Web.Plugins.Less.csproj">
+      <Project>{C37BE4CF-CFB6-4A7B-8CAE-6EE21E37D2FD}</Project>
+      <Name>MBS.Web.Plugins.Less</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Framework\MBS.Framework\MBS.Framework.csproj">
+      <Project>{00266B21-35C9-4A7F-A6BA-D54D7FDCC25C}</Project>
+      <Name>MBS.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
