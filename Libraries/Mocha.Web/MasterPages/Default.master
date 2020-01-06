@@ -54,7 +54,7 @@
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="aspcAfterContent">
 	<div class="uwt-footer">
-		Powered by Mocha &copy; 2015-2019 MBS Business Solutions
+		<asp:Label runat="server" ID="lblLegalNoticeText" />
 		<div class="mocha-tenant-infobar uwt-badge uwt-color-danger" style="float: right;">
 			<strong>XORC Development Internal</strong> - <asp:Label runat="server" ID="lblSystemVersion" /> - <asp:Label runat="server" ID="lblTenantName" />
 		</div>

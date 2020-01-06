@@ -13,6 +13,8 @@ namespace Mocha.Web {
 	
 	public partial class LoginPage {
 		
+		protected System.Web.UI.WebControls.Label lblLegalNoticeText;
+		
 		public new Mocha.Web.MasterPages.Blank Master {
 			get {
 				return ((Mocha.Web.MasterPages.Blank)(base.Master));

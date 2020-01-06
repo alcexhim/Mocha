@@ -24,8 +24,9 @@ namespace Mocha.Web
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
+			lblLegalNoticeText.Text = String.Format(System.Configuration.ConfigurationManager.AppSettings["System.LegalNoticeText"], DateTime.Now.Year.ToString());
 
-			OMSClient oms = (Session["OMS"] as OMSClient);
+            OMSClient oms = (Session["OMS"] as OMSClient);
 			if (oms == null) return;
 
 			string username = Request.Form["user_name"];

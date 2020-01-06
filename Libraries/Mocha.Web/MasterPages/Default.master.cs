@@ -6,14 +6,15 @@ using MBS.Web;
 
 namespace Mocha.Web.MasterPages
 {
-    public partial class Default : System.Web.UI.MasterPage
-    {
+	public partial class Default : System.Web.UI.MasterPage
+	{
 		public string PageTitle { get { return lblTaskTitle.Text; } set { lblTaskTitle.Text = value; } }
 		public string PageSubtitle { get { return lblTaskSubtitle.Text; } set { lblTaskSubtitle.Text = value; } }
 
 		protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
+		{
+			base.OnLoad(e);
+			lblLegalNoticeText.Text = String.Format(System.Configuration.ConfigurationManager.AppSettings["System.LegalNoticeText"], DateTime.Now.Year.ToString());
 
 			string CurrentTenantName = System.Configuration.ConfigurationManager.AppSettings["Tenant.Default.Name"];
 			lblTenantName.Text = CurrentTenantName;

@@ -21,6 +21,8 @@ namespace Mocha.Web.MasterPages {
 		
 		protected System.Web.UI.WebControls.ContentPlaceHolder aspcContent;
 		
+		protected System.Web.UI.WebControls.Label lblLegalNoticeText;
+		
 		protected System.Web.UI.WebControls.Label lblSystemVersion;
 		
 		protected System.Web.UI.WebControls.Label lblTenantName;

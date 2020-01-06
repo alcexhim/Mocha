@@ -29,7 +29,7 @@
 			</FooterControls>
 		</wcx:Panel>
 		<p style="margin-top: 100px; text-align: center; font-size: 10pt; color: #a0a0a0">
-			Powered by Mocha &copy; 2015-2019 MBS Business Solutions
+			<asp:Label runat="server" ID="lblLegalNoticeText" />
 		</p>
 	</div>
 </asp:Content>
