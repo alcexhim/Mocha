@@ -113,12 +113,32 @@ namespace Mocha.OMS
 
 		}
 
-		public string GetTTC(Instance inst, Instance instTTC, string defaultValue = "")
+		public string GetTTC(Instance instTTC, string defaultValue = "")
+		{
+			return GetTTC(null, instTTC, defaultValue);
+		}
+
+		/// <summary>
+		/// Gets the value of the Translatable Text Constant related to the specified <see cref="Instance" /> via the relationship with the given Relationship <see cref="Guid" />.
+		/// </summary>
+		/// <returns><see cref="String"/> value of the Translatable Text Constant related to the specified <see cref="Instance" /> via the given Relationship <see cref="Guid" />.</returns>
+		/// <param name="inst">The <see cref="Instance" /> for which to query a value.</param>
+		/// <param name="guidRelationship">The <see cref="Guid" /> of the relationship for which to query a value.</param>
+		/// <param name="defaultValue">The default value returned if the Translatable Text Constant is not defined on the specified <see cref="Instance" /> for the given Relationship.</param>
+		public string GetTTC(Instance inst, Guid guidRelationship, string defaultValue = "")
+		{
+			return GetTTC(inst, GetInstance(guidRelationship), defaultValue);
+		}
+		public string GetTTC(Instance inst, Instance instRelationshipOrTTC, string defaultValue = "")
 		{
 			string value = defaultValue;
-			if (instTTC != null)
+			if (inst != null)
 			{
-				Instance instTTCValue = GetRelatedInstance(instTTC, KnownInstanceGUIDs.Relationship.Translatable_Text_Constant__has__Translatable_Text_Constant_Value);
+				instRelationshipOrTTC = GetRelatedInstance(inst, instRelationshipOrTTC);
+			}
+			if (instRelationshipOrTTC != null)
+			{
+				Instance instTTCValue = GetRelatedInstance(instRelationshipOrTTC, KnownInstanceGUIDs.Relationship.Translatable_Text_Constant__has__Translatable_Text_Constant_Value);
 
 				Instance Attribute___Value = GetInstance(KnownAttributeGUIDs.Value);
 				value = GetAttributeValue<string>(instTTCValue, Attribute___Value);
