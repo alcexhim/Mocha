@@ -28,6 +28,8 @@ namespace Mocha
 		public static readonly Guid TranslatableTextConstant = new Guid("{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}");
 		public static readonly Guid TranslatableTextConstantValue = new Guid("{6D38E757-EC18-43AD-9C35-D15BB446C0E1}");
 
+		public static readonly Guid ThisTenant = new Guid("{F2C9D4A9-9EFB-4263-84DB-66A9DA65AD00}");
+
 		public static class Relationship
 		{
 			public static readonly Guid Class__has_super__Class = new Guid("{100F0308-855D-4EC5-99FA-D8976CA20053}");
@@ -47,6 +49,9 @@ namespace Mocha
 			public static readonly Guid Extract_Single_Instance_String_Component__has__Relationship = new Guid("{5E499753-F50F-4A9E-BF53-DC013820499C}");
 			public static readonly Guid Report_Column__has__Report_Field = new Guid("{B9026910-7E91-4EE1-B5F2-D7B740614831}");
 			public static readonly Guid Class__has_default__Task = new Guid("{CF396DAA-75EA-4148-8468-C66A71F2262D}");
+
+			public static readonly Guid Tenant__has_login_header__Translatable_Text_Constant = new Guid("{41D66ACB-AFDE-4B6F-892D-E66255F10DEB}");
+			public static readonly Guid Tenant__has_login_footer__Translatable_Text_Constant = new Guid("{A6203B6B-5BEB-4008-AE49-DB5E7DDBA45B}");
 		}
 	}
 }

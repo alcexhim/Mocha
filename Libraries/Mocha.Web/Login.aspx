@@ -3,6 +3,7 @@
 <%@Register TagPrefix="wcx" Assembly="MBS.Web.Controls" Namespace="MBS.Web.Controls" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="aspcContent">
+	<!-- This page is hardcoded, replace with Mocha -->
 	<div style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 600px;"> 
 		<div style="text-align: center; margin-bottom: 50px;">
 			<asp:Image runat="server" ImageUrl="~/Images/MainIcon.svg" />
@@ -12,13 +13,15 @@
 		</div>
 		<wcx:Panel runat="server" CssClass="uwt-color-primary">
 			<ContentControls>
-				<h4>Please sign in to access this feature</h4>
+				<h4>
+					<asp:Label runat="server" ID="lblLoginHeaderText" Text="LOGIN_HEADER_TEXT" />
+				</h4>
 				<wcx:FormView runat="server" CssClass="uwt-expand">
 					<wcx:FormViewItemText runat="server" Name="user_name" Title="User name" />
 					<wcx:FormViewItemPassword runat="server" Name="user_pass" Title="Password" />
 				</wcx:FormView>
 				<p>
-					Once you're logged in, you can customize the 'Login Header Text' and 'Login Footer Text' properties of your new tenant.
+					<asp:Label runat="server" ID="lblLoginFooterText" Text="LOGIN_FOOTER_TEXT" />
 				</p>
 			</ContentControls>
 			<FooterControls>

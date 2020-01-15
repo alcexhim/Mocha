@@ -13,6 +13,10 @@ namespace Mocha.Web {
 	
 	public partial class LoginPage {
 		
+		protected System.Web.UI.WebControls.Label lblLoginHeaderText;
+		
+		protected System.Web.UI.WebControls.Label lblLoginFooterText;
+		
 		protected System.Web.UI.WebControls.Label lblLegalNoticeText;
 		
 		public new Mocha.Web.MasterPages.Blank Master {
