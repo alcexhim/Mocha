@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  All Classes 2.xml - XML definition for the initial Mocha `All Classes` system task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020-2021 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<reports>
+				<report type="standard" id="{7CA0EFA9-6849-4AAE-BF81-F055C006853B}" dataSourceId="{C6C62D56-CD40-474C-B727-44FB1930485A}">
+					<!-- Standard Report: All Classes -->
+					<columns>
+						<column fieldId="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" />
+						<column fieldId="{57ABFD83-0237-4DF7-9429-7C3A32DACD0F}" />
+						<column fieldId="{5F8A264E-D2B8-40A2-B583-A7ED511C9DD9}" />
+						<column fieldId="{406E63B4-D868-407D-80E8-2A4D32B97772}" />
+						<column fieldId="{420B3000-6B84-4107-9BCF-8B212A4AFB0A}">
+							<columnOptions>
+								<!-- Display as Count -->
+								<columnOption instanceId="{5C9B4C79-995B-4E6A-81C0-39C174BF9F6D}" />
+							</columnOptions>
+						</column>
+					</columns>
+				</report>
+			</reports>
+		</library>
+	</libraries>
+</mocha>

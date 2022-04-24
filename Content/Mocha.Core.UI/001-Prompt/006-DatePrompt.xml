@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  DatePrompt.xml - XML definition for the Mocha `Date Prompt` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{44b31ee1-d242-47ea-bf62-83a20b1c9d62}" superClassId="{EC889225-416A-4F73-B8D1-2A42B37AF43E}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Date Prompt" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Prompt`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{DB43F472-5DDA-4D6D-983E-929A06EF0112}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

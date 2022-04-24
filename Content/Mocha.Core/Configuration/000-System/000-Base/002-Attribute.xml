@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Attribute.xml - XML definition for the Mocha `Attribute` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!-- Attribute -->
+				<instance id="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" index="2">
+					<attributeValues>
+						<!-- Abstract -->
+						<attributeValue attributeInstanceId="{A1C0255D-3E8D-47D7-A186-1C93C93D4667}" value="true" />
+					</attributeValues>
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Attribute" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<targetInstances>
+								<instanceReference instanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Attribute`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{6894DC7E-F471-4F5C-88E6-B8016259817F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

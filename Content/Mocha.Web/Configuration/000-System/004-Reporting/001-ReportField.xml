@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ReportField.xml - XML definition for the initial Mocha `Report Field` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<!-- Class.has title Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Report Field" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{59EA0C72-4800-48BA-84A4-DDFE10E5F4D0}" superClassId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<!-- Class.has title Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Primary Object Report Field" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Relationship Report Field`.instance labeled by String `Report Field.has title Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{98A36370-2CE5-4707-B99A-B3F856FE0834}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" classInstanceId="{59EA0C72-4800-48BA-84A4-DDFE10E5F4D0}">
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Primary Object Report Field [Singleton]" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{AF4EAB1A-701C-4DEA-B38B-C75B5EB5A9AF}">
+							<!-- Class `Report Field`.has Method -->
+							<targetInstances>
+								<!-- `get This Instance` -->
+								<instanceReference instanceId="{D35E13B1-3F40-4AED-8C4A-D401E2F878E7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}" superClassId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<!-- Class.has title Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Relationship Report Field" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Relationship Report Field`.instance labeled by String `Report Field.has title Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{98A36370-2CE5-4707-B99A-B3F856FE0834}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<!-- `Render as Text` [Boolean Attribute] -->
+								<instanceReference instanceId="{15DD9E49-AB6D-44F0-9039-27AF81736406}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D11050AD-7376-4AB7-84DE-E8D0336B74D2}">
+							<!-- Class.has summary Report Field -->
+							<targetInstances>
+								<!-- `Target Relationship` -->
+								<instanceReference instanceId="{7EE0EA2C-0EDD-4AE4-9F8D-C3FBE92DE0E0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{98CE6CD2-9CFC-475E-86A2-7FE10E69C2D8}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Source Class for Relationship -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Source Class" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{B90B485E-8A49-4F9E-B33B-D539ADEE8411}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Destination Class for Relationship -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Destination Class" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4CB5C72A-21A2-4B18-A21D-278EBF5C7B91}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Title for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Title" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{15DD9E49-AB6D-44F0-9039-27AF81736406}" value="true" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{023FF41D-E77C-4522-A26E-FD9EA65CA38E}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Description for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Description" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{15DD9E49-AB6D-44F0-9039-27AF81736406}" value="true" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{57ABFD83-0237-4DF7-9429-7C3A32DACD0F}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Superclasses for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Super Classes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{100F0308-855D-4EC5-99FA-D8976CA20053}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5F8A264E-D2B8-40A2-B583-A7ED511C9DD9}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Created By for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Created By" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D1A25625-C90F-4A73-A6F2-AFB530687705}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{406E63B4-D868-407D-80E8-2A4D32B97772}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Object Source for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Source" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B62F9B81-799B-4ABE-A4AF-29B45347DE54}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{420B3000-6B84-4107-9BCF-8B212A4AFB0A}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Instances for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Instances" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{7EB41D3C-2AE9-4884-83A4-E59441BCAEFB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{7EE0EA2C-0EDD-4AE4-9F8D-C3FBE92DE0E0}" classInstanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}">
+					<!-- Target Relationship for Relationship Report Field -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Target Relationship" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9DA34BD8-AEC3-4CA0-B0B0-6E9F65595B2A}">
+					<!-- Language for Translatable Text Constant Value -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Language" />
+							</translationValues>
+						</translation>
+						<relationships>
+							<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+								<targetInstances>
+									<instanceReference instanceId="{3655AEC2-E2C9-4DDE-8D98-0C4D3CE1E569}" />
+								</targetInstances>
+							</relationship>
+						</relationships>
+					</translations>
+				</instance>
+				
+				<instance id="{37964301-26FD-41D8-8661-1F73684C0E0A}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Attribute Report Field.has target Attribute -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has target" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{C06E0461-A956-4599-9708-012C8FE04D94}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{09E6A707-9833-4167-B563-4F232BE2E29D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{09E6A707-9833-4167-B563-4F232BE2E29D}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Attribute.target for Attribute Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="target for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{C06E0461-A956-4599-9708-012C8FE04D94}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{37964301-26FD-41D8-8661-1F73684C0E0A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Relationship Report Field.has target Relationship -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has target" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{AF8AB7F2-5581-4891-8C6F-92ACD8AFB1B4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{AF8AB7F2-5581-4891-8C6F-92ACD8AFB1B4}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Relationship.target for Relationship Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="target for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{C06E0461-A956-4599-9708-012C8FE04D94}" superClassId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}">
+					<!-- Attribute Report Field (inherits Report Field) -->
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Attribute Report Field" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class.instance labeld by String -->
+							<targetInstances>
+								<instanceReference instanceId="{98A36370-2CE5-4707-B99A-B3F856FE0834}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{F95F7594-22A9-4E8D-A8BB-E1EA0031A0DC}" parentClassId="{C06E0461-A956-4599-9708-012C8FE04D94}">
+					<!-- Relationship Report Field: Relationship Type for Relationship -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Relationship Type" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{37964301-26FD-41D8-8661-1F73684C0E0A}">
+							<!-- Attribute Report Field.has target Attribute -->
+							<targetInstances>
+								<!-- `Relationship Type` -->
+								<instanceReference instanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{AB0B6DFB-A03F-4F2B-9082-2D639C110AE6}" parentClassId="{C06E0461-A956-4599-9708-012C8FE04D94}">
+					<!-- Relationship Report Field: Tenant Name for Tenant -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Tenant Name" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{37964301-26FD-41D8-8661-1F73684C0E0A}">
+							<!-- Attribute Report Field.has target Attribute -->
+							<targetInstances>
+								<!-- `Name` -->
+								<instanceReference instanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{FE5BEBE7-5B56-4C2E-B85E-611B3F448815}" parentClassId="{C06E0461-A956-4599-9708-012C8FE04D94}">
+					<!-- Relationship Report Field: Account Locked, Disabled, or Expired for User -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Account Locked, Disabled, or Expired" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{37964301-26FD-41D8-8661-1F73684C0E0A}">
+							<!-- Attribute Report Field.has target Attribute -->
+							<targetInstances>
+								<!-- `Name` -->
+								<instanceReference instanceId="{AA602558-7E12-4F5A-8F38-B0E3AB933AF4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{7F825488-60CE-4AF1-B832-F68EFEB695C4}" parentClassId="{C06E0461-A956-4599-9708-012C8FE04D94}">
+					<!-- Relationship Report Field: Value for Translatable Text Constant Value -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Value" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{37964301-26FD-41D8-8661-1F73684C0E0A}">
+							<!-- Attribute Report Field.has target Attribute -->
+							<targetInstances>
+								<!-- `Name` -->
+								<instanceReference instanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D11050AD-7376-4AB7-84DE-E8D0336B74D2}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Class.has summary Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has summary" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{FAD8F8B8-B0E2-4852-A6E9-A272C041DC4E}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{FAD8F8B8-B0E2-4852-A6E9-A272C041DC4E}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Report Field.summary for Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="summary for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{D11050AD-7376-4AB7-84DE-E8D0336B74D2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{45544098-727E-4A5E-9265-0131C695A290}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Report Field.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{4DD7164B-4658-4870-8E5B-290863F2F77F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4DD7164B-4658-4870-8E5B-290863F2F77F}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Translatable Text Constant.title for Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{655A04D9-FE35-4F89-9AAB-B8FA34989D03}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{45544098-727E-4A5E-9265-0131C695A290}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -3,11 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{64612D17-84D9-4437-BA38-230CB1C40976}</ProjectGuid>
+    <ProjectGuid>{DBEE1BAC-D658-420D-96D6-417523326650}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Mocha.Compiler</RootNamespace>
-    <AssemblyName>mochamcx</AssemblyName>
-    <ReleaseVersion>1.0.*</ReleaseVersion>
+    <AssemblyName>mcc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -17,14 +16,14 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ExternalConsole>true</ExternalConsole>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>..\..\Output\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ExternalConsole>true</ExternalConsole>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -34,13 +33,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MBS.Framework\MBS.Framework\MBS.Framework.csproj">
-      <Project>{00266B21-35C9-4A7F-A6BA-D54D7FDCC25C}</Project>
-      <Name>MBS.Framework</Name>
+    <ProjectReference Include="..\..\Libraries\UniversalEditor.Plugins.Mocha\UniversalEditor.Plugins.Mocha.csproj">
+      <Project>{3D0893DC-9961-4EAA-BF6C-604686068D09}</Project>
+      <Name>UniversalEditor.Plugins.Mocha</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MBS.Framework\MBS.Framework.CLI\MBS.Framework.CLI.csproj">
-      <Project>{DA900843-92F7-49A5-AE16-A27658AA2F3C}</Project>
-      <Name>MBS.Framework.CLI</Name>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Core\UniversalEditor.Core.csproj">
+      <Project>{2D4737E6-6D95-408A-90DB-8DFF38147E85}</Project>
+      <Name>UniversalEditor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Essential\UniversalEditor.Essential.csproj">
+      <Project>{30467E5C-05BC-4856-AADC-13906EF4CADD}</Project>
+      <Name>UniversalEditor.Essential</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

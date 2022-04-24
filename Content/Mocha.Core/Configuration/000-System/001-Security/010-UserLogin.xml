@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  LoginAuthenticationType.xml - XML definition for the initial Mocha `Login Authentication Type` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{64F4BCDB-38D0-4373-BA30-8AE99AF1A5F7}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="User Login" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<!-- Class `User Login`.has Attribute -->
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<targetInstances>
+								<!-- `Token` [Text Attribute] (Login Token) -->
+								<instanceReference instanceId="{DA7686B6-3803-4F15-97F6-7F8F3AE16668}" />
+								<!-- `Start Date` [Date Attribute] (Signon Time) -->
+								<instanceReference instanceId="{F23CD242-64DB-4115-AB57-E9C70B0A38DC}" />
+								<!-- `End Date` [Date Attribute] (Signoff Time) -->
+								<instanceReference instanceId="{B3AED59A-1977-4CE4-A2F9-891A1CACDEB8}" />
+								<!-- `IP Address` [Text Attribute] -->
+								<instanceReference instanceId="{ADE5A3C3-A84E-4798-BC5B-E08F21380208}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{403B2264-4393-4B7B-90C4-F066605982B3}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: User Login.has Login Device Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `User Login` -->
+							<targetInstances>
+								<instanceReference instanceId="{64F4BCDB-38D0-4373-BA30-8AE99AF1A5F7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Login Device Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{C1FCE2B8-93EA-4575-95A7-8D4C3527AF63}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{BE633A67-4A1C-42B1-BC86-7C6A5C020D27}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{BE633A67-4A1C-42B1-BC86-7C6A5C020D27}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Login Device Type.for User Login -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Login Device Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{C1FCE2B8-93EA-4575-95A7-8D4C3527AF63}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `User Login` -->
+							<targetInstances>
+								<instanceReference instanceId="{64F4BCDB-38D0-4373-BA30-8AE99AF1A5F7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{403B2264-4393-4B7B-90C4-F066605982B3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{85B40E4B-849B-4006-A9C0-4E201B25975F}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: User Login.has User -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `User Login` -->
+							<targetInstances>
+								<instanceReference instanceId="{64F4BCDB-38D0-4373-BA30-8AE99AF1A5F7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `User` -->
+							<targetInstances>
+								<instanceReference instanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{C79A6041-FC94-41A5-9860-D443C60FA7DE}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{C79A6041-FC94-41A5-9860-D443C60FA7DE}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: User.for User Login -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `User` -->
+							<targetInstances>
+								<instanceReference instanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `User Login` -->
+							<targetInstances>
+								<instanceReference instanceId="{64F4BCDB-38D0-4373-BA30-8AE99AF1A5F7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{85B40E4B-849B-4006-A9C0-4E201B25975F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

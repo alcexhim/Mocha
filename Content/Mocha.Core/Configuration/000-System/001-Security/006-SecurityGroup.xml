@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Task.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{8EA7D1D3-6FC8-40C9-98C6-F72798307E9F}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Security Permission" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{36156720-B166-47E8-AA45-073EE789AD59}" classInstanceId="{8EA7D1D3-6FC8-40C9-98C6-F72798307E9F}">
+					<translations>
+						<translation relationshipInstanceId="{6EF090CF-DF98-4DC6-83A9-364A3FA25E9B}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Provision Tenants" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				
+				<instance id="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Security Permission.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Security Permission` -->
+							<targetInstances>
+								<instanceReference instanceId="{8EA7D1D3-6FC8-40C9-98C6-F72798307E9F}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{616E5840-4DA4-4C99-B470-8F464465C2DB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{616E5840-4DA4-4C99-B470-8F464465C2DB}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Translatable Text Constant.title for Security Permission -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Security Permission` -->
+							<targetInstances>
+								<instanceReference instanceId="{8EA7D1D3-6FC8-40C9-98C6-F72798307E9F}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{099B644B-76D4-4654-BDE7-3CBCCA418169}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Security Group.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{62E94B4E-1A7A-48F1-9812-2AC6AF5B0170}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{62E94B4E-1A7A-48F1-9812-2AC6AF5B0170}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Translatable Text Constant.title for Security Group -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{099B644B-76D4-4654-BDE7-3CBCCA418169}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4E73EEA2-BD64-4ECD-B328-99A2779B2FB5}" classInstanceId="{FCECCE4E-8D05-485A-AE34-B1B45E766661}">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{099B644B-76D4-4654-BDE7-3CBCCA418169}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{30965725-28BA-45FA-8578-804A4FDDA149}" classInstanceId="{5AECB489-DBC2-432E-86AF-6BE349317238}">
+					<relationships>
+						<relationship relationshipInstanceId="{3B6C4C25-B7BC-4242-8ED1-BA6D01B834BA}">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{4E73EEA2-BD64-4ECD-B328-99A2779B2FB5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Security Group" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{30965725-28BA-45FA-8578-804A4FDDA149}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{0E57B7A3-FE6D-4B40-843B-F20580441242}" classInstanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}">
+					<translations>
+						<translation relationshipInstanceId="{099B644B-76D4-4654-BDE7-3CBCCA418169}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="System Administrator" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5E305133-1380-4736-93E4-6B280B35FCE3}">
+							<!-- Security Group `System Administrator`.has Security Permission -->
+							<targetInstances>
+								<!-- `Provision Tenants` -->
+								<instanceReference instanceId="{36156720-B166-47E8-AA45-073EE789AD59}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

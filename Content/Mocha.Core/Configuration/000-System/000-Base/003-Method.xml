@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Method.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{04F267AB-7BF4-4851-AE01-B57FA6F330E7}" classInstanceId="{FCECCE4E-8D05-485A-AE34-B1B45E766661}">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{99C0A026-9CE1-44ED-8193-76CE396108A1}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="*P" />
+					</attributeValues>
+				</instance>
+				<instance id="{C773E134-D9C3-4524-A908-ACF0F744B4E1}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="*S" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{D37439E3-1138-4148-9946-379695B9B945}" classInstanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}">
+					<!-- parent class is Select Instance Set Method ? return Text Constant String Component `SS` -->
+				</instance>
+				<instance id="{EB4F9366-4EC8-4A5E-A932-B6A8A222A416}" classInstanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}">
+					<!-- has Attribute `Public` ? return Text Constant String Component `*P` -->
+					<relationships>
+						<relationship relationshipInstanceId="{B1A5F12F-2882-431E-A3E2-801FCA2114D2}">
+							<!-- Conditional String Component.has Condition `contains Attribute `Public` -->
+						</relationship>
+						<relationship relationshipInstanceId="{B14DB3B7-4F72-4930-AD13-3E3CCD8F0C7F}">
+							<!-- Conditional String Component.has String Component `*P` -->
+							<targetInstances>
+								<instanceReference instanceId="{99C0A026-9CE1-44ED-8193-76CE396108A1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{768A7207-0886-49B1-8838-3E5812504FB4}" classInstanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}">
+					<!-- has Attribute `Static` ? return Text Constant String Component `*S` : return nothing -->
+					<relationships>
+						<relationship relationshipInstanceId="{B1A5F12F-2882-431E-A3E2-801FCA2114D2}">
+							<!-- Conditional String Component.has Condition `contains Attribute `Static` -->
+						</relationship>
+						<relationship relationshipInstanceId="{B14DB3B7-4F72-4930-AD13-3E3CCD8F0C7F}">
+							<!-- Conditional String Component.has String Component `*S` -->
+							<targetInstances>
+								<instanceReference instanceId="{C773E134-D9C3-4524-A908-ACF0F744B4E1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{8833DA21-F5A4-4794-AE0D-724D744F12EC}" classInstanceId="{5AECB489-DBC2-432E-86AF-6BE349317238}">
+					<!-- Title - Instance Property String Component -->
+					<relationships>
+						<relationship relationshipInstanceId="{3B6C4C25-B7BC-4242-8ED1-BA6D01B834BA}">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{04F267AB-7BF4-4851-AE01-B57FA6F330E7}" />
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<instanceReference instanceId="{FBBEEA51-E342-42C8-93B9-098D0548100D}" />
+								<instanceReference instanceId="{D37439E3-1138-4148-9946-379695B9B945}" />
+								<instanceReference instanceId="{EB4F9366-4EC8-4A5E-A932-B6A8A222A416}" />
+								<instanceReference instanceId="{768A7207-0886-49B1-8838-3E5812504FB4}" />
+								<instanceReference instanceId="{D85F9F58-79D8-4C2C-BD3F-48B382FC37D7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{3D3B601B-4EF0-49F3-AF05-86CEA0F00619}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Call.has Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Call` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{D2813913-80B6-4DD6-9AD6-56D989169734}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{794471BC-C639-4DBE-A043-753713DE407D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{794471BC-C639-4DBE-A043-753713DE407D}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Call.has Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{D2813913-80B6-4DD6-9AD6-56D989169734}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Call` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{3D3B601B-4EF0-49F3-AF05-86CEA0F00619}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{765BD0C9-117D-4D0E-88C9-2CEBD4898135}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Call.has Prompt Value -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Call` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Prompt Value` -->
+							<targetInstances>
+								<instanceReference instanceId="{9E1BC193-4B9A-4FEC-9807-A7059F4D8080}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{0F7C38FE-403D-4A93-87D8-1F81323FFF03}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{0F7C38FE-403D-4A93-87D8-1F81323FFF03}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Prompt Value.for Method Call -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Prompt Value` -->
+							<targetInstances>
+								<instanceReference instanceId="{9E1BC193-4B9A-4FEC-9807-A7059F4D8080}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Call` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{765BD0C9-117D-4D0E-88C9-2CEBD4898135}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Method Call" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{795DD1D3-0744-459D-87BD-62C70F1F5CBA}" classInstanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}">
+					<relationships>
+						<relationship relationshipInstanceId="{3D3B601B-4EF0-49F3-AF05-86CEA0F00619}">
+							<!-- Method Call.has Method -->
+							<targetInstances>
+								<instanceReference instanceId="{4E92D64E-AC91-4ABF-8052-96366DF93996}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{765BD0C9-117D-4D0E-88C9-2CEBD4898135}">
+							<!-- Method Call.has Prompt Value -->
+							<targetInstances>
+								<instanceReference instanceId="{115847D3-5BBF-4BB6-BF0E-7C1A4484F617}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{D2813913-80B6-4DD6-9AD6-56D989169734}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Method" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<!-- Name [Text Attribute] -->
+								<instanceReference instanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{D52500F1-1421-4B73-9987-223163BC9C04}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method.has Method Binding -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{D2813913-80B6-4DD6-9AD6-56D989169734}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B782A592-8AF5-4228-8296-E3D0B24C70A8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{B782A592-8AF5-4228-8296-E3D0B24C70A8}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Binding.for Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{D2813913-80B6-4DD6-9AD6-56D989169734}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D52500F1-1421-4B73-9987-223163BC9C04}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{5B715276-8F3C-4E3F-9FF4-27E766A91154}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method.has Prompt -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{D2813913-80B6-4DD6-9AD6-56D989169734}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Prompt` -->
+							<targetInstances>
+								<instanceReference instanceId="{EC889225-416A-4F73-B8D1-2A42B37AF43E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B271A437-32C7-4E99-8498-FC1B36A7AE11}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{B271A437-32C7-4E99-8498-FC1B36A7AE11}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Prompt.for Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Prompt` -->
+							<targetInstances>
+								<instanceReference instanceId="{EC889225-416A-4F73-B8D1-2A42B37AF43E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{D2813913-80B6-4DD6-9AD6-56D989169734}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{5B715276-8F3C-4E3F-9FF4-27E766A91154}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{73471769-5445-4EF4-ADFA-3E08DE139A3D}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Binding.has Condition -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F7407D0C-E400-4AD6-B995-46BF90B99677}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F7407D0C-E400-4AD6-B995-46BF90B99677}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Condition.for Method Binding -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{73471769-5445-4EF4-ADFA-3E08DE139A3D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{BC4B71B9-6168-4B58-95D4-A56ED78CA965}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Assign Attribute Method.has Attribute -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Assign Attribute Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{3312A789-3B7A-4478-B329-4FF781504F9C}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Attribute` -->
+							<targetInstances>
+								<instanceReference instanceId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{C238C7D8-B8C8-419F-9F71-35C1B96FB724}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{C238C7D8-B8C8-419F-9F71-35C1B96FB724}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Attribute.for Assign Attribute Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Attribute` -->
+							<targetInstances>
+								<instanceReference instanceId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Assign Attribute Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{3312A789-3B7A-4478-B329-4FF781504F9C}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{BC4B71B9-6168-4B58-95D4-A56ED78CA965}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{63FFA896-56A7-477F-A78A-EEF954BB04C5}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="SS" />
+					</attributeValues>
+				</instance>
+				<instance id="{D117D714-B7F5-4304-A3FB-B287405AB043}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="P" />
+					</attributeValues>
+				</instance>
+				<instance id="{E3C34504-6050-4F90-A871-8B44A08D9BEB}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="S" />
+					</attributeValues>
+				</instance>
+				<instance id="{F2E0F0E8-3048-4E67-B523-666332EF9F41}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="rsmb" />
+					</attributeValues>
+				</instance>
+				<instance id="{E33D7576-F7B9-4A60-9A0E-87065FAA987E}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="ramb" />
+					</attributeValues>
+				</instance>
+				
+				
+				<instance id="{940EBFDB-B064-48D7-A55B-873947F4D19A}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Binding.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{300A3D26-699F-4F1F-9FD4-6A294915EAC8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{300A3D26-699F-4F1F-9FD4-6A294915EAC8}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Translatable Text Constant.title for Method Binding -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5EB6D9EC-3031-4337-B9DB-7D67B3E4CB86}" classInstanceId="{FCECCE4E-8D05-485A-AE34-B1B45E766661}">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A41150B8-0982-492D-BD46-7D1C3E3CFFFB}" classInstanceId="{5AECB489-DBC2-432E-86AF-6BE349317238}">
+					<relationships>
+						<relationship relationshipInstanceId="{3B6C4C25-B7BC-4242-8ED1-BA6D01B834BA}">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{5EB6D9EC-3031-4337-B9DB-7D67B3E4CB86}" />
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<instanceReference instanceId="{21CA6A9B-8405-4D8E-AFFD-CF1960397704}" />
+								<instanceReference instanceId="{F2E0F0E8-3048-4E67-B523-666332EF9F41}" />
+								<instanceReference instanceId="{94760D6C-64E9-494C-AFCC-AB4B68344F32}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{AADC20F9-7559-429B-AEF0-97E059295C76}" superClassId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Return Instance Set Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{A41150B8-0982-492D-BD46-7D1C3E3CFFFB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{712D1D13-78B4-457C-8C32-BCA5723EB0E1}" classInstanceId="{AADC20F9-7559-429B-AEF0-97E059295C76}">
+					<translations>
+						<translation relationshipInstanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="return This Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{30FB6BA6-2BBB-41D2-B91A-709C00A07790}" superClassId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Return Attribute Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{8673D5FF-803C-49F4-80DE-A41AC90862E6}" superClassId="{CB36098E-B9BF-4D22-87FA-4186EC632C89}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Process Updates Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{3312A789-3B7A-4478-B329-4FF781504F9C}" superClassId="{D2813913-80B6-4DD6-9AD6-56D989169734}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="AA - Assign Attribute Method" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<targetInstances>
+								<instanceReference instanceId="{8833DA21-F5A4-4794-AE0D-724D744F12EC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{BF73CEAC-F972-46E8-BFA1-7807F39F1B91}" superClassId="{D2813913-80B6-4DD6-9AD6-56D989169734}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="CT - Control Transaction Method" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<targetInstances>
+								<instanceReference instanceId="{8833DA21-F5A4-4794-AE0D-724D744F12EC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4E92D64E-AC91-4ABF-8052-96366DF93996}" classInstanceId="{BF73CEAC-F972-46E8-BFA1-7807F39F1B91}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" value="create_instance" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="create instance" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				
+				<instance id="{75EC2A49-C715-4F89-A501-78869BD3758F}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Sequence Method.has Method Action -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Sequence Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{8BF91515-89EA-4633-80D3-C096A38E7B89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Action` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A9D63995-E2F3-474E-B3D2-1E4BA806726C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{A9D63995-E2F3-474E-B3D2-1E4BA806726C}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Method Action.for Sequence Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Action` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Sequence Method` -->
+							<targetInstances>
+								<instanceReference instanceId="{8BF91515-89EA-4633-80D3-C096A38E7B89}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{75EC2A49-C715-4F89-A501-78869BD3758F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{8BF91515-89EA-4633-80D3-C096A38E7B89}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="SM - Sequence Method" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{8833DA21-F5A4-4794-AE0D-724D744F12EC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B324D93A-738C-48BF-854F-A1C038BE5BA5}">
+					<relationships>
+						<relationship relationshipInstanceId="{2DA28271-5E46-4472-A6F5-910B5DD6F608}">
+							<!-- Class `Global`.has Method `get This Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="{D35E13B1-3F40-4AED-8C4A-D401E2F878E7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{130637B4-17A7-4394-8F4D-E83A79114E6C}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="SS - Select Instance Set Method" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{8833DA21-F5A4-4794-AE0D-724D744F12EC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D35E13B1-3F40-4AED-8C4A-D401E2F878E7}" classInstanceId="{130637B4-17A7-4394-8F4D-E83A79114E6C}">
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="get This Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{D52500F1-1421-4B73-9987-223163BC9C04}">
+							<targetInstances>
+								<instanceReference instanceId="{712D1D13-78B4-457C-8C32-BCA5723EB0E1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{EE7A3049-8E09-410C-84CB-C2C0D652CF40}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Return Instance Set Method Binding.has source Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has source" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Return Instance Set Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{AADC20F9-7559-429B-AEF0-97E059295C76}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{AA3C3ECA-9963-4877-9D9E-139724B59E14}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{AA3C3ECA-9963-4877-9D9E-139724B59E14}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Class.source for Return Instance Set Method Binding -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="source for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Return Instance Set Method Binding` -->
+							<targetInstances>
+								<instanceReference instanceId="{AADC20F9-7559-429B-AEF0-97E059295C76}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{EE7A3049-8E09-410C-84CB-C2C0D652CF40}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{C9A4BF32-9176-4409-A016-9A263C3F2657}" superClassId="{D2813913-80B6-4DD6-9AD6-56D989169734}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<!-- Class.has title Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="SS - Server-Side Script Method DEPRECATED" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<!-- Class.has description Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Defines a server-side code block written in PHP that is executed when this Method is called." />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Method`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{8833DA21-F5A4-4794-AE0D-724D744F12EC}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class `Method`.has Attribute -->
+							<targetInstances>
+								<!-- Name [Text Attribute] -->
+								<instanceReference instanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" />
+								<!-- Code Blob [Text Attribute] -->
+								<instanceReference instanceId="{CAC2B62B-47F1-44F9-8C68-45EC64CE3C92}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{0E45F38E-9868-4F5E-B91C-35FABE484E00}" classInstanceId="{C9A4BF32-9176-4409-A016-9A263C3F2657}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" value="GetInstanceDisplayTitleForInstanceParm" />
+						<attributeValue attributeInstanceId="{CAC2B62B-47F1-44F9-8C68-45EC64CE3C92}" value="echo('Not implemented yet !!!');" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="get Instance Display Title for Instance parm" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{7FFB4808-60B3-4442-B343-B6CA2FE3B0DE}" classInstanceId="{C9A4BF32-9176-4409-A016-9A263C3F2657}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" value="TEST_PrintMethodArguments" />
+						<attributeValue attributeInstanceId="{CAC2B62B-47F1-44F9-8C68-45EC64CE3C92}" value="print_r($parameters);" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="PMP - Print Method Parameters" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{944C1459-1757-4F76-8A8B-F9E617AEC5FB}" classInstanceId="{C9A4BF32-9176-4409-A016-9A263C3F2657}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" value="GetLoginTokenForCurrentUser" />
+						<attributeValue attributeInstanceId="{CAC2B62B-47F1-44F9-8C68-45EC64CE3C92}" value="if (isset($_SESSION['Authentication.LoginToken'])) { return $_SESSION['Authentication.LoginToken']; } else { return null; }" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="get Login Token for currently logged-in User" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

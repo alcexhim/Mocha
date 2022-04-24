@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  MenuItemHeader.xml - XML definition for the initial Mocha `Header Menu Item` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Instance Menu Item.has target Instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has target" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Instance Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="{263C4882-945F-4DE9-AED8-E0D6516D4903}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{579AF79B-A6BE-4316-9517-903455CE5F99}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{579AF79B-A6BE-4316-9517-903455CE5F99}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Instance.target for Instance Menu Item -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="target for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="{263C4882-945F-4DE9-AED8-E0D6516D4903}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Instance Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}" superClassId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Instance Menu Item" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{E2E48032-DF8D-45F5-8865-A4A8DE8F28B2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  SequentialContainerPageComponent.xml - XML definition for the initial Mocha `Sequential Container Page Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{DDC61BCA-022D-43EF-9A94-D79BA9FEC5C8}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<!-- Class: Sequential Container Orientation -->
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Sequential Container Orientation" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<!-- `Name` [Text Attribute] -->
+								<instanceReference instanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9B7B7F14-0925-456D-98E6-E3FFEFDC272C}" classInstanceId="{DDC61BCA-022D-43EF-9A94-D79BA9FEC5C8}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" value="Horizontal" />
+					</attributeValues>
+				</instance>
+				<instance id="{96423CAA-260E-453A-B609-E8090897EDDF}" classInstanceId="{DDC61BCA-022D-43EF-9A94-D79BA9FEC5C8}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" value="Vertical" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{A66D9AE2-3BEC-4083-A5CB-7DE3B03A9CC7}" superClassId="{6AD6BD1C-7D1C-4AC9-9642-FEBC61E9D6FF}">
+					<!-- Class: Sequential Container Page Component (inherits Container Page Component) -->
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Sequential Container Page Component" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{DD55F506-8718-4240-A894-21346656E804}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Sequential Container Page Component.has Sequential Container Orientation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{A66D9AE2-3BEC-4083-A5CB-7DE3B03A9CC7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{DDC61BCA-022D-43EF-9A94-D79BA9FEC5C8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F8F4EBFE-605C-4F68-99F7-83AEF3FF1AF2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F8F4EBFE-605C-4F68-99F7-83AEF3FF1AF2}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Sequential Container Orientation.for Sequential Container Page Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{DDC61BCA-022D-43EF-9A94-D79BA9FEC5C8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{A66D9AE2-3BEC-4083-A5CB-7DE3B03A9CC7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{DD55F506-8718-4240-A894-21346656E804}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

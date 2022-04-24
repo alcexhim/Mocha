@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Package.xml - XML definition for the initial Mocha `Package` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{BCDB6FFD-D2F2-4B63-BD7E-9C2CCD9547E0}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<!-- Class: Layout -->
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Layout" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{3E45AA17-6E8E-41DB-9C94-E84B4B4176E8}" classInstanceId="{BCDB6FFD-D2F2-4B63-BD7E-9C2CCD9547E0}" />
+				
+				<instance id="{419047F8-852B-4A4D-B161-A8BD022FD8EB}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Package.has Layout -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="{F1A06573-C447-4D85-B4E7-54A438C4A960}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Package` -->
+							<targetInstances>
+								<instanceReference instanceId="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Layout` -->
+							<targetInstances>
+								<instanceReference instanceId="{BCDB6FFD-D2F2-4B63-BD7E-9C2CCD9547E0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{AA2D3B51-4153-4599-A983-6B4A13ADCBCB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{AA2D3B51-4153-4599-A983-6B4A13ADCBCB}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Layout.for Package -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Layout` -->
+							<targetInstances>
+								<instanceReference instanceId="{BCDB6FFD-D2F2-4B63-BD7E-9C2CCD9547E0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Package` -->
+							<targetInstances>
+								<instanceReference instanceId="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{419047F8-852B-4A4D-B161-A8BD022FD8EB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{E15A97DD-2A1D-4DC0-BD6B-A957B63D9802}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Package.has Instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Package` -->
+							<targetInstances>
+								<instanceReference instanceId="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="{263C4882-945F-4DE9-AED8-E0D6516D4903}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{33C51321-C18B-409C-A7D0-BEF65BFEFC9A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{33C51321-C18B-409C-A7D0-BEF65BFEFC9A}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Instance.for Package -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="{263C4882-945F-4DE9-AED8-E0D6516D4903}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Package` -->
+							<targetInstances>
+								<instanceReference instanceId="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{E15A97DD-2A1D-4DC0-BD6B-A957B63D9802}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5C999F31-207C-4A6F-9B61-B8D75C0B736E}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Package.has description Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has description" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Package` -->
+							<targetInstances>
+								<instanceReference instanceId="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D3C6B6F1-94E2-45C2-854D-70E82E34B586}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{D3C6B6F1-94E2-45C2-854D-70E82E34B586}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Translatable Text Constant.description for Package -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="description for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Package` -->
+							<targetInstances>
+								<instanceReference instanceId="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{5C999F31-207C-4A6F-9B61-B8D75C0B736E}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{6A1F66F7-8EA6-43D1-B2AF-198F63B84710}">
+					<!-- Class: Package -->
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Package" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{419047F8-852B-4A4D-B161-A8BD022FD8EB}">
+							<!-- Class `Package`.has Layout  ... (???) -->
+							<targetInstances>
+								<instanceReference instanceId="{3E45AA17-6E8E-41DB-9C94-E84B4B4176E8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

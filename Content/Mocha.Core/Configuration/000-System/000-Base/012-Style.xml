@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Style.xml - XML definition for the initial Mocha `Style` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Style Property" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class `Style Property`.has Text Attribute `CSS Value` -->
+							<destinationInstance>
+								<instanceReference instanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" />
+							</destinationInstance>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{1AE4BE55-312D-461C-9A4B-5F3F13CCF7F9}" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Horizontal Alignment" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="text-align" />
+					</attributeValues>
+				</instance>
+				<instance id="{F936088C-8D65-4476-BDBC-421EE8BC41A9}" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Font Size" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="font-size" />
+					</attributeValues>
+				</instance>
+				<instance id="{354D0A44-6816-4E65-BC84-4910CE0CE6F5}" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Padding (all)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="padding" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{B69C2708-E78D-413A-B491-ABB6F1D2A6E0}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Style Rule.has Style Property -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style Property` -->
+							<targetInstances>
+								<instanceReference instanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{DF43F7A5-8175-4E23-9801-8299EA55B356}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{DF43F7A5-8175-4E23-9801-8299EA55B356}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Style Property.for Style Rule -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style Property` -->
+							<targetInstances>
+								<instanceReference instanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B69C2708-E78D-413A-B491-ABB6F1D2A6E0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Style Rule" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class `Style Rule`.has Attribute -->
+							<targetInstances>
+								<!-- `Value` [Text Attribute] -->
+								<instanceReference instanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4CC8A654-B2DF-4B17-A956-24939530790E}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Style.has Style Rule -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{32276525-126A-412F-A10F-1368312D2EAB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{32276525-126A-412F-A10F-1368312D2EAB}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Style Rule.for Style -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{4CC8A654-B2DF-4B17-A956-24939530790E}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{963233D5-88F6-41F0-9DE0-63BAB95FA228}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Style.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{13CA9CF4-DAD3-48FB-9546-8929CF9DDA38}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{13CA9CF4-DAD3-48FB-9546-8929CF9DDA38}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Translatable Text Constant.title for Style -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{963233D5-88F6-41F0-9DE0-63BAB95FA228}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Style" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class `Style Rule`.has Attribute -->
+							<targetInstances>
+								<!-- `Class Name` [Text Attribute] -->
+								<instanceReference instanceId="{0F42BCB6-549A-4407-BB91-DD147443F68F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Condition.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{A5B9CB0C-C3A1-458A-A664-9028134A32A4}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Condition Group.has Condition -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{1CD066D8-6C68-458C-B50F-D5FF44AA838B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{6CBD6A00-6921-4073-9CC0-FD4CA396B9A8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{6CBD6A00-6921-4073-9CC0-FD4CA396B9A8}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Condition.for Condition Group -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{1CD066D8-6C68-458C-B50F-D5FF44AA838B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A5B9CB0C-C3A1-458A-A664-9028134A32A4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{EED03C12-E5EB-437E-B668-8FA59C96A751}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Attribute Condition.has source Attribute -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has source" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Attribute Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{EF98C74C-4621-4AC7-AA08-8534F9050B68}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Attribute` -->
+							<targetInstances>
+								<instanceReference instanceId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{59A43F04-9BD3-4328-9456-A5C0B02C6836}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{59A43F04-9BD3-4328-9456-A5C0B02C6836}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Attribute.source for Attribute Condition -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="source for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Attribute` -->
+							<targetInstances>
+								<instanceReference instanceId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Attribute Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{EF98C74C-4621-4AC7-AA08-8534F9050B68}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{EED03C12-E5EB-437E-B668-8FA59C96A751}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{BEEC38DE-9F5F-43D1-B86E-B02A6D5C0C99}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Condition.has Condition Comparison -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition Comparison` -->
+							<targetInstances>
+								<instanceReference instanceId="{1BA3B424-A45C-49DC-9F6F-3DDE169AFE12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D52C5C3B-17E8-46DA-BF32-28DB3CFC74DC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{D52C5C3B-17E8-46DA-BF32-28DB3CFC74DC}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Condition Comparison.for Condition -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition Comparison` -->
+							<targetInstances>
+								<instanceReference instanceId="{1BA3B424-A45C-49DC-9F6F-3DDE169AFE12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{BEEC38DE-9F5F-43D1-B86E-B02A6D5C0C99}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F7ACCB06-1D93-472C-9A67-3CDA30AA1DFD}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Condition Comparison.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition Comparison` -->
+							<targetInstances>
+								<instanceReference instanceId="{1BA3B424-A45C-49DC-9F6F-3DDE169AFE12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D5C16CF3-FF84-423D-A3FB-6F1FCB6F57EC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{D5C16CF3-FF84-423D-A3FB-6F1FCB6F57EC}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Translatable Text Constant.title for Condition Comparison -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translatable Text Constant` -->
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition Comparison` -->
+							<targetInstances>
+								<instanceReference instanceId="{1BA3B424-A45C-49DC-9F6F-3DDE169AFE12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F7ACCB06-1D93-472C-9A67-3CDA30AA1DFD}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2656C98F-C985-4075-AAE8-7F87F969927F}" classInstanceId="{FCECCE4E-8D05-485A-AE34-B1B45E766661}">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{F7ACCB06-1D93-472C-9A67-3CDA30AA1DFD}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{7C21CA5B-3F06-43A5-A1A2-1D6EAC874554}" classInstanceId="{5AECB489-DBC2-432E-86AF-6BE349317238}">
+					<relationships>
+						<relationship relationshipInstanceId="{3B6C4C25-B7BC-4242-8ED1-BA6D01B834BA}">
+							<targetInstances>
+								<instanceReference instanceId="{2656C98F-C985-4075-AAE8-7F87F969927F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Condition" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{A1C0255D-3E8D-47D7-A186-1C93C93D4667}" value="true" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{EF98C74C-4621-4AC7-AA08-8534F9050B68}" superClassId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Attribute Condition" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{1BA3B424-A45C-49DC-9F6F-3DDE169AFE12}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Condition Comparison" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{A1C0255D-3E8D-47D7-A186-1C93C93D4667}" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<targetInstances>
+								<instanceReference instanceId="{7C21CA5B-3F06-43A5-A1A2-1D6EAC874554}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{2BCEDBA7-BFD8-4041-B0EA-3EDF4EDDDC86}" superClassId="{1BA3B424-A45C-49DC-9F6F-3DDE169AFE12}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Attribute Condition Comparison" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<targetInstances>
+								<instanceReference instanceId="{7C21CA5B-3F06-43A5-A1A2-1D6EAC874554}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{EDF442A6-8E95-456C-812A-546F3FBD1F45}" classInstanceId="{2BCEDBA7-BFD8-4041-B0EA-3EDF4EDDDC86}">
+					<translations>
+						<translation relationshipInstanceId="{F7ACCB06-1D93-472C-9A67-3CDA30AA1DFD}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="equal to" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{C7F75135-62DC-4DE6-8F3D-5D2CA459EE94}" classInstanceId="{2BCEDBA7-BFD8-4041-B0EA-3EDF4EDDDC86}">
+					<translations>
+						<translation relationshipInstanceId="{F7ACCB06-1D93-472C-9A67-3CDA30AA1DFD}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="not equal to" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{1CD066D8-6C68-458C-B50F-D5FF44AA838B}" superClassId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Condition Group" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{A1C0255D-3E8D-47D7-A186-1C93C93D4667}" value="true" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

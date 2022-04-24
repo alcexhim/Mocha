@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ReportColumnOption.xml - XML definition for the initial Mocha `Report Column Option` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{41FFF5F0-B467-4986-A6FD-46FAF4A479E9}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Report Column.has Report Column Option -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{BEFE99A1-B2EB-4365-A2C9-061C6609037B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{53B273DD-E239-4B37-9665-FB1A00373AE0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{53B273DD-E239-4B37-9665-FB1A00373AE0}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Report Column Option.for Report Column -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{BEFE99A1-B2EB-4365-A2C9-061C6609037B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{41FFF5F0-B467-4986-A6FD-46FAF4A479E9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D45B9F25-2E19-4B19-A1F7-5BF8F9498517}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Report Column Option.has title Translatable Text Constant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{1CBBA84F-6AFC-42C0-AFC7-63D3264A2081}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{1CBBA84F-6AFC-42C0-AFC7-63D3264A2081}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Translatable Text Constant.title for Report Column Option -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{04A53CC8-3206-4A97-99C5-464DB8CAA6E6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{D45B9F25-2E19-4B19-A1F7-5BF8F9498517}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{F5313F3E-193D-4CFB-A60B-EF149A71BCB2}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Report Column Option.has valid report field type Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has valid report field type" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{46C5DADB-0210-47D8-B269-5730D43D078B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{46C5DADB-0210-47D8-B269-5730D43D078B}" classInstanceId="{9B0A80F9-C325-4D36-997C-FB4106204648}">
+					<!-- Relationship: Class.valid report field type for Report Column Option -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="valid report field type for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{656110FF-4502-48B8-A7F3-D07F017AEA3F}">
+							<targetInstances>
+								<instanceReference instanceId="{F5313F3E-193D-4CFB-A60B-EF149A71BCB2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}">
+					<translations>
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<!-- Class.has title Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Report Column Option" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{5C9B4C79-995B-4E6A-81C0-39C174BF9F6D}" classInstanceId="{7BCD0EF6-953D-45E9-948F-EB556A2CCCB6}">
+					<translations>
+						<translation relationshipInstanceId="{D45B9F25-2E19-4B19-A1F7-5BF8F9498517}">
+							<!-- Report Column Option.has title Translatable Text Constant -->
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Display as Count" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{F5313F3E-193D-4CFB-A60B-EF149A71BCB2}">
+							<!-- Report Column Option.has valid report field type Class -->
+							<targetInstances>
+								<!-- Relationship Report Field -->
+								<instanceReference instanceId="{FC4E3BB5-1EA7-44FF-B828-2EA54CDD4ABB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

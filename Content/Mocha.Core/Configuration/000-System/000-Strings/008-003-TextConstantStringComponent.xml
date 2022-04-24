@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Text Constant String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}" superClassId="{F9E2B671-13F5-4172-A568-725ACD8BBFAB}">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Text Constant String Component" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<!-- `Value` [Text Attribute] -->
+								<instanceReference instanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{DD658EAB-9A3D-4ED1-8631-E3A5A336A7B6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{FEE39766-9A0D-49A2-A29F-45C17989DCF6}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="/" />
+					</attributeValues>
+				</instance>
+				<instance id="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value=" " />
+					</attributeValues>
+				</instance>
+				<instance id="{1BC6AC2B-7C3F-46EB-88F7-47F7070ED1DD}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="." />
+					</attributeValues>
+				</instance>
+				<instance id="{21CA6A9B-8405-4D8E-AFFD-CF1960397704}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="[" />
+					</attributeValues>
+				</instance>
+				<instance id="{94760D6C-64E9-494C-AFCC-AB4B68344F32}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="]" />
+					</attributeValues>
+				</instance>
+				<instance id="{FBBEEA51-E342-42C8-93B9-098D0548100D}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value="(" />
+					</attributeValues>
+				</instance>
+				<instance id="{D85F9F58-79D8-4C2C-BD3F-48B382FC37D7}" classInstanceId="{35BF9AC5-0212-4DBA-BB9B-D1A6E9955827}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{041DD7FD-2D9C-412B-8B9D-D7125C166FE0}" value=")" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

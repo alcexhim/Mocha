@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Class.xml - XML definition for the initial Mocha `Class` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!-- Class -->
+				<instance id="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" superClassId="{B9C9B9B7-AD8A-4CBD-AA6B-E05784630B6B}" index="1">
+					<translations>
+						<!-- Class.has title Translatable Text Constant -->
+						<translation relationshipInstanceId="{B8BDB905-69DD-49CD-B557-0781F7EF2C50}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="Class" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translatable Text Constant -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="{68BB6038-A4B5-4EE1-AAE9-326494942062}" value="The class Class is the class of all the classes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{DECBB61A-2C6C-4BC8-9042-0B5B701E08DE}">
+							<targetInstances>
+								<instanceReference instanceId="{9153A637-992E-4712-ADF2-B03F0D9EDEA6}" />
+								<instanceReference instanceId="{A1C0255D-3E8D-47D7-A186-1C93C93D4667}" />
+								<instanceReference instanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F52FC851-D655-48A9-B526-C5FE0D7A29D2}">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{DFF37594-DFC2-4269-A04B-510385B615A4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D11050AD-7376-4AB7-84DE-E8D0336B74D2}">
+							<!-- Class `Class`.has summary Report Field `Name`, `Description` -->
+							<targetInstances>
+								<instanceReference instanceId="{4CB5C72A-21A2-4B18-A21D-278EBF5C7B91}" />
+								<instanceReference instanceId="{023FF41D-E77C-4522-A26E-FD9EA65CA38E}" />
+								<instanceReference instanceId="{5F8A264E-D2B8-40A2-B583-A7ED511C9DD9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{4D8670E1-2AF1-4E7C-9C87-C910BD7B319B}">
+							<!-- Class `Class`.has Task `Redirect Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{16D35AE0-5F0A-4D06-A14A-8D08E85BFA37}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}">
+							<!-- Class `Class`.has default Task `View Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{2BAC6373-6534-4EC3-AB2A-BA85E6CF0B6B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>
