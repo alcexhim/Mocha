@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mocha.Core", "Libraries\Moc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A99F87BF-FE39-45B6-814A-0D02A47BD216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mocha.Tests", "Mocha.Tests\Mocha.Tests.csproj", "{433D38B6-B57C-473F-8DC3-0FB134ADDDEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mocha.Tests", "Tests\Mocha.Tests\Mocha.Tests.csproj", "{433D38B6-B57C-473F-8DC3-0FB134ADDDEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{4FB5982D-9872-48C1-A71A-45BB0EA5C0A0}"
 EndProject
