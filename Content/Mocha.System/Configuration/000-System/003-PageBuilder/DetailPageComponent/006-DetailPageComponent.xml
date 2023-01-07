@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  DetailPageComponent.xml - XML definition for the initial Mocha `Detail Page Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<relationship id="&IDR_Detail_Page_Component__has_caption__Translation;"
+					sourceClassId="&IDC_DetailPageComponent;"
+					type="has caption"
+					destinationClassId="&IDC_Translation;" />
+				
+				<relationship id="{54FBD056-0BD4-44F4-921C-11FB0C77996E}"
+					sourceClassId="&IDC_DetailPageComponent;"
+					type="has row source"
+					destinationClassId="&IDC_MethodBinding;" 
+					siblingRelationshipId="{5296BC07-15F4-4B84-B94A-D4FBF0228983}" />
+					
+				<relationship id="{5296BC07-15F4-4B84-B94A-D4FBF0228983}" 
+					sourceClassId="&IDC_MethodBinding;"
+					type="row source for"
+					destinationClassId="&IDC_DetailPageComponent;"
+					siblingRelationshipId="{54FBD056-0BD4-44F4-921C-11FB0C77996E}" />
+				
+				<relationship id="{ddabeeda-aa26-4d87-a457-4e7da921a293}"
+					sourceClassId="&IDC_DetailPageComponent;"
+					type="has column source"
+					destinationClassId="&IDC_MethodBinding;" 
+					siblingRelationshipId="{e757c2e1-6c63-447f-ba92-60f4b2a8a4c7}" />
+					
+				<relationship id="{e757c2e1-6c63-447f-ba92-60f4b2a8a4c7}" 
+					sourceClassId="&IDC_MethodBinding;"
+					type="column source for"
+					destinationClassId="&IDC_DetailPageComponent;"
+					siblingRelationshipId="{ddabeeda-aa26-4d87-a457-4e7da921a293}" />
+				
+				<instance id="{1540634D-EB44-48F8-88B8-17B7DCBBD006}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Detail Page Component.has Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_DetailPageComponent;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{51C8837D-FF85-4647-A0F6-BE5D0AED51B5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{51C8837D-FF85-4647-A0F6-BE5D0AED51B5}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Field.for Detail Page Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_DetailPageComponent;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{1540634D-EB44-48F8-88B8-17B7DCBBD006}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_DetailPageComponent;" superClassId="{EF4D4027-6904-4773-9013-22CEDC169F00}">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Detail Page Component" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

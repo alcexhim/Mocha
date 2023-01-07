@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ReportObject.xml - XML definition for the initial Mocha `Report Object` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{0a630a62-7123-42be-8ee0-021862c76f04}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Object.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportObject;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{d33d70b4-cf5c-406e-b5d1-2be96bc3f447}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{d33d70b4-cf5c-406e-b5d1-2be96bc3f447}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Report Object -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportObject;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{0a630a62-7123-42be-8ee0-021862c76f04}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{bdec07cd-07c1-427a-9e42-253fc0b6100c}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{167cd662-4982-482d-a67f-9eb1975a691f}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{f04f78a3-d48e-4ffb-a31c-def8e06f83ab}" classInstanceId="&IDC_String;">
+					<!-- String: instance labeler for Report Object -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{bdec07cd-07c1-427a-9e42-253fc0b6100c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				 
+				<instance id="&IDC_ReportObject;" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<!-- Class.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Object" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class `Report Object`.has summary Report Field -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Report Object`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{f04f78a3-d48e-4ffb-a31c-def8e06f83ab}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

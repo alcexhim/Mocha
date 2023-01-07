@@ -24,6 +24,7 @@ using System;
 using Mocha.Core;
 using UniversalEditor.Plugins.Mocha;
 using UniversalEditor.Accessors;
+using Mocha.OMS;
 
 namespace Mocha.Tests
 {
@@ -32,14 +33,14 @@ namespace Mocha.Tests
 	{
 		private static readonly InstanceKey IK_CLASS = new InstanceKey(1, 1);
 
-		private static readonly Type TYPE_OMS = typeof(Core.OmsImplementations.MemoryOms);
+		private static readonly Type TYPE_OMS = typeof(OMS.LocalOms);
 
 		private Oms oms = null;
 		internal static Oms GetTestingOms()
 		{
 			Oms _oms = (Oms)TYPE_OMS.Assembly.CreateInstance(TYPE_OMS.FullName);
-			_oms.DefaultTenant = _oms.CreateTenant("default");
-			_oms.Initialize(new MemoryAccessor(Properties.Resources.Mocha_Core_v1_0_mcl));
+			// _oms.TenantName = _oms.CreateTenant("default");
+			// _oms.Initialize(new MemoryAccessor(Properties.Resources.Mocha_Core_v1_0_mcl));
 			return _oms;
 		}
 

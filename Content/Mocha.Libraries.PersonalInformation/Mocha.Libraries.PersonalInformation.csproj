@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{d300ddb5-393c-4c76-a4f8-5f7521599345}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mocha.Libraries.PersonalInformation</RootNamespace>
+    <AssemblyName>Mocha.Libraries.PersonalInformation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug\System</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release\System</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="mocha.dtd" />
+    <Compile Include="PersonName.xml" />
+    <Compile Include="Library.xml" />
+    <Compile Include="PersonName%40getFormattedName.xml" />
+    <Compile Include="BirthMoment.xml" />
+    <Compile Include="Person\Person.xml" />
+    <Compile Include="Gender\Gender.xml" />
+    <Compile Include="Person\Relationships\Person__has__Gender.xml" />
+    <Compile Include="Person\Relationships\Person__has__Legal_Name.xml" />
+    <Compile Include="Tasks\EditPersonalInformation\EditPersonalInformation.xml" />
+    <Compile Include="Tasks\EditPersonalInformation\Elements\Person Edit [EL].xml" />
+    <Compile Include="Module.xml" />
+    <Compile Include="Tasks\EditPersonalInformation\Elements\Person Subedit [EL].xml" />
+    <Compile Include="Person\Person%40getPersonName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Person\" />
+    <Folder Include="Gender\" />
+    <Folder Include="Person\Relationships\" />
+    <Folder Include="Tasks\" />
+    <Folder Include="Tasks\EditPersonalInformation\" />
+    <Folder Include="Tasks\EditPersonalInformation\Elements\" />
+  </ItemGroup>
+  <Import Project="..\..\Mocha.Compiler.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

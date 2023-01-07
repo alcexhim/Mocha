@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Blank.xml - XML definition for the initial Mocha `Blank Master Page` system page
+//  			Used for: Public-facing landing page, Login page, Registration page, etc.
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}">
+			<instances>
+				<instance id="{0394565f-7c14-4ac2-8bc5-bc7fa5236f52}" classInstanceId="&IDC_Page;">
+					<translations>
+						<translation relationshipInstanceId="{7BE6522A-4BE8-4CD3-8701-C8353F7DF630}">
+							<!-- Page.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Blank Master Page" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

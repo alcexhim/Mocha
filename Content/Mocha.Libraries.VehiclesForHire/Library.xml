@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Library.xml - XML definition for Mocha Class Library metadata
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha" xmlns:dc="http://purl.org/dc/terms">
+	<libraries>
+		<library id="{eb1fc7d8-fcc3-4e45-a7c4-22ab8a4e543d}">
+			<libraryReferences>
+				<libraryReference libraryId="{bb1d56b4-c063-4232-a789-93c8419e2d31}" />
+				<libraryReference libraryId="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}" />
+				<!-- Mocha.Web, for Web applications -->
+				<libraryReference libraryId="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}" />
+			</libraryReferences>
+			<metadata>
+				<dc:title>vfh sample data</dc:title>
+				<dc:description>The System library contains the bare minimum classes required to instantiate a Mocha tenant.</dc:description>
+				<dc:creator>Michael Becker</dc:creator>
+				<dc:license>GPLv3</dc:license>
+				<dc:rights>Copyright (c) 2020 Mike Becker's Software</dc:rights>
+			</metadata>
+			<translations>
+				<!-- Library.has title Translation -->
+				<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+					<translationValues>
+						<translationValue languageInstanceId="&IDI_Language_English;" value="System" />
+					</translationValues>
+				</translation>
+				<!-- Class.has title Translation -->
+				<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+					<translationValues>
+						<translationValue languageInstanceId="&IDI_Language_English;" value="The System library contains the bare minimum classes required to instantiate a Mocha tenant." />
+					</translationValues>
+				</translation>
+			</translations>
+		</library>
+	</libraries>
+</mocha>

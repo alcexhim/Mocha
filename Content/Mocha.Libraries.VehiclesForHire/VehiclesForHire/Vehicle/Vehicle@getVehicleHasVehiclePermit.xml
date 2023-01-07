@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  All Businesses.xml - XML definition for the `All Businesses` report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{8f422ce4-0516-42a7-bd47-263ffd0ce2cf}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<!-- Method.has Method Binding return instance set method binding [rsmb] -->
+							<targetInstances>
+								<instanceReference instanceId="{abf5f597-3c84-4d7e-821f-92633f8bae94}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{abf5f597-3c84-4d7e-821f-92633f8bae94}" classInstanceId="&IDC_GetRelationshipMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{321581d6-60c1-4547-8344-9d5bda027adc}">
+							<!-- GR Method. has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{10ae5c20-84c6-4f2d-9928-affb8421b1a4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="{818ed630-6b04-4a0e-9f82-7b9de27b941b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<!-- Method.has Method Binding return instance set method binding [rsmb] -->
+							<targetInstances>
+								<instanceReference instanceId="{8f422ce4-0516-42a7-bd47-263ffd0ce2cf}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

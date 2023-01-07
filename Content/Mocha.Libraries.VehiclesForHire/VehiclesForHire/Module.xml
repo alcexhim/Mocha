@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  VehicleType.xml - XML definition for the `Vehicle Type` Enumeration;
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" classInstanceId="&IDC_Module;">
+					<translations>
+						<translation relationshipInstanceId="{b530a988-367c-4a63-b4a7-9ecda334d237}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="City of Orlando: Vehicle for Hire" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

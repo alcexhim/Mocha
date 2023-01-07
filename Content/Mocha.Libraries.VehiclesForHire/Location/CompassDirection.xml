@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Location.xml - defines a location with coordinates, naming, etc.
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				
+				<!-- Location.has Compass Direction -->
+				<relationship id="{61d70a38-0620-485d-86bc-eab1d5c70f30}"
+					sourceClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					type="has"
+					destinationClassId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}"
+					siblingRelationshipId="{44b31ee1-d242-47ea-bf62-83a20b1c9d62}" />
+				
+				<!-- Compass Direction.for Location -->
+				<relationship id="{44b31ee1-d242-47ea-bf62-83a20b1c9d62}"
+					sourceClassId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}"
+					type="for"
+					destinationClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					siblingRelationshipId="{61d70a38-0620-485d-86bc-eab1d5c70f30}" />
+
+				<instance id="{3fc24c6f-07db-42f4-a08e-79c56af652e0}" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Compass Direction" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+
+				<instance id="{cf918743-9588-4930-82e7-e2b1e43ab1e7}" classInstanceId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="North" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{6dfabde7-092a-43ed-bbba-ee195bace24c}" classInstanceId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="South" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{56e49505-8fff-4190-a65f-e793460ae657}" classInstanceId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="West" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{62090cec-8fe7-49f5-ab6e-723dd1b37122}" classInstanceId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="East" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

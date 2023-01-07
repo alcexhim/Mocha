@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  MethodBinding.xml - XML definition for the initial Mocha `Method Binding` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!--
+				
+					Method Binding
+					==============
+				
+					Method Binding.assigns to Parm
+					Method Binding.assigns from Method Binding
+				
+				-->
+				<instance id="&IDR_Method__has_return_type__Class;" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has return type" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_MethodBinding;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_MethodBinding;" superClassId="&IDC_Executable;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abstract;" value="true" />
+					</attributeValues>
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class.has summary Report Field -->
+							<targetInstances>
+								<!-- Method Binding: executes Method -->
+								<instanceReference instanceId="{d5e44497-c781-47dd-a908-fa05f687070c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<!-- Class.has related Task -->
+							<targetInstances>
+								<!-- Test Method Binding -->
+								<instanceReference instanceId="{c1aafaf7-835b-4bc4-9fd8-cc57055cc3d1}" />
+								
+								<!-- Returned Work Data:View -->
+								<instanceReference instanceId="{32d3824d-2675-4c93-94c4-89f904659a05}" />
+								<!-- Returned Work Data:Edit -->
+								<instanceReference instanceId="{258863e8-39dc-49cd-9cdc-c48fefc46498}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{97d04e97-4b85-446d-946e-9c3d37ec0bcc}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{871cec9e-faf3-4996-b873-57e78c988b11}" classInstanceId="&IDC_TaskCategory;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{d5e44497-c781-47dd-a908-fa05f687070c}" classInstanceId="&IDC_ReportField;">
+					<!-- Report Field: Method Binding: Executes Method -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Executes Method" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<!-- `Executes Method`.has source Method `Method Binding@get Method for Method Binding parm (GRS)*P*S`-->
+							<targetInstances>
+								<!-- `Name` -->
+								<instanceReference instanceId="{348e3089-8a52-4940-997d-87950753b80d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Gender.xml - XML definition for the initial Mocha `Gender` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}">
+			<instances>
+				<!-- Gender -->
+				<instance id="{1fcf4663-95a7-4004-8332-05ad2dc5fbb9}" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Gender" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{ba16bfa2-4ad4-4112-84be-a323148064b1}" classInstanceId="{1fcf4663-95a7-4004-8332-05ad2dc5fbb9}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Male" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{7cfcf101-4421-4a04-8bcc-331984fd2e0b}" classInstanceId="{1fcf4663-95a7-4004-8332-05ad2dc5fbb9}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Female" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{f41b9b4e-072f-4bd3-a4f5-2883e8adcf58}" classInstanceId="{1fcf4663-95a7-4004-8332-05ad2dc5fbb9}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Neutral" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

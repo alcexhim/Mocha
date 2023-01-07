@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Tenant.xml - XML definition for the initial Mocha `Tenant` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{22936f51-2629-4503-a30b-a02d61a6c0e0}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has Application -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{b1a29a91-6795-44dc-a47e-bd77d3dcb8db}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{cc290a68-f69e-4ae0-8e96-a8cec17ae1e4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{cc290a68-f69e-4ae0-8e96-a8cec17ae1e4}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has Tenant Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{b1a29a91-6795-44dc-a47e-bd77d3dcb8db}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{22936f51-2629-4503-a30b-a02d61a6c0e0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

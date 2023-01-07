@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53D2CDA0-7CE3-4D80-90EC-30D8D15344BC}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mocha.Web</RootNamespace>
+    <AssemblyName>Mocha.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Instance.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MasterPages\Blank.master" />
+    <Content Include="Logout.aspx" />
+    <Content Include="PhoenixSNS\phoenix.css" />
+    <Content Include="PhoenixSNS\phoenix-engine.css" />
+    <Content Include="StyleSheets\mcx-instancebrowser.less" />
+    <Content Include="StyleSheets\mcx.less" />
+    <Content Include="ShowRelationships.aspx" />
+    <Content Include="Scripts\Instance.js" />
+    <Content Include="StyleSheets\Mobile\mcx.less" />
+    <Content Include="StyleSheets\mcx-tenantinfobar.less" />
+    <Content Include="Scripts\InstanceBrowser.js" />
+    <Content Include="API.aspx" />
+    <Content Include="Scripts\Task.js" />
+    <Content Include="Scripts\InstanceKey.js" />
+    <Content Include="Scripts\Mocha.js" />
+    <Content Include="Scripts\Page.js" />
+    <Content Include="Scripts\SummaryPageComponent.js" />
+    <Content Include="MasterPages\Default.master" />
+    <Content Include="Scripts\PageBuilder.js" />
+    <Content Include="StyleSheets\mcx-pagebuilder.less" />
+    <Content Include="UML.aspx" />
+    <Content Include="Upload.aspx" />
+    <Content Include="StyleSheets\mcx-instanceicons.less" />
+    <Content Include="Page.aspx" />
+    <Content Include="AppBuilder\Flow.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Instance.aspx.cs">
+      <DependentUpon>Instance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instance.aspx.designer.cs">
+      <DependentUpon>Instance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Blank.master.cs">
+      <DependentUpon>Blank.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Blank.master.designer.cs">
+      <DependentUpon>Blank.master</DependentUpon>
+    </Compile>
+    <Compile Include="LoginTokenInfo.cs" />
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Controls\ListViewItemColumnInstance.cs" />
+    <Compile Include="Controls\InstanceBrowser.cs" />
+    <Compile Include="Controls\FormViewItemInstance.cs" />
+    <Compile Include="Controls\Dashlet.cs" />
+    <Compile Include="ShowRelationships.aspx.cs">
+      <DependentUpon>ShowRelationships.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowRelationships.aspx.designer.cs">
+      <DependentUpon>ShowRelationships.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InteropExtensions.cs" />
+    <Compile Include="Controls\InfoBar.cs" />
+    <Compile Include="MochaExtensions.cs" />
+    <Compile Include="API.aspx.cs">
+      <DependentUpon>API.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API.aspx.designer.cs">
+      <DependentUpon>API.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageBuilder.cs" />
+    <Compile Include="MasterPages\Default.master.cs">
+      <DependentUpon>Default.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Default.master.designer.cs">
+      <DependentUpon>Default.master</DependentUpon>
+    </Compile>
+    <Compile Include="UML.aspx.cs">
+      <DependentUpon>UML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UML.aspx.designer.cs">
+      <DependentUpon>UML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page.aspx.cs">
+      <DependentUpon>Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page.aspx.designer.cs">
+      <DependentUpon>Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppBuilder\Flow.aspx.cs">
+      <DependentUpon>Flow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppBuilder\Flow.aspx.designer.cs">
+      <DependentUpon>Flow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MasterPages\" />
+    <Folder Include="Images\" />
+    <Folder Include="PhoenixSNS\" />
+    <Folder Include="Controls\" />
+    <Folder Include="StyleSheets\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="StyleSheets\Mobile\" />
+    <Folder Include="AppBuilder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MBS.Networking\Libraries\MBS.Networking\MBS.Networking.csproj">
+      <Project>{DBD65B3F-81C8-4E44-B268-3FAB3B12AA1E}</Project>
+      <Name>MBS.Networking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Networking\Plugins\MBS.Networking.Plugins.HyperTextTransfer\MBS.Networking.Plugins.HyperTextTransfer.csproj">
+      <Project>{5743EE32-F3ED-4162-A0E3-B105503BF139}</Project>
+      <Name>MBS.Networking.Plugins.HyperTextTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Libraries\MBS.Web\MBS.Web.csproj">
+      <Project>{D30649B8-EAF2-4D4D-968F-A7C65572F7FA}</Project>
+      <Name>MBS.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Libraries\MBS.Web.Controls\MBS.Web.Controls.csproj">
+      <Project>{99886629-32B3-46D3-9094-6445A33FCFA9}</Project>
+      <Name>MBS.Web.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Plugins\MBS.Web.Plugins.Less\MBS.Web.Plugins.Less.csproj">
+      <Project>{C37BE4CF-CFB6-4A7B-8CAE-6EE21E37D2FD}</Project>
+      <Name>MBS.Web.Plugins.Less</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Framework\MBS.Framework\MBS.Framework.csproj">
+      <Project>{00266B21-35C9-4A7F-A6BA-D54D7FDCC25C}</Project>
+      <Name>MBS.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Web\Libraries\MBS.Web.Themes\MBS.Web.Themes.csproj">
+      <Project>{18492D58-0C92-4904-AAAB-58283C66150F}</Project>
+      <Name>MBS.Web.Themes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.Core\Mocha.Core.csproj">
+      <Project>{8D3211A6-B2D6-4A26-ABE3-5B57636A4196}</Project>
+      <Name>Mocha.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.OMS\Mocha.OMS.csproj">
+      <Project>{8588928F-2868-4248-8993-533307A05C0C}</Project>
+      <Name>Mocha.OMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.Web.Configuration\Mocha.Web.Configuration.csproj">
+      <Project>{F6598243-00B2-445E-8B1A-CC0EC9003459}</Project>
+      <Name>Mocha.Web.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.Storage\Mocha.Storage.csproj">
+      <Project>{C9A3AE1D-0658-4A70-BC48-9D8DEF9C205B}</Project>
+      <Name>Mocha.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.Storage.Local\Mocha.Storage.Local.csproj">
+      <Project>{A4B8D6D8-3365-49FC-8123-58B3749A5427}</Project>
+      <Name>Mocha.Storage.Local</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\UniversalEditor.Plugins.Mocha\UniversalEditor.Plugins.Mocha.csproj">
+      <Project>{3D0893DC-9961-4EAA-BF6C-604686068D09}</Project>
+      <Name>UniversalEditor.Plugins.Mocha</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Core\UniversalEditor.Core.csproj">
+      <Project>{2D4737E6-6D95-408A-90DB-8DFF38147E85}</Project>
+      <Name>UniversalEditor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Essential\UniversalEditor.Essential.csproj">
+      <Project>{30467E5C-05BC-4856-AADC-13906EF4CADD}</Project>
+      <Name>UniversalEditor.Essential</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MainIcon.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8088" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

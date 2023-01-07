@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  File.xml - XML definition for the initial Mocha `File` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{34142FCB-172C-490A-AF03-FF8451D00CAF}" classInstanceId="&IDC_TextAttribute;">
+					<!-- Text Attribute: Content Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="ContentType" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Content Type" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{5D081079-E136-406A-A728-7472937A6E5E}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="File" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+								<instanceReference instanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" />
+								<instanceReference instanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" />
+								<instanceReference instanceId="&IDA_Value;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

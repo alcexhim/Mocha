@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  StreetAddress.xml - defines a location with a building number, street, city, state, postal code, etc.
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<!-- Street Address.has Street Type -->
+				<relationship
+					id="{c7c3feea-44d5-4bfc-a7d5-21c346b8cc5c}"
+					sourceClassId="{399d99a2-499e-400f-bcd2-22cdde735683}"
+					type="has"
+					destinationClassId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}"
+					siblingRelationshipId="{af264e39-11e2-4b07-95a6-fc7836d7e7ac}" />
+				<!-- Street Type.for Street Address -->
+				<relationship
+					id="{af264e39-11e2-4b07-95a6-fc7836d7e7ac}"
+					sourceClassId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}"
+					type="for"
+					destinationClassId="{399d99a2-499e-400f-bcd2-22cdde735683}"
+					siblingRelationshipId="{c7c3feea-44d5-4bfc-a7d5-21c346b8cc5c}" />
+				
+				<!-- Street Address.has Compass Direction -->
+				<relationship
+					id="{79ff3961-3543-4289-a761-fda0cd7da721}"
+					sourceClassId="{399d99a2-499e-400f-bcd2-22cdde735683}"
+					type="has"
+					destinationClassId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}"
+					siblingRelationshipId="{a63eb605-bf21-445b-aa63-c76453465077}" />
+				<!-- Compass Direction.for Street Address -->
+				<relationship
+					id="{a63eb605-bf21-445b-aa63-c76453465077}"
+					sourceClassId="{3fc24c6f-07db-42f4-a08e-79c56af652e0}"
+					type="for"
+					destinationClassId="{399d99a2-499e-400f-bcd2-22cdde735683}"
+					siblingRelationshipId="{79ff3961-3543-4289-a761-fda0cd7da721}" />
+
+				
+				<!-- Street Address.has City -->
+				<relationship
+					id="{5f6e62a2-d53f-4aff-affa-44dc7b625022}"
+					sourceClassId="{399d99a2-499e-400f-bcd2-22cdde735683}"
+					type="has"
+					destinationClassId="{b8cf2d75-405b-43fc-863d-39460bce01a9}"
+					siblingRelationshipId="{33fa17fd-8f49-4ae8-b080-4fd652dd9525}" />
+				<!-- City.for Street Address -->
+				<relationship
+					id="{33fa17fd-8f49-4ae8-b080-4fd652dd9525}"
+					sourceClassId="{b8cf2d75-405b-43fc-863d-39460bce01a9}"
+					type="for"
+					destinationClassId="{399d99a2-499e-400f-bcd2-22cdde735683}"
+					siblingRelationshipId="{5f6e62a2-d53f-4aff-affa-44dc7b625022}" />
+				
+				<instance id="{399d99a2-499e-400f-bcd2-22cdde735683}" superClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Street Address" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<instanceReference instanceId="{6adac879-fd1c-420d-b642-b22a2ef05ac4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="{8794300f-927c-4d37-bef4-20798932fd43}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

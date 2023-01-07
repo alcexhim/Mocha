@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  AccountLocked.xml - XML definition for the initial Mocha `User` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schemas.alcetech.net/Mocha/schema.xsd">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				
+				<instance id="{AA602558-7E12-4F5A-8F38-B0E3AB933AF4}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="AccountDisabled" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Account Disabled" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

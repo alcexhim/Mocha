@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  SidebarMenuItems.xml - XML definition for the sidebar menu items on the initial tenant created by the Mocha setup routine
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{D135F145-36DC-4482-8130-872D1A8AA551}" classInstanceId="{1F148873-8A97-4409-A79B-C19D5D380CA4}">
+					<!-- Header Menu Item: Overview -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Overview" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{7855FB37-1F75-4FA0-B3EE-5EE2D463E39F}" classInstanceId="{1F148873-8A97-4409-A79B-C19D5D380CA4}">
+					<!-- Header Menu Item: Reports -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Reports" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{4723BA97-2321-485A-B3F1-346716C1A3E1}" classInstanceId="{1F148873-8A97-4409-A79B-C19D5D380CA4}">
+					<!-- Header Menu Item: Help and Support -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Help and Support" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{EC5BC2CD-F400-4064-B7E8-DA2CADDCD2A9}" classInstanceId="{1F148873-8A97-4409-A79B-C19D5D380CA4}">
+					<!-- Header Menu Item: Developer -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Developer" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{80832D29-809C-45F6-8548-1F552B7E0974}" classInstanceId="{9D3EDE23-6DB9-4664-9145-ABCBD3A0A2C2}">
+					<!-- Command Menu Item: Dashboard -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Dashboard" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{8859DAEF-01F7-46FA-8F3E-7B2F28E0A520}">
+							<targetInstances>
+								<instanceReference instanceId="{FC73ECB7-58C7-4E3C-B916-BB0C86864A67}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/d/home.htmld" />
+					</attributeValues>
+				</instance>
+				<instance id="{D0AB191C-ACC2-4C68-8D2F-06C77369728B}" classInstanceId="{9D3EDE23-6DB9-4664-9145-ABCBD3A0A2C2}">
+					<!-- Command Menu Item: Documentation -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Documentation" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{8859DAEF-01F7-46FA-8F3E-7B2F28E0A520}">
+							<targetInstances>
+								<instanceReference instanceId="{FA5F164D-04AD-495A-BDFB-BD33E80E22F1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/support/documentation" />
+					</attributeValues>
+				</instance>
+				<instance id="{C7C2087D-51EB-4DCD-B13A-3577CAD50FA0}" classInstanceId="{9D3EDE23-6DB9-4664-9145-ABCBD3A0A2C2}">
+					<!-- Command Menu Item: Support Center -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Support Center" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{8859DAEF-01F7-46FA-8F3E-7B2F28E0A520}">
+							<targetInstances>
+								<instanceReference instanceId="{92A5E29D-78E2-43FA-96AE-84827C441667}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/support" />
+					</attributeValues>
+				</instance>
+				<instance id="{71339566-a50b-46fb-a744-7585b1c63d71}" classInstanceId="{9D3EDE23-6DB9-4664-9145-ABCBD3A0A2C2}">
+					<!-- Command Menu Item: Migrate Packages -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Application Builder" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{8859DAEF-01F7-46FA-8F3E-7B2F28E0A520}">
+							<targetInstances>
+								<instanceReference instanceId="{463C1D88-D2CD-45BA-BEBA-29CFD5509E17}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/migrate" />
+					</attributeValues>
+				</instance>
+				<instance id="{529EFFF5-B967-40BA-BF07-B163BD58DFE6}" classInstanceId="{9D3EDE23-6DB9-4664-9145-ABCBD3A0A2C2}">
+					<!-- Command Menu Item: Migrate Packages -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Migrate Packages" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{8859DAEF-01F7-46FA-8F3E-7B2F28E0A520}">
+							<targetInstances>
+								<instanceReference instanceId="{463C1D88-D2CD-45BA-BEBA-29CFD5509E17}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/migrate" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{E1B04FF9-5364-47B3-AC5E-300726CF3BE9}" classInstanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}">
+					<!-- Instance Menu Item: All Classes -->
+					<relationships>
+						<relationship relationshipInstanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}">
+							<targetInstances>
+								<instanceReference instanceId="{7CA0EFA9-6849-4AAE-BF81-F055C006853B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{8859DAEF-01F7-46FA-8F3E-7B2F28E0A520}">
+							<!-- Menu Item.has Icon -->
+							<targetInstances>
+								<instanceReference instanceId="{41C8C445-A0C9-4245-A05C-3AA282A06985}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Classes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<!-- this doesn't really belong on Instance Menu Item, but whatever -->
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/objects" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

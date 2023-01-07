@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Business.xml - XML definition for the initial Mocha `Patient` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{57aac73d-7353-4b60-8505-6e1ca3dd4182}" classInstanceId="{07313588-f837-4e8e-84e7-286a877b0ba9}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="United States of America" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{d694a883-a639-46bb-a4f1-4d3d4b90cab4}">
+							<targetInstances>
+								<!-- Country -->
+								<instanceReference instanceId="{59bd1767-d015-4fd0-af65-9dc41501742e}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

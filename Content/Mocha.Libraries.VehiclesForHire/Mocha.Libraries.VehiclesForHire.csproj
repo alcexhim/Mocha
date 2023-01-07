@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{395052e4-a438-4cdf-b143-61abdb022996}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mocha.Libraries.VehiclesForHire</RootNamespace>
+    <AssemblyName>Mocha.Libraries.VehiclesForHire</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug\System</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release\System</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="mocha.dtd" />
+    <None Include="Library.xml" />
+    <None Include="VehiclesForHire\InspectionEvent\ReportFields\Inspector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VehiclesForHire\004-Tenants\001-RydeRentals\001-Production.xml" />
+    <Compile Include="VehiclesForHire\004-Tenants\001-RydeRentals\003-Gold.xml" />
+    <Compile Include="VehiclesForHire\004-Tenants\001-RydeRentals\002-Implementation1.xml" />
+    <Compile Include="VehiclesForHire\MegaMenu.xml" />
+    <Compile Include="VehiclesForHire\Module.xml" />
+    <Compile Include="VehiclesForHire\SampleData\tenant.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Octane\business.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Prime\business.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Tread\business.xml" />
+    <Compile Include="VehiclesForHire\Reports\All Businesses.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Vehicles\A213B4\permit.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Octane\insurance.xml" />
+    <Compile Include="VehiclesForHire\InsuranceCarrier.xml" />
+    <Compile Include="VehiclesForHire\InsuranceCoverage.xml" />
+    <Compile Include="VehiclesForHire\InsuranceCoverageType.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Tread\insurance.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Users\ckresh.xml" />
+    <Compile Include="VehiclesForHire\Reports\View Assigned Vehicles.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Vehicles\A213B4\vehicle.xml" />
+    <Compile Include="VehiclesForHire\Reports\Citations and Violations.xml" />
+    <Compile Include="VehiclesForHire\VehicleManufacturer.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\Vehicle.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\ReportFields\VehicleYear.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\ReportFields\VehicleManufacturer.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\Attributes\Year[NM].xml" />
+    <Compile Include="VehiclesForHire\Business\Business.xml" />
+    <Compile Include="VehiclesForHire\Business\Attributes\DateOpened.xml" />
+    <Compile Include="VehiclesForHire\Business\ReportFields\DateOpened.xml" />
+    <Compile Include="VehiclesForHire\Reports\All Vehicles.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\ReportFields\VehiclePermit.xml" />
+    <Compile Include="VehiclesForHire\VehiclePermit\VehiclePermit.xml" />
+    <Compile Include="VehiclesForHire\VehiclePermit\VehiclePermit%40getExpiresLabel.xml" />
+    <Compile Include="VehiclesForHire\VehiclePermit\VehiclePermitStatus.xml" />
+    <Compile Include="VehiclesForHire\VehiclePermit\ReportFields\VehicleType.xml" />
+    <Compile Include="VehiclesForHire\VFHApplication.xml" />
+    <Compile Include="VehiclesForHire\VehiclePermit\Attributes\PermitNumber[NM].xml" />
+    <Compile Include="VehiclesForHire\Vehicle\Attributes\TagNumber[TX].xml" />
+    <Compile Include="VehiclesForHire\Vehicle\Attributes\MeterExpirationMoment[DT].xml" />
+    <Compile Include="VehiclesForHire\ReportDataSources\AllVehicles.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\Vehicle%40getClass.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\ReportFields\TagNumber.xml" />
+    <Compile Include="VehiclesForHire\Business\Business%40getBusiness.xml" />
+    <Compile Include="VehiclesForHire\Business\Business%40getInsurancePolicy.xml" />
+    <Compile Include="VehiclesForHire\Business\Business%40getBusinessHasInsurancePolicy.xml" />
+    <Compile Include="VehiclesForHire\InsurancePolicy\InsurancePolicy.xml" />
+    <Compile Include="VehiclesForHire\InsurancePolicy\Attributes\EndDate.xml" />
+    <Compile Include="VehiclesForHire\Business\ReportFields\Drivers.xml" />
+    <Compile Include="VehiclesForHire\Business\Relationships\Business__has__Driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Prime\insurance.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Users\kwarwick.xml" />
+    <Compile Include="VehiclesForHire\Driver\Driver.xml" />
+    <Compile Include="VehiclesForHire\Driver\ReportFields\Businesses.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Octane\Cara Kresh\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Octane\Cara Kresh\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Octane\Jenna Denton\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Octane\Jenna Denton\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Jessalyn Ingram\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Jessalyn Ingram\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Serina Marsh\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Serina Marsh\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Dorian Johnson\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Dorian Johnson\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Wynn Shields\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Wynn Shields\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Ken Warwick\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Ken Warwick\name.xml" />
+    <Compile Include="VehiclesForHire\Business\ReportFields\InsurancePolicy.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Katie Adams\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Prime\Katie Adams\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Jaclyn Adamson\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Jaclyn Adamson\name.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Kellie Sherman\driver.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Drivers\Tread\Kellie Sherman\name.xml" />
+    <Compile Include="VehiclesForHire\Reports\All Drivers.xml" />
+    <Compile Include="VehiclesForHire\ReportDataSources\AllDrivers.xml" />
+    <Compile Include="VehiclesForHire\Driver\Driver%40getClass.xml" />
+    <Compile Include="VehiclesForHire\Vehicle\Vehicle%40getVehicleHasVehiclePermit.xml" />
+    <Compile Include="VehiclesForHire\VehiclePermit\ReportFields\PermitNumber.xml" />
+    <Compile Include="VehiclesForHire\VehicleType\VehicleType.xml" />
+    <Compile Include="VehiclesForHire\VehicleType\Attributes\InspectionRequired[BL].xml" />
+    <Compile Include="VehiclesForHire\Tasks\Business\View Business\View Business.xml" />
+    <Compile Include="VehiclesForHire\Tasks\Business\Common\Business Subedit [EL].xml" />
+    <Compile Include="VehiclesForHire\Tasks\Business\Common\Business Edit [EL].xml" />
+    <Compile Include="VehiclesForHire\Business\ReportFields\Owner.xml" />
+    <Compile Include="VehiclesForHire\InspectionEvent\Class.xml" />
+    <Compile Include="VehiclesForHire\Reports\View Inspection Events for Business.xml" />
+    <Compile Include="VehiclesForHire\ReportDataSources\InspectionEventsForBusiness.xml" />
+    <Compile Include="VehiclesForHire\SampleData\Businesses\Octane\location.xml" />
+    <Compile Include="VehiclesForHire\Business\Relationships\Business__has__Location.xml" />
+    <Compile Include="VehiclesForHire\Business\ReportFields\Location.xml" />
+    <Compile Include="VehiclesForHire\Business\Relationships\Business__has__Owner.xml" />
+    <Compile Include="Location\CompassDirection.xml" />
+    <Compile Include="Location\Location\Location.xml" />
+    <Compile Include="Location\Location\Instances\United States\Location.xml" />
+    <Compile Include="Location\Location\Attributes\Name.xml" />
+    <Compile Include="Location\StreetType\Attributes\Abbreviation.xml" />
+    <Compile Include="Location\StreetType\StreetType.xml" />
+    <Compile Include="Location\Location\Subclasses\StreetAddress\StreetAddress.xml" />
+    <Compile Include="Location\Location\Subclasses\State\State.xml" />
+    <Compile Include="Location\Location\Subclasses\State\Instances\Florida.xml" />
+    <Compile Include="Location\Location\Subclasses\City\City.xml" />
+    <Compile Include="Location\Location\Subclasses\City\Instances\Pensacola.xml" />
+    <Compile Include="Location\Location\Subclasses\StreetAddress\Attributes\BuildingNumber.xml" />
+    <Compile Include="Location\Location\Subclasses\StreetAddress\Attributes\StreetName.xml" />
+    <Compile Include="Location\Location\Subclasses\StreetAddress\StreetAddressLabeler.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VehiclesForHire\" />
+    <Folder Include="VehiclesForHire\004-Tenants\" />
+    <Folder Include="VehiclesForHire\004-Tenants\001-RydeRentals\" />
+    <Folder Include="VehiclesForHire\SampleData\" />
+    <Folder Include="VehiclesForHire\Reports\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\" />
+    <Folder Include="VehiclesForHire\Tasks\" />
+    <Folder Include="VehiclesForHire\SampleData\Vehicles\" />
+    <Folder Include="VehiclesForHire\SampleData\Vehicles\A213B4\" />
+    <Folder Include="VehiclesForHire\SampleData\Users\" />
+    <Folder Include="VehiclesForHire\Vehicle\" />
+    <Folder Include="VehiclesForHire\Vehicle\ReportFields\" />
+    <Folder Include="VehiclesForHire\Vehicle\Attributes\" />
+    <Folder Include="VehiclesForHire\Business\" />
+    <Folder Include="VehiclesForHire\Business\ReportFields\" />
+    <Folder Include="VehiclesForHire\Business\Attributes\" />
+    <Folder Include="VehiclesForHire\VehiclePermit\" />
+    <Folder Include="VehiclesForHire\VehiclePermit\ReportFields\" />
+    <Folder Include="VehiclesForHire\VehiclePermit\Attributes\" />
+    <Folder Include="VehiclesForHire\ReportDataSources\" />
+    <Folder Include="VehiclesForHire\InsurancePolicy\" />
+    <Folder Include="VehiclesForHire\InsurancePolicy\Attributes\" />
+    <Folder Include="VehiclesForHire\Business\Relationships\" />
+    <Folder Include="VehiclesForHire\Driver\" />
+    <Folder Include="VehiclesForHire\Driver\ReportFields\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Octane\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Octane\Cara Kresh\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Octane\Jenna Denton\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Prime\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Prime\Jessalyn Ingram\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Prime\Serina Marsh\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Tread\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Tread\Dorian Johnson\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Tread\Wynn Shields\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Prime\Ken Warwick\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Prime\Katie Adams\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Tread\Jaclyn Adamson\" />
+    <Folder Include="VehiclesForHire\SampleData\Drivers\Tread\Kellie Sherman\" />
+    <Folder Include="VehiclesForHire\VehicleType\" />
+    <Folder Include="VehiclesForHire\VehicleType\Attributes\" />
+    <Folder Include="VehiclesForHire\Tasks\ApplyForPermit\" />
+    <Folder Include="VehiclesForHire\Tasks\Business\" />
+    <Folder Include="VehiclesForHire\Tasks\Business\View Business\" />
+    <Folder Include="VehiclesForHire\Tasks\Business\Common\" />
+    <Folder Include="VehiclesForHire\InspectionEvent\" />
+    <Folder Include="VehiclesForHire\InspectionEvent\ReportFields\" />
+    <Folder Include="Location\" />
+    <Folder Include="Location\Location\" />
+    <Folder Include="Location\Location\Instances\" />
+    <Folder Include="Location\Location\Attributes\" />
+    <Folder Include="Location\StreetType\" />
+    <Folder Include="Location\StreetType\Attributes\" />
+    <Folder Include="Location\Location\Subclasses\" />
+    <Folder Include="Location\Location\Subclasses\StreetAddress\" />
+    <Folder Include="Location\Location\Subclasses\State\" />
+    <Folder Include="Location\Location\Subclasses\State\Instances\" />
+    <Folder Include="Location\Location\Subclasses\City\" />
+    <Folder Include="Location\Location\Subclasses\City\Instances\" />
+    <Folder Include="Location\Location\Instances\United States\Florida\" />
+    <Folder Include="Location\Location\Subclasses\StreetAddress\Attributes\" />
+  </ItemGroup>
+  <Import Project="..\..\Mocha.Compiler.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

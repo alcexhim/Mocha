@@ -48,6 +48,16 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 				}
 				Add(item);
 			}
+
+			public bool Contains(Guid id)
+			{
+				for (int i = 0; i < Count;i ++)
+				{
+					if (this[i].ID == id)
+						return true;
+				}
+				return false;
+			}
 		}
 
 		private void Merge(MochaInstance item)
@@ -66,6 +76,7 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 		{
 			MochaInstance clone = new MochaInstance();
 			clone.ID = ID;
+			clone.Index = Index;
 			for (int i = 0; i < AttributeValues.Count; i++)
 			{
 				clone.AttributeValues.Add(AttributeValues[i].Clone() as MochaAttributeValue);

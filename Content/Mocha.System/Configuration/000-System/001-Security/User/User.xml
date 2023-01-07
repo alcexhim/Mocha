@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  User.xml - XML definition for the initial Mocha `User` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schemas.alcetech.net/Mocha/schema.xsd">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				
+				<relationship id="&IDR_User__has_default__Page;"
+					sourceClassId="&IDC_User;"
+					type="has default"
+					destinationClassId="&IDC_Page;"
+					siblingRelationshipId="{52d960d7-6729-4329-9686-c9792820ff21}" />
+				
+				<relationship id="{52d960d7-6729-4329-9686-c9792820ff21}"
+					sourceClassId="&IDC_Page;"
+					type="default for"
+					destinationClassId="&IDC_User;"
+					siblingRelationshipId="&IDR_User__has_default__Page;" />
+				
+				<relationship id="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}"
+					sourceClassId="&IDC_User;"
+					type="has display name"
+					destinationClassId="&IDC_Translation;"
+					singular="true"
+					siblingRelationshipId="{C0B4140B-92C1-4D52-B6DA-8E818A83F3FA}" />
+				
+				<relationship id="{C0B4140B-92C1-4D52-B6DA-8E818A83F3FA}"
+					sourceClassId="&IDC_Translation;"
+					type="display name for"
+					destinationClassId="&IDC_User;"
+					singular="true"
+					siblingRelationshipId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}" />
+					
+				<instance id="{1921D642-84EC-4E16-B568-9C333909C018}" classInstanceId="&IDC_Relationship;">
+					<!-- User.has Security Group -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `User` -->
+							<targetInstances>
+								<instanceReference instanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{EDC79A23-3324-472D-B2F8-8CB9D2CF9C5D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{EDC79A23-3324-472D-B2F8-8CB9D2CF9C5D}" classInstanceId="&IDC_Relationship;">
+					<!-- Security Group.for User -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `User` -->
+							<targetInstances>
+								<instanceReference instanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{1921D642-84EC-4E16-B568-9C333909C018}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5E305133-1380-4736-93E4-6B280B35FCE3}" classInstanceId="&IDC_Relationship;">
+					<!-- Security Group.has Security Permission (DEPRECATED) -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Security Permission` -->
+							<targetInstances>
+								<instanceReference instanceId="{8EA7D1D3-6FC8-40C9-98C6-F72798307E9F}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{52DAC6FC-7E3A-4B09-B3FC-205FF38FE952}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{52DAC6FC-7E3A-4B09-B3FC-205FF38FE952}" classInstanceId="&IDC_Relationship;">
+					<!-- Security Permission.for Security Group (DEPRECATED) -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Security Permission` -->
+							<targetInstances>
+								<instanceReference instanceId="{8EA7D1D3-6FC8-40C9-98C6-F72798307E9F}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{5E305133-1380-4736-93E4-6B280B35FCE3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{91EB4F16-9E36-4EED-8E02-921DF802DC15}" classInstanceId="{623565D5-5AEE-49ED-A5A9-0CFE670507BC}">
+					<!-- Attribute String Component: UserName -->
+					<relationships>
+						<relationship relationshipInstanceId="{E15D4277-69FB-4F19-92DB-8D087F361484}">
+							<targetInstances>
+								<instanceReference instanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{BAE9E054-ED1E-4DE7-A70B-33A437591D80}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<!-- Extract Single Instance String Component -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{344CC8C6-EC17-4568-BACA-D55C77B2B0BF}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{91EB4F16-9E36-4EED-8E02-921DF802DC15}" />
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<instanceReference instanceId="{FEE39766-9A0D-49A2-A29F-45C17989DCF6}" />
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<instanceReference instanceId="{BAE9E054-ED1E-4DE7-A70B-33A437591D80}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="UserName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{F377FC29-4DF1-4AFB-9643-4191F37A00A9}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="PasswordHash" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Password Hash" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{8C5A99BC-40ED-4FA2-B23F-F373C1F3F4BE}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="PasswordSalt" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Password Salt" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{b3bc53ae-77a0-4915-9494-c30469f1b4d7}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Password" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Password" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDC_User;" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<!-- User Name [Text Attribute] -->
+								<instanceReference instanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" />
+								<!-- Password Hash [Text Attribute] -->
+								<instanceReference instanceId="{F377FC29-4DF1-4AFB-9643-4191F37A00A9}" />
+								<!-- Password Salt [Text Attribute] -->
+								<instanceReference instanceId="{8C5A99BC-40ED-4FA2-B23F-F373C1F3F4BE}" />
+								<!-- Global [Boolean Attribute] -->
+								<instanceReference instanceId="{40A05D59-4F7B-46BF-9352-67FC3E5FB2C1}" />
+								<!-- `Account Disabled` [Boolean Attribute] -->
+								<instanceReference instanceId="{AA602558-7E12-4F5A-8F38-B0E3AB933AF4}" />
+								<!-- `Account Locked` [BL] -->
+								<instanceReference instanceId="{1833749a-523e-4417-89b8-4c437849fe26}" />
+								<!-- `Require New Password at Next Login` [BL] -->
+								<instanceReference instanceId="{7e844d27-08ad-48ee-945e-1628424c40e5}" />
+							</targetInstances>
+						</relationship>
+						
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{344CC8C6-EC17-4568-BACA-D55C77B2B0BF}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{344CC8C6-EC17-4568-BACA-D55C77B2B0BF}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class `User`.has summary Report Field `Account Disabled` -->
+							<targetInstances>
+								<instanceReference instanceId="{FE5BEBE7-5B56-4C2E-B85E-611B3F448815}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B066A54B-B160-4510-A805-436D3F90C2E6}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="zq-environments" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="ZeQuaL Environment Automation" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{098DDA82-CD04-4B53-8C75-89D420EA6902}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="zq-developer" />
+						<attributeValue attributeInstanceId="{F377FC29-4DF1-4AFB-9643-4191F37A00A9}" value="f4f166c4d578cb5ca942e07851d7c09de07d417463f2d8e5165a779f768d14b370cd1e82826a94b617b6c6359253e8c12ea8285cba1e6e69e2e13f2bdc0425d0" />
+						<attributeValue attributeInstanceId="{8C5A99BC-40ED-4FA2-B23F-F373C1F3F4BE}" value="7e893ba949b041bab73c6f4f0bcb9413" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Developer Generic User" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<!-- User.has Security Group -->
+							<targetInstances>
+								<!-- System Administrator -->
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_User__has_default__Page;">
+							<targetInstances>
+								<instanceReference instanceId="{b9826117-2221-46a2-a5ad-9649fbde5581}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{232A8CBF-0D2B-4BDA-BE86-3E2FA25A3FB5}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="zq-support" />
+						<attributeValue attributeInstanceId="{AA602558-7E12-4F5A-8F38-B0E3AB933AF4}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="ZeQuaL Support" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{FB20A79C-EAA2-4A98-A1DA-BDC351854694}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="zq-configurator" />
+						<attributeValue attributeInstanceId="{AA602558-7E12-4F5A-8F38-B0E3AB933AF4}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="ZeQuaL Configurator" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{63F2EF51-DC73-48EC-856A-6FBBEDE01A8A}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="zq-implementer" />
+						<attributeValue attributeInstanceId="{AA602558-7E12-4F5A-8F38-B0E3AB933AF4}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="ZeQuaL Implementer" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{739C26BC-740F-4CB0-BCB1-2A28FA570E7D}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="admin" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="System Administrator" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D1A25625-C90F-4A73-A6F2-AFB530687705}" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has owner" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{04DD2E6B-EA57-4840-8DD5-F0AA943C37BB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{04DD2E6B-EA57-4840-8DD5-F0AA943C37BB}" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="owner for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D1A25625-C90F-4A73-A6F2-AFB530687705}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{6933F902-9C87-4D9B-8B25-AD4214A87420}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- RSMB: Return Instance Set Method Binding -->
+					<translations>
+						<translation relationshipInstanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User instance for Login Token parm" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{2E113B59-CFF0-4F08-A5B2-1E5061491AC5}" classInstanceId="&IDC_SelectFromInstanceSetMethod;">
+					<!-- SS: Select Instance Set Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User instance for Login Token parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{6933F902-9C87-4D9B-8B25-AD4214A87420}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

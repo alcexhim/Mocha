@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  StandardReport-AllObjects.xml - XML definition for the initial Mocha `All Objects` system report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDC_Class;">
+					<relationships>
+						<relationship relationshipInstanceId="{2DA28271-5E46-4472-A6F5-910B5DD6F608}">
+							<!-- Class.has Method -->
+							<targetInstances>
+								<!-- get user favorite instances for Class parm -->
+								<instanceReference instanceId="{4EA2E04C-E059-42E7-B6F1-71DC894A3277}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4825AF68-CCB7-40B2-A1A5-D2AEFD332317}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- Return Instance Set Method Binding: return all instances [rsmb] -->
+					<translations>
+						<translation relationshipInstanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="return all instances" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{4EA2E04C-E059-42E7-B6F1-71DC894A3277}" classInstanceId="&IDC_SelectFromInstanceSetMethod;">
+					<!-- Select Instance Set Method: -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="all instances" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<!-- Method.has Method Binding -->
+							<targetInstances>
+								<!-- return instance set method binding [rsmb] -->
+								<instanceReference instanceId="{4825AF68-CCB7-40B2-A1A5-D2AEFD332317}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{CB7BE34B-5580-4EFA-B541-F298D940C2F4}" classInstanceId="{C46FA477-1F9F-4C5E-A232-8BB3CB70B97D}">
+					<!-- Report Data Source : All Instances -->
+					<translations>
+						<translation relationshipInstanceId="{0B698B22-1E66-46E2-B152-1259333091F2}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Instances" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2D5CB496-5839-46A0-9B94-30D4E2227B56}">
+							<targetInstances>
+								<instanceReference instanceId="{4EA2E04C-E059-42E7-B6F1-71DC894A3277}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{EA51DF31-33A7-4561-9514-439FDB257463}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<targetInstances>
+								<instanceReference instanceId="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{98D153FB-6CC2-4A03-AA42-9CD782FBCEEE}" classInstanceId="&IDC_StandardReport;">
+					<!-- Standard Report: Favorite Instances -->
+					<translations>
+						<translation relationshipInstanceId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}">
+							<translationValues> 
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Favorite Instances" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}">
+							<!-- Report.has instructions TTC -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View your favorite bookmarked instances" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1DE7B484-F9E3-476A-A9D3-7D2A86B55845}">
+							<!-- Report.has Report Data Source -->
+							<targetInstances>
+								<!-- All Instances -->
+								<instanceReference instanceId="{CB7BE34B-5580-4EFA-B541-F298D940C2F4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{EA7C6841-FFE0-4230-95CF-87B3D425DC38}">
+							<!-- Report.has Report Facet -->
+							<targetInstances>
+								<!-- Object Source -->
+								<instanceReference instanceId="{89676807-7605-4F77-BD61-4050385E2569}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}">
+							<!-- Standard Report.has Report Column -->
+							<targetInstances>
+								<!-- Primary Object -->
+								<instanceReference instanceId="{EA51DF31-33A7-4561-9514-439FDB257463}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

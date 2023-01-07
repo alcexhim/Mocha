@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{dc5fc675-b334-4042-91db-fcaa72d6e1bc}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="kwarwick" />
+						<!-- Danica@2015 -->
+						<attributeValue attributeInstanceId="{F377FC29-4DF1-4AFB-9643-4191F37A00A9}" value="e67ac01153b7b78de1f2c9d6d1209c12d0227461a3d1576ee44651cccf098f121c374a504dcc496943547133548e0064cbab6837540ffe8677024db0b51933f6" />
+						<attributeValue attributeInstanceId="{8C5A99BC-40ED-4FA2-B23F-F373C1F3F4BE}" value="1b478619f14c46d3b43938a8865fe471" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Ken Warwick" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

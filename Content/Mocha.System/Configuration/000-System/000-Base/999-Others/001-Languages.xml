@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Language.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				
+				<instance id="&IDI_Language_English;" classInstanceId="{61102B47-9B2F-4CF3-9840-D168B84CF1E5}">
+					<!-- Language: English (United States) -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B31887C6-B16E-457F-814A-071C9CBCAB98}" value="1033" />
+						<attributeValue attributeInstanceId="{93742C80-CDF7-4700-A03B-718F92B2666C}" value="en-US" />
+					</attributeValues>
+					<translations>
+						<!-- Language.has title Translation -->
+						<translation relationshipInstanceId="{84032F2C-B347-4529-8D2E-FA68F4497D7C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="English (United States)" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Inglés (Estados Unidos)" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDI_Language_Spanish;" classInstanceId="{61102B47-9B2F-4CF3-9840-D168B84CF1E5}">
+					<!-- Language: Spanish -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B31887C6-B16E-457F-814A-071C9CBCAB98}" value="1033" />
+						<attributeValue attributeInstanceId="{93742C80-CDF7-4700-A03B-718F92B2666C}" value="en-US" />
+					</attributeValues>
+					<translations>
+						<!-- Language.has title Translation -->
+						<translation relationshipInstanceId="{84032F2C-B347-4529-8D2E-FA68F4497D7C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Spanish" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Español" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

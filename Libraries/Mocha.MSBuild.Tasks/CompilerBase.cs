@@ -30,12 +30,6 @@ namespace Mocha.MSBuild.Tasks
 		public string OutputAssembly { get; set; }
 		public ITaskItem[] Sources { get; set; }
 
-		protected override bool HandleTaskExecutionErrors()
-		{
-			// TODO: implement this?
-			return base.HandleTaskExecutionErrors();
-		}
-
 		protected override string GenerateFullPathToTool()
 		{
 			string exefile = System.Reflection.Assembly.GetExecutingAssembly().Location;

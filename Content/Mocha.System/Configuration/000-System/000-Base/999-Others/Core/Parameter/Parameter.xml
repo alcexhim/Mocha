@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  MethodParameter.xml - XML definition for the initial Mocha `Method Parameter` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<relationship
+					id="&IDR_Parameter__has_data_type__Instance;"
+					sourceClassId="&IDC_Parameter;"
+					type="has data type"
+					destinationClassId="&IDC_Instance;"
+					siblingRelationshipId="&IDR_Instance__data_type_for__Parameter;" />
+				<relationship
+					id="&IDR_Instance__data_type_for__Parameter;"
+					sourceClassId="&IDC_Instance;"
+					type="data type for"
+					destinationClassId="&IDC_Parameter;"
+					siblingRelationshipId="&IDR_Parameter__has_data_type__Instance;" />
+				
+				<instance id="&IDR_Method__has__Method_Parameter;" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Method;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Parameter;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Method_Parameter__for__Method;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="&IDR_Method_Parameter__for__Method;" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Parameter;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Method;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Method__has__Method_Parameter;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_Parameter;" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Parameter" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Required;" />
+								<instanceReference instanceId="&IDA_Null;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

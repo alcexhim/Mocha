@@ -19,24 +19,26 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
+using MBS.Framework;
+
 namespace Mocha.Core
 {
 	public struct InstanceHandle : IEquatable<InstanceHandle>
 	{
-		private string _ID;
+		private NanoId _ID;
 		private bool isNotEmpty;
 
 		public static InstanceHandle Create()
 		{
 			InstanceHandle handle = new InstanceHandle();
-			handle._ID = NanoID.Nanoid.Generate();
+			handle._ID = NanoId.Generate();
 			handle.isNotEmpty = true;
 			return handle;
 		}
 
 		public byte[] ToByteArray()
 		{
-			return System.Text.Encoding.ASCII.GetBytes(_ID);
+			return System.Text.Encoding.ASCII.GetBytes(_ID.ToString());
 		}
 
 		public static readonly InstanceHandle Empty = new InstanceHandle();
@@ -65,7 +67,7 @@ namespace Mocha.Core
 			if (IsEmpty)
 				return "(empty)  ";
 
-			return _ID;
+			return _ID.ToString();
 		}
 
 

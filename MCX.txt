@@ -1,0 +1,29 @@
+MochaExecutable (MCX) format
+
+Text Table
+
+	int32	opcode
+	int32	param1, ...
+	
+	CI - Create Instance		instID
+		// no class id parm here because it is handled with AssignRelationship (newly created inst, `Instance.for Class`, class inst)
+		
+	AA - Assign Attribute		instID, attInstID, valueIndex
+	AR - Assign Relationship	instID, relInstID, targetCount, targets...
+	
+	example:
+	
+		CI 1, 1
+		CI 2, 1
+		CI 3, 1
+		
+		CI 4, 1
+		CI 1, 4
+		CI 2, 4
+		CI 3, 4
+		
+		AA [4$1], [4$1], "Name"
+
+Value Table
+	int32	dataType
+	object	value

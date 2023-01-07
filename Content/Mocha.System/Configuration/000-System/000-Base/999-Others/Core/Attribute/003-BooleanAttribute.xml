@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  BooleanAttribute.xml - XML definition for the Mocha `Boolean Attribute` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDC_BooleanAttribute;" superClassId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" index="5">
+					<!-- Boolean Attribute -->
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Boolean Attribute" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Boolean Attribute`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{6894DC7E-F471-4F5C-88E6-B8016259817F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDA_Singular;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Singular" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Singular" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Abstract;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Abstract" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Abstract" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Static;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Static" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Static" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{0B3CA089-8F63-4D62-BFFC-D524B2A16B8D}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Set" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Set" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{09D23735-7067-4560-843E-1092F0A57BD6}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Build" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Build" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{9F6F4296-2FCD-4B7E-AB09-D25F47D0C54C}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="True" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="True" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{7410EC44-4A40-43B9-BCFC-CFDB8979F992}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="This instance equal to Instance Parm" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="This instance equal to Instance Parm" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{E61F769D-E1FB-4A70-835A-4ACB010DBE6E}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Allow Negative" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Allow Negative" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{06AA6922-360A-49A5-AC17-BC0C91149C24}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Static Only" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Static Only" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{C89BDA1A-CC54-417E-8138-40A47B965147}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Add References" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Add References" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{FEDABDEF-C69A-4944-B454-5C3B7EE646C6}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Clear Execution Metric Results" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Clear Execution Metric Results" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{40A05D59-4F7B-46BF-9352-67FC3E5FB2C1}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Global" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Global" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{15DD9E49-AB6D-44F0-9039-27AF81736406}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Render as Text" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Render as Text" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{957fd8b3-fdc4-4f35-87d6-db1c0682f53c}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Editable" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Editable" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Final;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Final" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Final" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Required;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Required" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Required" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Null;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Null" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Null" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Visible;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Visible" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Visible" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{4a211f11-c5c3-4b58-a7f4-ed62538c5a3d}" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="OpenInNewWindow" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Open In New Window" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

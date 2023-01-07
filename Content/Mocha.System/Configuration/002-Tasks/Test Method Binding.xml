@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Create Page.xml - XML definition for the initial Mocha PageBuilder `Create Page` system task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{b47f3f6f-bb71-4f68-b8e4-c10f9382fec0}" classInstanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}">
+					<!-- Instance Prompt: Method Binding for Test Method Binding -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{D5BD754B-F401-4FD8-A707-82684E7E25F0}">
+							<!-- Instance Prompt.has valid Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_MethodBinding;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{c1aafaf7-835b-4bc4-9fd8-cc57055cc3d1}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<relationships>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Prompt -->
+							<targetInstances>
+								<!-- Method Binding -->
+								<instanceReference instanceId="{b47f3f6f-bb71-4f68-b8e4-c10f9382fec0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}">
+							<!-- Task.executes Method Call -->
+							<targetInstances>
+								<!-- create instance `Application` -->
+								<instanceReference instanceId="{58649c09-c152-42af-a502-a373872b352f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Task__has__Task_Category;">
+							<targetInstances>
+								<!-- Instance -->
+								<instanceReference instanceId="{871cec9e-faf3-4996-b873-57e78c988b11}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Test Method Binding" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Tests the method binding" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

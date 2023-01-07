@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Class.xml - XML definition for the initial Mocha `Class` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{cc321c82-f7f0-4cf2-a1f2-bfae3eed49bd}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{204a00f8-3bd7-4679-b6de-e646171f92ac}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{204a00f8-3bd7-4679-b6de-e646171f92ac}" classInstanceId="&IDC_GetReferencedInstanceSetMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Title for Class parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2978238f-7cb0-4ba3-8c6f-473df782cfef}">
+							<!-- Get Referenced Attribute Method.loop on Instance Set -->
+							<targetInstances>
+								<instanceReference instanceId="{a476372a-24e7-41d1-9a21-ba241b1a5067}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{6a65819e-c8cb-4575-9af8-ee221364049b}">
+							<!-- Get Referenced Instance Set Method.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Class__has_title__Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{cc321c82-f7f0-4cf2-a1f2-bfae3eed49bd}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Vehicle -->
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4CB5C72A-21A2-4B18-A21D-278EBF5C7B91}" classInstanceId="&IDC_ReportField;">
+					<!-- Title for Class -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Title" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{cc321c82-f7f0-4cf2-a1f2-bfae3eed49bd}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Report_Field__for__Report_Object;">
+							<targetInstances>
+								<instanceReference instanceId="{9f247c48-9a11-4822-9d5d-a38a6eae4c4c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{15DD9E49-AB6D-44F0-9039-27AF81736406}" value="true" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

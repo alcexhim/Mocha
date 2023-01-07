@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//
+//  Creators.xml - xLoad data sheet for Media Library
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{cf75f891-81ff-4665-9936-09f2892040db}">
+			<instances>
+				<instance id="{7106f5f6-aaf9-4a8b-97b0-83dbb87c5959}" classInstanceId="{b80a4207-5c38-4617-9bf5-f386b5fde53b}">
+					<translations>
+						<!-- Creator.has given name Translation -->
+						<translation relationshipId="{92a72e97-9e88-40e4-9170-3e593e7d308b}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Michael" />
+							</translationValues>
+						</translation>
+						<!-- Creator.has family name Translation -->
+						<translation relationshipId="{8d322f99-1ea9-476c-9720-0f3d82090188}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Cassutt" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{ea1fb03d-d5d9-4cee-bfdc-4cd5c2c5437e}" classInstanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Tread Lightly Transportation Inc." />
+						<attributeValue attributeInstanceId="{05708bcb-cb29-4b34-b952-6859fc7fcbe8}" value="1990-02-24 07:32" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{87089551-dd7f-4842-9d65-ad491d147b95}">
+							<!-- Business.has owner Person -->
+							<targetInstances>
+								<instanceReference instanceId="{19a58292-d755-4266-b678-9cf83a8809db}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{f3f68e1d-7e43-4341-b66d-c5da630e8c32}">
+							<!-- Business.has Insurance Policy -->
+							<targetInstances>
+								<instanceReference instanceId="{ab1eecac-ee1c-423c-a675-a0250fc40f5d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

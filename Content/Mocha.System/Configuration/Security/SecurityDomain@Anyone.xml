@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  LoginPage.xml - XML definition for the initial Mocha `Login Page` system page
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{7c420ec0-988b-4987-89f6-004df29d7e6b}" classInstanceId="{7a843f0b-0c78-456b-aabe-fd26e85bdebd}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Anyone" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{432f74f7-7fdd-4c5b-b2cb-7b5abe353f87}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+				</instance>
+				<instance id="{01a86f06-9f1e-45ce-ad0b-24655baa936a}" classInstanceId="&IDC_GetSpecifiedInstancesMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Anyone instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{dea1aa0b-2bef-4bac-b4f9-0ce8cf7006fc}">
+							<!-- GSI Method.has Instance -->
+							<targetInstances>
+								<!-- Anyone -->
+								<instanceReference instanceId="{7c420ec0-988b-4987-89f6-004df29d7e6b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<!-- Method.has Method Binding return instance set method binding [rsmb] -->
+							<targetInstances>
+								<instanceReference instanceId="{432f74f7-7fdd-4c5b-b2cb-7b5abe353f87}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="{7a843f0b-0c78-456b-aabe-fd26e85bdebd}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

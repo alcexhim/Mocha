@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{56b2fc09-f921-4997-8dc4-3da1bbec9bce}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{190fd6f1-9683-4f70-a22e-7ea478e99b71}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{190fd6f1-9683-4f70-a22e-7ea478e99b71}" classInstanceId="&IDC_GetReferencedInstanceSetMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle Type for Vehicle Permit parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2978238f-7cb0-4ba3-8c6f-473df782cfef}">
+							<!-- Get Referenced Instance Set Method.loop on Instance Set -->
+							<targetInstances>
+								<instanceReference instanceId="{a476372a-24e7-41d1-9a21-ba241b1a5067}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{6a65819e-c8cb-4575-9af8-ee221364049b}">
+							<!-- Get Referenced Instance Set Method.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{f3ec5f01-7570-49e1-94f4-3ce60d775a0e}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{56b2fc09-f921-4997-8dc4-3da1bbec9bce}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Common Text -->
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{8a6cb27e-4e74-4d10-81fc-82a35f2fad97}" classInstanceId="&IDC_ReportField;">
+					<!-- Report Field: Vehicle Permit: Vehicle Type -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle Type" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<!-- `Executes Method`.has source Method -->
+							<targetInstances>
+								<instanceReference instanceId="{190fd6f1-9683-4f70-a22e-7ea478e99b71}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Report_Field__for__Report_Object;">
+							<targetInstances>
+								<instanceReference instanceId="{ad04691d-4509-498b-8c68-fa42eead818b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Style.xml - XML definition for the initial Mocha `Style` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Style Property" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Style Property`.has Text Attribute `CSS Value` -->
+							<destinationInstance>
+								<instanceReference instanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" />
+							</destinationInstance>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{1AE4BE55-312D-461C-9A4B-5F3F13CCF7F9}" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Horizontal Alignment" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="text-align" />
+					</attributeValues>
+				</instance>
+				<instance id="{F936088C-8D65-4476-BDBC-421EE8BC41A9}" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Font Size" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="font-size" />
+					</attributeValues>
+				</instance>
+				<instance id="{455fcc28-acc9-4c83-823e-fdd9a8ede2a5}" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Font Weight" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="font-weight" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_Padding;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Padding (all)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="padding" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_PaddingTop;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Padding (top)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="padding-top" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_PaddingBottom;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Padding (bottom)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="padding-bottom" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_PaddingLeft;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Padding (left)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="padding-left" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_PaddingRight;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Padding (right)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="padding-right" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_BackgroundAttachment;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Background Attachment" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="background-attachment" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_Display;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Display" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="display" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_Width;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Width" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="width" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_MarginLeft;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Margin (left)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="margin-left" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_MarginRight;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Margin (right)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="margin-right" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_MarginTop;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Margin (top)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="margin-top" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_MarginBottom;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Margin (bottom)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="margin-bottom" />
+					</attributeValues>
+				</instance>
+				<instance id="&IDI_StyleProperty_Margin;" classInstanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}">
+					<translations>
+						<translation relationshipInstanceId="{116e279a-12d5-48cc-854c-3d0ccdcb0bbe}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Margin (all)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" value="margin" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{B69C2708-E78D-413A-B491-ABB6F1D2A6E0}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Style Rule.has Style Property -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style Property` -->
+							<targetInstances>
+								<instanceReference instanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{DF43F7A5-8175-4E23-9801-8299EA55B356}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{DF43F7A5-8175-4E23-9801-8299EA55B356}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Style Property.for Style Rule -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style Property` -->
+							<targetInstances>
+								<instanceReference instanceId="{A5688B41-343C-4D9E-8DE9-EAD92EC44E12}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B69C2708-E78D-413A-B491-ABB6F1D2A6E0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_StyleRule;" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Style Rule" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Style Rule`.has Attribute -->
+							<targetInstances>
+								<!-- `Value` [Text Attribute] -->
+								<instanceReference instanceId="&IDA_Value;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4CC8A654-B2DF-4B17-A956-24939530790E}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Style.has Style Rule -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{32276525-126A-412F-A10F-1368312D2EAB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{32276525-126A-412F-A10F-1368312D2EAB}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Style Rule.for Style -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style Rule` -->
+							<targetInstances>
+								<instanceReference instanceId="{C269A1F3-E014-4230-B78D-38EAF6EA8A81}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{4CC8A654-B2DF-4B17-A956-24939530790E}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{963233D5-88F6-41F0-9DE0-63BAB95FA228}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Style.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{13CA9CF4-DAD3-48FB-9546-8929CF9DDA38}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{13CA9CF4-DAD3-48FB-9546-8929CF9DDA38}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Style -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Style` -->
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{963233D5-88F6-41F0-9DE0-63BAB95FA228}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_Style;" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Style" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Style Rule`.has Attribute -->
+							<targetInstances>
+								<!-- `Class Name` [Text Attribute] -->
+								<instanceReference instanceId="{0F42BCB6-549A-4407-BB91-DD147443F68F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="&IDC_StyleClass;" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Style Class" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Style Class`.has Attribute -->
+							<targetInstances>
+								<!-- `Value` [Text Attribute] -->
+								<instanceReference instanceId="&IDA_Value;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<relationship id="&IDR_Style__has__Style_Class;"
+					sourceClassId="&IDC_Style;"
+					type="has"
+					destinationClassId="&IDC_StyleClass;"
+					siblingRelationshipId="&IDR_Style_Class__for__Style;"
+					/>
+				<relationship id="&IDR_Style_Class__for__Style;"
+					sourceClassId="&IDC_StyleClass;"
+					type="for"
+					destinationClassId="&IDC_Style;"
+					siblingRelationshipId="&IDR_Style__has__Style_Class;"
+					/>
+				
+				<relationship id="&IDR_Style__implements__Style;"
+					sourceClassId="&IDC_Style;"
+					type="implements"
+					destinationClassId="&IDC_Style;"
+					siblingRelationshipId="&IDR_Style__implemented_for__Style;"
+					/>
+				<relationship id="&IDR_Style__implemented_for__Style;"
+					sourceClassId="&IDC_Style;"
+					type="implemented for"
+					destinationClassId="&IDC_Style;"
+					siblingRelationshipId="&IDR_Style__implements__Style;"
+					/>
+				
+				
+				<instance id="{135e904a-763b-4f59-9cb2-ccf003b4c178}" classInstanceId="&IDC_StyleRule;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Style_Rule__has__Style_Property;">
+							<targetInstances>
+								<instanceReference instanceId="&IDI_StyleProperty_Display;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Value;" value="block" />
+					</attributeValues>
+				</instance>
+				<instance id="{57ae3a77-cde7-4e0a-a85f-a00dcb21aca3}" classInstanceId="&IDC_StyleRule;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Style_Rule__has__Style_Property;">
+							<targetInstances>
+								<instanceReference instanceId="&IDI_StyleProperty_MarginLeft;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Value;" value="auto" />
+					</attributeValues>
+				</instance>
+				<instance id="{cbc50526-18df-4097-89fa-d5961117cbf8}" classInstanceId="&IDC_StyleRule;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Style_Rule__has__Style_Property;">
+							<targetInstances>
+								<instanceReference instanceId="&IDI_StyleProperty_MarginRight;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Value;" value="auto" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="&IDI_Style_BlockElementHorizontallyCentered;" classInstanceId="&IDC_Style;">
+					<translations>
+						<translation relationshipInstanceId="{963233D5-88F6-41F0-9DE0-63BAB95FA228}">
+							<!-- Style.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Block Element Horizontally Centered" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Style__has__Style_Rule;">
+							<targetInstances>
+								<!-- display: block to override if we assign this style to a default- inline element -->
+								<instanceReference instanceId="{135e904a-763b-4f59-9cb2-ccf003b4c178}" />
+								
+								<!-- margin-left: auto -->
+								<instanceReference instanceId="{57ae3a77-cde7-4e0a-a85f-a00dcb21aca3}" />
+								<!-- margin-right: auto -->
+								<instanceReference instanceId="{cbc50526-18df-4097-89fa-d5961117cbf8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{a970007c-f8a3-4a89-8b84-19a28cbfab8d}" classInstanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Prime Taxi Co., LLC" />
+						<attributeValue attributeInstanceId="{05708bcb-cb29-4b34-b952-6859fc7fcbe8}" value="1995-06-06 17:25" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{87089551-dd7f-4842-9d65-ad491d147b95}">
+							<!-- Business.has owner Person -->
+							<targetInstances>
+								<instanceReference instanceId="{0c5b12ee-6f35-44b5-b0de-5fd947f50468}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{f3f68e1d-7e43-4341-b66d-c5da630e8c32}">
+							<!-- Business.has Insurance Policy -->
+							<targetInstances>
+								<instanceReference instanceId="{a8e7a858-a672-46e4-8950-04a59c55bf7d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

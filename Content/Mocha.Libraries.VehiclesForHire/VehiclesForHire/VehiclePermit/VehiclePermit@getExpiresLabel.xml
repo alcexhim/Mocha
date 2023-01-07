@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{99972774-5dab-4da9-a320-c7eaf3fe2e60}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<!-- Text Attribute: Common Text@get '@' (BA - Build Attribute Method) static public [ramb] -->
+					<attributeValues>
+						<!-- value of attribute to build -->
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{b9e70b2b-ab7d-4581-9f09-2a7473ac7730}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{b9e70b2b-ab7d-4581-9f09-2a7473ac7730}" classInstanceId="&IDC_BuildAttributeMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+						<attributeValue attributeInstanceId="&IDA_Value;" value="expires" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Expires label" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{99972774-5dab-4da9-a320-c7eaf3fe2e60}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Common Text -->
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{1d5f59db-5b4c-4551-b0c9-e5fda3ac7bf4}" classInstanceId="&IDC_StringComponent;">
+					<!-- String Component returning a RAMB: Text Attribute: Common Text@get '@' (BA - Build Attribute Method) static public [ramb] -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<!-- Common Text@get '@' (BA - Build Attribute Method) static public -->
+								<instanceReference instanceId="{99972774-5dab-4da9-a320-c7eaf3fe2e60}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

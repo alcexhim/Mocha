@@ -1,0 +1,526 @@
+﻿/*
+-----------------------------------------------
+U2 Base Style Sheet
+----------------------------------------------- */
+
+body {
+    font-size: .8em;
+}
+body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, input, textarea, select, td, th, legend, a {
+    font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Arial, sans-serif;
+}
+form {
+    margin: 0;
+    padding: 0;
+}
+img { 
+    border: 0px; 
+}
+textarea { 
+    font-size: 1em 
+}
+ul.prompt {
+    list-style: none; 
+}
+.panel ul, .taskNavigator ul { 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.panel ul li, .taskNavigator ul li  {
+    margin: .5em 0 .5em 0;
+}
+ul.facetValues {
+    list-style: none; 
+}
+.list ul, ul.mutex { 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.list ul li, ul.mutex li  {
+    margin: 0 0 0 0;
+}
+.list ol {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.list ol li {
+    margin: 0 .5em 0 .5em;
+}
+.singleItem {
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+.singleOrgNavLevel2Item {
+    padding-left: 40px;
+}
+label {
+}
+.formItemLabel, legend.formItemLabel, .subheadingItemLabel {
+    text-align: right;
+    vertical-align: top;
+    color: #666666;
+    background-color: white;
+    font-size: 1em;
+    font-weight: normal;
+}
+.headingItem {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.requiredMark {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #A00000;
+    background-color: white;
+    vertical-align: top;
+}
+input[type="text"][readonly] {
+	/* HTMLA-377 Fixed for high contrast */
+    background:#707070;
+}
+
+table { 
+    border-collapse: collapse;
+    margin: .5em 0 .5em 0;
+}
+table caption {
+    text-align: left;
+    white-space: nowrap;
+    border: 1px dotted #999;
+    background-color: #F9F9F9;
+    color: #000;
+}
+.gridCaptionLabel {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #C5511B;
+    font-size: 1em;
+    font-weight:bold;
+}
+.errorGrid .gridCaptionLabel {
+    color: red;
+    font-size: 1em;
+    font-weight:bold;
+}
+.gridRowCount, .preferredCurrency {
+    color: #666666;
+    font-size: 0.8em;
+}
+.gridTotalRow {
+    background-color: #DAF1F5;
+}
+.gridTotalText {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #262626;
+}
+.preferredCurrency.inGrid {
+    display: block;
+}
+.preferredCurrency.inPanel {
+    display: inline;
+    margin: 0 0 0 1em;
+} 
+td.number, th.number {
+    text-align: right;
+}
+table td table {
+    margin: 0;
+}
+table.header {
+    border: 0px;
+    width: 100%;
+}
+table.header td {
+    border: 0px;
+}
+th {
+    border: 1px dotted #999;
+    text-align: center;
+    font-weight: normal;
+}
+th.gridColumnLabel {
+    color: #000033;
+    background-color: #F9F9F9;
+    font-weight: bold;
+}
+th.gridColumnGroupLabel {
+    color: #000033;
+    background-color: #F9F9F9;
+    font-weight: bold;
+    text-align: center;
+}
+th.gridRowLabel {
+    background-color: #F9F9F9;
+}
+.errorGrid th.gridRowLabel {
+    color: red;
+    background-color: #F9F9F9;
+}
+th.addIcon {
+    text-align: left;
+}
+td { 
+    /*text-align: left;*/
+    vertical-align: top;
+    border: 1px dotted #999;
+}
+tr th {
+    text-align: left;
+    vertical-align: top;
+}
+th.transposedGridHeaderLabel img {
+    float: left;
+}
+.transposedGridSubheaderWidget >* {
+    display: block;
+}
+th.transposedGridGroupLabel {
+    color: #C5511B;
+    background-color: #F6F6F6;
+    font-weight:bold;
+}
+td.transposedGridGroupRow {
+    background-color: #F6F6F6;
+}
+th.transposedGridRowLabel {
+    color: #6C6A69;
+    font-weight:bold;
+}
+th.transposedGridRowLabel >*{
+    position: relative;
+    left: 8px;
+}
+table.matrixNbox td, table.matrixNbox th {
+    border: 1px solid #999;
+    padding: 1em 1em 1em 1em
+}
+table.matrixNbox th {
+	/* HTMLA-377 Fixed for high contrast */
+    background-color: #FFFFFF;
+}
+table.matrixNbox th[scope="colgroup"], table.matrixNbox th[scope="rowgroup"] {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #C5511B;
+    font-size: 1em;
+    font-weight:bold;
+}
+fieldset {
+    border: 1px dotted #999;
+    margin: 0;
+    padding: .5em;
+}
+fieldset.panelSet {
+    border: 1px dotted #999;
+    margin: 0;
+    padding: .5em;
+}
+fieldset.panelSetItem {
+    border: 2px solid #999;
+    margin: 0;
+    padding: .5em;
+}
+fieldset legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+h1 .pageTitleData {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+h1 .pageTitleLabelForLandingPage {
+    text-align: left;
+    /* HTMLA-346 color/bg color chosen for high contrast */
+    color: #C5511B;
+    background-color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin: 0 .5em 0 0;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.logo {
+    margin: 0 1em 0 0;
+}
+.logo img {
+    max-height: 150px;
+}
+dl {
+    margin: 0 0 5px 0;
+}
+table.fieldSetHorizontal td {
+    padding: 0 1em 0 1em
+}
+.session {
+    font-weight: normal;
+    font-size: .9em;
+}
+.session a {
+}
+.session ul {
+    margin: .5em 0;
+    padding: 0;
+}
+.session li {
+    display: inline;
+    margin: 0 .5em 0 0;
+    padding: 0;
+}
+.sessionTimer {
+    text-align: center;
+}
+.toolBar {
+    padding-bottom: 5px;
+}
+.toolBar img {
+    vertical-align: middle;
+}
+.toolBar div,.toolBar form {
+    display: inline;
+    padding-left: 18px; 
+}
+.toolBar ul, .buttonBar ul {
+    display: inline;
+    list-style: none;
+    margin: .5em 0;
+    padding: 0;
+}
+.toolBar li {
+    display: inline;
+    padding: 0;
+    margin: 0 .5em 0 0;
+}
+.toolBar a {
+    font-size: 0.9em; 
+}
+.gridToolBar {
+    margin: 0;
+}
+.gridToolBar th {
+    border: 0 none;
+}
+.gridToolBar th >* {
+    margin: 0 0.25em 0 0;
+}
+.buttonBar {
+    margin-top: 2em; 
+    margin-bottom: 2em; 
+    text-align: center;
+}
+.buttonBar li, .buttonBar form, .buttonBar a, .buttonBar>* {
+    display: inline;
+    padding: 0 0.5em 0 0.5em;
+    margin: 0;
+}
+.buttonBarLeft * {
+    display: inline;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}
+.buttonGroup form {
+    display: inline;
+    margin: 0 0 0 0;
+}
+.buttonPanel {
+    text-align: center;
+    font-size: 1.2em;
+}
+.horizontalButtonGrid * {
+    display: inline;
+}
+a.button0 {
+    /* link */
+    margin-top: .5em; 
+    margin-bottom: .5em; 
+}
+.button1 {
+    /* secondary (blue) button */
+    /* HTMLA-346 color/bg color chosen for high contrast */
+    background-color: #0067AC;
+    color: #FFFFFF;
+}
+.button2 {
+    /* primary (green) button */
+    /* HTMLA-377 Fixed for high contrast */
+    background-color: #006700;
+    color: #FFFFFF;
+}
+.multiCommandButton a {
+    display: block;
+}
+button .buttonLabel {
+    font-weight: bold;
+}
+button .buttonLabel2 {
+    color: #000000;
+}
+a .buttonLabel2 {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+form.imageButton {
+    display: inline;
+}
+.taskMap, .taskDetail, .taskPreview {
+    margin: .5em;
+}
+.taskMap ul {
+}
+.taskMap ul li {
+    margin: 0 0 0 0;
+    padding: .5em;
+}
+.taskMap ul li ul, .taskMap ul li ul li {
+    display: inline;
+}
+.taskMap ul li.current {
+    border: 1px solid #B2B2B2;
+}
+.search {
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+input.remove {
+    margin: 0 .2em 0 0;
+}
+tr.hidden {
+    background-color: gray;
+    color: black;
+}
+div.errors, div.errors a {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #A00000;
+    background: white;
+}
+div.warnings, div.warnings a {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #C5511b; /*fieldMonitorWarningTitle in flex*/
+    background: white;
+}
+ div.errors ul, div.warnings ul {
+    margin: 0;
+    padding: 0;
+}
+div.errors ul li, div.warnings ul li  {
+    margin: .5em 0 .5em 0;
+}
+p.confirmation {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #006700;
+    background: white;
+}
+p.note {
+}
+p.failure {
+	/* HTMLA-377 Fixed for high contrast */
+    color: #A00000;
+}
+.workletLink, .documentSectionLink {
+    background: #C0C0C0;
+    color: black;
+    font-size: 1.6em; 
+    padding: 10px; 
+    margin: 2px;
+}
+#worklets ul {
+    list-style: none;
+    padding-left:0;
+}
+.number {
+}
+.readonly {
+    border: 0
+}
+.legal {
+	/* HTMLA-377 Fixed for high contrast */
+    text-align: right;
+    color: #707070;
+    background-color: white;
+    font-size: .8em;
+}
+.rjAmount {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.rjAmountLabel {
+    font-size: 1em;
+    font-weight: bold;
+}
+.hbox {
+    width: 100%;
+}
+.stylizedHeader {
+    width: 100%;
+}
+.workletSectionLabel, .facetCategoryLabel {
+    /* HTMLA-346 color/bg color chosen for high contrast */
+    color: #C5511B;
+    background-color: white;
+    font-size: 1em;
+    font-weight:bold;
+}
+.workletUnrunnable {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1em;
+    color: #A00000;
+    background-color: white;
+}
+.workletUnrunnable * {
+    vertical-align: middle;
+}
+.documentSecionHeader {
+    /* HTMLA-346 color/bg color chosen for high contrast */
+    color: #C5511B;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight:bold;
+}
+ul.groupedList, ul.relatedTasks {
+    list-style: none;
+}
+/* Org Navigator */
+table.navigableNode, table.navigableLeaf {
+    border: 1px solid #002E56;
+}
+table.navigableSelfNode {
+    border: 2px solid red;
+}
+table.navigableNode, table.navigableSelfNode {
+    background-color:#ABC0D1;
+}
+table.navigableLeaf {
+    background-color:#DEE87D;
+}
+ul.orgNavigator, .orgNavigator ul { 
+    list-style: none; 
+}
+.outageNotice {
+     border:2px dotted #999;
+}
+.analyticIndicator {
+    float:left;
+}
+.chartOptions {
+    margin-top:  0.5em;
+}
+.passwordFormItem {
+    margin-bottom: 1em;
+}
+.comment td {
+    border:0px none;
+    min-width: 21px;
+}
+.compositeViewHeaderSubtitle {
+    padding: 0 0 0 1em;
+    font-size: 1.3em;
+}
+table[role="presentation"]>tbody>tr>td {
+    border: none;
+}
+li.searchItem {
+    padding: 0 0 .5em 0;
+}

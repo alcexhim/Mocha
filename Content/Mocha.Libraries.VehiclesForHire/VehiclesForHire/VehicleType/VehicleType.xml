@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  VehicleType.xml - XML definition for the `Vehicle Type` &IDA_StartDate;
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<!-- Business -->
+				<instance id="{e11b8498-365a-48a4-974a-7d668aae2e1c}" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle Type" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Class`.instance labeled by String `Enumeration.has title Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="{ff027f7b-fc6d-4ef3-a109-e65ca046f7d2}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class.has summary Report Field -->
+							<targetInstances>
+								<!-- `Inspection Required` -->
+								<instanceReference instanceId="{d44e8053-9ceb-43ca-8c48-cab71c44ed8f}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{6a1f0541-d3cf-438c-8d44-11e1429ffa51}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Airport Shuttle Van" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="AIRVAN" />
+					</integrationIds>
+				</instance>
+				<instance id="{0fef03aa-c537-4b8d-b03a-68d63a555669}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Limousine" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="ELIMO" />
+					</integrationIds>
+				</instance>
+				<instance id="{80ab8015-56c8-4e42-a5df-f267d9a9ede3}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Luxury Sedan" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="LUXSED" />
+					</integrationIds>
+				</instance>
+				<instance id="{c319eea1-4a8d-4a8a-b113-07c411de6c29}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Luxury SUV" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="LUXSUV" />
+					</integrationIds>
+				</instance>
+				
+				
+				
+				<instance id="{b61a5935-b12d-4852-9ab5-f66351ced64d}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Luxury Sedan" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="ELXSD" />
+					</integrationIds>
+				</instance>
+				<instance id="{692d30d0-e509-4135-b090-149d8571440f}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Luxury SUV" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="ELXSV" />
+					</integrationIds>
+				</instance>
+				<instance id="{ec6909d2-ed33-40ab-9099-376f42baa40b}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Luxury Van" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="ELXVN" />
+					</integrationIds>
+				</instance>
+				<instance id="{bc5ab56a-2632-4fa4-a192-7968a85714c1}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{b464c936-9422-4d4a-a78e-b50bb0752abf}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Taxi" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="ETAXI" />
+					</integrationIds>
+				</instance>
+				<instance id="{a1be34e7-5daa-4670-b12f-ed045f238697}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{b464c936-9422-4d4a-a78e-b50bb0752abf}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Taxi Van" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="ETXVN" />
+					</integrationIds>
+				</instance>
+				<instance id="{edd14c2e-1eb7-43e5-a674-2b7f02599591}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly Van" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="EVAN" />
+					</integrationIds>
+				</instance>
+				
+				<instance id="{2c484b90-bd47-4789-a170-0049e622778f}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Luxury Van" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="LUXVAN" />
+					</integrationIds>
+				</instance>
+				<instance id="{c952ead3-1b44-4535-b4d5-c9f9e3cb3534}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Limousine" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="LIMO" />
+					</integrationIds>
+				</instance>
+				<instance id="{8f265059-1b5d-493c-aeca-b92c63f952af}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Eco-Friendly" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="~ECO~" />
+					</integrationIds>
+				</instance>
+				<instance id="{ddaf4adc-7f4a-467d-8cf2-dba6e2aca094}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Residential Shuttle (Low-Speed Vehicle)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="~RESIDENTIAL~" />
+					</integrationIds>
+				</instance>
+				<instance id="{8b8191d8-b57b-417f-88c2-a6b15a8449e2}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Mini Shuttle (Low-Speed Vehicle)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="~MINI~" />
+					</integrationIds>
+				</instance>
+				<instance id="{e6860976-df08-435b-9fba-629967abe61a}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Horse Drawn" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="HD" />
+					</integrationIds>
+				</instance>
+				<instance id="{147275f7-f1de-45d6-b43e-51c134e1d1c5}" classInstanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Livery" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="LIVERY" />
+					</integrationIds>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

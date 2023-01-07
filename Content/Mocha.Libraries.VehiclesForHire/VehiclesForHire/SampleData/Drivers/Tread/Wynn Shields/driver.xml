@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{19a58292-d755-4266-b678-9cf83a8809db}" classInstanceId="{45c48b5c-2816-40d1-8139-927f008e2939}">
+					<relationships>
+						<relationship relationshipInstanceId="{416f02a2-fcad-4f0f-83e6-17165173ed57}">
+							<!-- Person.has Legal Name -->
+							<targetInstances>
+								<instanceReference instanceId="{9107b8f5-0501-4cbf-9c47-f481d95d4491}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{92423583-8029-4a99-a2d5-04676a6db71d}">
+							<!-- Person.has Gender -->
+							<targetInstances>
+								<!-- Neutral -->
+								<instanceReference instanceId="{f41b9b4e-072f-4bd3-a4f5-2883e8adcf58}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{12ed315e-0632-4fec-9b44-dc88ba4924bf}">
+							<!-- Driver.for Business -->
+							<targetInstances>
+								<instanceReference instanceId="{ea1fb03d-d5d9-4cee-bfdc-4cd5c2c5437e}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

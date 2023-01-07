@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Driver.xml - XML definition for the initial Mocha `Patient` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{2d869ed8-ed59-4ba3-b191-99f620d7e51a}" classInstanceId="{b1a29a91-6795-44dc-a47e-bd77d3dcb8db}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicles for Hire" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<!-- 7426bee1-2d34-44ff-95d3-deeb07151cb9 -->
+				<!-- Integration ID Usage: City of Orlando: Vehicles for Hire ASP.NET Application -->
+				<instance id="{e5022461-7c23-487c-877f-a0ae028f6d89}" classInstanceId="{86084b9f-3860-4857-a41f-2f8b6877aff1}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="City of Orlando:Vehicles for Hire ASP.NET application" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

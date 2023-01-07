@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  SummaryPageComponent.xml - XML definition for the initial Mocha `Summary Page Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDC_ElementPageComponent;" superClassId="{EF4D4027-6904-4773-9013-22CEDC169F00}">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Element Page Component" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<relationship
+					id="&IDR_Element_Page_Component__has__Element;"
+					sourceClassId="&IDC_ElementPageComponent;"
+					type="has"
+					destinationClassId="&IDC_Element;"
+					singular="true"
+					siblingRelationshipId="&IDR_Element__for__Element_Page_Component;" />
+				<relationship
+					id="&IDR_Element__for__Element_Page_Component;"
+					sourceClassId="&IDC_Element;"
+					type="for"
+					destinationClassId="&IDC_ElementPageComponent;"
+					siblingRelationshipId="&IDR_Element_Page_Component__has__Element;" />
+				
+				<relationship
+					id="&IDR_Element_Page_Component__has__Element_Content_Display_Option;"
+					sourceClassId="&IDC_ElementPageComponent;"
+					type="has"
+					destinationClassId="&IDC_ElementContentDisplayOption;"
+					siblingRelationshipId="&IDR_Element_Content_Display_Option__for__Element_Page_Component;" />
+				<relationship
+					id="&IDR_Element_Content_Display_Option__for__Element_Page_Component;"
+					sourceClassId="&IDC_ElementContentDisplayOption;"
+					type="for"
+					destinationClassId="&IDC_ElementPageComponent;"
+					siblingRelationshipId="&IDR_Element_Page_Component__has__Element_Content_Display_Option;" />
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ReportFacet.xml - XML definition for the initial Mocha `Report Facet` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{EA7C6841-FFE0-4230-95CF-87B3D425DC38}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report.has Report Facet -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{EC515BC0-D235-4A1F-A461-72B840B49020}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{EC515BC0-D235-4A1F-A461-72B840B49020}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Facet.for Report -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{EA7C6841-FFE0-4230-95CF-87B3D425DC38}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{9EE30D06-5BF3-406F-B13A-451F5A609046}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Facet.has Report Facet Option -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{4CFB0305-306E-46DF-8B07-03D4C2DE55F9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{F21B8F49-9F19-497C-9A32-10601BC6FB0F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F21B8F49-9F19-497C-9A32-10601BC6FB0F}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Facet Option.for Report Facet -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{4CFB0305-306E-46DF-8B07-03D4C2DE55F9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{9EE30D06-5BF3-406F-B13A-451F5A609046}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D182076B-9804-47E1-9ECA-2D028B623525}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Facet.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{596E57FF-CE23-4F23-A98F-643DFA2CECD3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{596E57FF-CE23-4F23-A98F-643DFA2CECD3}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Report Facet -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{D182076B-9804-47E1-9ECA-2D028B623525}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{3D57D50E-2148-4323-92DF-9B03499A6847}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Facet Option.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{4CFB0305-306E-46DF-8B07-03D4C2DE55F9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{81E6697A-4598-4E28-8C81-D2270709A67D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{81E6697A-4598-4E28-8C81-D2270709A67D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Report Facet Option -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{4CFB0305-306E-46DF-8B07-03D4C2DE55F9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{3D57D50E-2148-4323-92DF-9B03499A6847}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{33F4F820-98B4-4C2C-B8B5-1C62E9210CBE}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Facet.has Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{011940D5-7786-4E53-91EC-7072582C555E}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{011940D5-7786-4E53-91EC-7072582C555E}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Field.for Report Facet -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{33F4F820-98B4-4C2C-B8B5-1C62E9210CBE}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5A78F865-6A1F-499A-8508-B972D732AEE5}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<!-- Extract Single Instance String Component -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D182076B-9804-47E1-9ECA-2D028B623525}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{77A62A6E-E418-4B7E-8FCB-318E64381467}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<!-- Extract Single Instance String Component -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{3D57D50E-2148-4323-92DF-9B03499A6847}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A5415D78-E43A-4A79-AC1C-83B0A1C9FFBB}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{5A78F865-6A1F-499A-8508-B972D732AEE5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{2C52A6F3-120A-400C-9D1F-107377A32E3B}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{77A62A6E-E418-4B7E-8FCB-318E64381467}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B3CE1406-593F-414B-B000-DD5BA06A30B6}" superClassId="&IDC_Class;">
+					<!-- Report Facet -->
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Facet" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Report Facet`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{A5415D78-E43A-4A79-AC1C-83B0A1C9FFBB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4CFB0305-306E-46DF-8B07-03D4C2DE55F9}" superClassId="&IDC_Class;">
+					<!-- Report Facet Option -->
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Facet Option" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Report Facet`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{2C52A6F3-120A-400C-9D1F-107377A32E3B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

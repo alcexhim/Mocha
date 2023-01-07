@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  PermitStatus.xml - XML definition for the `Permit Status` Enumeration;
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{10ae5c20-84c6-4f2d-9928-affb8421b1a4}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle.has Vehicle Permit -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{9feed373-3242-4ef7-b75e-85f3beb12fb3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{9feed373-3242-4ef7-b75e-85f3beb12fb3}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle Permit.for Vehicle -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{10ae5c20-84c6-4f2d-9928-affb8421b1a4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{f3ec5f01-7570-49e1-94f4-3ce60d775a0e}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle Permit.has valid Vehicle Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has valid" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{d3ccf001-92e9-4611-86b2-40c155ef92d5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{d3ccf001-92e9-4611-86b2-40c155ef92d5}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle Type.valid for Vehicle Permit -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="valid for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{f3ec5f01-7570-49e1-94f4-3ce60d775a0e}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{a774da69-4254-4553-94d5-cb7ecdc5c230}" superClassId="&IDC_Class;">
+					<!-- Vehicle Permit -->
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle Permit" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Permiso del Vehicúlo" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{6599e47b-01db-4753-9b67-1a10679a9d27}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<!-- Permit Number -->
+								<instanceReference instanceId="{81173df8-e01e-44f2-9d91-fab8501be6b4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: VFH -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<targetInstances>
+								<!-- Permit Number -->
+								<instanceReference instanceId="{b961ea8a-44f0-4d0b-a600-853bce98ca22}" />
+								<!-- Vehicle Type -->
+								<instanceReference instanceId="{8a6cb27e-4e74-4d10-81fc-82a35f2fad97}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5b154e7c-1b13-4639-8a3c-0bcc4a5a976b}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<!-- Permit@get Permit Number (GA)*P[ramb] -->
+								<instanceReference instanceId="{8c72cfe6-da9a-41d5-af1f-dd473e6f95b1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{04a969b4-4253-4ec3-84f4-09c491d816a4}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<!-- Vehicle Permit@get Vehicle Type -->
+							<targetInstances>
+								<instanceReference instanceId="{56b2fc09-f921-4997-8dc4-3da1bbec9bce}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{6599e47b-01db-4753-9b67-1a10679a9d27}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<!-- Permit Number -->
+								<instanceReference instanceId="{5b154e7c-1b13-4639-8a3c-0bcc4a5a976b}" />
+								<!-- ':' -->
+								<instanceReference instanceId="{ff51d26b-28de-43a4-86d1-4c8799e140d5}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- LUXSED, LUXVAN, etc. -->
+								<instanceReference instanceId="{04a969b4-4253-4ec3-84f4-09c491d816a4}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- "expires" -->
+								<instanceReference instanceId="{1d5f59db-5b4c-4551-b0c9-e5fda3ac7bf4}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- Expiration Date -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{ad04691d-4509-498b-8c68-fa42eead818b}" classInstanceId="&IDC_ReportObject;">
+					<translations>
+						<translation relationshipInstanceId="{0a630a62-7123-42be-8ee0-021862c76f04}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Vehicúlo" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

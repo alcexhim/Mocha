@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Default.xml - XML definition for the initial tenant created by the Mocha setup routine
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{94D32217-87E4-478D-AAC6-C3451C977F4A}" name="pawprints">
+			<libraryReferences>
+				<!-- bring in the Mocha System -->
+				<libraryReference libraryId="{2826E41F-763A-413F-B239-3D9698AB629F}" />
+				<!-- Mocha.Web -->
+				<libraryReference libraryId="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}" />
+				<!-- bring in Pawprints Pet EHR -->
+				<libraryReference libraryId="{39188e4e-805f-45db-990f-94f05b5b0ae9}" />
+			</libraryReferences>
+			<instances>
+				<instance id="{39A0D313-A6DA-40BD-A7EC-B0EECD03B191}" classInstanceId="{5D081079-E136-406A-A728-7472937A6E5E}">
+					<!-- This is the logo image file for the initial Tenant instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Header.png" />
+						<attributeValue attributeInstanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" value="image/png" />
+						<attributeValue attributeInstanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" value="2016-01-01" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{4E658CD0-775B-4A7F-A876-78CBAB0FB445}" classInstanceId="{5D081079-E136-406A-A728-7472937A6E5E}">
+					<!-- This is the background image file for the initial Tenant instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="background.png" />
+						<attributeValue attributeInstanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" value="image/png" />
+						<attributeValue attributeInstanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" value="2021-04-09T22:27:35-0500" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{847CA108-F881-4FF0-A1AF-F1933BF12E19}" classInstanceId="{5D081079-E136-406A-A728-7472937A6E5E}">
+					<!-- This is the icon image file for the initial Tenant instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="icon.png" />
+						<attributeValue attributeInstanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" value="image/png" />
+						<attributeValue attributeInstanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" value="2021-04-09T22:27:35-0500" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{23C39C3A-A8E7-4836-9C3E-CA5EAE118855}" classInstanceId="&IDC_Tenant;">
+					<!-- This is the initial Tenant instance used by the Setup routine -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="pawprints" />
+						<attributeValue attributeInstanceId="{A1D39058-E934-4DBC-9179-EFAECFDD8B48}" value="~/dashboard" />
+						<attributeValue attributeInstanceId="{5D8CAF97-1E4C-495C-8C2D-1DFA26C74C13}" value="1.0.19.283" />
+						<attributeValue attributeInstanceId="{BD8523CA-C003-4F7F-93F6-F4ABECDD1BBE}" value="19235" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{D62DFB9F-48D5-4697-AAAD-1CAD0EA7ECFA}">
+							<!-- Tenant.has sidebar Menu Item -->
+							<targetInstances>
+								<instanceReference instanceId="{D135F145-36DC-4482-8130-872D1A8AA551}" />
+								<instanceReference instanceId="{80832D29-809C-45F6-8548-1F552B7E0974}" />
+								<instanceReference instanceId="{7855FB37-1F75-4FA0-B3EE-5EE2D463E39F}" />
+								<instanceReference instanceId="{E1B04FF9-5364-47B3-AC5E-300726CF3BE9}" />
+								
+								<instanceReference instanceId="{EC5BC2CD-F400-4064-B7E8-DA2CADDCD2A9}" />
+								<instanceReference instanceId="{529EFFF5-B967-40BA-BF07-B163BD58DFE6}" />
+								
+								<instanceReference instanceId="{4723BA97-2321-485A-B3F1-346716C1A3E1}" />
+								<instanceReference instanceId="{D0AB191C-ACC2-4C68-8D2F-06C77369728B}" />
+								<instanceReference instanceId="{C7C2087D-51EB-4DCD-B13A-3577CAD50FA0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{4C399E80-ECA2-4A68-BFB4-26A5E6E97047}">
+							<!-- Tenant.has logo image File -->
+							<targetInstances>
+								<instanceReference instanceId="{39A0D313-A6DA-40BD-A7EC-B0EECD03B191}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{39B0D963-4BE0-49C8-BFA2-607051CB0101}">
+							<!-- Tenant.has background image File -->
+							<targetInstances>
+								<!-- <instanceReference instanceId="{3293C7EC-7900-4953-8031-24464F7DC0B3}" /> -->
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CC4E65BD-7AAA-40DA-AECA-C607D7042CE3}">
+							<!-- Tenant.has icon image File -->
+							<targetInstances>
+								<instanceReference instanceId="{847CA108-F881-4FF0-A1AF-F1933BF12E19}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{E94B6C9D-3307-4858-9726-F24B7DB21E2D}">
+							<!-- Tenant.has Tenant Type -->
+							<targetInstances>
+								<instanceReference instanceId="{6A3767FD-6606-426F-B8D9-507B9FFE595C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{41D66ACB-AFDE-4B6F-892D-E66255F10DEB}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Happy Paws Pet Care - Litterbox" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A6203B6B-5BEB-4008-AE49-DB5E7DDBA45B}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Play in the Litterbox to your hearts content - &lt;strong&gt;changes will be reset weekly&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Use your Happy Paws Pet Care production credentials to sign in" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

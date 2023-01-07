@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  RN.xml - XML definition for the `RN` jobcode
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{E6EC799B-5F02-4681-B0A0-4863313B2EED}">
+			<instances>
+				<instance id="{d03e2e42-0e5b-4f1e-9b00-f2c8571ba54a}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Registered Nurse" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="RN" />
+					</integrationIds>
+				</instance>
+				<instance id="{c95c209a-97e5-46e3-a0d4-e3a41ad2ae9f}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Unit Secretary" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="US" />
+					</integrationIds>
+				</instance>
+				<instance id="{a0333c32-9085-4028-9bcb-4f598fbe8d3a}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Monitor Tech" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="MT" />
+					</integrationIds>
+				</instance>
+				<instance id="{9a47f8ba-76c2-45f5-bc5e-ad9c886ce678}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="SNI" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="SNI" />
+					</integrationIds>
+				</instance>
+				<instance id="{d8044ee8-a783-428f-86aa-10eb107cc6f3}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="CN" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="CN" />
+					</integrationIds>
+				</instance>
+				<instance id="{ed30872d-04eb-46d9-8144-4b90e5b75690}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Request Off" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="Request Off" />
+					</integrationIds>
+				</instance>
+				<instance id="{9dc9718d-af68-44fb-8197-50dd51ce88e9}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Available" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="Available" />
+					</integrationIds>
+				</instance>
+				<instance id="{d7abaa12-9498-4e44-986b-1401221beffa}" classInstanceId="{37b19db9-b268-4a9b-a1c0-88509cd39de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Paid Time Off" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<integrationId typeId="{0334de64-6b37-469a-9e85-f8a6d240c3e7}" value="PTO" />
+					</integrationIds>
+				</instance>
+				
+				<instanceSet id="{0ee8d2e3-6d1b-446d-b318-26a94a8179a8}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Job Codes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<instances>
+						<instanceReference instanceId="{d03e2e42-0e5b-4f1e-9b00-f2c8571ba54a}" />
+						<instanceReference instanceId="{c95c209a-97e5-46e3-a0d4-e3a41ad2ae9f}" />
+						<instanceReference instanceId="{a0333c32-9085-4028-9bcb-4f598fbe8d3a}" />
+						<instanceReference instanceId="{9a47f8ba-76c2-45f5-bc5e-ad9c886ce678}" />
+						<instanceReference instanceId="{d8044ee8-a783-428f-86aa-10eb107cc6f3}" />
+						<instanceReference instanceId="{ed30872d-04eb-46d9-8144-4b90e5b75690}" />
+						<instanceReference instanceId="{9dc9718d-af68-44fb-8197-50dd51ce88e9}" />
+						<instanceReference instanceId="{d7abaa12-9498-4e44-986b-1401221beffa}" />
+					</instances>
+				</instanceSet>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

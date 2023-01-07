@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Vehicle.xml - XML definition for the initial Mocha `Patient` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{44978cde-78c8-46f1-a2d8-e59ff55fdea6}" classInstanceId="&IDC_StringComponent;">
+					<!-- attr SC: vehicle tag number -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<!-- has attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{5f230177-c98a-4a50-8fff-a20820efb3b6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a4ddc013-137d-460f-960b-8964172c7fdb}" classInstanceId="&IDC_StringComponent;">
+					<!-- attr SC: vehicle year -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<!-- has attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{1392f8e2-9a84-43d0-8d54-30e3f5ff5ae5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{d7d966ed-240a-4f89-ad2a-d5cbfd507664}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{0117d53b-bc8f-4e6d-8ca9-eb8db7301a22}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4c54d41c-3cbb-4fa3-abac-82a250f77c40}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{f437e2d0-9213-49e9-91ee-288684cad776}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{f437e2d0-9213-49e9-91ee-288684cad776}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle.has Vehicle Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{6c9ee364-4ee5-4120-ac83-933d4c2abb03}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{6c9ee364-4ee5-4120-ac83-933d4c2abb03}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle Type.for Vehicle -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{e11b8498-365a-48a4-974a-7d668aae2e1c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{f437e2d0-9213-49e9-91ee-288684cad776}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{871202f8-538b-4372-a9b3-c7e52e8ca35b}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<!-- Attr: Tag Number -->
+								<instanceReference instanceId="{44978cde-78c8-46f1-a2d8-e59ff55fdea6}" />
+								<!-- ':' -->
+								<instanceReference instanceId="{ff51d26b-28de-43a4-86d1-4c8799e140d5}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- Attr: Vehicle Year -->
+								<instanceReference instanceId="{a4ddc013-137d-460f-960b-8964172c7fdb}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- ESI: Vehicle.has Vehicle Manufacturer -->
+								<instanceReference instanceId="{d7d966ed-240a-4f89-ad2a-d5cbfd507664}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- ESI: Vehicle.has Vehicle Model -->
+								<!-- <instanceReference instanceId="{17520239-6a24-4f3b-81a0-995fd20a7eb8}" /> -->
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- '(' -->
+								<instanceReference instanceId="{FBBEEA51-E342-42C8-93B9-098D0548100D}" />
+								<!-- ESI: Vehicle.has Vehicle Type -->
+								<instanceReference instanceId="{4c54d41c-3cbb-4fa3-abac-82a250f77c40}" />
+								<!-- ')' -->
+								<instanceReference instanceId="{D85F9F58-79D8-4C2C-BD3F-48B382FC37D7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<!-- Vehicle -->
+				<instance id="{818ed630-6b04-4a0e-9f82-7b9de27b941b}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Vehículo" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="{4e7f1a23-063b-4a1d-afba-4fbff0d04f2d}" />
+								<instanceReference instanceId="{3d8784eb-49b3-42c5-91f9-92af9d6425d4}" />
+								<instanceReference instanceId="{85370f07-b91e-4649-a663-ca21afc8be0f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<!-- [2019] [Nissan] [Altima] '(' [Luxury Sedan] ')' -->
+								<instanceReference instanceId="{871202f8-538b-4372-a9b3-c7e52e8ca35b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class.has summary Report Field -->
+							<targetInstances>
+								<!-- Vehicle Year -->
+								<instanceReference instanceId="{8d31930a-0c88-4f2b-bf6b-37d19d5254f8}" />
+								<!-- Vehicle Manufacturer -->
+								<instanceReference instanceId="{4cc264c4-36ae-49b1-9aa4-3d23551d1721}" />
+								<!-- Vehicle Permit -->
+								<instanceReference instanceId="{cc7cd372-7030-426f-a980-0663432fc811}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<!-- Class `Class`.has Task `Redirect Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{16D35AE0-5F0A-4D06-A14A-8D08E85BFA37}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}">
+							<!-- Class `Class`.has default Task `View Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{2BAC6373-6534-4EC3-AB2A-BA85E6CF0B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{e6b2e135-3a4a-4e9b-90d6-7ba0cfb66a6b}" classInstanceId="&IDC_ReportObject;">
+					<translations>
+						<translation relationshipInstanceId="{0a630a62-7123-42be-8ee0-021862c76f04}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Vehículo" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

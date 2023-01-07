@@ -52,10 +52,7 @@ namespace UniversalEditor.Plugins.Mocha.DataFormats.MochaBinary.Slick
 			Reader reader = Accessor.Reader;
 			string signature = reader.ReadFixedLengthString(8);
 			if (!signature.Equals("slick!\0\0"))
-			{
-				Console.Error.WriteLine("expected 'slick!\\0\\0', got '{0}'", signature);
-				throw new InvalidDataFormatException();
-			}
+				throw new InvalidDataFormatException("");
 
 			float version = reader.ReadSingle();
 			if (version != 1.0f)

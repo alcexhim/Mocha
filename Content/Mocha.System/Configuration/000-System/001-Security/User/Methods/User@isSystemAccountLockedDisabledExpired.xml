@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  User.xml - XML definition for the initial Mocha `User` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schemas.alcetech.net/Mocha/schema.xsd">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{6677609f-e971-4449-84d7-442f2ea6448d}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{949c14c4-a914-4d07-b3f0-06dd0c711ada}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<method id="{949c14c4-a914-4d07-b3f0-06dd0c711ada}" type="conditionalSelectAttribute" verb="is" name="System Account Locked or Disabled or Expired">
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="System Account Locked or Disabled or Expired" />
+							</translationValues>
+						</translation>
+					</translations>
+					<cases>
+						<case id="{557feda3-31bd-4511-969a-bdb750c659a2}" useAnyCondition="true" returnAttributeMethodBindingId="{bdd5a5e8-d584-4e67-b081-a3758ea0d6c8}">
+							<!-- User is Locked -->
+							<trueConditions>
+								<!-- User@is Account Locked -->
+								<instanceReference instanceId="{2a842498-2c6c-405a-a167-bf12f5455e1c}" />
+								<!-- User@is Account Disabled -->
+								<instanceReference instanceId="{bf9478bb-8b5f-4cce-8a5f-27fd03aa4697}" />
+								<!-- User@is Account Expired -->
+								<!-- <instanceReference instanceId="{}" /> -->
+							</trueConditions>
+							<falseConditions>
+							</falseConditions>
+						</case>
+						<case id="{4f02e95d-7acc-4e28-b0b8-00cb11935de2}">
+							<!-- Default Case, returns empty -->
+						</case>
+					</cases>
+					<relationships>
+						<relationship relationshipInstanceId="{2978238f-7cb0-4ba3-8c6f-473df782cfef}">
+							<!-- Evaluate Boolean Expression Method.loop on Instance Set -->
+							<targetInstances>
+								<instanceReference instanceId="{a476372a-24e7-41d1-9a21-ba241b1a5067}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{43854823-5d45-4a2a-b1f8-8f73611ce1ed}">
+							<!--
+								SAC: Conditional Select Attribute Method
+								
+								Case:
+									True Conditions: User@is Account Locked
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								
+								Case:
+									True Conditions: User@is Account Disabled
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								
+								Case:
+									True Conditions: User@is Account Expired
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								
+								Case:
+									True Conditions:
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get False
+							-->
+							<!-- Conditional Method.has Conditional Method Case -->
+							<targetInstances>
+								<!--
+									True Conditions: User@is Account Locked
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								-->
+								<instanceReference instanceId="" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{6677609f-e971-4449-84d7-442f2ea6448d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_User;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</method>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

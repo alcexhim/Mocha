@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  LoginPage.xml - XML definition for the initial Mocha `Login Page` system page
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}">
+			<instances>
+				<instance id="{ee8104a0-6b0c-4614-b93d-a6b5ce7d6189}" classInstanceId="&IDC_DetailPageComponent;">
+					<!-- Detail Page Component: -->
+					<relationships>
+						<relationship relationshipInstanceId="{818CFF50-7D42-43B2-B6A7-92C3C54D450D}">
+							<!-- Page Component.has Style -->
+							<targetInstances>
+								<instanceReference instanceId="{EED15C64-0279-4219-A920-E9635AA84468}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Detail_Page_Component__has_row_source__Method_Binding;">
+							<!-- Detail Page Component.has row source Method Binding -->
+							<targetInstances>
+								<!-- Report@get Instances for Data Source -->
+								<instanceReference instanceId="" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Detail_Page_Component__has_column_source__Method_Binding;">
+							<targetInstances>
+								<!-- Report@get Report Columns -->
+								<instanceReference instanceId="{dc583713-38cd-4c8f-9994-ac9be4c93a41}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{aa3b58db-b05a-4bf1-bee9-a4a8e889cfaa}" classInstanceId="&IDC_Page;">
+					<integrationIDs>
+						<integrationID name="PageName" value="ReportPage" />
+					</integrationIDs>
+					<translations>
+						<translation relationshipInstanceId="{7BE6522A-4BE8-4CD3-8701-C8353F7DF630}">
+							<!-- Page.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Page" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{24F6C596-D77D-4754-B023-00321DEBA924}">
+							<!-- Page.has Page Component -->
+							<targetInstances>
+								<instanceReference instanceId="{ee8104a0-6b0c-4614-b93d-a6b5ce7d6189}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{15199c49-9595-4288-846d-13b0ad5dcd4b}">
+							<!-- Securable Object.secured by domains from Method -->
+							<targetInstances>
+								<!-- Anyone: {01a86f06-9f1e-45ce-ad0b-24655baa936a} -->
+								<!-- Authenticated Users: {843dcb86-be54-4c81-9ff7-8235215623ba} -->
+								
+								<!-- Security Domain@get Authenticated Users instance -->
+								<instanceReference instanceId="{f9d4f21d-2b2b-4002-b99d-7b30d4e67c6d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<attributeValues>
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="report" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,5 +1,5 @@
 ﻿//
-//  MyClass.cs
+//  Program.cs - main entry point for the ZeQuaL compiler (zq)
 //
 //  Author:
 //       Michael Becker <alcexhim@gmail.com>
@@ -20,6 +20,7 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Collections.Generic;
+using Mocha.Core;
 using UniversalEditor;
 using UniversalEditor.Accessors;
 using UniversalEditor.Plugins.Mocha.DataFormats.MochaBinary;
@@ -54,6 +55,8 @@ namespace Mocha.Compiler
 				}
 			}
 
+			listFileNames.Sort();
+
 			MochaClassLibraryObjectModel mcl = new MochaClassLibraryObjectModel();
 			MochaBinaryDataFormat mcx = new MochaBinaryDataFormat();
 			MochaXMLDataFormat xml = new MochaXMLDataFormat();
@@ -63,6 +66,12 @@ namespace Mocha.Compiler
 			for (int i = 0; i < listFileNames.Count; i++)
 			{
 				Console.Error.WriteLine("reading {0}", listFileNames[i]);
+
+				if (!System.IO.File.Exists(listFileNames[i]))
+				{
+					MBS.Framework.ConsoleExtensions.LogMSBuildMessage(MBS.Framework.MessageSeverity.Error, "File not found", "MCX0003", listFileNames[i]);
+					continue;
+				}
 
 				MochaClassLibraryObjectModel mcl1 = new MochaClassLibraryObjectModel();
 				FileAccessor fain = new FileAccessor(listFileNames[i]);
@@ -81,16 +90,114 @@ namespace Mocha.Compiler
 				}
 			}
 
+			ZqLinkRelationships(mcl);
+
 			Console.Error.WriteLine("wrote {0} libraries with {1} instances and {2} relationships total", mcl.Libraries.Count, totalInstances, totalRelationships);
 
-			string outputDir = System.IO.Path.GetDirectoryName(outputFileName);
-			if (!System.IO.Directory.Exists(outputDir))
+			/*
+			// LINKER SANITY CHECK
+			// we need to load all the referenced MCX libraries in a testing
+			// environment and check MCX relationships for existing instances
+			foreach (MochaLibrary library in mcl.Libraries)
 			{
-				System.IO.Directory.CreateDirectory(outputDir);
+				CheckInstancesForMochaStore(mcl, library);
 			}
+			foreach (MochaTenant tenant in mcl.Tenants)
+			{
+				CheckInstancesForMochaStore(mcl, tenant);
+			}
+			*/
 
 			FileAccessor faout = new FileAccessor(outputFileName, true, true);
 			Document.Save(mcl, mcx, faout);
+		}
+
+		private static void ZqLinkRelationships(MochaClassLibraryObjectModel mcl)
+		{
+			for (int i = 0; i < mcl.Libraries.Count; i++)
+			{
+				ZqLinkRelationships(mcl, mcl.Libraries[i]);
+			}
+			for (int i = 0; i < mcl.Tenants.Count; i++)
+			{
+				ZqLinkRelationships(mcl, mcl.Tenants[i]);
+			}
+		}
+		private static void ZqLinkRelationships(MochaClassLibraryObjectModel mcl, IMochaStore store)
+		{
+			for (int j = 0; j < store.Relationships.Count; j++)
+			{
+				MochaInstance instRel = mcl.FindInstance(store.Relationships[j].RelationshipInstanceID);
+				if (instRel != null)
+				{
+					MochaRelationship relSiblingRel = mcl.FindRelationship(new RelationshipKey(instRel.ID, KnownRelationshipGuids.Relationship__has_sibling__Relationship));
+					if (relSiblingRel != null)
+					{
+						MochaInstance instSibling = mcl.FindInstance(relSiblingRel.DestinationInstanceIDs[0]);
+						if (instSibling != null)
+						{
+							for (int k = 0; k < store.Relationships[j].DestinationInstanceIDs.Count; k++)
+							{
+								RelationshipKey rkSibling = new RelationshipKey(store.Relationships[j].DestinationInstanceIDs[k], instSibling.ID);
+								MochaRelationship relSibling = store.Relationships[rkSibling];
+								if (relSibling == null)
+								{
+									Console.Error.WriteLine("zq2: linking relationship {0}", instSibling.ID.ToString("B"));
+									relSibling = new MochaRelationship() { SourceInstanceID = store.Relationships[j].DestinationInstanceIDs[k], RelationshipInstanceID = instSibling.ID };
+									store.Relationships.Add(relSibling);
+								}
+
+								if (!relSibling.DestinationInstanceIDs.Contains(store.Relationships[j].SourceInstanceID))
+								{
+									relSibling.DestinationInstanceIDs.Add(store.Relationships[j].SourceInstanceID);
+								}
+							}
+						}
+						else
+						{
+							Console.Error.WriteLine("zq2: no sibling relationship '{0}' found", relSiblingRel.DestinationInstanceIDs[0].ToString("B"));
+						}
+					}
+				}
+			}
+		}
+
+		private static void CheckInstancesForMochaStore(MochaClassLibraryObjectModel mcl, IMochaStore library)
+		{
+			foreach (MochaRelationship rel in library.Relationships)
+			{
+				if (FindInstance(mcl, library, rel.SourceInstanceID) == null)
+				{
+					MBS.Framework.ConsoleExtensions.LogMSBuildMessage(MBS.Framework.MessageSeverity.Error, String.Format("relationship references nonexistent sourceInstanceId '{0}'", rel.SourceInstanceID));
+				}
+				if (FindInstance(mcl, library, rel.RelationshipInstanceID) == null)
+				{
+					MBS.Framework.ConsoleExtensions.LogMSBuildMessage(MBS.Framework.MessageSeverity.Error, String.Format("relationship references nonexistent relationshipInstanceId '{0}'", rel.RelationshipInstanceID));
+				}
+				foreach (Guid id in rel.DestinationInstanceIDs)
+				{
+					if (FindInstance(mcl, library, id) == null)
+					{
+						MBS.Framework.ConsoleExtensions.LogMSBuildMessage(MBS.Framework.MessageSeverity.Error, String.Format("relationship references nonexistent target instanceReference '{0}'", id));
+					}
+				}
+			}
+		}
+
+		private static MochaInstance FindInstance(MochaClassLibraryObjectModel mcl, IMochaStore store, Guid id)
+		{
+			MochaInstance inst = store.FindInstance(id);
+			if (inst != null)
+			{
+				return inst;
+			}
+			foreach (Guid libraryId in store.LibraryReferences)
+			{
+				inst = mcl.Libraries[libraryId].FindInstance(id);
+				if (inst != null)
+					return inst;
+			}
+			return null;
 		}
 	}
 }

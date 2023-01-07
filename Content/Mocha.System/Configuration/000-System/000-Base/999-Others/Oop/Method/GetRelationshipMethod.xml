@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  GetAttributeMethod.xml - gets the value of the given Attribute on the current Instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{321581d6-60c1-4547-8344-9d5bda027adc}"  classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_GetRelationshipMethod;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Relationship;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{d2413823-0f43-4310-a558-926d3c57f60b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{d2413823-0f43-4310-a558-926d3c57f60b}" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Relationship;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_GetRelationshipMethod;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{321581d6-60c1-4547-8344-9d5bda027adc}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_GetRelationshipMethod;" superClassId="&IDC_Method;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="GR" />
+					</attributeValues>
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="GR - Get Relationship Method" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{53284981-9811-488a-94fe-bc625a260a0b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{a7ae3a89-0cbb-4ecc-b364-444cccabb3f2}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- for GR: Class.has sub Class -->
+					<!-- Assigns to Parm: Relationship -->
+					<!-- Assigns from Work Data: Relationship: %IDC_Class% -->
+					
+					<!-- Conditions: None -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{1e924042-f6e9-4884-997a-e755f97d2966}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{1e924042-f6e9-4884-997a-e755f97d2966}" classInstanceId="&IDC_GetRelationshipMethod;">
+					<!-- GR - Get Relationship Method: Class.has sub Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{321581d6-60c1-4547-8344-9d5bda027adc}">
+							<targetInstances>
+								<!-- Class.has sub Class -->
+								<instanceReference instanceId="{C14BC80D-879C-4E6F-9123-E8DFB13F4666}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<!-- Method.has Method Binding return instance set method binding [rsmb] -->
+							<targetInstances>
+								<instanceReference instanceId="{a7ae3a89-0cbb-4ecc-b364-444cccabb3f2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+
+			</instances>
+		</library>
+	</libraries>
+</mocha>

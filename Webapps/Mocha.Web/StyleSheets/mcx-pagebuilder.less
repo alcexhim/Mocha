@@ -1,0 +1,81 @@
+﻿div.mcx-pagebuilder-placeholder
+{
+	border: dashed;
+	border-radius: 8px;
+	padding: 16px;
+	background-color: #ececec;
+	color: #03a;
+	border-color: #aaa;
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	user-select: none;
+	&:hover
+	{
+		background-color: #ffffff;
+		cursor: pointer;
+	}
+	&::before
+	{
+		content: "Click or tap to add PageBuilder component";
+		font-size: 10pt;
+		font-weight: normal;
+		color: #aaaaaa;
+		position: absolute;
+		top: 8px;
+		left: 8px;
+	}
+}
+
+div.mcx-pagebuilder-wrapper
+{
+	border: solid 1px transparent;
+	position: relative;
+	
+	&> div.mcx-pagebuilder-toolbar
+	{
+		background: #33aacc; /* rgba(51, 170, 204, 0.5); */
+		color: #ffffff;
+		padding: 8px;
+		visibility: hidden;
+		z-index: 1;
+		position: absolute;
+		left: 0px;
+		top: -40px;
+		right: 0px;
+		height: 24px;
+		&> div.mcx-pagebuilder-item-title
+		{
+			&> div.mcx-pagebuilder-item-instance-title, &> div.mcx-pagebuilder-item-instance-type, &> div.mcx-pagebuilder-item-controlbox
+			{
+				display: inline-block;
+			}
+			&> div.mcx-pagebuilder-item-instance-title
+			{
+				font-weight: bold;
+				padding-right: 16px;
+			}
+			&> div.mcx-pagebuilder-item-controlbox
+			{
+				position: absolute;
+				right: 8px;
+				
+				&> a.uwt-button
+				{
+					width: 24px;
+					padding: 4px;
+					min-width: unset;
+				}
+			}
+		}
+	}
+	&:hover
+	{
+		border-color: #3ac;
+		&> div.mcx-pagebuilder-toolbar
+		{
+			visibility: visible;
+		}
+	}
+}

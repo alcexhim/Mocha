@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{4e15d646-ee8c-4129-9663-b70d80116901}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Element:Common:Definition Subedit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Element Definition" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="&IDI_Module_MochaBaseSystem;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{a7a9ce35-02ee-4b58-a4e9-6520267ed393}" classInstanceId="&IDC_ElementContent;">
+					<!-- Name -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- For Element -->
+							<targetInstances>
+								<!-- Element:Common:Definition Subedit -->
+								<instanceReference instanceId="{4e15d646-ee8c-4129-9663-b70d80116901}" />
+							</targetInstances>
+						</relationship>
+						<!-- Assigns to Parm: Name (Translation) -->
+					</relationships>
+				</instance>
+				<instance id="{27659270-006a-4989-8384-e5ee381450b5}" classInstanceId="&IDC_ElementContent;">
+					<!-- Label -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="b" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<targetInstances>
+								<instanceReference instanceId="{4e15d646-ee8c-4129-9663-b70d80116901}" />
+							</targetInstances>
+						</relationship>
+						<!-- Assigns to Parm: Label (Translation) -->
+					</relationships>
+				</instance>
+				<instance id="{ea999916-049b-4cc5-85e5-5e686aa21acf}" classInstanceId="&IDC_ElementContent;">
+					<!-- Module -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="c" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<targetInstances>
+								<instanceReference instanceId="{4e15d646-ee8c-4129-9663-b70d80116901}" />
+							</targetInstances>
+						</relationship>
+						<!-- Assigns to Parm: Module (Module) -->
+					</relationships>
+				</instance>
+				<instance id="{6cb5b3b7-b1fd-4cb9-93c3-f21a86244b5a}" classInstanceId="&IDC_ElementContent;">
+					<!-- Namespace -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="d" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<targetInstances>
+								<instanceReference instanceId="{4e15d646-ee8c-4129-9663-b70d80116901}" />
+							</targetInstances>
+						</relationship>
+						<!-- Assigns to Parm: Namespace (Namespace) -->
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

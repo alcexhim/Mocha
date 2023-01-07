@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Edit Class.xml - XML definition for the initial Mocha `Edit Class` system task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{2558D152-E696-469E-B636-8C67CF052FED}" classInstanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}">
+					<!-- Instance Prompt: Class for Edit Class -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{D5BD754B-F401-4FD8-A707-82684E7E25F0}">
+							<!-- Instance Prompt.has valid Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{E228B80D-42DB-41F6-BC50-57B48B05D6C9}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Condition -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Condition" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{73471769-5445-4EF4-ADFA-3E08DE139A3D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{2EC2BC2E-9574-434C-9B5C-C86975B770A0}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Condition -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Target Method" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{EE7A3049-8E09-410C-84CB-C2C0D652CF40}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D7AF7C3F-5975-4F40-8273-E3E7D330DDDA}" classInstanceId="{5EBA7BD6-BA0A-45B2-835C-C92489FD7E74}">
+					<!-- Summary Page Component: -->
+					<relationships>
+						<relationship relationshipInstanceId="{39B8A6F3-45F9-48C7-8175-3B9A79E8ACA0}">
+							<!-- Summary Page Component.has target Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+								<instanceReference instanceId="&IDA_Abstract;" />
+								<instanceReference instanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{C22BD524-1E63-4015-88C5-DB2E249B9BDE}" classInstanceId="&IDC_DetailPageComponent;">
+					<!-- Detail Page Component: -->
+					<relationships>
+						<relationship relationshipInstanceId="{54FBD056-0BD4-44F4-921C-11FB0C77996E}">
+							<!-- Detail Page Component.has target Relationship -->
+							<targetInstances>
+								<!-- Class.has Attribute (Relationship) -->
+								<instanceReference instanceId="&IDR_Class__has__Attribute;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{1540634D-EB44-48F8-88B8-17B7DCBBD006}">
+							<!-- Detail Page Component.has Report Field -->
+							<targetInstances>
+								<!-- Attribute -->
+								<instanceReference instanceId="{9DA34BD8-AEC3-4CA0-B0B0-6E9F65595B2A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2913383C-6289-4452-A3E0-CBD30C0D3DE0}" classInstanceId="{E52B02D7-895C-4642-9B03-EB0232868190}">
+					<!-- Tab Container Page Component: -->
+					<relationships>
+						<relationship relationshipInstanceId="{5D22EC45-9E6B-4B77-B79A-E59AEBAECFB9}">
+							<!-- Tab Container Page Component.has Tab Container Tab -->
+							<targetInstances>
+								<instanceReference instanceId="{C22DD3C1-3D81-4430-A3C4-2DD9607619E2}" />
+								<instanceReference instanceId="{9C0705AD-07D0-4D06-A132-93987B966CF0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{C22DD3C1-3D81-4430-A3C4-2DD9607619E2}" classInstanceId="{35A690E0-2989-4ABE-B82B-2564E65584ED}">
+					<!-- Tab Container Tab: General -->
+					<translations>
+						<translation relationshipInstanceId="{447375EF-2FF6-4869-B9C8-0523B5123430}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="General" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{CB7B8162-1C9E-4E72-BBB8-C1C37CA69CD5}">
+							<!-- Container Page Component.has Page Component -->
+							<targetInstances>
+								<instanceReference instanceId="{D7AF7C3F-5975-4F40-8273-E3E7D330DDDA}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{9C0705AD-07D0-4D06-A132-93987B966CF0}" classInstanceId="{35A690E0-2989-4ABE-B82B-2564E65584ED}">
+					<!-- Tab Container Tab: General -->
+					<translations>
+						<translation relationshipInstanceId="{447375EF-2FF6-4869-B9C8-0523B5123430}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Attributes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{CB7B8162-1C9E-4E72-BBB8-C1C37CA69CD5}">
+							<!-- Container Page Component.has Page Component -->
+							<targetInstances>
+								<instanceReference instanceId="{C22BD524-1E63-4015-88C5-DB2E249B9BDE}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5EE8BE76-41AD-42C5-9DD7-4E55C482EAAF}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<!-- UI Task: Edit Class -->
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<!-- UI Task.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Edit Class" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<!-- UI Task.has instructions Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Edits a Class" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Prompt -->
+							<targetInstances>
+								<!-- Class -->
+								<instanceReference instanceId="{2558D152-E696-469E-B636-8C67CF052FED}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D2949AF7-249A-4FFB-9A54-252CD9D06C51}">
+							<!-- UI Task.has Page Component -->
+							<targetInstances>
+								<instanceReference instanceId="{2913383C-6289-4452-A3E0-CBD30C0D3DE0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

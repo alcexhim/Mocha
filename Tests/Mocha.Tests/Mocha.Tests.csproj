@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\NUnit.3.13.3\build\NUnit.props" Condition="Exists('..\..\packages\NUnit.3.13.3\build\NUnit.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -27,7 +28,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.3.13.3\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -36,11 +37,8 @@
     <Compile Include="Properties\Resources.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Libraries\Mocha.Core\Mocha.Core.csproj">
-      <Project>{F16FA112-4CEB-4583-82F8-4EAD7F6B7F10}</Project>
+      <Project>{8D3211A6-B2D6-4A26-ABE3-5B57636A4196}</Project>
       <Name>Mocha.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Libraries\UniversalEditor.Plugins.Mocha\UniversalEditor.Plugins.Mocha.csproj">
@@ -55,6 +53,10 @@
       <Project>{2D4737E6-6D95-408A-90DB-8DFF38147E85}</Project>
       <Name>UniversalEditor.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.OMS\Mocha.OMS.csproj">
+      <Project>{8588928F-2868-4248-8993-533307A05C0C}</Project>
+      <Name>Mocha.OMS</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
@@ -62,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources\Mocha.Core_v1.0.mcl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

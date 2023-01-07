@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{aca29baa-f5eb-4ba3-a84b-1bcd806dda4c}" classInstanceId="{399d99a2-499e-400f-bcd2-22cdde735683}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="210 West 4th Street" />
+						<attributeValue attributeInstanceId="{8794300f-927c-4d37-bef4-20798932fd43}" value="210" />
+						<attributeValue attributeInstanceId="{9fd5afd8-7112-41f9-aae0-a812dfc4777a}" value="4th" />
+						
+						<!-- Latitude -->
+						<attributeValue attributeInstanceId="{9fefab52-11ce-44f5-9639-57f0d3a53a65}" value="1.0000347582934221" />
+						<!-- Longitude -->
+						<attributeValue attributeInstanceId="{49cff7cc-b740-4dec-a664-04d9e45c2756}" value="1.0000347582934221" />
+						<!-- Altitude -->
+						<attributeValue attributeInstanceId="{ba58e371-1f33-4623-9452-5a3d8be64dcf}" value="1.0000347582934221" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{d694a883-a639-46bb-a4f1-4d3d4b90cab4}">
+							<targetInstances>
+								<!-- Number -->
+								<instanceReference instanceId="{cf918743-9588-4930-82e7-e2b1e43ab1e7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{ae6e707f-c4cf-48e8-a994-7e2c4f5737e8}">
+							<!-- Location.enclosed by Location -->
+							<targetInstances>
+								<instanceReference instanceId="{7938e0ac-570a-4fbc-ae37-9062d437882c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{79ff3961-3543-4289-a761-fda0cd7da721}">
+							<!-- Street Address.has Compass Direction -->
+							<targetInstances>
+								<!-- (none) -->
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{c7c3feea-44d5-4bfc-a7d5-21c346b8cc5c}">
+							<!-- Street Address.has Street Type -->
+							<targetInstances>
+								<!-- Street -->
+								<instanceReference instanceId="{f18f4566-55a7-463c-94be-1b450f9153c5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{7938e0ac-570a-4fbc-ae37-9062d437882c}" classInstanceId="{07313588-f837-4e8e-84e7-286a877b0ba9}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="4th Street" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{d694a883-a639-46bb-a4f1-4d3d4b90cab4}">
+							<targetInstances>
+								<!-- Street -->
+								<instanceReference instanceId="{93f253bf-d8b2-4cec-b6a5-b535dbc62d3d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{61d70a38-0620-485d-86bc-eab1d5c70f30}">
+							<!-- Location.has Compass Direction -->
+							<targetInstances>
+								<!-- West -->
+								<instanceReference instanceId="{56e49505-8fff-4190-a65f-e793460ae657}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{e121fcf7-da76-4935-baf5-9dcf9bad6f8d}">
+							<!-- Location.has Street Type -->
+							<targetInstances>
+								<!-- Street -->
+								<instanceReference instanceId="{f18f4566-55a7-463c-94be-1b450f9153c5}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{ae6e707f-c4cf-48e8-a994-7e2c4f5737e8}">
+							<!-- Location.enclosed by Location -->
+							<targetInstances>
+								<instanceReference instanceId="{4db4b9a6-442a-404c-aa39-eb64fc9d0c08}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

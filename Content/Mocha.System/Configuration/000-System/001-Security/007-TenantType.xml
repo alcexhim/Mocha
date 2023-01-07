@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Task.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{5670953C-7367-4065-9AC2-46555342DC72}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Tenant Type" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{B1DEEB97-FECC-413C-A199-BA583B8C0E5A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" />
+								<instanceReference instanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" />
+								<instanceReference instanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5535F488-6C8E-42BC-86A3-664D70411A2A}" classInstanceId="{5670953C-7367-4065-9AC2-46555342DC72}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" value="#85C744" />
+						<attributeValue attributeInstanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" value="#FFFFFF" />
+						<attributeValue attributeInstanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" value="false" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{79AAE09C-5690-471C-8442-1B230610456C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Production" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The production tenant type. Usually the only tenant type visible to regular users. Add more (such as production, development, sandbox, sandbox preview, implementation preview, implementation) as needed." />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{6A3767FD-6606-426F-B8D9-507B9FFE595C}" classInstanceId="{5670953C-7367-4065-9AC2-46555342DC72}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" value="#F1C40F" />
+						<attributeValue attributeInstanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" value="#FFFFFF" />
+						<attributeValue attributeInstanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" value="false" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{79AAE09C-5690-471C-8442-1B230610456C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Sandbox" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The sandbox tenant type. Usually used to create new features and modules before pushing them to production. Add more (such as production, development, sandbox, sandbox preview, implementation preview, implementation) as needed." />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{E860A64C-C156-49E7-80E5-E3BA3CE4D15D}" classInstanceId="{5670953C-7367-4065-9AC2-46555342DC72}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" value="#2BBCE0" />
+						<attributeValue attributeInstanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" value="#FFFFFF" />
+						<attributeValue attributeInstanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" value="false" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{79AAE09C-5690-471C-8442-1B230610456C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Implementation" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The implementation tenant type. Usually used to create new features and modules before pushing them to production. Add more (such as production, development, sandbox, sandbox preview, implementation preview, implementation) as needed." />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{B4F900F1-2C22-41FD-AAB9-7C956663256F}" classInstanceId="{5670953C-7367-4065-9AC2-46555342DC72}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" value="#E73C3C" />
+						<attributeValue attributeInstanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" value="#FFFFFF" />
+						<attributeValue attributeInstanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{79AAE09C-5690-471C-8442-1B230610456C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Development" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The development tenant type. Usually used to create new features and modules before pushing them to production. Add more (such as production, development, sandbox, sandbox preview, implementation preview, implementation) as needed." />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{716D4C16-040F-4EBB-A920-DDF88765A017}" classInstanceId="{5670953C-7367-4065-9AC2-46555342DC72}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" value="#E73C3C" />
+						<attributeValue attributeInstanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" value="#FFFFFF" />
+						<attributeValue attributeInstanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{79AAE09C-5690-471C-8442-1B230610456C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="MADI Internal Development" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The development tenant type. Usually used to create new features and modules before pushing them to production. Add more (such as production, development, sandbox, sandbox preview, implementation preview, implementation) as needed." />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{b225d85b-d1a2-4ce7-90bc-410f2d5c0a53}" classInstanceId="{5670953C-7367-4065-9AC2-46555342DC72}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" value="#E02BBC" />
+						<attributeValue attributeInstanceId="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" value="#FFFFFF" />
+						<attributeValue attributeInstanceId="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{79AAE09C-5690-471C-8442-1B230610456C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Sandbox Preview Preview" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The development tenant type. Usually used to create new features and modules before pushing them to production. Add more (such as production, development, sandbox, sandbox preview, implementation preview, implementation) as needed." />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{B817BE3B-D0AC-4A60-A98A-97F99E96CC89}" classInstanceId="&IDC_TextAttribute;">
+					<!-- Text Attribute: Background Color -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="BackgroundColor" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Background Color" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{BB4B6E0D-D9BA-403D-9E81-93E8F7FB31C8}" classInstanceId="&IDC_TextAttribute;">
+					<!-- Text Attribute: Foreground Color -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="ForegroundColor" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Foreground Color" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{BE5966A4-C4CA-49A6-B504-B6E8759F392D}" classInstanceId="&IDC_BooleanAttribute;">
+					<!-- Boolean Attribute: Display Version in Badge -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="DisplayVersionInBadge" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Display Version in Badge" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{53568BDE-3E4C-4094-B7EE-B5D346B4CD9C}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{79AAE09C-5690-471C-8442-1B230610456C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B1DEEB97-FECC-413C-A199-BA583B8C0E5A}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{53568BDE-3E4C-4094-B7EE-B5D346B4CD9C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{79AAE09C-5690-471C-8442-1B230610456C}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant Type.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{FBEAE730-6E4F-4EFB-83A2-3ACA02C1F947}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{FBEAE730-6E4F-4EFB-83A2-3ACA02C1F947}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Tenant Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{79AAE09C-5690-471C-8442-1B230610456C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant Type.has description Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has description" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F152D032-B059-4397-BF62-C3FF9C922043}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F152D032-B059-4397-BF62-C3FF9C922043}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.description for Tenant Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="description for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{5FBD0BB8-0296-498A-A3C3-07A458CE5792}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ReportColumn.xml - XML definition for the initial Mocha `Report Column` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{B9026910-7E91-4EE1-B5F2-D7B740614831}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Column.has Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportColumn;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{B1FF7805-2C61-45D4-AFAE-5161F14FA13F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{B1FF7805-2C61-45D4-AFAE-5161F14FA13F}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Field.for Report Column -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportColumn;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_ReportColumn;" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<!-- Class.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Column" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<instanceReference instanceId="{35007192-d0b7-42ad-924f-b90aeb0333db}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{35007192-d0b7-42ad-924f-b90aeb0333db}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{3a68c2dc-e044-40b6-b283-af2bf37dcee5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{3a68c2dc-e044-40b6-b283-af2bf37dcee5}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{16dae0e3-5cb7-4939-9dc7-c351003968ba}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{16dae0e3-5cb7-4939-9dc7-c351003968ba}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<!-- Report Column@get Report Field for Report Column parm -->
+								<instanceReference instanceId="{9ef13397-bf2c-4bef-8953-aee4f8f14c43}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9ef13397-bf2c-4bef-8953-aee4f8f14c43}" classInstanceId="&IDC_GetReferencedInstanceSetMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Field for Report Column parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>1	``````
+						<relationship relationshipInstanceId="{2978238f-7cb0-4ba3-8c6f-473df782cfef}">
+							<!-- Get Referenced Attribute Method.loop on Instance Set -->
+							<targetInstances>
+								<instanceReference instanceId="{a476372a-24e7-41d1-9a21-ba241b1a5067}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{6a65819e-c8cb-4575-9af8-ee221364049b}">
+							<!-- Get Referenced Instance Set Method.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Report_Column__has__Report_Field;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Vehicle -->
+								<instanceReference instanceId="&IDC_ReportColumn;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

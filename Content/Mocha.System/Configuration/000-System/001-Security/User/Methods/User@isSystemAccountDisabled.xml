@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  User.xml - XML definition for the initial Mocha `User` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schemas.alcetech.net/Mocha/schema.xsd">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{bf9478bb-8b5f-4cce-8a5f-27fd03aa4697}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{3cc2ddc1-1b1d-4e06-9c3d-c33b8ebc39e2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<method id="{3cc2ddc1-1b1d-4e06-9c3d-c33b8ebc39e2}" type="getAttribute" verb="is" name="System Account Disabled">
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="System Account Disabled" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5eca9b3f-be75-4f6e-8495-781480774833}">
+							<!-- Get Attribute Method.has Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{1833749a-523e-4417-89b8-4c437849fe26}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{bf9478bb-8b5f-4cce-8a5f-27fd03aa4697}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_User;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</method>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

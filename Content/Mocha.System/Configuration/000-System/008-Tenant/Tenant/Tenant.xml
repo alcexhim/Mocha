@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Tenant.xml - XML definition for the initial Mocha `Tenant` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{5D8CAF97-1E4C-495C-8C2D-1DFA26C74C13}" classInstanceId="&IDC_TextAttribute;">
+					<!-- Text Attribute: System Version -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="SystemVersion" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="System Version" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{BD8523CA-C003-4F7F-93F6-F4ABECDD1BBE}" classInstanceId="&IDC_TextAttribute;">
+					<!-- Text Attribute: MADI Revision -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="MADIRevision" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="MADI Revision" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{2AB66547-7C22-41C5-8620-53FC524CCEAF}" classInstanceId="{623565D5-5AEE-49ED-A5A9-0CFE670507BC}">
+					<!-- Instance Attribute String Component: `Name` -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{A294F77C-8A89-419E-B494-8BFCC80DB634}" value="Name" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{9FE564A4-53AE-45B4-8110-BF732164C683}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{2AB66547-7C22-41C5-8620-53FC524CCEAF}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{E94B6C9D-3307-4858-9726-F24B7DB21E2D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has Tenant Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{AA858424-859B-42B3-A76D-FDA986C83845}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{AA858424-859B-42B3-A76D-FDA986C83845}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has Tenant Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{E94B6C9D-3307-4858-9726-F24B7DB21E2D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4C399E80-ECA2-4A68-BFB4-26A5E6E97047}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has logo image File -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has logo image" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A6E61265-6681-4AA7-A183-BEDF27DC5CD8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{A6E61265-6681-4AA7-A183-BEDF27DC5CD8}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: File.logo image for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="logo image for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{4C399E80-ECA2-4A68-BFB4-26A5E6E97047}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{39B0D963-4BE0-49C8-BFA2-607051CB0101}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has background image File -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has background image" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F3E3CF84-8133-4B54-BE39-9EC2B6888BAE}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F3E3CF84-8133-4B54-BE39-9EC2B6888BAE}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: File.background image for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="background image for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{39B0D963-4BE0-49C8-BFA2-607051CB0101}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{CC4E65BD-7AAA-40DA-AECA-C607D7042CE3}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has icon image File -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has icon image" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{3B88A43F-2F9E-47A4-AD04-B096E2E5A735}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{3B88A43F-2F9E-47A4-AD04-B096E2E5A735}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: File.icon image for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="icon image for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{CC4E65BD-7AAA-40DA-AECA-C607D7042CE3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{3540c81c-b229-4eac-b9b5-9d4b4c6ad1eb}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has company logo image File -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has icon image" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{de61cfa1-52d2-435f-be9a-1ef0935d69b2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{de61cfa1-52d2-435f-be9a-1ef0935d69b2}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: File.company logo image for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="icon image for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `File` -->
+							<targetInstances>
+								<instanceReference instanceId="{5D081079-E136-406A-A728-7472937A6E5E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{3540c81c-b229-4eac-b9b5-9d4b4c6ad1eb}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A2CBF7C4-0D70-4DDB-BD28-660011DF1DA6}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has application Menu Item -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has application" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{4311C8CC-8CF6-4C24-95F7-21E2C37602A1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4311C8CC-8CF6-4C24-95F7-21E2C37602A1}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Menu Item.application for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has application" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A2CBF7C4-0D70-4DDB-BD28-660011DF1DA6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{471A3308-3A5E-4F27-967E-D88498068FA1}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has Dashboard -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Dashboard` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Dashboard;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{617D82EA-AD23-4446-BC30-FA7CC247D7BE}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{617D82EA-AD23-4446-BC30-FA7CC247D7BE}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Dashboard.for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Dashboard` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Dashboard;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{471A3308-3A5E-4F27-967E-D88498068FA1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{41D66ACB-AFDE-4B6F-892D-E66255F10DEB}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant.has login header Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has login header" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F1AD1C66-340C-44D6-B9DE-A62573D20048}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{F1AD1C66-340C-44D6-B9DE-A62573D20048}" classInstanceId="&IDC_Relationship;">
+					<!-- Translation.login header for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="login header for" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{41D66ACB-AFDE-4B6F-892D-E66255F10DEB}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A6203B6B-5BEB-4008-AE49-DB5E7DDBA45B}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant.has login footer Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has login footer" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{54DCAB4B-A74E-4597-8CD6-8895D33CAF6F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{54DCAB4B-A74E-4597-8CD6-8895D33CAF6F}" classInstanceId="&IDC_Relationship;">
+					<!-- Translation.login footer for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="login footer for" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A6203B6B-5BEB-4008-AE49-DB5E7DDBA45B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{76683437-67ba-46d9-a5e7-2945be635345}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant.has application title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has application title" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{f4cc67df-97b7-4f79-b719-72902e685804}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{f4cc67df-97b7-4f79-b719-72902e685804}" classInstanceId="&IDC_Relationship;">
+					<!-- Translation.application title for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="login footer for" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{76683437-67ba-46d9-a5e7-2945be635345}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{CE4EA0D6-955D-4894-BACB-549B76D38E26}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant.has Data Center -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Data Center` -->
+							<targetInstances>
+								<instanceReference instanceId="{7E3C9A3A-23D7-4811-9711-EE0BF92F1F63}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{2374530A-8C7E-4A1C-8AFD-08A6805F89E5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2374530A-8C7E-4A1C-8AFD-08A6805F89E5}" classInstanceId="&IDC_Relationship;">
+					<!-- Data Center.for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Data Center` -->
+							<targetInstances>
+								<instanceReference instanceId="{7E3C9A3A-23D7-4811-9711-EE0BF92F1F63}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{CE4EA0D6-955D-4894-BACB-549B76D38E26}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{D3963A58-BA8F-4CB4-AB0F-6B51C3852F26}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant.has Tenant Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{DD52A3F3-7312-4492-BF89-F4434CB439D0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{DD52A3F3-7312-4492-BF89-F4434CB439D0}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant Type.for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{5670953C-7367-4065-9AC2-46555342DC72}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D3963A58-BA8F-4CB4-AB0F-6B51C3852F26}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D62DFB9F-48D5-4697-AAAD-1CAD0EA7ECFA}" classInstanceId="&IDC_Relationship;">
+					<!-- Tenant.has sidebar Menu Item -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has sidebar" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{4E0A8C3D-5D10-44E5-A6D7-31F262711E01}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4E0A8C3D-5D10-44E5-A6D7-31F262711E01}" classInstanceId="&IDC_Relationship;">
+					<!-- Menu Item.sidebar for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="sidebar for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D62DFB9F-48D5-4697-AAAD-1CAD0EA7ECFA}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_Tenant;" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Tenant" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+						<relationships>
+							<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+								<targetInstances>
+									<!-- `Name` [Text Attribute] -->
+									<instanceReference instanceId="&IDA_Name;" />
+									<!-- `Start Date` [Date Attribute] -->
+									<instanceReference instanceId="&IDA_StartDate;" />
+									<!-- `End Date` [Date Attribute] -->
+									<instanceReference instanceId="&IDA_EndDate;" />
+									<!-- `Default Redirect URL` [Text Attribute] -->
+									<instanceReference instanceId="{A1D39058-E934-4DBC-9179-EFAECFDD8B48}" />
+								</targetInstances>
+							</relationship>
+							<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+								<!-- Class.instance labeled by String -->
+								<targetInstances>
+									<instanceReference instanceId="{9FE564A4-53AE-45B4-8110-BF732164C683}" />
+								</targetInstances>
+							</relationship>
+							<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+								<!-- Class.has summary Report Field -->
+								<targetInstances>
+									<!-- `Tenant Name` -->
+									<instanceReference instanceId="{AB0B6DFB-A03F-4F2B-9082-2D639C110AE6}" />
+								</targetInstances>
+							</relationship>
+							<relationship relationshipInstanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}">
+								<!-- Class.has default Task -->
+								<targetInstances>
+									<!-- `View Tenant` -->
+									<instanceReference instanceId="{4F1876F1-DBE0-48D3-B046-54766280ECB4}" />
+								</targetInstances>
+							</relationship>
+						</relationships>
+					</translations>
+				</instance>
+				
+				
+				<instance id="{cdd743cb-c74a-4671-9922-652c7db9f2d8}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Tenant.has mega Menu -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has mega" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Menu` -->
+							<targetInstances>
+								<instanceReference instanceId="{06E7806D-9384-4EA5-B5D1-350A51552773}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{c038b83a-b862-43ca-9395-94348812a8ad}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{c038b83a-b862-43ca-9395-94348812a8ad}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Menu.mega for Tenant -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="mega for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Menu` -->
+							<targetInstances>
+								<instanceReference instanceId="{06E7806D-9384-4EA5-B5D1-350A51552773}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Tenant` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Tenant;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{cdd743cb-c74a-4671-9922-652c7db9f2d8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

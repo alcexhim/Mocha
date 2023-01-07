@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ExtractSingleInstanceStringComponent.xml - XML definition for the Mocha `Extract Single Instance String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{5E499753-F50F-4A9E-BF53-DC013820499C}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Extract Single Instance String Component.has Relationship -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Extract Single Instance String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ExtractSingleInstanceStringComponent;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Relationship` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Relationship;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<!-- TODO: BE VERY CAREFUL to make sure this doesn't result in an infinite loop while autogenerating sibling relationships -->
+								<instanceReference instanceId="{B0111132-8721-405C-967B-0BEFA92CFE9A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{B0111132-8721-405C-967B-0BEFA92CFE9A}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Relationship.for Extract Single Instance String Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Relationship` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Relationship;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Extract Single Instance String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ExtractSingleInstanceStringComponent;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<!-- TODO: BE VERY CAREFUL to make sure this doesn't result in an infinite loop while autogenerating sibling relationships -->
+								<instanceReference instanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="&IDC_ExtractSingleInstanceStringComponent;" superClassId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Extract Single Instance String Component`.instance labeled by String -->
+							<targetInstances>
+								<!-- <instanceReference instanceId="{7741ef6b-4ccd-4910-9259-69ac7cf0f20c}" /> -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Extract Single Instance String Component" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{7741ef6b-4ccd-4910-9259-69ac7cf0f20c}" classInstanceId="&IDC_String;">
+					<!-- get Name attribute -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- .has String component -->
+							<targetInstances>
+								<instanceReference instanceId="{f7222bb7-59a3-4cf3-a469-cab3bc386d11}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{E2F11C41-51F1-4DB2-A16F-C384267A8598}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<!-- TODO: BE VERY CAREFUL to make sure this doesn't result in an infinite loop while autogenerating sibling relationships -->
+								<instanceReference instanceId="&IDR_Class__has_title__Translation;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9DD1CDE1-6DAD-452D-9A07-9DE1CC32A396}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<!-- TODO: BE VERY CAREFUL to make sure this doesn't result in an infinite loop while autogenerating sibling relationships -->
+								<instanceReference instanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{7734AD93-8328-421B-BD78-E353EEFB0879}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<!-- TODO: BE VERY CAREFUL to make sure this doesn't result in an infinite loop while autogenerating sibling relationships -->
+								<instanceReference instanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

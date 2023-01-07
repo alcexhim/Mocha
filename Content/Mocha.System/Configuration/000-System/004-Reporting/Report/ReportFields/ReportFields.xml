@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Report.xml - XML definition for the initial Mocha `Report` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{dc583713-38cd-4c8f-9994-ac9be4c93a41}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{0660ed04-1a94-4b8c-94b7-0d76a1df920b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{0660ed04-1a94-4b8c-94b7-0d76a1df920b}" classInstanceId="&IDC_GetReferencedInstanceSetMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Columns for Report parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2978238f-7cb0-4ba3-8c6f-473df782cfef}">
+							<!-- Get Referenced Instance Set Method.loop on Instance Set -->
+							<targetInstances>
+								<instanceReference instanceId="{a476372a-24e7-41d1-9a21-ba241b1a5067}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{6a65819e-c8cb-4575-9af8-ee221364049b}">
+							<!-- Get Referenced Instance Set Method.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Report__has__Report_Column;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{98b35fa2-81b6-4436-ab4a-d6971e042076}" classInstanceId="&IDC_ReportField;">
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Fields" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<targetInstances>
+								<!-- `Report Field@get Report Object for Report Field parm (GRS)*P [rsmb]` -->
+								<instanceReference instanceId="{dc583713-38cd-4c8f-9994-ac9be4c93a41}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

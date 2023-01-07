@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond "%{REQUEST_FILENAME}" "!-f"
+RewriteCond "%{REQUEST_FILENAME}" "!-d"
+
+RewriteRule ^madi/authgwy/(.*)/login.htmld$ Login.aspx?tenantName=$1 [PT,L,QSA]
+RewriteRule ^(.*)/attachment/(.*)/(.*)$ Upload.aspx?tenantName=$1&vp=$1/attachment/$2/$3 [PT,L,QSA]
+

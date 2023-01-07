@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Person.xml - XML definition for the initial Mocha `Person` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}">
+			<instances>
+				<!-- Person -->
+				<instance id="{d3f2529d-6daf-4789-93da-8be5348d3aec}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Person" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<instanceReference instanceId="{2a6b369a-c65c-4200-94c1-f3aefe08c329}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Person`.has Attribute `Birth Moment` -->
+							<targetInstances>
+								<instanceReference instanceId="{ea8fcd9b-0aec-4738-85d7-fdf441bcd66e}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<!-- Class `Person`.has related Task -->
+							<targetInstances>
+								<!-- `Edit Personal Information` -->
+								<instanceReference instanceId="{949a4462-035d-4a50-a5b1-04988fd01cf9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<instanceReference instanceId="{88faa115-d556-4759-b2a0-6c4f7a522b31}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<!-- Class.instance labeled by Method 
+					
+						return Get Related Instance (This Instance).(Person.has Legal Name)
+					
+						(the Legal Name should have its own Instance Labeled By Method)
+					-->
+				</instance>
+			
+				<instance id="{2a6b369a-c65c-4200-94c1-f3aefe08c329}" classInstanceId="&IDC_String;">
+					<!-- Person @get Formatted Name from Person Name -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{416f02a2-fcad-4f0f-83e6-17165173ed57}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4b7b3923-5d44-4a24-9478-f84d235ccecd}" classInstanceId="&IDC_TaskCategory;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Person" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>s
+			</instances>
+		</library>
+	</libraries>
+</mocha>

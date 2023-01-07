@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  InstancePrompt.xml - XML definition for the Mocha `Instance Prompt` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}" superClassId="{EC889225-416A-4F73-B8D1-2A42B37AF43E}">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Instance Prompt" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Prompt`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{DB43F472-5DDA-4D6D-983E-929A06EF0112}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{06210C75-9093-4B3D-ACF2-124C84E95C2A}" classInstanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}">
+					<translations>
+						<!-- Prompt.has title Translation -->
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class Instance ID" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{D5BD754B-F401-4FD8-A707-82684E7E25F0}">
+							<!-- Instance Prompt.has valid Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}" superClassId="{9E1BC193-4B9A-4FEC-9807-A7059F4D8080}">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Instance Prompt Value" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{115847D3-5BBF-4BB6-BF0E-7C1A4484F617}" classInstanceId="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}">
+					<relationships>
+						<relationship relationshipInstanceId="{7CD62362-DDCE-4BFC-87B9-B5499B0BC141}">
+							<!-- Prompt Value.has Prompt -->
+							<targetInstances>
+								<instanceReference instanceId="{06210C75-9093-4B3D-ACF2-124C84E95C2A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{512B518E-A892-44AB-AC35-4E9DBCABFF0B}">
+							<!-- Instance Prompt Value.has Instance -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_StandardReport;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D5BD754B-F401-4FD8-A707-82684E7E25F0}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Instance Prompt.has valid Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has valid" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Instance Prompt` -->
+							<targetInstances>
+								<instanceReference instanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{9D7628CC-D888-4311-A5F7-6EEA17FF6A86}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{9D7628CC-D888-4311-A5F7-6EEA17FF6A86}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Class.valid for Instance Prompt -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="valid for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Instance Prompt` -->
+							<targetInstances>
+								<instanceReference instanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D5BD754B-F401-4FD8-A707-82684E7E25F0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{512B518E-A892-44AB-AC35-4E9DBCABFF0B}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Instance Prompt Value.has Instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Instance Prompt Value` -->
+							<targetInstances>
+								<instanceReference instanceId="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Instance;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{1DA962A0-1E0F-4603-9614-21C1B100EA5D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{1DA962A0-1E0F-4603-9614-21C1B100EA5D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Instance.for Instance Prompt Value -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Instance` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Instance;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Instance Prompt Value` -->
+							<targetInstances>
+								<instanceReference instanceId="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{512B518E-A892-44AB-AC35-4E9DBCABFF0B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  InsurancePolicy.xml - XML definition for the `Insurance Policy` class
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{986856d9-ade0-433e-9766-bbd8bd3b4ada}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<!-- Method.has Method Binding return instance set method binding [rsmb] -->
+							<targetInstances>
+								<instanceReference instanceId="{e18b9988-2e30-4c79-9069-1ca1c3999f76}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{e18b9988-2e30-4c79-9069-1ca1c3999f76}" classInstanceId="&IDC_GetAttributeMethod;">
+					<!-- Insurance Policy@get Expiration Date (GA - Get Attribute Method) -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Expiration Date" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5eca9b3f-be75-4f6e-8495-781480774833}">
+							<!-- Get Attribute Method.has Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="&IDA_EndDate;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Insurance Policx -->
+								<instanceReference instanceId="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{d9bedf9a-f488-423f-bf35-3ab2b6a57270}" classInstanceId="&IDC_ReportField;">
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Expiration Date" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<!-- Report Field.has source Method -->
+							<targetInstances>
+								<!-- Insurance Policy@get Expiration Date (GA) [ramb] -->
+								<instanceReference instanceId="{986856d9-ade0-433e-9766-bbd8bd3b4ada}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

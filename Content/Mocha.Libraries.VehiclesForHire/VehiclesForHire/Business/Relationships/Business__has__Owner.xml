@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Business__has__Location.xml - XML definition for the `Business.has Location` relationship
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<relationship id="{87089551-dd7f-4842-9d65-ad491d147b95}"
+					sourceClassId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}"
+					type="has owner"
+					destinationClassId="{d3f2529d-6daf-4789-93da-8be5348d3aec}"
+					singular="true"
+					siblingRelationshipId="{4de3f19a-23ac-4088-ab88-942a90c1a60f}" />
+				<relationship id="{4de3f19a-23ac-4088-ab88-942a90c1a60f}"
+					sourceClassId="{d3f2529d-6daf-4789-93da-8be5348d3aec}"
+					type="owner for"
+					destinationClassId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}"
+					siblingRelationshipId="{87089551-dd7f-4842-9d65-ad491d147b95}" />
+				
+				<!-- Get Relationship Methods -->
+				<instance id="{96bbbe1c-c589-4690-beb9-4bebbdd89536}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<!-- Method.has Method Binding return instance set method binding [rsmb] -->
+							<targetInstances>
+								<instanceReference instanceId="{5f5b9b3e-c6cb-419e-bfba-8ca5833a9fa5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{5f5b9b3e-c6cb-419e-bfba-8ca5833a9fa5}" classInstanceId="&IDC_GetRelationshipMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{321581d6-60c1-4547-8344-9d5bda027adc}">
+							<!-- GR Method. has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{87089551-dd7f-4842-9d65-ad491d147b95}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{96bbbe1c-c589-4690-beb9-4bebbdd89536}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{2d41ef15-c48d-455d-a1c8-2cdb3e063876}" classInstanceId="{818ed630-6b04-4a0e-9f82-7b9de27b941b}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{4e7f1a23-063b-4a1d-afba-4fbff0d04f2d}" value="A213B4" />
+						<attributeValue attributeInstanceId="{3d8784eb-49b3-42c5-91f9-92af9d6425d4}" value="2017" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{f437e2d0-9213-49e9-91ee-288684cad776}">
+							<!-- Vehicle.has Vehicle Type -->
+							<targetInstances>
+								<!-- LUXSED -->
+								<instanceReference instanceId="{80ab8015-56c8-4e42-a5df-f267d9a9ede3}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{10ae5c20-84c6-4f2d-9928-affb8421b1a4}">
+							<!-- Vehicle.has Vehicle Permit -->
+							<targetInstances>
+								<instanceReference instanceId="{22c3018b-447f-495d-92a2-660e039155fd}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{0117d53b-bc8f-4e6d-8ca9-eb8db7301a22}">
+							<!-- Vehicle.has Vehicle Manufacturer -->
+							<targetInstances>
+								<instanceReference instanceId="{22a725a0-3ede-4a55-a821-c130c2b51b04}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

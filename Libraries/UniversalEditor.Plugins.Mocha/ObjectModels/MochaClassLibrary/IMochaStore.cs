@@ -19,13 +19,17 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
+using System.Collections.Generic;
+
 namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 {
 	public interface IMochaStore
 	{
+		List<Guid> LibraryReferences { get; }
 		MochaInstance.MochaInstanceCollection Instances { get; }
 		MochaRelationship.MochaRelationshipCollection Relationships { get; }
 
 		Guid DefaultObjectSourceID { get; }
+		MochaInstance FindInstance(Guid id);
 	}
 }

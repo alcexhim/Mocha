@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  LoginDeviceType.xml - XML definition for the initial Mocha `Login Device Type` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!--
+					{92202d42-6862-409c-a36a-afde29fa4fa0}
+					{1d5e3195-0f24-42fc-a9a2-bc50ef0256b5}
+				-->
+				<instance id="{C1FCE2B8-93EA-4575-95A7-8D4C3527AF63}" superClassId="&IDC_Enumeration;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Login Device Type" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{74991048-7369-4C3C-8BCE-B371A385780C}" classInstanceId="{C1FCE2B8-93EA-4575-95A7-8D4C3527AF63}">
+					<translations>
+						<!-- Login Device Type.has title Translation -->
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Desktop" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{D794A86F-41F2-4908-A898-E1DD62ECCCA1}" classInstanceId="{C1FCE2B8-93EA-4575-95A7-8D4C3527AF63}">
+					<translations>
+						<!-- Login Device Type.has title Translation -->
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Phone" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{76F7F962-93A6-411A-A612-719286E47C50}" classInstanceId="{C1FCE2B8-93EA-4575-95A7-8D4C3527AF63}">
+					<translations>
+						<!-- Login Device Type.has title Translation -->
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Tablet" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

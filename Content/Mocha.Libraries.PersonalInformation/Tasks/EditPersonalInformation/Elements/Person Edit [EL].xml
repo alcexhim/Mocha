@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  View Business.xml - XML definition for the `View Business` task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}">
+			<instances>
+				
+				<instance id="{38cb7ed9-c57e-4061-ba17-88d196c28726}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Personal Information:Person Common:Person Edit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Element__has__Element_Content;">
+							<targetInstances>
+								<instanceReference instanceId="{54e5c4c9-9f9c-4766-ae5f-cd05d796735d}" />
+								<instanceReference instanceId="{46f1bbf0-cca0-4409-a37c-28fe496409d5}" />
+								<instanceReference instanceId="{2dac0b5b-677d-4c27-b753-81cc09e9e156}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<instanceReference instanceId="{3d11a1a9-0bc4-45a4-9a2e-f31b9d101c23}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{605f4890-e499-4247-bf6a-fd4472343de0}" classInstanceId="&IDC_ParameterAssignment;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_to__Parameter;">
+							<targetInstances>
+								<instanceReference instanceId="{b815803d-e125-42f2-992f-8954cc2d6d58}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_from__Method_Binding;">
+							<targetInstances>
+								<!--
+									Class@get Class (GSI)*P*S [rsmb]
+									================================
+									This Get Specific Instance Method returns the class, User Login.
+								-->
+								<instanceReference instanceId="{83fb4e27-1467-4798-b3e1-f97f814cfbbb}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{b815803d-e125-42f2-992f-8954cc2d6d58}" classInstanceId="&IDC_Parameter;">
+					<!-- Person for Person Edit -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Required;" value="true" />
+						<attributeValue attributeInstanceId="&IDA_Null;" value="false" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Person [CL]" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Parameter__has_data_type__Instance;">
+							<targetInstances>
+								<!-- Person -->
+								<instanceReference instanceId="{d3f2529d-6daf-4789-93da-8be5348d3aec}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{54e5c4c9-9f9c-4766-ae5f-cd05d796735d}" classInstanceId="&IDC_ElementContent;">
+					<!-- Person -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{38cb7ed9-c57e-4061-ba17-88d196c28726}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Person [CL] -->
+								<instanceReference instanceId="{d3f2529d-6daf-4789-93da-8be5348d3aec}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Parameter_Assignment;">
+							<targetInstances>
+								<instanceReference instanceId="{605f4890-e499-4247-bf6a-fd4472343de0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Display as Page Title -->
+								<instanceReference instanceId="{369335cf-4a3d-4349-9300-62bd72dafeb6}" />
+								<!-- Not Enterable -->
+								<instanceReference instanceId="{831e921b-5132-4b37-9303-da0994a0f828}" />
+								<!-- Submit Not Enterable -->
+								<instanceReference instanceId="{f480a1d6-cc9b-4606-bce1-d6757fa99bad}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{46f1bbf0-cca0-4409-a37c-28fe496409d5}" classInstanceId="&IDC_ElementContent;">
+					<!-- Business Subedit -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="b" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{38cb7ed9-c57e-4061-ba17-88d196c28726}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Person Subedit -->
+								<instanceReference instanceId="{0d4cd13e-d846-4cb7-bed6-e00e0a1ccdc8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Show Subelements Vertically -->
+								<instanceReference instanceId="{8bfd1ae2-1474-413d-b4dd-6cd4993080d1}" />
+								<!-- Singular -->
+								<instanceReference instanceId="{683b3cdb-2e69-468e-bb36-4bd62716542c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<!-- d0ea4db1-07d1-4bda-ab14-1fc8930f76fb -->
+				
+				<instance id="{2dac0b5b-677d-4c27-b753-81cc09e9e156}" classInstanceId="&IDC_ElementContent;">
+					<!-- Task Review Fragment -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="z" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{38cb7ed9-c57e-4061-ba17-88d196c28726}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Person Subedit -->
+								<instanceReference instanceId="{f5b2cabf-1a07-4c3b-847d-499ae537e43b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Initialize for Entry -->
+								<instanceReference instanceId="{59410ca4-8214-4b59-ba49-1565d0cf16c7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

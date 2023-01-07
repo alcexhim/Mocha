@@ -42,22 +42,8 @@
     <Compile Include="ObjectModels\MochaClassLibrary\MochaRelationship.cs" />
     <Compile Include="DataFormats\MochaBinary\MochaOpcode.cs" />
     <Compile Include="ObjectModels\MochaClassLibrary\MochaTenant.cs" />
-    <Compile Include="ObjectModels\MochaClassLibrary\MochaLibraryReference.cs" />
     <Compile Include="ObjectModels\MochaClassLibrary\IMochaStore.cs" />
     <Compile Include="DataFormats\MochaBinary\MochaInstanceFlags.cs" />
-    <Compile Include="OmsExtensions.cs" />
-    <Compile Include="RelationshipKey.cs" />
-    <Compile Include="ObjectModels\MochaTenantDefinition\MochaTenantDefinitionObjectModel.cs" />
-    <Compile Include="ObjectModels\MochaTenantDefinition\LibraryReference.cs" />
-    <Compile Include="DataFormats\MochaTenantDefinition\MochaTenantDefinitionDataFormat.cs" />
-    <Compile Include="XMLSchemas.cs" />
-    <Compile Include="ObjectModels\MochaTenantDefinition\Tenant.cs" />
-    <Compile Include="ObjectModels\MochaSnapshot\MochaSnapshotObjectModel.cs" />
-    <Compile Include="ObjectModels\MochaSnapshot\MochaSnapshotTransaction.cs" />
-    <Compile Include="ObjectModels\MochaSnapshot\MochaSnapshotTransactionOperation.cs" />
-    <Compile Include="ObjectModels\MochaSnapshot\TransactionOperations\MochaSnapshotAssignAttributeTransactionOperation.cs" />
-    <Compile Include="ObjectModels\MochaSnapshot\TransactionOperations\MochaSnapshotAssociateRelationshipTransactionOperation.cs" />
-    <Compile Include="ObjectModels\MochaSnapshot\TransactionOperations\MochaSnapshotCreateInstanceTransactionOperation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ObjectModels\" />
@@ -66,10 +52,6 @@
     <Folder Include="DataFormats\MochaBinary\" />
     <Folder Include="DataFormats\MochaXML\" />
     <Folder Include="DataFormats\MochaBinary\Slick\" />
-    <Folder Include="ObjectModels\MochaTenantDefinition\" />
-    <Folder Include="DataFormats\MochaTenantDefinition\" />
-    <Folder Include="ObjectModels\MochaSnapshot\" />
-    <Folder Include="ObjectModels\MochaSnapshot\TransactionOperations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Core\UniversalEditor.Core.csproj">
@@ -85,7 +67,7 @@
       <Name>MBS.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mocha.Core\Mocha.Core.csproj">
-      <Project>{F16FA112-4CEB-4583-82F8-4EAD7F6B7F10}</Project>
+      <Project>{8D3211A6-B2D6-4A26-ABE3-5B57636A4196}</Project>
       <Name>Mocha.Core</Name>
     </ProjectReference>
   </ItemGroup>

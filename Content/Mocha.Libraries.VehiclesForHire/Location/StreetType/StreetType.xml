@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Location.xml - defines a location with coordinates, naming, etc.
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				
+				<!-- Location.has Street Type -->
+				<relationship id="{e121fcf7-da76-4935-baf5-9dcf9bad6f8d}"
+					sourceClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					type="has"
+					destinationClassId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}"
+					siblingRelationshipId="{771bc3a1-102f-481e-8f2a-25e01e39da83}" />
+				
+				<!-- Street Type.for Location -->
+				<relationship id="{771bc3a1-102f-481e-8f2a-25e01e39da83}"
+					sourceClassId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}"
+					type="for"
+					destinationClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					siblingRelationshipId="{e121fcf7-da76-4935-baf5-9dcf9bad6f8d}" />
+				
+				<instance id="{443db9ce-901d-42c8-b28b-1f3a574705ef}" superClassId="&IDC_ReportObject;">
+					<translations>
+						<translation relationshipInstanceId="{0a630a62-7123-42be-8ee0-021862c76f04}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Street Type" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+
+				<instance id="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Street Type" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Abbreviation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<targetInstances>
+								<instanceReference instanceId="{7ff0f4b1-ee87-43d9-8cb8-880ce1fc88fd}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+
+				<instance id="{f18f4566-55a7-463c-94be-1b450f9153c5}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="St" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Street" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{9ba16b92-b65d-4717-a3f8-dcf29e30683a}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Wy" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Way" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{a69aa3d8-c6bb-4c39-aecf-d22a5fad0e78}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Dr" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Drive" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{ec17123b-ce61-485f-85df-c230c1a5f7cf}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Tl" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Trail" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{d10d666f-742d-4592-bd70-1a318cef3d6a}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Bv" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Boulevard" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{87bd6c73-2d4f-4c57-ba1a-4af1919ed398}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Lp" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Loop" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{b5f790c5-a71b-43b1-a090-858551718365}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Av" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Avenue" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{a3f1e105-60e8-45ce-96b3-6d906ef00c77}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Pkwy" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Parkway" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{94cfbdd7-ef31-4a55-aff1-1f9e43a060dd}" classInstanceId="{9fa7afcf-7505-4118-9d74-c4a0a6bce6ac}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abbreviation;" value="Pl" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Place" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

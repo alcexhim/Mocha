@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Person.xml - XML definition for the initial Mocha `Person` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}">
+			<instances>
+				<!-- Person Name -->
+				<instance id="{04fea3a4-1dd9-4fc3-9b17-35edf0b86d03}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Person Name" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<instanceReference instanceId="{074153cf-292d-4159-b47b-421a43ddd475}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{feec53f2-385c-48bf-976a-3e5e42b45c2e}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="GivenName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Given Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{16edd080-b1df-4d87-9bf5-b5978cc17431}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="FamilyName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Family Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{9c00da3c-1dc6-47e0-89b4-3420365e62e2}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="MiddleName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Middle Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

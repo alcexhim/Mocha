@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{2ec878ce-efa8-452e-9d8b-0ade81897379}" classInstanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Octane Transportation" />
+						<attributeValue attributeInstanceId="{05708bcb-cb29-4b34-b952-6859fc7fcbe8}" value="2022-04-25 08:00" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{87089551-dd7f-4842-9d65-ad491d147b95}">
+							<!-- Business.has owner Person -->
+							<targetInstances>
+								<instanceReference instanceId="{46483243-7984-4423-ab91-1ff8389f7aa3}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{f3f68e1d-7e43-4341-b66d-c5da630e8c32}">
+							<!-- Business.has Insurance Policy -->
+							<targetInstances>
+								<instanceReference instanceId="{92133287-e99c-4c8b-aac9-058fb9668a3e}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{10aef1a6-874d-4241-845e-bb65ddcdfe7c}">
+							<!-- Business.has Location -->
+							<targetInstances>
+								<instanceReference instanceId="{aca29baa-f5eb-4ba3-a84b-1bcd806dda4c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

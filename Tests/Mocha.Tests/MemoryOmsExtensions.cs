@@ -20,6 +20,7 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using Mocha.Core;
+using Mocha.OMS;
 using NUnit.Framework;
 
 namespace Mocha.Tests
@@ -27,7 +28,7 @@ namespace Mocha.Tests
 	[TestFixture(Category = "OMS")]
 	public class MemoryOmsExtensions
 	{
-		public static readonly Type TYPE_OMS = typeof(Core.OmsImplementations.MemoryOms);
+		public static readonly Type TYPE_OMS = typeof(LocalOms);
 		public static readonly Guid TEST_CLASS_GUID = new Guid("{380447a5-4174-414b-a80f-844997308358}");
 		public const string TEST_CLASS_NAME = "TEST_CLASS_NAME";
 		public const string TEST_CLASS_TITLE = "TEST CLASS TITLE";
@@ -53,17 +54,17 @@ namespace Mocha.Tests
 		[Test(Description = "Creates a class and tests the CreateTranslation functionality simultaneously.")]
 		public void CreateClassWithTranslation()
 		{
-			oms.BeginTransaction();
+			// oms.BeginTransaction();
 
-			InstanceHandle key = oms.CreateClass(TEST_CLASS_GUID, TEST_CLASS_NAME, TEST_CLASS_TITLE);
+			Instance key = oms.CreateClass(TEST_CLASS_GUID, TEST_CLASS_NAME, TEST_CLASS_TITLE);
 
-			oms.CommitTransaction();
+			// oms.CommitTransaction();
 
 
 			string name = oms.GetAttributeValue<string>(key, oms.GetInstance(KnownAttributeGuids.Text.Name));
 			Assert.AreEqual(TEST_CLASS_NAME, name);
 
-			string title = oms.GetTranslationValue(key, oms.GetInstance(KnownRelationshipGuids.Class__has_title__Translatable_Text_Constant), oms.GetInstance(KnownInstanceGuids.Languages.English));
+			string title = oms.GetTranslationValue(key, oms.GetInstance(KnownRelationshipGuids.Class__has_title__Translation), oms.GetInstance(KnownInstanceGuids.Languages.English));
 			Assert.AreEqual(TEST_CLASS_TITLE, title);
 		}
 	}

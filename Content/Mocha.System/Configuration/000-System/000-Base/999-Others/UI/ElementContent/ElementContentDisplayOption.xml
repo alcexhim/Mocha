@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Element Content.xml - XML definition for the Mocha `Attribute` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<relationship
+					id="&IDR_Element_Content__has__Element_Content_Display_Option;"
+					sourceClassId="&IDC_ElementContent;"
+					type="has"
+					destinationClassId="&IDC_ElementContentDisplayOption;" />
+				
+				<class id="&IDC_ElementContentDisplayOption;"
+					superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Element Content Display Option" />
+							</translationValues>
+						</translation>
+					</translations>
+				</class>
+				
+				<instance id="&IDI_DisplayOption_DisplayAsPageTitle;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Display As Page Title" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_NotEnterable;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Not Enterable" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_SubmitNotEnterable;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Submit Not Enterable" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_ShowSubelementsVertically;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Show Subelements Vertically" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_Singular;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Singular" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_DoNotShow;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Do Not Show" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_InitializeForEntry;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Initialize for Entry" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_DoNotShowLabel;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Do Not Show Label" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_WideText;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Wide Text" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_Required;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Required" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_DoNotShowIfEmpty;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Do Not Show If Empty" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="&IDI_DisplayOption_ObscuredText;" classInstanceId="&IDC_ElementContentDisplayOption;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Obscured Text" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

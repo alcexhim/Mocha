@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{161a6783-5ec9-4ae8-ac55-ee90999c8106}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method:Common:Definition Subedit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Definition" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="&IDI_Module_MochaBaseSystem;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{4e0908ca-2cb1-4abe-8e8a-7f4fbf557e1b}" classInstanceId="&IDC_ElementContent;">
+					<!-- For Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<targetInstances>
+								<instanceReference instanceId="{161a6783-5ec9-4ae8-ac55-ee90999c8106}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

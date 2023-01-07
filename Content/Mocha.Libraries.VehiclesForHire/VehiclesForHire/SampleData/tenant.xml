@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Default.xml - XML definition for the initial tenant created by the Mocha setup routine
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}" name="ryderentals_rrt">
+			<libraryReferences>
+				<!-- bring in the Mocha System -->
+				<libraryReference libraryId="{2826E41F-763A-413F-B239-3D9698AB629F}" />
+				<!-- Mocha.Web -->
+				<libraryReference libraryId="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}" />
+				
+				<!-- references Personal Information library (nope, library references still are not inherited..yet) -->
+				<libraryReference libraryId="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}" />
+				<!-- bring in the Vehicles for Hire library -->
+				<libraryReference libraryId="{bb1d56b4-c063-4232-a789-93c8419e2d31}" />
+				<!-- Ryde Rentals sample data -->
+				<!-- <libraryReference libraryId="{eb1fc7d8-fcc3-4e45-a7c4-22ab8a4e543d}" /> -->
+			</libraryReferences>
+			<instances>
+				<instance id="{63428235-c1c5-4203-88df-1ef2f1c07cc1}" classInstanceId="{5D081079-E136-406A-A728-7472937A6E5E}">
+					<!-- This is the logo image file for the initial Tenant instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Header.png" />
+						<attributeValue attributeInstanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" value="image/png" />
+						<attributeValue attributeInstanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" value="2016-01-01" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{4231bfde-3158-439a-ad64-a901c3912a9a}" classInstanceId="{5D081079-E136-406A-A728-7472937A6E5E}">
+					<!-- This is the background image file for the initial Tenant instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="background.png" />
+						<attributeValue attributeInstanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" value="image/png" />
+						<attributeValue attributeInstanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" value="2021-04-09T22:27:35-0500" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{6ac94d33-dfcd-49aa-bce3-e31036128b0a}" classInstanceId="{5D081079-E136-406A-A728-7472937A6E5E}">
+					<!-- This is the icon image file for the initial Tenant instance -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="background.png" />
+						<attributeValue attributeInstanceId="{34142FCB-172C-490A-AF03-FF8451D00CAF}" value="image/png" />
+						<attributeValue attributeInstanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" value="2021-04-09T22:27:35-0500" />
+					</attributeValues>
+				</instance>
+				
+				<instance id="{70072a15-e5a2-40f8-8771-b0c39f6edce3}" classInstanceId="&IDC_Tenant;">
+					<!-- This is the initial Tenant instance used by the Setup routine -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="ryderentals_rrt" />
+						<attributeValue attributeInstanceId="{A1D39058-E934-4DBC-9179-EFAECFDD8B48}" value="~/dashboard" />
+						<attributeValue attributeInstanceId="{5D8CAF97-1E4C-495C-8C2D-1DFA26C74C13}" value="1.0.19.283" />
+						<attributeValue attributeInstanceId="{BD8523CA-C003-4F7F-93F6-F4ABECDD1BBE}" value="19235" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{D62DFB9F-48D5-4697-AAAD-1CAD0EA7ECFA}">
+							<!-- Tenant.has sidebar Menu Item -->
+							<targetInstances>
+								<instanceReference instanceId="{D135F145-36DC-4482-8130-872D1A8AA551}" />
+								<instanceReference instanceId="{80832D29-809C-45F6-8548-1F552B7E0974}" />
+								<instanceReference instanceId="{7855FB37-1F75-4FA0-B3EE-5EE2D463E39F}" />
+								<instanceReference instanceId="{E1B04FF9-5364-47B3-AC5E-300726CF3BE9}" />
+								
+								<instanceReference instanceId="{EC5BC2CD-F400-4064-B7E8-DA2CADDCD2A9}" />
+								<instanceReference instanceId="{529EFFF5-B967-40BA-BF07-B163BD58DFE6}" />
+								
+								<instanceReference instanceId="{4723BA97-2321-485A-B3F1-346716C1A3E1}" />
+								<instanceReference instanceId="{D0AB191C-ACC2-4C68-8D2F-06C77369728B}" />
+								<instanceReference instanceId="{C7C2087D-51EB-4DCD-B13A-3577CAD50FA0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{4C399E80-ECA2-4A68-BFB4-26A5E6E97047}">
+							<!-- Tenant.has logo image File -->
+							<targetInstances>
+								<instanceReference instanceId="{63428235-c1c5-4203-88df-1ef2f1c07cc1}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{39B0D963-4BE0-49C8-BFA2-607051CB0101}">
+							<!-- Tenant.has background image File -->
+							<targetInstances>
+								<instanceReference instanceId="{4231bfde-3158-439a-ad64-a901c3912a9a}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CC4E65BD-7AAA-40DA-AECA-C607D7042CE3}">
+							<!-- Tenant.has icon image File -->
+							<targetInstances>
+								<instanceReference instanceId="{6ac94d33-dfcd-49aa-bce3-e31036128b0a}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{E94B6C9D-3307-4858-9726-F24B7DB21E2D}">
+							<!-- Tenant.has Tenant Type -->
+							<targetInstances>
+								<instanceReference instanceId="{b225d85b-d1a2-4ce7-90bc-410f2d5c0a53}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{cdd743cb-c74a-4671-9922-652c7db9f2d8}">
+							<!-- Tenant.has mega Menu -->
+							<targetInstances>
+								<instanceReference instanceId="{db3c6aa9-81c7-4685-b12e-98579e7e235f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{22936f51-2629-4503-a30b-a02d61a6c0e0}">
+							<!-- Tenant.has Application -->
+							<targetInstances>
+								<instanceReference instanceId="{2d869ed8-ed59-4ba3-b191-99f620d7e51a}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{41D66ACB-AFDE-4B6F-892D-E66255F10DEB}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Ryde Rentals Transportation" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A6203B6B-5BEB-4008-AE49-DB5E7DDBA45B}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Sign in with your Ryde Rentals account credentials" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

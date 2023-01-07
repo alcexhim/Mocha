@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6317262E-0B06-486B-AC1F-4494A708493D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mocha.Web.Server</RootNamespace>
+    <AssemblyName>Mocha.Web.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionContext.cs" />
+    <Compile Include="PageBuilder2.cs" />
+    <Compile Include="Core\Less.cs" />
+    <Compile Include="Core\Cache\ICache.cs" />
+    <Compile Include="Core\Cache\InMemoryCache.cs" />
+    <Compile Include="Core\configuration\DotlessConfiguration.cs" />
+    <Compile Include="Core\Engine\CacheDecorator.cs" />
+    <Compile Include="Core\Engine\ILessEngine.cs" />
+    <Compile Include="Core\Engine\LessEngine.cs" />
+    <Compile Include="Core\Engine\ParameterDecorator.cs" />
+    <Compile Include="Core\Exceptions\ParserException.cs" />
+    <Compile Include="Core\Exceptions\ParsingException.cs" />
+    <Compile Include="Core\Extensions\MissingTypeRegistrationException.cs" />
+    <Compile Include="Core\Importers\IImporter.cs" />
+    <Compile Include="Core\Importers\Importer.cs" />
+    <Compile Include="Core\Input\FileReader.cs" />
+    <Compile Include="Core\Input\IFileReader.cs" />
+    <Compile Include="Core\Input\IPathResolver.cs" />
+    <Compile Include="Core\Input\RelativePathResolver.cs" />
+    <Compile Include="Core\Loggers\ConsoleLogger.cs" />
+    <Compile Include="Core\Loggers\DiagnosticsLogger.cs" />
+    <Compile Include="Core\Loggers\ILogger.cs" />
+    <Compile Include="Core\Loggers\Logger.cs" />
+    <Compile Include="Core\Loggers\NullLogger.cs" />
+    <Compile Include="Core\Parameters\ConsoleArgumentParameterSource.cs" />
+    <Compile Include="Core\Parameters\IParameterSource.cs" />
+    <Compile Include="Core\Parameters\NullParameterSource.cs" />
+    <Compile Include="Core\Parser\Parser.cs" />
+    <Compile Include="Core\Parser\ParserLocation.cs" />
+    <Compile Include="Core\Parser\Parsers.cs" />
+    <Compile Include="Core\Parser\Tokenizer.cs" />
+    <Compile Include="Core\Parser\Zone.cs" />
+    <Compile Include="Core\Parser\Functions\ExtractFunction.cs" />
+    <Compile Include="Core\Parser\Functions\AbsFunction.cs" />
+    <Compile Include="Core\Parser\Functions\AddFunction.cs" />
+    <Compile Include="Core\Parser\Functions\AlphaFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ArgbFunction.cs" />
+    <Compile Include="Core\Parser\Functions\AverageFunction.cs" />
+    <Compile Include="Core\Parser\Functions\BlueFunction.cs" />
+    <Compile Include="Core\Parser\Functions\CeilFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ColorFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ColorFunctionBase.cs" />
+    <Compile Include="Core\Parser\Functions\ColorMixFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ComplementFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ContrastFunction.cs" />
+    <Compile Include="Core\Parser\Functions\DataUriFunction.cs" />
+    <Compile Include="Core\Parser\Functions\DefaultFunction.cs" />
+    <Compile Include="Core\Parser\Functions\DifferenceFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ExclusionFunction.cs" />
+    <Compile Include="Core\Parser\Functions\FloorFunction.cs" />
+    <Compile Include="Core\Parser\Functions\FormatStringFunction.cs" />
+    <Compile Include="Core\Parser\Functions\Function.cs" />
+    <Compile Include="Core\Parser\Functions\GradientImageFunction.cs" />
+    <Compile Include="Core\Parser\Functions\GrayscaleFunction.cs" />
+    <Compile Include="Core\Parser\Functions\GreenFunction.cs" />
+    <Compile Include="Core\Parser\Functions\HardlightFunction.cs" />
+    <Compile Include="Core\Parser\Functions\HexFunction.cs" />
+    <Compile Include="Core\Parser\Functions\HslaFunction.cs" />
+    <Compile Include="Core\Parser\Functions\HslColorFunctionBase.cs" />
+    <Compile Include="Core\Parser\Functions\HslFunction.cs" />
+    <Compile Include="Core\Parser\Functions\HueFunction.cs" />
+    <Compile Include="Core\Parser\Functions\IncrementFunction.cs" />
+    <Compile Include="Core\Parser\Functions\IsFunctions.cs" />
+    <Compile Include="Core\Parser\Functions\LengthFunction.cs" />
+    <Compile Include="Core\Parser\Functions\LightnessFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ListFunctionBase.cs" />
+    <Compile Include="Core\Parser\Functions\MixFunction.cs" />
+    <Compile Include="Core\Parser\Functions\MultiplyFunction.cs" />
+    <Compile Include="Core\Parser\Functions\NegationFunction.cs" />
+    <Compile Include="Core\Parser\Functions\NumberFunctionBase.cs" />
+    <Compile Include="Core\Parser\Functions\OverlayFunction.cs" />
+    <Compile Include="Core\Parser\Functions\PercentageFunction.cs" />
+    <Compile Include="Core\Parser\Functions\PowFunction.cs" />
+    <Compile Include="Core\Parser\Functions\RedFunction.cs" />
+    <Compile Include="Core\Parser\Functions\RgbaFunction.cs" />
+    <Compile Include="Core\Parser\Functions\RgbFunction.cs" />
+    <Compile Include="Core\Parser\Functions\RoundFunction.cs" />
+    <Compile Include="Core\Parser\Functions\SaturationFunction.cs" />
+    <Compile Include="Core\Parser\Functions\ScreenFunction.cs" />
+    <Compile Include="Core\Parser\Functions\SoftlightFunction.cs" />
+    <Compile Include="Core\Parser\Functions\StringFunctions.cs" />
+    <Compile Include="Core\Parser\Functions\UnitFunction.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Closure.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Context.cs" />
+    <Compile Include="Core\Parser\Infrastructure\DefaultNodeProvider.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Env.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Extender.cs" />
+    <Compile Include="Core\Parser\Infrastructure\INodeProvider.cs" />
+    <Compile Include="Core\Parser\Infrastructure\IOperable.cs" />
+    <Compile Include="Core\Parser\Infrastructure\MimeTypeLookup.cs" />
+    <Compile Include="Core\Parser\Infrastructure\MixinMatch.cs" />
+    <Compile Include="Core\Parser\Infrastructure\NamedArgument.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Output.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Nodes\BooleanNode.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Nodes\CharMatchResult.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Nodes\Node.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Nodes\NodeList.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Nodes\RegexMatchResult.cs" />
+    <Compile Include="Core\Parser\Infrastructure\Nodes\TextNode.cs" />
+    <Compile Include="Core\Parser\Tree\Alpha.cs" />
+    <Compile Include="Core\Parser\Tree\Assignment.cs" />
+    <Compile Include="Core\Parser\Tree\Attribute.cs" />
+    <Compile Include="Core\Parser\Tree\Call.cs" />
+    <Compile Include="Core\Parser\Tree\Color.cs" />
+    <Compile Include="Core\Parser\Tree\Combinator.cs" />
+    <Compile Include="Core\Parser\Tree\Comment.cs" />
+    <Compile Include="Core\Parser\Tree\Condition.cs" />
+    <Compile Include="Core\Parser\Tree\CssFunction.cs" />
+    <Compile Include="Core\Parser\Tree\Directive.cs" />
+    <Compile Include="Core\Parser\Tree\Element.cs" />
+    <Compile Include="Core\Parser\Tree\Expression.cs" />
+    <Compile Include="Core\Parser\Tree\Extend.cs" />
+    <Compile Include="Core\Parser\Tree\GuardedRuleset.cs" />
+    <Compile Include="Core\Parser\Tree\Import.cs" />
+    <Compile Include="Core\Parser\Tree\KeyFrame.cs" />
+    <Compile Include="Core\Parser\Tree\Keyword.cs" />
+    <Compile Include="Core\Parser\Tree\Media.cs" />
+    <Compile Include="Core\Parser\Tree\MixinCall.cs" />
+    <Compile Include="Core\Parser\Tree\MixinDefinition.cs" />
+    <Compile Include="Core\Parser\Tree\Number.cs" />
+    <Compile Include="Core\Parser\Tree\Operation.cs" />
+    <Compile Include="Core\Parser\Tree\Paren.cs" />
+    <Compile Include="Core\Parser\Tree\Quoted.cs" />
+    <Compile Include="Core\Parser\Tree\RepeatEntity.cs" />
+    <Compile Include="Core\Parser\Tree\Root.cs" />
+    <Compile Include="Core\Parser\Tree\Rule.cs" />
+    <Compile Include="Core\Parser\Tree\Ruleset.cs" />
+    <Compile Include="Core\Parser\Tree\Script.cs" />
+    <Compile Include="Core\Parser\Tree\Selector.cs" />
+    <Compile Include="Core\Parser\Tree\Shorthand.cs" />
+    <Compile Include="Core\Parser\Tree\Url.cs" />
+    <Compile Include="Core\Parser\Tree\Value.cs" />
+    <Compile Include="Core\Parser\Tree\Variable.cs" />
+    <Compile Include="Core\Plugins\ColorSpinPlugin.cs" />
+    <Compile Include="Core\Plugins\DelegateVisitor.cs" />
+    <Compile Include="Core\Plugins\GenericPluginConfigurator.cs" />
+    <Compile Include="Core\Plugins\IFunctionPlugin.cs" />
+    <Compile Include="Core\Plugins\IPlugin.cs" />
+    <Compile Include="Core\Plugins\IPluginConfigurator.cs" />
+    <Compile Include="Core\Plugins\IPluginParameter.cs" />
+    <Compile Include="Core\Plugins\IVisitor.cs" />
+    <Compile Include="Core\Plugins\IVisitorPlugin.cs" />
+    <Compile Include="Core\Plugins\PluginFinder.cs" />
+    <Compile Include="Core\Plugins\PluginParameter.cs" />
+    <Compile Include="Core\Plugins\RtlPlugin.cs" />
+    <Compile Include="Core\Plugins\VisitorPlugin.cs" />
+    <Compile Include="Core\Stylizers\ConsoleStylizer.cs" />
+    <Compile Include="Core\Stylizers\HtmlStylizer.cs" />
+    <Compile Include="Core\Stylizers\IStylizer.cs" />
+    <Compile Include="Core\Stylizers\PlainStylizer.cs" />
+    <Compile Include="Core\Utils\EnumerableExtensions.cs" />
+    <Compile Include="Core\Utils\Guard.cs" />
+    <Compile Include="Core\Utils\HslColor.cs" />
+    <Compile Include="Core\Utils\NodeHelper.cs" />
+    <Compile Include="Core\Utils\NumberExtensions.cs" />
+    <Compile Include="Core\Utils\ObjectExtensions.cs" />
+    <Compile Include="Core\Utils\StringExtensions.cs" />
+    <Compile Include="InteropExtensions.cs" />
+    <Compile Include="Sys\Request.cs" />
+    <Compile Include="Sys\HttpRequest.cs" />
+    <Compile Include="Sys\WebApplication.cs" />
+    <Compile Include="Sys\RequestEventArgs.cs" />
+    <Compile Include="Sys\HttpResponse.cs" />
+    <Compile Include="Sys\Response.cs" />
+    <Compile Include="Sys\PostEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="PageBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Sys\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\css.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Mocha.Core\Mocha.Core.csproj">
+      <Project>{8D3211A6-B2D6-4A26-ABE3-5B57636A4196}</Project>
+      <Name>Mocha.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.OMS\Mocha.OMS.csproj">
+      <Project>{8588928F-2868-4248-8993-533307A05C0C}</Project>
+      <Name>Mocha.OMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.Storage.Local\Mocha.Storage.Local.csproj">
+      <Project>{A4B8D6D8-3365-49FC-8123-58B3749A5427}</Project>
+      <Name>Mocha.Storage.Local</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Mocha.Storage\Mocha.Storage.csproj">
+      <Project>{C9A3AE1D-0658-4A70-BC48-9D8DEF9C205B}</Project>
+      <Name>Mocha.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Core\UniversalEditor.Core.csproj">
+      <Project>{2D4737E6-6D95-408A-90DB-8DFF38147E85}</Project>
+      <Name>UniversalEditor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MBS.Framework\MBS.Framework\MBS.Framework.csproj">
+      <Project>{00266B21-35C9-4A7F-A6BA-D54D7FDCC25C}</Project>
+      <Name>MBS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

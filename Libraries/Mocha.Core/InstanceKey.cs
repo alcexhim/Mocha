@@ -38,17 +38,26 @@ namespace Mocha.Core
 
 		public InstanceKey(string instanceKey)
 		{
-			if (instanceKey.Contains("$"))
+			if (instanceKey == null)
 			{
-				string[] split = instanceKey.Split(new char[] { '$' });
-				if (split.Length == 2)
+				ClassIndex = 0;
+				InstanceIndex = 0;
+				_isNotEmpty = false;
+			}
+			else
+			{
+				if (instanceKey.Contains("$"))
 				{
-					if (Int32.TryParse(split[0], out int ci) && Int32.TryParse(split[1], out int ii))
+					string[] split = instanceKey.Split(new char[] { '$' });
+					if (split.Length == 2)
 					{
-						ClassIndex = ci;
-						InstanceIndex = ii;
-						_isNotEmpty = true;
-						return;
+						if (Int32.TryParse(split[0], out int ci) && Int32.TryParse(split[1], out int ii))
+						{
+							ClassIndex = ci;
+							InstanceIndex = ii;
+							_isNotEmpty = true;
+							return;
+						}
 					}
 				}
 			}

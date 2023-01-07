@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ConditionalStringComponent.xml - XML definition for the Mocha `Conditional String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}" superClassId="&IDC_StringComponent;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Conditional String Component" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{B1A5F12F-2882-431E-A3E2-801FCA2114D2}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Conditional String Component.has Condition -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Conditional String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D3D86C8F-A1B2-4792-94F8-017A5FD22BF4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{D3D86C8F-A1B2-4792-94F8-017A5FD22BF4}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Condition.for Conditional String Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Condition` -->
+							<targetInstances>
+								<instanceReference instanceId="{B7AEA03C-073A-480C-BEA2-6680B6C9A119}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Conditional String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B1A5F12F-2882-431E-A3E2-801FCA2114D2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B14DB3B7-4F72-4930-AD13-3E3CCD8F0C7F}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Conditional String Component.has String Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Conditional String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_StringComponent;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{E8607E63-E16B-4864-9F65-2607447FBF58}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{E8607E63-E16B-4864-9F65-2607447FBF58}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: String Component.for Conditional String Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_StringComponent;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Conditional String Component` -->
+							<targetInstances>
+								<instanceReference instanceId="{9730DE6E-6F9D-4921-B7F7-E1EFF485BF79}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B14DB3B7-4F72-4930-AD13-3E3CCD8F0C7F}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

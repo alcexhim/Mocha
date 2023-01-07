@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Validation.xml - XML definition for the initial Mocha `Validation` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDA_ValidateOnlyOnSubmit;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="ValidateOnlyOnSubmit" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Validate Only on Submit" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDC_Validation;" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Validation" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_UseAnyCondition;" />
+								<instanceReference instanceId="&IDA_ValidateOnlyOnSubmit;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<relationship
+					id="&IDR_Validation__has__Validation_Classification;"
+					sourceClassId="&IDC_Validation;"
+					type="has"
+					destinationClassId="&IDC_ValidationClassification;" />
+				
+				<relationship
+					id="&IDR_Validation__has_true_condition__Executable;"
+					sourceClassId="&IDC_Validation;"
+					type="has true condition"
+					destinationClassId="&IDC_Executable;" />
+				
+				<relationship
+					id="&IDR_Validation__has_false_condition__Executable;"
+					sourceClassId="&IDC_Validation;"
+					type="has false condition"
+					destinationClassId="&IDC_Executable;" />
+				
+				<relationship
+					id="&IDR_Validation__has_failure_message__Translation;"
+					sourceClassId="&IDC_Validation;"
+					type="has failure message"
+					destinationClassId="&IDC_Translation;" />
+				
+				<relationship
+					id="&IDR_Translation__failure_message_for__Validation;"
+					sourceClassId="&IDC_Translation;"
+					type="failure message for"
+					destinationClassId="&IDC_Validation;" />
+			</instances>
+		</library>
+	</libraries>
+</mocha>

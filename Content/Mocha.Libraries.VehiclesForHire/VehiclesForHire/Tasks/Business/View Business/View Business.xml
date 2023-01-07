@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  View Business.xml - XML definition for the `View Business` task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{a5e06edc-3988-4b83-8409-327d88747095}" classInstanceId="{195DDDD7-0B74-4498-BF61-B0549FE05CF3}">
+					<!-- Text Prompt: Business Name for View Business -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Business Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{8f16ac4f-4233-4d21-a7ad-cf5c9f5ef17b}" classInstanceId="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}">
+					<relationships>
+						<relationship relationshipInstanceId="{7CD62362-DDCE-4BFC-87B9-B5499B0BC141}">
+							<!-- Prompt Value.has Prompt `Class Instance ID` -->
+							<targetInstances>
+								<instanceReference instanceId="{06210C75-9093-4B3D-ACF2-124C84E95C2A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{512B518E-A892-44AB-AC35-4E9DBCABFF0B}">
+							<!-- Instance Prompt Value.has Instance `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{60e992ca-1481-4074-8c2c-b885492b580b}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<relationships>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Prompt -->
+							<targetInstances>
+								<!-- Class Name -->
+								<instanceReference instanceId="{a5e06edc-3988-4b83-8409-327d88747095}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Task__has_initiating__Element;">
+							<targetInstances>
+								<instanceReference instanceId="{d84cb1b1-187f-42b9-9597-c7b6c5489112}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View Business" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Displays details about a Business" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

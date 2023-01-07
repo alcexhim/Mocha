@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Driver.xml - XML definition for the initial Mocha `Patient` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{39188e4e-805f-45db-990f-94f05b5b0ae9}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<libraryReferences>
+				<!-- bring in the Mocha System -->
+				<libraryReference libraryId="{2826E41F-763A-413F-B239-3D9698AB629F}" />
+				<!-- Mocha.Web -->
+				<libraryReference libraryId="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}" />
+				<!-- Personal Information -->
+				<libraryReference libraryId="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}" />
+			</libraryReferences>
+			<instances>
+				<instance id="{77e90824-83a9-49a0-b4a7-a5a74740045e}" classInstanceId="{b1a29a91-6795-44dc-a47e-bd77d3dcb8db}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Starlight Patient Care" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

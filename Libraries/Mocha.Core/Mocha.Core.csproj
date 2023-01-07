@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F16FA112-4CEB-4583-82F8-4EAD7F6B7F10}</ProjectGuid>
+    <ProjectGuid>{8D3211A6-B2D6-4A26-ABE3-5B57636A4196}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Mocha.Core</RootNamespace>
     <AssemblyName>Mocha.Core</AssemblyName>
@@ -16,7 +16,6 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Output\Debug\Mocha.Core.xml</DocumentationFile>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -24,37 +23,29 @@
     <OutputPath>..\..\Output\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Output\Release\Mocha.Core.xml</DocumentationFile>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Transaction.cs" />
+    <Compile Include="Instance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Oms.cs" />
-    <Compile Include="AttributeValue.cs" />
-    <Compile Include="RelationshipValue.cs" />
-    <Compile Include="OmsImplementations\MemoryOms.cs" />
-    <Compile Include="InstanceKey.cs" />
+    <Compile Include="Attribute.cs" />
+    <Compile Include="Relationship.cs" />
+    <Compile Include="Tenant.cs" />
+    <Compile Include="KnownInstanceGuids.cs" />
     <Compile Include="KnownAttributeGuids.cs" />
     <Compile Include="KnownRelationshipGuids.cs" />
-    <Compile Include="KnownInstanceGuids.cs" />
-    <Compile Include="OmsExtensions.cs" />
-    <Compile Include="TransactionOperations\CreateInstanceTransactionOperation.cs" />
-    <Compile Include="TransactionOperation.cs" />
-    <Compile Include="TransactionOperations\AssignAttributeTransactionOperation.cs" />
-    <Compile Include="TransactionOperations\AssociateRelationshipTransactionOperation.cs" />
+    <Compile Include="InstanceKey.cs" />
+    <Compile Include="RelationshipKey.cs" />
+    <Compile Include="OmsVariable.cs" />
+    <Compile Include="OmsException.cs" />
     <Compile Include="InstanceHandle.cs" />
     <Compile Include="TenantHandle.cs" />
-    <Compile Include="NanoID\NanoID.cs" />
-    <Compile Include="NanoID\CryptoRandom.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OmsImplementations\" />
-    <Folder Include="TransactionOperations\" />
-    <Folder Include="NanoID\" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionOperation.cs" />
+    <Compile Include="ExportEntitiesAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\MBS.Framework\MBS.Framework\MBS.Framework.csproj">

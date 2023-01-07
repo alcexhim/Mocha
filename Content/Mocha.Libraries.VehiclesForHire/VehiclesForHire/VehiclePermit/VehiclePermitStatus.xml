@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  VehiclePermitStatus.xml - XML definition for the `Vehicle Permit Status` class
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{e8c39f1c-9c91-4a30-b086-36017716d968}" superClassId="&IDC_Enumeration;">
+					<!-- Vehicle Permit Status -->
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle Permit Status" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Estado del Permiso de Vehicúlo" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Class`.instance labeled by String `Enumeration.has title Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="{ff027f7b-fc6d-4ef3-a109-e65ca046f7d2}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{394c88bd-f553-4692-97ae-4f1cedcac501}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle Permit.has Vehicle Permit Status -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{e8c39f1c-9c91-4a30-b086-36017716d968}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{13683639-437e-4340-9529-9f68fb22744b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{13683639-437e-4340-9529-9f68fb22744b}" classInstanceId="&IDC_Relationship;">
+					<!-- Vehicle Permit Status.for Vehicle Permit -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{e8c39f1c-9c91-4a30-b086-36017716d968}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{a774da69-4254-4553-94d5-cb7ecdc5c230}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{394c88bd-f553-4692-97ae-4f1cedcac501}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{c0c4c7de-5f79-4c33-ada0-a76a334fda6c}" classInstanceId="{e8c39f1c-9c91-4a30-b086-36017716d968}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Active" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Activo" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="A" />
+					</integrationIds>
+				</instance>
+				
+				<instance id="{bcc6ebda-46d3-462c-8ef4-1bcd97b3bcbe}" classInstanceId="{e8c39f1c-9c91-4a30-b086-36017716d968}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Revoked" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Revocado" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="R" />
+					</integrationIds>
+				</instance>
+				
+				<instance id="{8b96abdf-b1f6-480a-975a-8673bf5738b6}" classInstanceId="{e8c39f1c-9c91-4a30-b086-36017716d968}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Expired" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Caducado" />
+							</translationValues>
+						</translation>
+					</translations>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="X" />
+					</integrationIds>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

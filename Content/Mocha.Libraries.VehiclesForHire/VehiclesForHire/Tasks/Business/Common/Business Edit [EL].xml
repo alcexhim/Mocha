@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  View Business.xml - XML definition for the `View Business` task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				
+				<instance id="{d84cb1b1-187f-42b9-9597-c7b6c5489112}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="VFH:Business Common:Business Edit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Element__has__Element_Content;">
+							<targetInstances>
+								<instanceReference instanceId="{c3a47717-5d54-46be-9d37-302bb7831315}" />
+								<instanceReference instanceId="{6b1dd5d7-d48b-4612-8e0c-b9e7edee8968}" />
+								<instanceReference instanceId="{5f43073c-92c6-43df-8fea-6d2de4d6f0d8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{c3a47717-5d54-46be-9d37-302bb7831315}" classInstanceId="&IDC_ElementContent;">
+					<!-- Business -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{d84cb1b1-187f-42b9-9597-c7b6c5489112}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Business [CL] -->
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Display as Page Title -->
+								<instanceReference instanceId="{369335cf-4a3d-4349-9300-62bd72dafeb6}" />
+								<!-- Not Enterable -->
+								<instanceReference instanceId="{831e921b-5132-4b37-9303-da0994a0f828}" />
+								<!-- Submit Not Enterable -->
+								<instanceReference instanceId="{f480a1d6-cc9b-4606-bce1-d6757fa99bad}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{6b1dd5d7-d48b-4612-8e0c-b9e7edee8968}" classInstanceId="&IDC_ElementContent;">
+					<!-- Business Subedit -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="b" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{d84cb1b1-187f-42b9-9597-c7b6c5489112}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Business Subedit -->
+								<instanceReference instanceId="{c013138e-7363-4114-a3ca-9e6d344ebc85}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Show Subelements Vertically -->
+								<instanceReference instanceId="{8bfd1ae2-1474-413d-b4dd-6cd4993080d1}" />
+								<!-- Singular -->
+								<instanceReference instanceId="{683b3cdb-2e69-468e-bb36-4bd62716542c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5f43073c-92c6-43df-8fea-6d2de4d6f0d8}" classInstanceId="&IDC_ElementContent;">
+					<!-- Task Review Fragment -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="z" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{d84cb1b1-187f-42b9-9597-c7b6c5489112}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Business Subedit -->
+								<instanceReference instanceId="{f5b2cabf-1a07-4c3b-847d-499ae537e43b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Show Subelements Vertically -->
+								<instanceReference instanceId="{8bfd1ae2-1474-413d-b4dd-6cd4993080d1}" />
+								<!-- Singular -->
+								<instanceReference instanceId="{683b3cdb-2e69-468e-bb36-4bd62716542c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

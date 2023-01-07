@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Person Name@get Formatted Name
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{af0e1c56-8e93-4fe6-8d44-142e3b95b016}">
+			<instances>
+				<instance id="{7421ffea-f0a2-4cfa-90f6-16d5b16e8482}" classInstanceId="{623565D5-5AEE-49ED-A5A9-0CFE670507BC}">
+					<!-- Attribute String Component: Given Name -->
+					<relationships>
+						<relationship relationshipInstanceId="{E15D4277-69FB-4F19-92DB-8D087F361484}">
+							<targetInstances>
+								<instanceReference instanceId="{feec53f2-385c-48bf-976a-3e5e42b45c2e}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{31e2a990-ae68-4a8f-bfd4-da4cc487f204}" classInstanceId="{623565D5-5AEE-49ED-A5A9-0CFE670507BC}">
+					<!-- Attribute String Component: Family Name -->
+					<relationships>
+						<relationship relationshipInstanceId="{E15D4277-69FB-4F19-92DB-8D087F361484}">
+							<targetInstances>
+								<instanceReference instanceId="{16edd080-b1df-4d87-9bf5-b5978cc17431}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			
+				<instance id="{074153cf-292d-4159-b47b-421a43ddd475}" classInstanceId="&IDC_String;">
+					<!-- Person Name@get Formatted Name -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<!-- Given Name -->
+								<instanceReference instanceId="{7421ffea-f0a2-4cfa-90f6-16d5b16e8482}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- Family Name -->
+								<instanceReference instanceId="{31e2a990-ae68-4a8f-bfd4-da4cc487f204}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{2637f3ba-5485-496d-9f88-60d097d5e1b0}" classInstanceId="{9C6871C1-9A7F-4A3A-900E-69D1D9E24486}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" value="ckresh" />
+						<!-- l0vecar5! -->
+						<attributeValue attributeInstanceId="{F377FC29-4DF1-4AFB-9643-4191F37A00A9}" value="346e9d81e3224234a12be5faf00c2a110602b0082725c58566dc5fe73fbb8659c5ecbefaacaeee5c06fc85985e11644fb33687d1c79a4117dbb8a6579fbf58c4" />
+						<attributeValue attributeInstanceId="{8C5A99BC-40ED-4FA2-B23F-F373C1F3F4BE}" value="350774d853464c2da0072209d6e49ed9" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{6C29856C-3B10-4F5B-A291-DD3CA4C04A2F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Cara Kresh" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1921D642-84EC-4E16-B568-9C333909C018}">
+							<targetInstances>
+								<instanceReference instanceId="{0E57B7A3-FE6D-4B40-843B-F20580441242}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

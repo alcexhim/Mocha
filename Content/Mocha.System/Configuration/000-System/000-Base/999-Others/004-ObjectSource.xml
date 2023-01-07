@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  ObjectSource.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{CCF074BA-155C-4BCF-A4C5-D06085502A70}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<!-- TODO: BE VERY CAREFUL to make sure this doesn't result in an infinite loop while autogenerating sibling relationships -->
+								<instanceReference instanceId="{51550210-074D-487B-B950-E3630EE81C49}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{0BF7CC86-C0F8-4EC4-98F3-929BE9529BB8}" classInstanceId="&IDC_String;">
+					<!-- String: instance labeler for Object Source -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{CCF074BA-155C-4BCF-A4C5-D06085502A70}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{8EE7024D-ED87-4D99-BF21-10E09AF5566D}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Object Source" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{0BF7CC86-C0F8-4EC4-98F3-929BE9529BB8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9547EB35-07FB-4B64-B82C-6DA1989B9165}" classInstanceId="{8EE7024D-ED87-4D99-BF21-10E09AF5566D}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="System" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{51550210-074D-487B-B950-E3630EE81C49}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="System" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{062B57B5-D728-4DF8-903A-AD79D843B5CA}" classInstanceId="{8EE7024D-ED87-4D99-BF21-10E09AF5566D}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Delivered" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{51550210-074D-487B-B950-E3630EE81C49}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Delivered" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{63D91CCD-D196-4C3A-8609-6DF371E2406F}" classInstanceId="{8EE7024D-ED87-4D99-BF21-10E09AF5566D}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Custom" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{51550210-074D-487B-B950-E3630EE81C49}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Custom" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{B62F9B81-799B-4ABE-A4AF-29B45347DE54}" classInstanceId="&IDC_Relationship;">
+					<!-- Class.has Object Source -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Object Source` -->
+							<targetInstances>
+								<instanceReference instanceId="{8EE7024D-ED87-4D99-BF21-10E09AF5566D}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{FBB9391D-C4A2-4326-9F85-7801F377253C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{FBB9391D-C4A2-4326-9F85-7801F377253C}" classInstanceId="&IDC_Relationship;">
+					<!-- Object Source.for Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Object Source` -->
+							<targetInstances>
+								<instanceReference instanceId="{8EE7024D-ED87-4D99-BF21-10E09AF5566D}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{B62F9B81-799B-4ABE-A4AF-29B45347DE54}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

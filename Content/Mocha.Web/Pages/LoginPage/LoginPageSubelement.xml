@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  LoginPageSubelement.xml - XML definition for the initial Mocha `Login Page` system page
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}">
+			<instances>
+				
+				<instance id="{2b7d4481-b7c2-4e26-a917-e3ff7c367a8a}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Mocha Core:Login Page:Login Subedit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Element__has__Element_Content;">
+							<targetInstances>
+								<!-- User Name [TX] -->
+								<instanceReference instanceId="{c67f305e-bd4d-4628-816b-55fb85ea1b67}" />
+								<!-- Password [TX+PW] -->
+								<instanceReference instanceId="{51b51be3-44fd-48f1-971f-682aee0a6132}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{c67f305e-bd4d-4628-816b-55fb85ea1b67}" classInstanceId="&IDC_ElementContent;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- User Name [TX] -->
+								<instanceReference instanceId="{960FAF02-5C59-40F7-91A7-20012A99D9ED}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__for__Element;">
+							<targetInstances>
+								<instanceReference instanceId="{2b7d4481-b7c2-4e26-a917-e3ff7c367a8a}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Validation;">
+							<targetInstances>
+								<instanceReference instanceId="{a38afc70-2d72-4fb5-b14b-8d19ce3d9651}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{a38afc70-2d72-4fb5-b14b-8d19ce3d9651}" classInstanceId="&IDC_Validation;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Validation__has_failure_message__Translation;">
+							<translationValues>
+								<!-- replace with string: (Literal)"Please enter a valid " + (RAMB)`Current Element Content`:`Element Content.has title Translation` -->
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Please enter a valid User Name" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Validation__has__Validation_Classification;">
+							<targetInstances>
+								<instanceReference instanceId="{c130b051-c7d0-4e7a-b395-66d491a0466b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Validation__has_false_condition__Executable;">
+							<targetInstances>
+								<!-- Common Boolean@is User Name equal to Empty String(EBE)*P*S(public)[ramb]+PA -->
+								<instanceReference instanceId="{32e77eab-ef5d-40e7-8c1f-57221e5f4be3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{d29090d9-34f1-4a2e-9048-2b9c03507a1c}">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{32e77eab-ef5d-40e7-8c1f-57221e5f4be3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{32e77eab-ef5d-40e7-8c1f-57221e5f4be3}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<!-- Common Boolean@is String A equal to String B(EBE)*P*S(public) -->
+								<instanceReference instanceId="{d29090d9-34f1-4a2e-9048-2b9c03507a1c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{51b51be3-44fd-48f1-971f-682aee0a6132}" classInstanceId="&IDC_ElementContent;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="b" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Password [TX] -->
+								<instanceReference instanceId="{b3bc53ae-77a0-4915-9494-c30469f1b4d7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<targetInstances>
+								<instanceReference instanceId="&IDI_DisplayOption_ObscuredText;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__for__Element;">
+							<targetInstances>
+								<instanceReference instanceId="{2b7d4481-b7c2-4e26-a917-e3ff7c367a8a}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			
+			</instances>
+		</library>
+	</libraries>
+</mocha>

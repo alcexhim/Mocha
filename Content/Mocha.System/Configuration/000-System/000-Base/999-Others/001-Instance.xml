@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Instance.xml - XML definition for the initial Mocha `Instance` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDC_Instance;" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<!-- Class `Class`.has related Task `Redirect Task` -->
+							<targetInstances>
+								<!-- Instance: Show Definition in Code Editor -->
+								<instanceReference instanceId="{4f8a0e8e-e139-4cc6-b8cf-a32e67bd192d}" />
+								<!-- Instance: Delete -->
+								<instanceReference instanceId="{16D35AE0-5F0A-4D06-A14A-8D08E85BFA37}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="&IDC_InstanceSet;" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Instance Set" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<relationship id="&IDR_Instance_Set__has__Instance;"
+					sourceClassId="&IDC_InstanceSet;"
+					type="has"
+					destinationClassId="&IDC_Instance;"
+					siblingRelationshipId="{9241b0d5-daef-49d0-bf4e-75773e8da9a1}" />
+				
+				<relationship id="{9241b0d5-daef-49d0-bf4e-75773e8da9a1}"
+					sourceClassId="&IDC_Instance;"
+					type="for"
+					destinationClassId="&IDC_InstanceSet;"
+					siblingRelationshipId="&IDR_Instance_Set__has__Instance;" />
+				
+				<instance id="{01e09f71-0bf6-4e33-a9f5-d45d5fb375c7}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- Instance@get Related Instance(GSS)*P*S[rsmb] -->
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Related Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{4fd3768a-97f5-434d-8345-1dd9f900ff5f}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4fd3768a-97f5-434d-8345-1dd9f900ff5f}" classInstanceId="&IDC_GetInstanceSetBySystemRoutineMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Related Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{01e09f71-0bf6-4e33-a9f5-d45d5fb375c7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Instance;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{a476372a-24e7-41d1-9a21-ba241b1a5067}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- Instance@get This Instance(GSS)*P*S[rsmb] -->
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="This Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{d78fe3ca-3c15-41a0-bccf-0a701b4712a4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{d78fe3ca-3c15-41a0-bccf-0a701b4712a4}" classInstanceId="&IDC_GetInstanceSetBySystemRoutineMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="This Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{a476372a-24e7-41d1-9a21-ba241b1a5067}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Instance;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

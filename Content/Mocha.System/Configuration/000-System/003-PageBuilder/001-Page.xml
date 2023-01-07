@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Page.xml - XML definition for the initial Mocha `Page` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{097E8FA7-7118-4C10-BDC0-2E9100661600}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<!-- String Component: -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{7BE6522A-4BE8-4CD3-8701-C8353F7DF630}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{225FB3DA-FBF9-4DE4-AACD-107F2B5EAC2D}" classInstanceId="&IDC_String;">
+					<!-- String: -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{097E8FA7-7118-4C10-BDC0-2E9100661600}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{7BE6522A-4BE8-4CD3-8701-C8353F7DF630}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Page.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Page;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{E6F690A2-87A2-49B7-885E-70B58629322B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{E6F690A2-87A2-49B7-885E-70B58629322B}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Page -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Page;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{7BE6522A-4BE8-4CD3-8701-C8353F7DF630}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_Page;" superClassId="&IDC_Class;">
+					<!-- Class: Page -->
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Page" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class.has Attribute -->
+							<targetInstances>
+								<!-- Target URL [Text Attribute] -->
+								<instanceReference instanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{225FB3DA-FBF9-4DE4-AACD-107F2B5EAC2D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<relationship id="&IDR_Style__gets_background_image_File_from__Return_Instance_Set_Method_Binding;"
+					sourceClassId="&IDC_Style;"
+					type="gets background image File from"
+					destinationClassId="&IDC_ReturnInstanceSetMethodBinding;"
+					singular="true"
+					/>
+				
+				<instance id="{6E6E1A85-3EA9-4939-B13E-CBF645CB8B59}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Page.has Style -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Page;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A608FC55-4D41-47F6-B021-38DFBAF29521}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{A608FC55-4D41-47F6-B021-38DFBAF29521}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Style.for Page -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{A48C843A-B24B-4BC3-BE6F-E2D069229B0A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Page;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{6E6E1A85-3EA9-4939-B13E-CBF645CB8B59}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<relationship
+					id="&IDR_Page__has_master__Page;"
+					sourceClassId="&IDC_Page;"
+					type="has master"
+					destinationClassId="&IDC_Page;"
+					siblingRelationshipId="&IDR_Page__master_for__Page;" />
+				
+				<relationship id="&IDR_Page__master_for__Page;"
+					sourceClassId="&IDC_Page;"
+					type="master for"
+					destinationClassId="&IDC_Page;"
+					siblingRelationshipId="&IDR_Page__has_master__Page;" />
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

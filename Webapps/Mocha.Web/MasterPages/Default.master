@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" Inherits="Mocha.Web.MasterPages.Default" MasterPageFile="~/MasterPages/Blank.master" CodeBehind="Default.master.cs" %>
+<%@ MasterType VirtualPath="~/MasterPages/Blank.master" %>
+<%@ Register TagPrefix="wcx" Namespace="MBS.Web.Controls" Assembly="MBS.Web.Controls" %>
+<%@ Register TagPrefix="mcx" Namespace="Mocha.Web.Controls" Assembly="Mocha.Web" %>
+<asp:Content runat="server" ContentPlaceHolderID="aspcBeforeContent">
+	
+<script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.minitool.com/news/how-to-enable-use-reader-mode-in-chrome.html"
+  },
+  "headline": "How to Enable and Use Reader Mode in Google Chrome?",
+"image": [
+    "https://www.minitool.com/images/uploads/news/2021/07/how-to-enable-use-reader-mode-in-chrome/how-to-enable-use-reader-mode-in-chrome-thumbnail.png"
+   ],
+  "datePublished": "2021-07-21T10:08:26+00:00",
+  "dateModified": "2021-07-20T09:08:32+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Stella",
+    "sameAs": [
+      "https://www.minitool.com/author/stella.html",
+      "https://twitter.com/Stella_GUOGUO"
+    ]
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "MiniTool",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.minitool.com/images/logo.png"
+    }
+  },
+  "description": "In this post, we will show you how to enable and use Reader Mode in Google Chrome. We also show you some available reader extensions for Chrome."
+}
+
+	</script>
+	
+	<div class="uwt-header">
+		<div class="uwt-header-item uwt-applicationmenu">
+			<wcx:Button runat="server" IconName="bars" DropDownStyle="DropDownButton">
+				<DropDownContent>
+					<div id="divMegaMenu" class="uwt-menu uwt-menu-large" runat="server">
+					</div>
+				</DropDownContent>
+			</wcx:Button>
+		</div>
+		<div class="uwt-header-item uwt-searchbar">
+			<wcx:TextBox ID="txtSearch" runat="server" SuggestionURL="~/api/search?q=%1&search_subclasses=true" PlaceholderText="Type to search" autocomplete="off" />
+		</div>
+		<div class="uwt-header-item uwt-usermenu">
+			<wcx:Button runat="server" ID="btnUserName" DropDownStyle="DropDownButton">
+				<DropDownContent>
+					<wcx:Menu runat="server" id="mnuUserMenu" />
+				</DropDownContent>
+			</wcx:Button>
+		</div>
+	</div>
+	<div class="uwt-sidebar">
+		<asp:Panel runat="server" Visible="false">
+			<div class="uwt-sidebar-panel">
+	            <div class="uwt-profile-image uwt-column-4">
+	                <a href="ui-profile.html">
+	                    <img alt="" src="../data/profile/profile-blog.jpg" class="img-fluid rounded-circle" />
+	                </a>
+	            </div>
+	            <div class="uwt-profile-details uwt-column-8">
+					<div class="phoenix-engine phoenix-engine-avatar phoenix-avatar-profile">
+						<div class="phoenix-loading">&nbsp;</div>
+					</div>
+	                <p class="uwt-profile-title">
+	                    <a href="ui-profile.html">alcexhim</a>
+
+	                    <!-- Available statuses: online, idle, busy, away and offline -->
+	                    <span class="uwt-profile-status uwt-profile-status-online">&nbsp;</span>
+	                </p>
+	                <p class="uwt-profile-subtitle">Administrator</p>
+	            </div>
+	        </div>
+			<div class="uwt-sidebar-panel">
+				<span style="font-size: 1.4em;">400</span> coins
+			</div>
+		</asp:Panel>
+		<ul id="ul" runat="server" class="uwt-menu">
+		</ul>
+	</div>
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="aspcBeforePageContent">
+	<div class="uwt-header">
+		<div class="uwt-title"><asp:Label runat="server" ID="lblTaskTitle" /> <mcx:InstanceBrowser runat="server" ID="ibTaskTitle" Editable="false" Visible="false" /></div>
+		<div class="uwt-subtitle"><asp:Label runat="server" ID="lblTaskSubtitle" /><mcx:InstanceBrowser runat="server" ID="ibTaskSubtitle" Editable="false" Visible="false" /></div>
+		<div class="uwt-controlbox"><ul runat="server" id="pnlTaskControlBox">
+					
+					<li>
+						<a title="Configure" href="#"><i class="fa fa-gear">&nbsp;</i></a>
+					</li>
+					<li>
+						<a title="Download" href="#"><i class="fa fa-download">&nbsp;</i></a>
+					</li>
+					<li>
+						<a title="Print" href="#"><i class="fa fa-print">&nbsp;</i></a>
+					</li>
+					
+				</ul>
+				</div>
+	</div>
+</asp:Content>
+<asp:Content runat="server"  ContentPlaceHolderID="aspcContent">
+	<asp:ContentPlaceHolder runat="server" ID="aspcContent" />
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="aspcAfterPageContent">
+	<asp:Panel runat="server" ID="pnlPageFooter">
+		<div class="uwt-footer">
+			<asp:ContentPlaceHolder runat="server" ID="aspcPageFooter" />
+		</div>
+	</asp:Panel>
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="aspcAfterContent">
+	<div class="uwt-footer">
+		<asp:Label runat="server" ID="lblLegalNoticeText" />
+		<mcx:InfoBar runat="server" />
+	</div>
+</asp:Content>

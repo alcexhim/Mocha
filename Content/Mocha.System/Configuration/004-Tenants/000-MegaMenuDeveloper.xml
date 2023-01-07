@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  MegaMenuDeveloper.xml - XML definition for the mega menu for developers
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!-- mega menu and items -->
+				<instance id="{ca773e74-1f94-41e7-8186-d8ae903ca434}" classInstanceId="{2ba883e7-1172-4b83-a3bd-b05c7d570a84}">
+					<!-- Menu Section: Schema -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<!-- Menu Section. has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Schema" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5b659d7c-58f9-453c-9826-dd3205c3c97f}">
+							<!-- Menu Section.has Menu Item -->
+							<targetInstances>
+								<instanceReference instanceId="{9d0b0c92-7f63-4ce9-89c0-893efae1e203}" />
+								<instanceReference instanceId="{511178e5-2aca-46df-b6f0-6b6589edf7a4}" />
+								<instanceReference instanceId="{dd1a928d-37a0-4081-bd04-eeac443dec1b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{8f584ffb-0059-48eb-a21b-11772bb569c7}" classInstanceId="{2ba883e7-1172-4b83-a3bd-b05c7d570a84}">
+					<!-- Menu Section: Reports -->
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<!-- Menu Section. has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Reporting" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5b659d7c-58f9-453c-9826-dd3205c3c97f}">
+							<!-- Menu Section.has Menu Item -->
+							<targetInstances>
+								<instanceReference instanceId="{34bcf2d6-ba59-42ff-8b9a-65dbe848e5ca}" />
+								<instanceReference instanceId="{ba137091-2766-42cd-878e-6101384a8f6f}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9c44f2b6-348b-4f52-8c94-55a38c52ede1}" classInstanceId="{06E7806D-9384-4EA5-B5D1-350A51552773}">
+					<!-- Mega Menu: `Developer Mega Menu` -->
+					<relationships>
+						<relationship relationshipInstanceId="{a22d949f-f8d1-4dcc-a3eb-d9f910228dfd}">
+							<!-- Menu.has Menu Section -->
+							<targetInstances>
+								<!-- Schema -->
+								<instanceReference instanceId="{ca773e74-1f94-41e7-8186-d8ae903ca434}" />
+								<!-- Reporting -->
+								<instanceReference instanceId="{8f584ffb-0059-48eb-a21b-11772bb569c7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<!-- Mega Menu Items -->
+				<instance id="{9d0b0c92-7f63-4ce9-89c0-893efae1e203}" classInstanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}">
+					<!-- Instance Menu Item: Create Class -->
+					<relationships>
+						<relationship relationshipInstanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}">
+							<!-- .has target Instance -->
+							<targetInstances>
+								<instanceReference instanceId="{A5BF6B1C-AF0F-42F0-9506-EAE0D5183B56}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Class" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{511178e5-2aca-46df-b6f0-6b6589edf7a4}" classInstanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}">
+					<!-- Instance Menu Item: Create Attribute -->
+					<relationships>
+						<relationship relationshipInstanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}">
+							<!-- .has target Instance -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Attribute" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{dd1a928d-37a0-4081-bd04-eeac443dec1b}" classInstanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}">
+					<!-- Instance Menu Item: All Businesses -->
+					<relationships>
+						<relationship relationshipInstanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}">
+							<!-- .has target Instance -->
+							<targetInstances>
+								<instanceReference instanceId="{7CA0EFA9-6849-4AAE-BF81-F055C006853B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Relationship" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				
+				<instance id="{34bcf2d6-ba59-42ff-8b9a-65dbe848e5ca}" classInstanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}">
+					<!-- Instance Menu Item: Create Report Object -->
+					<relationships>
+						<relationship relationshipInstanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}">
+							<!-- .has target Instance -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Report Object" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{ba137091-2766-42cd-878e-6101384a8f6f}" classInstanceId="{6E3AA9AF-96B9-4208-BEA9-291A72C68418}">
+					<!-- Instance Menu Item: All Businesses -->
+					<relationships>
+						<relationship relationshipInstanceId="{C599C20E-F01A-4B12-A919-5DC3B0F545C2}">
+							<!-- .has target Instance -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Report Field" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

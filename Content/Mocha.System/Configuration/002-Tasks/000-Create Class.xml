@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Create Class.xml - XML definition for the initial Mocha `Create Class` system task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{ABA93F7C-63F1-49C1-804C-B935476E961A}" classInstanceId="{195DDDD7-0B74-4498-BF61-B0549FE05CF3}">
+					<!-- Text Prompt: Class Name for Create Class -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{E78EBE1E-870C-45C2-8DCD-C5F7AFC664BA}" classInstanceId="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}">
+					<relationships>
+						<relationship relationshipInstanceId="{7CD62362-DDCE-4BFC-87B9-B5499B0BC141}">
+							<!-- Prompt Value.has Prompt `Class Instance ID` -->
+							<targetInstances>
+								<instanceReference instanceId="{06210C75-9093-4B3D-ACF2-124C84E95C2A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{512B518E-A892-44AB-AC35-4E9DBCABFF0B}">
+							<!-- Instance Prompt Value.has Instance `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{05BE1694-9B42-4E6C-880F-B5EE1765EE44}" classInstanceId="{3312A789-3B7A-4478-B329-4FF781504F9C}">
+					<!-- Assign Attribute Method: assign_attribute_Name_to_Class_parm -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="assign_attribute_Name_to_Class_parm" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="assign attribute Name to Class parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5B715276-8F3C-4E3F-9FF4-27E766A91154}">
+							<!-- Method.has Prompt -->
+							<targetInstances>
+								<!-- Attribute Value for Assign Attribute -->
+								<instanceReference instanceId="{4B9417BB-2FEB-40D7-9A4E-6F36C4271F28}" />
+								<!-- Instance for Assign Attribute -->
+								<instanceReference instanceId="{73AB917D-7C1A-49F2-B278-67AED75EF7D8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{BC4B71B9-6168-4B58-95D4-A56ED78CA965}">
+							<!-- Assign Attribute Method.has Attribute `Name` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4B9417BB-2FEB-40D7-9A4E-6F36C4271F28}" classInstanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}">
+					<!-- Instance Prompt: Target Instance -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Target Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{73AB917D-7C1A-49F2-B278-67AED75EF7D8}" classInstanceId="{195DDDD7-0B74-4498-BF61-B0549FE05CF3}">
+					<!-- Text Prompt: Attribute Value -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Attribute Value" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{A505A755-3EB3-4D17-87D8-8332203F662C}" classInstanceId="{056B2384-F841-4562-886B-F7AFB6D272F2}">
+					<!-- Reference Prompt Value: Attribute Value for Assign Attribute :: Class Name for Create Class -->
+					<relationships>
+						<relationship relationshipInstanceId="{7CD62362-DDCE-4BFC-87B9-B5499B0BC141}">
+							<!-- Prompt Value.has Prompt -->
+							<targetInstances>
+								<!-- Attribute Value for Assign Attribute -->
+								<instanceReference instanceId="{73AB917D-7C1A-49F2-B278-67AED75EF7D8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{C9472658-9E50-48FD-BF7F-ED31A72DEF39}">
+							<!-- Reference Prompt Value.has source Prompt -->
+							<targetInstances>
+								<!-- Class Name for Create Class -->
+								<instanceReference instanceId="{ABA93F7C-63F1-49C1-804C-B935476E961A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{08AB6C76-7461-4F10-9131-E2B63CF404C3}" classInstanceId="{056B2384-F841-4562-886B-F7AFB6D272F2}">
+					<!-- Reference Prompt Value: Target Instance for Assign Attribute :: Newly Created Instance for Create Class -->
+					<relationships>
+						<relationship relationshipInstanceId="{7CD62362-DDCE-4BFC-87B9-B5499B0BC141}">
+							<!-- Prompt Value.has Prompt -->
+							<targetInstances>
+								<!-- Target Instance for Assign Attribute -->
+								<instanceReference instanceId="{4B9417BB-2FEB-40D7-9A4E-6F36C4271F28}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{C9472658-9E50-48FD-BF7F-ED31A72DEF39}">
+							<!-- Reference Prompt Value.has source Prompt -->
+							<targetInstances>
+								<!-- Newly Created Instance for Create Class -->
+								<instanceReference instanceId="{C9472658-9E50-48FD-BF7F-ED31A72DEF39}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{BEFAFDC4-358B-44E9-ACD9-FD253402EA22}" classInstanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}">
+					<!-- Method Call: create instance `Class` -->
+					<relationships>
+						<relationship relationshipInstanceId="{3D3B601B-4EF0-49F3-AF05-86CEA0F00619}">
+							<!-- Method Call.has Method -->
+							<targetInstances>
+								<instanceReference instanceId="{4E92D64E-AC91-4ABF-8052-96366DF93996}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{765BD0C9-117D-4D0E-88C9-2CEBD4898135}">
+							<!-- Method Call.has Prompt Value -->
+							<targetInstances>
+								<!-- Class for Create Instance -->
+								<instanceReference instanceId="{E78EBE1E-870C-45C2-8DCD-C5F7AFC664BA}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{0D4E84E7-84CD-431D-BB2A-6B8E08C202FD}" classInstanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}">
+					<!-- Method Call: assign attribute `Name` to Instance parm (newly created) using Value parm (from prompt `Class Name`) -->
+					<relationships>
+						<relationship relationshipInstanceId="{3D3B601B-4EF0-49F3-AF05-86CEA0F00619}">
+							<!-- Method Call.has Method -->
+							<targetInstances>
+								<instanceReference instanceId="{05BE1694-9B42-4E6C-880F-B5EE1765EE44}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{765BD0C9-117D-4D0E-88C9-2CEBD4898135}">
+							<!-- Method Call.has Prompt Value -->
+							<targetInstances>
+								<!-- `Target Instance for Assign Attribute` = the newly created instance from create instance method -->
+								<instanceReference instanceId="{08AB6C76-7461-4F10-9131-E2B63CF404C3}" />
+								<!-- `Attribute Value for Assign Attribute` = value (from prompt `Class Name`) -->
+								<instanceReference instanceId="{A505A755-3EB3-4D17-87D8-8332203F662C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{24fb17d2-785d-4c3f-a873-a0c9ee97bb4f}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class:Common:Create Class Subedit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Class" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="&IDI_Module_MochaBaseSystem;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{321d424d-b397-4583-93b0-18159d04e92d}" classInstanceId="&IDC_ElementContent;">
+					<!-- Class Name -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content. for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{24fb17d2-785d-4c3f-a873-a0c9ee97bb4f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- `Name` [TX] -->
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A5BF6B1C-AF0F-42F0-9506-EAE0D5183B56}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Task__has_initiating__Element;">
+							<targetInstances>
+								<instanceReference instanceId="{24fb17d2-785d-4c3f-a873-a0c9ee97bb4f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Prompt -->
+							<targetInstances>
+								<!-- Class Name -->
+								<instanceReference instanceId="{ABA93F7C-63F1-49C1-804C-B935476E961A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}">
+							<!-- Task.executes Method Call -->
+							<targetInstances>
+								<!-- create instance `Class` -->
+								<instanceReference instanceId="{BEFAFDC4-358B-44E9-ACD9-FD253402EA22}" />
+								<!-- assign attribute `Name` to Instance parm (newly created) using Value parm (from prompt `Class Name`) -->
+								<instanceReference instanceId="{0D4E84E7-84CD-431D-BB2A-6B8E08C202FD}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Class" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Creates a new instance of a Class" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

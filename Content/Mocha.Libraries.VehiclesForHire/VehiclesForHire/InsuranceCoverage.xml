@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  InsuranceCoverage.xml - XML definition for the `Insurance Coverage` class
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				
+				<instance id="{66ab8ed1-2162-480d-8c71-6a19297e4891}" classInstanceId="&IDC_Relationship;">
+					<!-- Insurance Policy.has Insurance Coverage -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{9cbc3c97-bd95-4b00-9086-9e31a8a8be4f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{b75a5c09-0693-4c8c-aee3-d3f848d5e580}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{b75a5c09-0693-4c8c-aee3-d3f848d5e580}" classInstanceId="&IDC_Relationship;">
+					<!-- Insurance Coverage.for Insurance Policy -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{9cbc3c97-bd95-4b00-9086-9e31a8a8be4f}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{66ab8ed1-2162-480d-8c71-6a19297e4891}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{1173b249-7c44-4339-9ad3-e5a08540aa63}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<!-- ESI: Insurance Coverage.has Insurance Coverage Type -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{ecdda4dd-fdd5-441d-82e0-cfbbc2342bf7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a0fd1276-b3da-4ef8-9a37-a2520af6c2f4}" classInstanceId="&IDC_InstanceAttributeStringComponent;">
+					<!-- Instance Attribute String Component: Value -->
+					<relationships>
+						<relationship relationshipInstanceId="{E15D4277-69FB-4F19-92DB-8D087F361484}">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Value;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{e7c324a9-f093-4c05-b162-dcc719e5c994}" classInstanceId="&IDC_String;">
+					<!-- Insurance Coverage labeler -->
+					<!-- should be: Value (Numeric Attribute) , Insurance Coverage Type -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{f755bb83-edce-4254-93a7-028ec2dc6a1d}" /> <!-- '$' -->
+								<instanceReference instanceId="{a0fd1276-b3da-4ef8-9a37-a2520af6c2f4}" /> <!-- Value [NM] -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" /> <!-- ' ' -->
+								<!-- FIXME: this should be:
+									Insurance Coverage Type@get Abbreviation [ramb]
+								for instance:
+									Insurance Coverage (This Instance)@get Insurance Coverage Type
+								-->
+								<instanceReference instanceId="{1173b249-7c44-4339-9ad3-e5a08540aa63}" /> <!-- Ins Cov Typ -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9cbc3c97-bd95-4b00-9086-9e31a8a8be4f}" superClassId="&IDC_Class;">
+					<!-- Insurance Coverage -->
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Insurance Coverage" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{e7c324a9-f093-4c05-b162-dcc719e5c994}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: orlvfh -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

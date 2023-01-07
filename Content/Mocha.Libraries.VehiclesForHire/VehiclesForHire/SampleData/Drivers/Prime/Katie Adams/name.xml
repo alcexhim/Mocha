@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{781bfe49-0635-450c-8719-0b0ac20a4e7f}" classInstanceId="{04fea3a4-1dd9-4fc3-9b17-35edf0b86d03}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{feec53f2-385c-48bf-976a-3e5e42b45c2e}" value="Katie" />
+						<attributeValue attributeInstanceId="{16edd080-b1df-4d87-9bf5-b5978cc17431}" value="Adams" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

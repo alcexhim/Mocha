@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Dashboard.xml - XML definition for the initial Mocha `Dashboard` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				
+				<relationship id="&IDR_Dashboard__has__Dashboard_Content;"
+					sourceClassId="&IDC_Dashboard;"
+					type="has"
+					destinationClassId="&IDC_DashboardContent;"
+					siblingRelationshipId="{9f236d2d-1f45-4096-a69c-42f37abbeebc}" />
+				
+				<relationship id="{9f236d2d-1f45-4096-a69c-42f37abbeebc}"
+					sourceClassId="&IDC_DashboardContent;"
+					type="for"
+					destinationClassId="&IDC_Dashboard;"
+					siblingRelationshipId="&IDR_Dashboard__has__Dashboard_Content;" />
+				
+				<relationship id="&IDR_Dashboard_Content__has__Instance;"
+					sourceClassId="&IDC_DashboardContent;"
+					type="has"
+					destinationClassId="&IDC_Instance;"
+					siblingRelationshipId="{376951c9-252b-4843-8e1d-ca89c94ddfa6}" />
+				
+				<relationship id="{376951c9-252b-4843-8e1d-ca89c94ddfa6}"
+					sourceClassId="&IDC_Instance;"
+					type="for"
+					destinationClassId="&IDC_DashboardContent;"
+					siblingRelationshipId="&IDR_Dashboard_Content__has__Instance;" />
+				
+				<instance id="{6D1C6E4D-8D36-4E18-9256-363105AC09B1}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Dashboard.has Dashboard Content -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Dashboard` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Dashboard;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Dashboard Content` -->
+							<targetInstances>
+								<instanceReference instanceId="{D1A60533-1B5A-422E-9739-4551FDEC48BF}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{44F0C7EF-A715-4833-84DC-D64347B9D6A5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{44F0C7EF-A715-4833-84DC-D64347B9D6A5}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Dashboard Content.for Dashboard -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Dashboard Content` -->
+							<targetInstances>
+								<instanceReference instanceId="{D1A60533-1B5A-422E-9739-4551FDEC48BF}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Dashboard` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Dashboard;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{6D1C6E4D-8D36-4E18-9256-363105AC09B1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="&IDC_Dashboard;" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Dashboard" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{D1A60533-1B5A-422E-9739-4551FDEC48BF}" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Dashboard Content" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{C0B0CE3D-4AA6-417E-93F0-AAF39FDC191A}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Dashboard Content.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Dashboard Content` -->
+							<targetInstances>
+								<instanceReference instanceId="{D1A60533-1B5A-422E-9739-4551FDEC48BF}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{050AF695-B568-4463-AB0A-543209D4374B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{050AF695-B568-4463-AB0A-543209D4374B}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Dashboard Content -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Dashboard Content` -->
+							<targetInstances>
+								<instanceReference instanceId="{D1A60533-1B5A-422E-9739-4551FDEC48BF}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{C0B0CE3D-4AA6-417E-93F0-AAF39FDC191A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

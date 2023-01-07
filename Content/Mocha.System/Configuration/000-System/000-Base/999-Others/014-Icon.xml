@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Icon.xml - XML definition for the initial Mocha `Icon` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Icon.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Icon` -->
+							<targetInstances>
+								<instanceReference instanceId="{FC73ECB7-58C7-4E3C-B916-BB0C86864A67}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{026D6615-5639-4AF1-B692-C33557EF4363}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{026D6615-5639-4AF1-B692-C33557EF4363}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Icon -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has source Class `Icon` -->
+							<targetInstances>
+								<instanceReference instanceId="{FC73ECB7-58C7-4E3C-B916-BB0C86864A67}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{67BD594B-E8B0-4752-8796-D7A369513FBF}" superClassId="&IDC_Class;">
+					<!-- Icon -->
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Icon" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{2B71F9EE-E843-46ED-B07D-B0424767A921}" superClassId="{67BD594B-E8B0-4752-8796-D7A369513FBF}">
+					<!-- Font Awesome Icon -->
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Font Awesome Icon" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<!-- .has Attribute "Name" (Text Attribute) -->
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{AEBB7B6A-917F-4D62-AED8-279E758ED203}" superClassId="{67BD594B-E8B0-4752-8796-D7A369513FBF}">
+					<!-- Font Awesome Icon -->
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Image Icon" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<!-- .has Attribute "Image URL" (Text Attribute) -->
+								<instanceReference instanceId="{8E4924CC-F09D-488A-80A6-7000B21510C0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{FC73ECB7-58C7-4E3C-B916-BB0C86864A67}" classInstanceId="{2B71F9EE-E843-46ED-B07D-B0424767A921}">
+					<translations>
+						<translation relationshipInstanceId="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Dashboard / Tachometer" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="tachometer" />
+					</attributeValues>
+				</instance>
+				<instance id="{41C8C445-A0C9-4245-A05C-3AA282A06985}" classInstanceId="{2B71F9EE-E843-46ED-B07D-B0424767A921}">
+					<translations>
+						<translation relationshipInstanceId="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Cubes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="cubes" />
+					</attributeValues>
+				</instance>
+				<instance id="{FA5F164D-04AD-495A-BDFB-BD33E80E22F1}" classInstanceId="{2B71F9EE-E843-46ED-B07D-B0424767A921}">
+					<translations>
+						<translation relationshipInstanceId="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Book" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="book" />
+					</attributeValues>
+				</instance>
+				<instance id="{92A5E29D-78E2-43FA-96AE-84827C441667}" classInstanceId="{2B71F9EE-E843-46ED-B07D-B0424767A921}">
+					<translations>
+						<translation relationshipInstanceId="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Life Ring / Life Buoy / Life Preserver / Support" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="life-ring" />
+					</attributeValues>
+				</instance>
+				<instance id="{463C1D88-D2CD-45BA-BEBA-29CFD5509E17}" classInstanceId="{2B71F9EE-E843-46ED-B07D-B0424767A921}">
+					<translations>
+						<translation relationshipInstanceId="{E16BFD3B-2F2C-431F-A7E1-BC2ADC6A3746}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Paper Plane (Outline)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="paper-plane-o" />
+					</attributeValues>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

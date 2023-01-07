@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Report.xml - XML definition for the initial Mocha `Report` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<relationship id="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}" 
+					sourceClassId="&IDC_Report;"
+					type="has title"
+					destinationClassId="&IDC_Translation;"
+					siblingRelationshipId="{2C4EA43B-6242-4370-9FF2-A78994702BCD}" />
+				
+				<relationship id="{2C4EA43B-6242-4370-9FF2-A78994702BCD}" 
+					sourceClassId="&IDC_Translation;"
+					type="title for"
+					destinationClassId="&IDC_Report;"
+					siblingRelationshipId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}" />
+				
+				<instance id="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report.has instructions Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has instructions" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{C2B3A2FA-25A0-45B4-91F2-22D00C4008AF}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{C2B3A2FA-25A0-45B4-91F2-22D00C4008AF}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.instructions for Report -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="instructions for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<targetInstances>
+								<instanceReference instanceId="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{DA50F279-D2EA-4E09-9D34-D3C47CA13EE8}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2956F23F-131C-4505-B100-B635457C81A8}" classInstanceId="&IDC_String;">
+					<!-- String: Report.instance labeled by String -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{DA50F279-D2EA-4E09-9D34-D3C47CA13EE8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_Report;" superClassId="&IDC_Class;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abstract;" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<!-- Class.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Report`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{2956F23F-131C-4505-B100-B635457C81A8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}">
+							<!-- Class `Report`.has default Task `Execute Report` -->
+							<targetInstances>
+								<instanceReference instanceId="{D50415EA-2C91-4942-8232-A8CC32A8D96B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{899E6F59-8881-4126-B06C-B265525872D5}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{98A36370-2CE5-4707-B99A-B3F856FE0834}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{899E6F59-8881-4126-B06C-B265525872D5}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Field.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{8AAAEF67-2CB8-4CC1-B854-F95E353848D1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{8AAAEF67-2CB8-4CC1-B854-F95E353848D1}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Report Field -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="&IDR_Report_Field__has_source__Method;" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Field.has source Method -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has source" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Method;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{ee9d1f11-e360-4b4e-acd0-f231ef0564e9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{ee9d1f11-e360-4b4e-acd0-f231ef0564e9}" classInstanceId="&IDC_Relationship;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="source for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Method;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportField;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Report_Field__has_source__Method;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				
+				<instance id="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report.has Report Column -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportColumn;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{3FA19854-CF0F-4656-B80B-54EF633503E0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{3FA19854-CF0F-4656-B80B-54EF633503E0}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Report Column.for Report -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportColumn;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Report;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{33C51321-C18B-409C-A7D0-BEF65BFEFC9A}" classInstanceId="{B9C1E04A-FABB-4DEE-A56A-E3AA308237A1}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Report_Edit" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Edit Standard Report" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Task__has_preview_action_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Edit" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Task__has__Task_Category;">
+							<targetInstances>
+								<!-- Instance -->
+								<instanceReference instanceId="{a86afe16-bcf7-4602-90ff-8dc3b7493c5b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_StandardReport;" superClassId="&IDC_Report;" index="1422">
+					<translations>,
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<!-- Class.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Standard Report" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<!-- FIXME: this should be inherited from `Report` class -->
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Report`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{2956F23F-131C-4505-B100-B635457C81A8}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<targetInstances>
+								<instanceReference instanceId="{33C51321-C18B-409C-A7D0-BEF65BFEFC9A}" />
+							</targetInstances>
+						</relationship>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

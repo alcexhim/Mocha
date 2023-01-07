@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0727d8c3-22b0-461f-87fa-0d190d51e608}</ProjectGuid>
+    <ProjectGuid>{1772cbb1-301c-430b-b5d3-9361124093d6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mocha.Web</RootNamespace>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\Output\Debug\System\Libraries</OutputPath>
+    <OutputPath>..\..\Output\Debug\System</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,103 +26,28 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Output\Release\System\Libraries</OutputPath>
+    <OutputPath>..\..\Output\Release\System</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Configuration\" />
-    <Folder Include="Configuration\000-System\002-Prompt\" />
-    <Folder Include="Configuration\000-System\003-PageBuilder\" />
-    <Folder Include="Configuration\000-System\004-Reporting\" />
-    <Folder Include="Configuration\000-System\001-Security\" />
-    <Folder Include="Configuration\000-System\005-File\" />
-    <Folder Include="Configuration\000-System\006-Menu\" />
-    <Folder Include="Configuration\000-System\007-Dashboard\" />
-    <Folder Include="Configuration\000-System\008-Tenant\" />
-    <Folder Include="Configuration\001-Pages\" />
-    <Folder Include="Configuration\002-Tasks\" />
-    <Folder Include="Configuration\003-Reports\" />
-    <Folder Include="Configuration\004-Tenants\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Configuration\000-System\Library.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\000-Prompt.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\001-PromptQualifier.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\002-ChoicePrompt.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\003-BooleanPrompt.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\003-TextPrompt.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\004-InstancePrompt.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\005-ReferencePrompt.xml" />
-    <Compile Include="Configuration\000-System\002-Prompt\006-DatePrompt.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\001-Page.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\002-PanelPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\002-ButtonPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\002-ParagraphPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\002-ImagePageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\004-SequentialContainerPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\003-ContainerPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\002-HeadingPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\001-PageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\005-AccordionPageComponent.xml" />
-    <Compile Include="Configuration\000-System\001-Security\006-SecurityGroup.xml" />
-    <Compile Include="Configuration\000-System\001-Security\007-TenantType.xml" />
-    <Compile Include="Configuration\000-System\001-Security\008-LoginDeviceType.xml" />
-    <Compile Include="Configuration\000-System\001-Security\009-LoginAuthenticationType.xml" />
-    <Compile Include="Configuration\000-System\001-Security\010-UserLogin.xml" />
-    <Compile Include="Configuration\000-System\001-Security\013-User.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\006-DetailPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\005-TabContainerPageComponent.xml" />
-    <Compile Include="Configuration\000-System\003-PageBuilder\006-SummaryPageComponent.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\000-Report.xml" />
-    <Compile Include="Configuration\000-System\005-File\000-File.xml" />
-    <Compile Include="Configuration\000-System\005-File\001-ReportFieldTypes.xml" />
-    <Compile Include="Configuration\000-System\006-Menu\000-Menu.xml" />
-    <Compile Include="Configuration\000-System\006-Menu\001-MenuItem.xml" />
-    <Compile Include="Configuration\000-System\006-Menu\003-MenuItemSeparator.xml" />
-    <Compile Include="Configuration\000-System\006-Menu\002-MenuItemCommand.xml" />
-    <Compile Include="Configuration\000-System\006-Menu\004-MenuItemHeader.xml" />
-    <Compile Include="Configuration\000-System\006-Menu\005-MenuItemInstance.xml" />
-    <Compile Include="Configuration\000-System\007-Dashboard\000-Dashboard.xml" />
-    <Compile Include="Configuration\000-System\008-Tenant\000-DataCenter.xml" />
-    <Compile Include="Configuration\000-System\008-Tenant\001-Tenant.xml" />
-    <Compile Include="Configuration\000-System\008-Tenant\003-SidebarMenuItems.xml" />
-    <Compile Include="Configuration\000-System\008-Tenant\002-DefaultTenantConfiguration.xml" />
-    <Compile Include="Configuration\001-Pages\000-LoginPage.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\001-ReportField.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\002-ReportColumn.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\006-ReportObject.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\003-ReportFacet.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\004-ReportDataSource.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\005-ReportColumnOption.xml" />
-    <Compile Include="Configuration\000-System\004-Reporting\007-ReportPrompt.xml" />
-    <Compile Include="Configuration\003-Reports\001-StandardReport-AllClasses.xml" />
-    <Compile Include="Configuration\003-Reports\002-StandardReport-FavoriteInstances.xml" />
-    <Compile Include="Configuration\004-Tenants\000-Default.xml" />
-    <Compile Include="Configuration\002-Tasks\000-Create Class.xml" />
-    <Compile Include="Configuration\002-Tasks\View Report Object.xml" />
-    <Compile Include="Configuration\003-Reports\002-StandardReport-DataSources.xml" />
-    <Compile Include="Configuration\002-Tasks\001-Edit Class.xml" />
-    <Compile Include="Configuration\002-Tasks\Create x509 Public Key.xml" />
-    <Compile Include="Configuration\002-Tasks\Create x509 Private Key Pair.xml" />
-    <Compile Include="Configuration\000-System\001-Security\x509 Public Key.xml" />
-    <Compile Include="Configuration\003-Reports\View Audit Trail.xml" />
-    <Compile Include="Configuration\000-System\001-Security\AuditLine.xml" />
-    <Compile Include="Configuration\002-Tasks\Create Application.xml" />
-  </ItemGroup>
-	<!--
-	-->
-  <ItemGroup>
     <None Include="mocha.dtd" />
-    <None Include="Configuration\002-Tasks\Edit Method.xqjs" />
-    <None Include="Configuration\002-Tasks\Edit Standard Report.xqjs" />
-    <None Include="Configuration\002-Tasks\Edit Translatable Text Constant.xqjs" />
-    <None Include="Configuration\002-Tasks\Edit User Preferences.xqjs" />
-    <None Include="Configuration\002-Tasks\Run Report.xqjs" />
-    <None Include="Configuration\002-Tasks\View Class.xqjs" />
-    <None Include="Configuration\002-Tasks\VIew Tenant.xqjs" />
-    <None Include="Configuration\003-Reports\All Classes 2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library.xml" />
+    <Compile Include="Reports\View User Logins for User.xml" />
+    <Compile Include="Pages\ReportPage.xml" />
+    <Compile Include="MasterPages\Blank.xml" />
+    <Compile Include="MasterPages\Default.xml" />
+    <Compile Include="Pages\LoginPage\LoginPage.xml" />
+    <Compile Include="Pages\LoginPage\LoginPageSubelement.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Reports\" />
+    <Folder Include="MasterPages\" />
+    <Folder Include="Pages\LoginPage\" />
   </ItemGroup>
   <Import Project="..\..\Mocha.Compiler.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

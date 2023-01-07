@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  GetAttributeMethod.xml - gets the value of the given Attribute on the current Instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDA_UseAnyCondition;" classInstanceId="&IDC_BooleanAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="UseAnyCondition" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Use Any Condition" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<relationship id="&IDR_Conditional_Method__has__Conditional_Method_Case;"
+					sourceClassId="&IDC_Method;"
+					type="has"
+					destinationClassId="&IDC_ConditionalMethodCase;"
+					siblingRelationshipId="&IDR_Conditional_Method_Case__for__Conditional_Method;"
+					singular="true" />
+				
+				<relationship id="&IDR_Conditional_Method_Case__for__Conditional_Method;"
+					sourceClassId="&IDC_ConditionalMethodCase;"
+					type="for"
+					destinationClassId="&IDC_Method;"
+					siblingRelationshipId="&IDR_Conditional_Method__has__Conditional_Method_Case;" />
+				
+				
+				<relationship id="&IDR_Conditional_Method_Case__has_return_attribute__Method_Binding;"
+					sourceClassId="&IDC_Method;"
+					type="has return attribute"
+					destinationClassId="&IDC_MethodBinding;"
+					siblingRelationshipId="&IDR_Method_Binding__returns_attribute_for__Conditional_Method_Case;"
+					singular="true" />
+				
+				<relationship id="&IDR_Method_Binding__returns_attribute_for__Conditional_Method_Case;"
+					sourceClassId="&IDC_MethodBinding;"
+					type="returns attribute for"
+					destinationClassId="&IDC_ConditionalMethodCase;"
+					siblingRelationshipId="&IDR_Conditional_Method_Case__has_return_attribute__Method_Binding;" />
+				
+				<relationship id="&IDR_Conditional_Method_Case__has_true_condition__Method_Binding;"
+					sourceClassId="&IDC_Method;"
+					type="has true condition"
+					destinationClassId="&IDC_MethodBinding;"
+					siblingRelationshipId="&IDR_Method_Binding__true_condition_for__Conditional_Method_Case;"
+					singular="true" />
+				
+				<relationship id="&IDR_Method_Binding__true_condition_for__Conditional_Method_Case;"
+					sourceClassId="&IDC_MethodBinding;"
+					type="true condition for"
+					destinationClassId="&IDC_ConditionalMethodCase;"
+					siblingRelationshipId="&IDR_Conditional_Method_Case__has_true_condition__Method_Binding;" />
+				
+				<relationship id="&IDR_Conditional_Method_Case__has_false_condition__Method_Binding;"
+					sourceClassId="&IDC_Method;"
+					type="has false condition"
+					destinationClassId="&IDC_MethodBinding;"
+					siblingRelationshipId="&IDR_Method_Binding__false_condition_for__Conditional_Method_Case;"
+					singular="true" />
+				
+				<relationship id="&IDR_Method_Binding__false_condition_for__Conditional_Method_Case;"
+					sourceClassId="&IDC_MethodBinding;"
+					type="false condition for"
+					destinationClassId="&IDC_ConditionalMethodCase;"
+					siblingRelationshipId="&IDR_Conditional_Method_Case__has_false_condition__Method_Binding;" />
+				
+				<class id="&IDC_ConditionalMethodCase;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<!-- Class.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Conditional Method Case" />
+							</translationValues>
+						</translation>
+					</translations>
+				</class>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

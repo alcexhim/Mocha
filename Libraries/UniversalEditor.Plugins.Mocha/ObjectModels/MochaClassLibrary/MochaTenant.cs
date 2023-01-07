@@ -26,15 +26,67 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 		public class MochaTenantCollection
 			: System.Collections.ObjectModel.Collection<MochaTenant>
 		{
+			public MochaTenant this[Guid id]
+			{
+				get
+				{
+					foreach (MochaTenant tenant in this)
+					{
+						if (tenant.ID == id)
+							return tenant;
+					}
+					return null;
+				}
+			}
+			public MochaTenant this[string name]
+			{
+				get
+				{
+					foreach (MochaTenant tenant in this)
+					{
+						if (tenant.Name == name)
+							return tenant;
+					}
+					return null;
+				}
+			}
 			public void Merge(MochaTenant tenant)
 			{
-				MochaTenant existing = null;  // this[tenant.Name];
+				MochaTenant existing = this[tenant.ID];
 				if (existing != null)
 				{
+					if (existing.Name == null && tenant.Name != null)
+					{
+						existing.Name = tenant.Name;
+					}
+					if (existing.DefaultObjectSourceID == Guid.Empty)
+						existing.DefaultObjectSourceID = tenant.DefaultObjectSourceID;
 
+					foreach (Guid lref in tenant.LibraryReferences)
+					{
+						if (!existing.LibraryReferences.Contains(lref))
+							existing.LibraryReferences.Add(lref);
+					}
+
+					foreach (MochaInstance inst in tenant.Instances)
+					{
+						if (!existing.Instances.Contains(inst))
+						{
+							existing.Instances.Add(inst);
+						}
+					}
+					foreach (MochaRelationship rel in tenant.Relationships)
+					{
+						if (!existing.Relationships.Contains(rel))
+						{
+							existing.Relationships.Add(rel);
+						}
+					}
 				}
-
-				Add(tenant);
+				else
+				{
+					Add(tenant);
+				}
 			}
 		}
 
@@ -47,7 +99,7 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 
 		public MochaInstance.MochaInstanceCollection Instances { get; } = new MochaInstance.MochaInstanceCollection();
 		public MochaRelationship.MochaRelationshipCollection Relationships { get; } = new MochaRelationship.MochaRelationshipCollection();
-		public MochaLibraryReference.MochaLibraryReferenceCollection LibraryReferences { get; } = new MochaLibraryReference.MochaLibraryReferenceCollection();
+		public System.Collections.Generic.List<Guid> LibraryReferences { get; } = new System.Collections.Generic.List<Guid>();
 
 		public object Clone()
 		{
@@ -69,11 +121,17 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 			{
 				clone.Relationships.Add(item.Clone() as MochaRelationship);
 			}
-			foreach (MochaLibraryReference item in LibraryReferences)
+			foreach (Guid item in LibraryReferences)
 			{
-				clone.LibraryReferences.Add(item.Clone() as MochaLibraryReference);
+				clone.LibraryReferences.Add((Guid)item);
 			}
 			return clone;
+		}
+
+		public MochaInstance FindInstance(Guid id)
+		{
+			MochaInstance inst = Instances[id];
+			return inst;
 		}
 	}
 }

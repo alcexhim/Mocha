@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  MethodBinding.xml - XML definition for the initial Mocha `Method Binding` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{803c96f5-44e7-49d0-ab8f-5af2324eb3cc}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{2c9607d0-b02b-414f-b80e-ad23f6cec026}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2227da05-b91a-4dd8-9acf-9c625beadd2c}" classInstanceId="&IDC_Parameter;">
+					<!-- Method Binding for get Method Binding Suffix for Method Binding Parm -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Required;" value="true" />
+						<attributeValue attributeInstanceId="&IDA_Null;" value="false" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method Binding [CL]" />
+							</translationValues>
+						</translation>
+					</translations>
+					<!--
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Parameter__has_data_type__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					-->
+				</instance>
+				
+				<method id="{5e29a169-e0f9-49d8-928e-f994dfbf230f}" type="conditionalSelectAttribute" verb="get" name="Method Binding Suffix for Method Binding parm">
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method Binding Suffix for Method Binding parm" />
+							</translationValues>
+						</translation>
+					</translations>
+					<cases>
+						<case id="{d218fa0c-43fa-43a9-9908-3fdc3c98c323}" useAnyCondition="true" returnAttributeMethodBindingId="{bdd96c09-d6aa-4ee5-879b-252a739af0ba}">
+							<trueConditions>
+								<!-- Method Binding@is Return Attribute Method Binding (EBE)*P [ramb] -->
+								<instanceReference instanceId="{2a842498-2c6c-405a-a167-bf12f5455e1c}" />
+							</trueConditions>
+							<falseConditions>
+							</falseConditions>
+						</case>
+						<case id="{bfe32d09-a239-40c5-8bc9-92bfbdd681e5}" useAnyCondition="true" returnAttributeMethodBindingId="{8015862a-1d37-4a8e-baa3-d83840015938}">
+							<trueConditions>
+								<!-- Method Binding@is Return Instance Set Method Binding (EBE)*P [ramb] -->
+								<instanceReference instanceId="{2a842498-2c6c-405a-a167-bf12f5455e1c}" />
+							</trueConditions>
+							<falseConditions>
+							</falseConditions>
+						</case>
+						<case id="{70fba452-590f-4ad9-94d5-283d04b28971}">
+							<!-- Default Case, returns empty -->
+						</case>
+					</cases>
+					<methodBindings>
+						<methodBinding id="{2c9607d0-b02b-414f-b80e-ad23f6cec026}">
+						</methodBinding>
+					</methodBindings>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Parameter;">
+							<!-- Method.has Method Parameter -->
+							<targetInstances>
+								<!-- Method Binding [CL] -->
+								<instanceReference instanceId="{2227da05-b91a-4dd8-9acf-9c625beadd2c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{43854823-5d45-4a2a-b1f8-8f73611ce1ed}">
+							<!--
+								SAC: Conditional Select Attribute Method
+								
+								Case:
+									True Conditions: User@is Account Locked
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								
+								Case:
+									True Conditions: User@is Account Disabled
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								
+								Case:
+									True Conditions: User@is Account Expired
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								
+								Case:
+									True Conditions:
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get False
+							-->
+							<!-- Conditional Method.has Conditional Method Case -->
+							<targetInstances>
+								<!--
+									True Conditions: User@is Account Locked
+									False Conditions:
+									Use Any Condition:
+									Return Attribute: Boolean Attribute@get True
+								-->
+								<instanceReference instanceId="" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_MethodBinding;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</method>
+				
+				<instance id="{97d04e97-4b85-446d-946e-9c3d37ec0bcc}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<!-- name (override) -->
+								<!-- <instanceReference instanceId="{5EB6D9EC-3031-4337-B9DB-7D67B3E4CB86}" /> -->
+								<!-- or base method name -->
+								<instanceReference instanceId="{fec5f214-67ed-4c78-a4bf-11606f539602}" />
+								
+								<!-- single space -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								
+								<!-- [ ramb ] : this should be a conditional string component -->
+								<instanceReference instanceId="{21CA6A9B-8405-4D8E-AFFD-CF1960397704}" />
+								
+								<!--
+								Method Binding@get Abbreviation (SAC)*P
+									case `This Class equal to Return Attribute Method Binding`: return `ramb`
+									case `This Class equal to Return Instance Set Method Binding`: return `rsmb`
+								-->
+								<instanceReference instanceId="{803c96f5-44e7-49d0-ab8f-5af2324eb3cc}" />
+								
+								<instanceReference instanceId="{94760D6C-64E9-494C-AFCC-AB4B68344F32}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

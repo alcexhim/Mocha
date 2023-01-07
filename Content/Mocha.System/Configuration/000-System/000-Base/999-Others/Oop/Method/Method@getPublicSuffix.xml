@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{0063333a-be99-4a3f-b489-01ec9d1860ff}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<!-- Text Attribute: Common Text@get '@' (BA - Build Attribute Method) static public [ramb] -->
+					<attributeValues>
+						<!-- value of attribute to build -->
+						<attributeValue attributeInstanceId="&IDA_Value;" value="*P" />
+					</attributeValues>
+				</instance>
+				<instance id="{ba5adcc7-cbc2-4104-ad7c-44c2c62e2db0}" classInstanceId="&IDC_BuildAttributeMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Public Method Suffix if Method parm is Public" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{0063333a-be99-4a3f-b489-01ec9d1860ff}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Common Text -->
+								<instanceReference instanceId="&IDC_Method;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{99C0A026-9CE1-44ED-8193-76CE396108A1}" classInstanceId="&IDC_StringComponent;">
+					<!-- String Component returning a RAMB: Text Attribute: Common Text@get '@' (BA - Build Attribute Method) static public [ramb] -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<!-- Common Text@get '@' (BA - Build Attribute Method) static public -->
+								<instanceReference instanceId="{ba5adcc7-cbc2-4104-ad7c-44c2c62e2db0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  InsurancePolicy.xml - XML definition for the `Insurance Policy` class
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<instance id="{82057f6b-c00e-4e6f-b179-d61a999196c7}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="PolicyNumber" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Policy Number" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Número de Póliza" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{f3f68e1d-7e43-4341-b66d-c5da630e8c32}" classInstanceId="&IDC_Relationship;">
+					<!-- Business.has Insurance Policy -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{d3f2529d-6daf-4789-93da-8be5348d3aec}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{999ccaf4-0c04-43a6-9945-173d45571625}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{999ccaf4-0c04-43a6-9945-173d45571625}" classInstanceId="&IDC_Relationship;">
+					<!-- Insurance Policy.for Business -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class -->
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{f3f68e1d-7e43-4341-b66d-c5da630e8c32}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{419208e2-6926-4d59-b26c-538d1a450cdb}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Target Relationship for Relationship Report Field -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Carrier" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship -->
+							<targetInstances>
+								<!-- Insurance Policy.has Insurance Carrier -->
+								<instanceReference instanceId="{29a687d8-67a7-4f25-9f18-a60a4d5b3df4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}" superClassId="&IDC_Class;">
+					<!-- Insurance Policy -->
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Insurance Policy" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Póliza de Seguros" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{51535bd5-6214-44a0-bd6b-a74a77703c1e}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class.has summary Report Field -->
+							<targetInstances>
+								<!-- `Carrier` -->
+								<instanceReference instanceId="{419208e2-6926-4d59-b26c-538d1a450cdb}" />
+								<!-- `Expiration Date` -->
+								<instanceReference instanceId="{d9bedf9a-f488-423f-bf35-3ab2b6a57270}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{63b2fdbf-804b-4944-a516-8d1f9ec24234}" classInstanceId="{623565D5-5AEE-49ED-A5A9-0CFE670507BC}">
+					<relationships>
+						<relationship relationshipInstanceId="{E15D4277-69FB-4F19-92DB-8D087F361484}">
+							<!-- Instance Attribute String Component.has Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{82057f6b-c00e-4e6f-b179-d61a999196c7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{5d88de91-e296-4572-8cd3-5baa87b33e66}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<!-- Insurance Policy.has Insurance Coverage -->
+								<instanceReference instanceId="{66ab8ed1-2162-480d-8c71-6a19297e4891}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{80ca71ba-a4e6-4008-97ec-03848f137203}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<!-- Insurance Policy.has Insurance Carrier -->
+								<instanceReference instanceId="{29a687d8-67a7-4f25-9f18-a60a4d5b3df4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{51535bd5-6214-44a0-bd6b-a74a77703c1e}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<!-- Policy Number -->
+								<instanceReference instanceId="{63b2fdbf-804b-4944-a516-8d1f9ec24234}" />
+								<!-- ':' -->
+								<instanceReference instanceId="{ff51d26b-28de-43a4-86d1-4c8799e140d5}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- Insurance Carrier -->
+								<instanceReference instanceId="{80ca71ba-a4e6-4008-97ec-03848f137203}" />
+								<!-- ' ' -->
+								<instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" />
+								<!-- Insurance Coverage -->
+								<instanceReference instanceId="{5d88de91-e296-4572-8cd3-5baa87b33e66}" />
+								
+								
+								<!-- ' ' -->
+								<!-- <instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" /> -->
+								<!-- "expires" -->
+								<!-- <instanceReference instanceId="{1d5f59db-5b4c-4551-b0c9-e5fda3ac7bf4}" /> -->
+								<!-- ' ' -->
+								<!-- <instanceReference instanceId="{936E4426-5995-4713-BDEE-BF4F7BA2AFAE}" /> -->
+								<!-- Expiration Date -->
+								<!-- <instanceReference instanceId="{e18b9988-2e30-4c79-9069-1ca1c3999f76}" /> -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

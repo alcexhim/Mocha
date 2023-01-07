@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  InspectionEventsForBusiness.xml - XML definition for the `All Businesses` report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{43d71827-771a-48a4-bb55-de707ad37620}" classInstanceId="&IDC_ParameterAssignment;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_to__Parameter;">
+							<targetInstances>
+								<instanceReference instanceId="{53675af2-67e1-425f-b121-6f1d4459179a}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_from__Method_Binding;">
+							<targetInstances>
+								<!--
+									Class@get Class (GSI)*P*S [rsmb]
+									================================
+									This Get Specific Instance Method returns the class, Inspection Event.
+								-->
+								<instanceReference instanceId="{f3cb4f6c-e4bf-4e84-b652-bfac8c6773ac}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5ed52cbc-04a6-42ba-b6de-d1c19b5a9c14}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- Return Instance Set Method Binding: return all instances where Class instance = 1$1 (Class) [rsmb] -->
+					<translations>
+						<translation relationshipInstanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}">
+							<!-- Method Binding.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="return all instances where Class instance = (Inspection Event)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<!-- Method Binding.for Method -->
+							<targetInstances>
+								<instanceReference instanceId="{B6509D59-536A-4514-A797-184AF5C835F4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__has__Parameter_Assignment;">
+							<!-- assign `Class [CL]` to `Class@get Class(GSI)*P*S` -->
+							<targetInstances>
+								<instanceReference instanceId="{43d71827-771a-48a4-bb55-de707ad37620}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4553b523-b930-4a66-b2db-b369adc90ff6}" classInstanceId="{C46FA477-1F9F-4C5E-A232-8BB3CB70B97D}">
+					<!-- Report Data Source: Inspection Events for Business -->
+					<translations>
+						<translation relationshipInstanceId="{0B698B22-1E66-46E2-B152-1259333091F2}">
+							<!-- Report Data Source.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Vehicles" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}">
+							<!-- Report Data Source.has description Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Accesses the Vehicle as its primary object and returns one row per vehicle. Does not contain any built-in prompts." />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2D5CB496-5839-46A0-9B94-30D4E2227B56}">
+							<!-- Report Data Source.has source Method -->
+							<targetInstances>
+								<instanceReference instanceId="{5ed52cbc-04a6-42ba-b6de-d1c19b5a9c14}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

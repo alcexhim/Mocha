@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  View Business.xml - XML definition for the `View Business` task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				
+				<instance id="{c013138e-7363-4114-a3ca-9e6d344ebc85}" classInstanceId="&IDC_Element;">
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="VFH:Business Common:Business Subedit" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Element__has_label__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Business" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Element__has__Element_Content;">
+							<targetInstances>
+								<instanceReference instanceId="{4d950ddc-d7b6-43bc-be0b-9d266aea695a}" />
+								<instanceReference instanceId="{438bbea5-c11c-4e53-bae3-a7e66298ae8e}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4d950ddc-d7b6-43bc-be0b-9d266aea695a}" classInstanceId="&IDC_ElementContent;">
+					<!-- Business -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="a" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{c013138e-7363-4114-a3ca-9e6d344ebc85}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Business [CL] -->
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+								<!-- Do Not Show -->
+								<instanceReference instanceId="{cc278872-4454-49fe-821a-ae657bffe062}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{438bbea5-c11c-4e53-bae3-a7e66298ae8e}" classInstanceId="&IDC_ElementContent;">
+					<!-- Business Name -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Order;" value="b" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{2eff7f58-0edd-40b7-9c06-00774257649e}">
+							<!-- Element Content.for Element -->
+							<targetInstances>
+								<instanceReference instanceId="{c013138e-7363-4114-a3ca-9e6d344ebc85}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Instance;">
+							<targetInstances>
+								<!-- Name [TX] -->
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Element_Content__has__Element_Content_Display_Option;">
+							<!-- Element Content.has Element Content Display Option -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

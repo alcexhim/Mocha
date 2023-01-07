@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  LoginAuthenticationType.xml - XML definition for the initial Mocha `Login Authentication Type` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Login Authentication Type.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+					</attributeValues>
+					<relationships>
+						<!-- .has source Class `Login Authentication Type` -->
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="{688F229C-488B-415C-8576-A47D15E02AB0}" />
+							</targetInstances>
+						</relationship>
+						<!-- .has destination Class `Translation` -->
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{59221689-89C5-4AE0-8DC4-C7D3D6C31C7C}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Login Authentication Type -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<!-- .has source Class `Translation` -->
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<!-- .has destination Class `Login Authentication Type` -->
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<targetInstances>
+								<instanceReference instanceId="{688F229C-488B-415C-8576-A47D15E02AB0}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{59272367-7213-478B-AFD2-7A694D6B915D}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<!-- Extract Single Instance String Component -->
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{8D8F415F-E095-4DEF-B52C-9FA370BCE7D1}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{59272367-7213-478B-AFD2-7A694D6B915D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{688F229C-488B-415C-8576-A47D15E02AB0}" superClassId="&IDC_Class;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Login Authentication Type" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{8D8F415F-E095-4DEF-B52C-9FA370BCE7D1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A0B4E2AE-705F-4AFD-9A00-06E4A7B44385}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User Name Password" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{73083E29-94F4-4C5E-BAC4-24210B43E1B5}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Delegated Authentication" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{F4781211-7B59-465F-A9C4-A74B972213AA}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="SAML" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{648B3E0D-20A4-4156-832A-BB33A38A254F}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Proxy" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{FB1F6507-8054-47D4-80AD-5A0C4D65BC22}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Trusted" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{CA9B5401-4C66-4AAB-90DA-80C4037F5DEF}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Session ID" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{9F5D76A5-CB0B-4A92-9415-7501ABD8F7B6}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="X.509" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{5443F0FB-1BBC-4897-BCF7-67114EE2E7B6}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="DelegationStarted" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{6D21C006-4BBC-49FF-A9B3-9AE2BFF177C9}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="DelegationEnded" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{6C680677-7787-4A93-97ED-1BE7EF3D44ED}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="OAuth" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{36A7E25D-F5D7-4AE3-BDA1-6859B6BD7A98}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User Name Password + Challenge Questions" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{AC617F03-E71B-44EB-B783-874A134E5EB0}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="InterOms" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{4947CF20-83DE-4BAE-8DC4-9A605F317F08}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="User Name Password + One Time Passcode" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{90A0A1E7-A1D4-4953-977E-E1E71E224D54}" classInstanceId="{688F229C-488B-415C-8576-A47D15E02AB0}">
+					<translations>
+						<translation relationshipInstanceId="{A9BE2FF8-8251-4822-A9FF-726FC2DDBABE}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="OAuth 2.0" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

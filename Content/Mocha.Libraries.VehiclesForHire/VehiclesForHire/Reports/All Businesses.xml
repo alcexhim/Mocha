@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  All Businesses.xml - XML definition for the `All Businesses` report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{32ec70c7-4035-4b52-96cd-44fb6d0d85ec}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- Return Instance Set Method Binding: return all instances where Class instance = 1$1 (Class) [rsmb] -->
+					<translations>
+						<translation relationshipInstanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}">
+							<!-- Method Binding.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="return all instances where Class instance = (Business)" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<!-- Method Binding.for Method -->
+							<targetInstances>
+								<instanceReference instanceId="{B6509D59-536A-4514-A797-184AF5C835F4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__has__Parameter_Assignment;">
+							<!-- assign `Class [CL]` to `Business@get Class(GSI)*P*S` -->
+							<targetInstances>
+								<instanceReference instanceId="{462648e5-a6a9-402a-90ce-6d09c5eb6c28}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{EE7A3049-8E09-410C-84CB-C2C0D652CF40}">
+							<!-- Return Instance Set Method Binding.has source Class -->
+							<targetInstances>
+								<instanceReference instanceId="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{462648e5-a6a9-402a-90ce-6d09c5eb6c28}" classInstanceId="&IDC_ParameterAssignment;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_to__Parameter;">
+							<targetInstances>
+								<instanceReference instanceId="{53675af2-67e1-425f-b121-6f1d4459179a}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_from__Method_Binding;">
+							<targetInstances>
+								<!--
+									Class@get Class (GSI)*P*S [rsmb]
+									================================
+									This Get Specific Instance Method returns the class, User Login.
+								-->
+								<instanceReference instanceId="{5ced0536-ed36-4e55-8fd4-ffe826a2cd9a}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{8f080ce8-5c78-41ce-87b7-e525f565b9f4}" classInstanceId="{C46FA477-1F9F-4C5E-A232-8BB3CB70B97D}">
+					<!-- Report Data Source: All Businesses -->
+					<translations>
+						<translation relationshipInstanceId="{0B698B22-1E66-46E2-B152-1259333091F2}">
+							<!-- Report Data Source.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Businesses" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Todas las Empresas" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}">
+							<!-- Report Data Source.has description Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Accesses the Businesses as its primary object and returns one row per business. Does not contain any built-in prompts." />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2D5CB496-5839-46A0-9B94-30D4E2227B56}">
+							<!-- Report Data Source.has source Method -->
+							<targetInstances>
+								<instanceReference instanceId="{32ec70c7-4035-4b52-96cd-44fb6d0d85ec}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{360aceb1-079e-4276-99b1-720523410422}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Business (Primary Object Report Field) -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" />
+								<!-- <instanceReference instanceId="{bf405db3-ef18-4b64-98eb-b54bc2984412}" /> -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a11e82fc-9c39-4311-a8be-6b91876e0174}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Owner -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{f12edc47-cd93-40e1-931f-7016bb7a36c7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{f222fcf5-5a3e-41cf-a8d9-2813f62ae5e9}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Date Opened -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Business@Date Opened` -->
+							<targetInstances>
+								<instanceReference instanceId="{3a618b3e-44a9-4ca5-8863-fb5050ec0611}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a3caa5ed-0185-4ec2-8cb0-eb4a5f03ca2d}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Location -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Business@Location` -->
+							<targetInstances>
+								<instanceReference instanceId="{d2f14c7c-ab73-486c-9a7d-307c7a9b78ca}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{76c846ce-88f6-4990-954f-95ad429208d4}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Insurance Policy -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{0da8404e-cf10-4615-9483-11238c5fcdcc}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a1b17702-69c5-47b3-8f5d-230aaf8b2cd8}" classInstanceId="&IDC_ReportColumn;">
+					<!--
+						Report Column: Vehicles awaiting Permit Renewal
+					
+						This is a calculated field. We Extract Multiple Instances from the 
+						Business.Vehicles field, with the condition Vehicle.Has Permit Expired
+					
+						Vehicle.Has Permit Expired is a calculated field, Evaluate Boolean Expression
+						where Permit Expiration Date is less than or equal to Current Date and Time.
+					-->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{c8b64e82-e5e3-4d55-8d98-ec6e75b1f86b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{41FFF5F0-B467-4986-A6FD-46FAF4A479E9}">
+							<!-- Report Column.has Report Column Option -->
+							<targetInstances>
+								<!-- Display as Count -->
+								<instanceReference instanceId="{5C9B4C79-995B-4E6A-81C0-39C174BF9F6D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{78bc2997-b469-4079-9919-d53a4f309a77}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Drivers -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{425cc5dd-3cad-4a8b-9e83-2d11d1667055}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{4654b3c7-7381-4d30-88c0-899d75b14622}" classInstanceId="&IDC_StandardReport;">
+					<!-- Standard Report -->
+					<translations>
+						<translation relationshipInstanceId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}">
+							<translationValues> 
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Businesses" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Todas las Empresas" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}">
+							<!-- Report.has instructions TTC -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View all businesses" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Ver todas las empresas" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{84f3969e-9840-4460-ad89-b6ae400f0a60}">
+							<!-- Securable Object.has Security Domain -->
+							<targetInstances>
+								<!-- Managers -->
+								<instanceReference instanceId="{38277966-fb69-4635-915d-3cbc8d1946f5}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{1DE7B484-F9E3-476A-A9D3-7D2A86B55845}">
+							<!-- Report.has Report Data Source -->
+							<targetInstances>
+								<instanceReference instanceId="{8f080ce8-5c78-41ce-87b7-e525f565b9f4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{EA7C6841-FFE0-4230-95CF-87B3D425DC38}">
+							<!-- Report.has Report Facet -->
+						</relationship>
+						<relationship relationshipInstanceId="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}">
+							<!-- Standard Report.has Report Column -->
+							<targetInstances>
+								<!-- Primary Object -->
+								<instanceReference instanceId="{360aceb1-079e-4276-99b1-720523410422}" />
+								<!-- Owner -->
+								<instanceReference instanceId="{a11e82fc-9c39-4311-a8be-6b91876e0174}" />
+								<!-- Date Opened -->
+								<instanceReference instanceId="{f222fcf5-5a3e-41cf-a8d9-2813f62ae5e9}" />
+								<!-- Location -->
+								<instanceReference instanceId="{a3caa5ed-0185-4ec2-8cb0-eb4a5f03ca2d}" />
+								<!-- Insurance Policy -->
+								<instanceReference instanceId="{76c846ce-88f6-4990-954f-95ad429208d4}" />
+								<!-- Drivers -->
+								<instanceReference instanceId="{78bc2997-b469-4079-9919-d53a4f309a77}" />
+								<!-- Vehicles awaiting Permit Renewal -->
+								<instanceReference instanceId="{a1b17702-69c5-47b3-8f5d-230aaf8b2cd8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

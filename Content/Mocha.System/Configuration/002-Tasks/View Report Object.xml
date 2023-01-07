@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  View Report Object.xml - XML definition for the initial Mocha `View Report Object` system task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{6a9faac6-58a8-419c-8207-789899ba2950}" classInstanceId="{F3ECBF1E-E732-4370-BE05-8FA7CC520F50}">
+					<!-- Instance Prompt: Report Object for View Report Object -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Object" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{D5BD754B-F401-4FD8-A707-82684E7E25F0}">
+							<!-- Instance Prompt.has valid Class -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_ReportObject;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{21171dcc-0fb7-42ad-afea-727374fa6242}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<relationships>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Parameter -->
+							<targetInstances>
+								<!-- Report Object -->
+								<instanceReference instanceId="{6a9faac6-58a8-419c-8207-789899ba2950}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}">
+							<!-- Task.executes Method Call -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View Report Object" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Displays the definition of a Report Object" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

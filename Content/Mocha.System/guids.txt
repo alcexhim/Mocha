@@ -1,0 +1,10 @@
+﻿{5C999F31-207C-4A6F-9B61-B8D75C0B736E}
+{D3C6B6F1-94E2-45C2-854D-70E82E34B586}
+
+
+Derived Validations
+Validation.has true condition Executable (rsmb, ramb, etc.)
+Validation.has false condition Executable (rsmb, ramb, etc.)
+Validation.has Boolean Attribute `Use Any Condition`
+Validation.has Boolean Attribute `Only on Submit`
+Validation.has error Translation

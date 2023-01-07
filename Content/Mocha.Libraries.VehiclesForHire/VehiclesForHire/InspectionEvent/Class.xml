@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  InspectionEvent.xml - XML definition for the `Inspection Event` class
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				
+				<instance id="{3b8e0c55-c266-4e62-877d-708a2f21ba53}" classInstanceId="&IDC_TaskCategory;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Inspection" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Inspección" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{f3cb4f6c-e4bf-4e84-b652-bfac8c6773ac}" superClassId="&IDC_Event;">
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Inspection Event" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class.instance labeled by String -->
+							<targetInstances>
+								<!-- (Passed|Failed) on Date by Inspector Person -->
+								<instanceReference instanceId="{cdbf1737-f9e2-46ca-a504-d17a1bf27bfe}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class.has summary Report Field -->
+							<targetInstances>
+								<!-- `Inspected By` -->
+								<instanceReference instanceId="{f10d24cb-a6be-40fc-a331-70c2d25704fb}" />
+								<!-- `Event Moment` -->
+								<instanceReference instanceId="{c56666e6-b442-4609-9d1c-1c8fca809922}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{63b2fdbf-804b-4944-a516-8d1f9ec24234}" classInstanceId="{623565D5-5AEE-49ED-A5A9-0CFE670507BC}">
+					<relationships>
+						<relationship relationshipInstanceId="{E15D4277-69FB-4F19-92DB-8D087F361484}">
+							<!-- Instance Attribute String Component.has Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{82057f6b-c00e-4e6f-b179-d61a999196c7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{5d88de91-e296-4572-8cd3-5baa87b33e66}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<!-- Insurance Policy.has Insurance Coverage -->
+								<instanceReference instanceId="{66ab8ed1-2162-480d-8c71-6a19297e4891}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{80ca71ba-a4e6-4008-97ec-03848f137203}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<!-- Insurance Policy.has Insurance Carrier -->
+								<instanceReference instanceId="{29a687d8-67a7-4f25-9f18-a60a4d5b3df4}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{cdbf1737-f9e2-46ca-a504-d17a1bf27bfe}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

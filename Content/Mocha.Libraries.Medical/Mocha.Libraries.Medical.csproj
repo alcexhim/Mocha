@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{871e84dd-5666-4261-8baa-a6c637c36e9b}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mocha.Libraries.Medical</RootNamespace>
+    <AssemblyName>Mocha.Libraries.Medical</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug\System</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release\System</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="mocha.dtd" />
+    <None Include="Patient\ReportObjects\Patient\ReportObject.xml" />
+    <None Include="Nurse\ReportObjects\Nurse\ReportObject.xml" />
+    <None Include="ScheduledJobPosition\ReportObjects\ScheduledJobPosition\ReportObject.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StarlightApplication.xml" />
+    <Compile Include="Patient\Patient.xml" />
+    <Compile Include="Nurse\class.xml" />
+    <Compile Include="999-Tenants\starlightcare1\tenant.xml" />
+    <Compile Include="999-Tenants\starlightcare\tenant.xml" />
+    <Compile Include="999-Tenants\starlightcare1\nurses\1.xml" />
+    <Compile Include="999-Tenants\starlightcare1\nurses\2.xml" />
+    <Compile Include="999-Tenants\starlightcare1\nurses\3.xml" />
+    <Compile Include="ScheduledJobPosition\class.xml" />
+    <Compile Include="999-Tenants\starlightcare1\jobCodes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patient\" />
+    <Folder Include="999-Tenants\" />
+    <Folder Include="Patient\ReportObjects\" />
+    <Folder Include="Patient\ReportObjects\Patient\" />
+    <Folder Include="Nurse\" />
+    <Folder Include="999-Tenants\starlightcare1\" />
+    <Folder Include="999-Tenants\starlightcare1\nurses\" />
+    <Folder Include="999-Tenants\starlightcare\" />
+    <Folder Include="ScheduledJobPosition\" />
+  </ItemGroup>
+  <Import Project="..\..\Mocha.Compiler.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

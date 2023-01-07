@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Location.xml - defines a location with coordinates, naming, etc.
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{07313588-f837-4e8e-84e7-286a877b0ba9}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Location" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<!-- labels instance with the value of the `Name` attribute -->
+								<instanceReference instanceId="{a5102470-94f5-4fb8-ada1-4d7ba0c276a6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{ce074868-1b6e-489c-be2e-645fe2109de4}" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Location Type" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<!-- Location.enclosed by Location -->
+				<relationship id="{ae6e707f-c4cf-48e8-a994-7e2c4f5737e8}"
+					sourceClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					type="enclosed by"
+					destinationClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					siblingRelationshipId="{058e1614-d724-4225-b8bd-2dd55dd5eaa1}" />
+				
+				<!-- Location.encloses Location -->
+				<relationship id="{058e1614-d724-4225-b8bd-2dd55dd5eaa1}"
+					sourceClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					type="encloses"
+					destinationClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					siblingRelationshipId="{ae6e707f-c4cf-48e8-a994-7e2c4f5737e8}" />
+				
+				<!-- Location.has Location Type -->
+				<relationship id="{d694a883-a639-46bb-a4f1-4d3d4b90cab4}"
+					sourceClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					type="has"
+					destinationClassId="{ce074868-1b6e-489c-be2e-645fe2109de4}"
+					siblingRelationshipId="{94103ee9-276b-46d6-817c-9bcf0f6d8f24}" />
+				
+				<!-- Location Type.for Location -->
+				<relationship id="{94103ee9-276b-46d6-817c-9bcf0f6d8f24}"
+					sourceClassId="{ce074868-1b6e-489c-be2e-645fe2109de4}"
+					type="for"
+					destinationClassId="{07313588-f837-4e8e-84e7-286a877b0ba9}"
+					siblingRelationshipId="{d694a883-a639-46bb-a4f1-4d3d4b90cab4}" />
+				
+				<instance id="{cf918743-9588-4930-82e7-e2b1e43ab1e7}" classInstanceId="{ce074868-1b6e-489c-be2e-645fe2109de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Number" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{93f253bf-d8b2-4cec-b6a5-b535dbc62d3d}" classInstanceId="{ce074868-1b6e-489c-be2e-645fe2109de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Street" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{b47384ef-986c-4142-9bc5-6b429895acb3}" classInstanceId="{ce074868-1b6e-489c-be2e-645fe2109de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="City" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{1f7a1e10-03b9-4322-a75b-f8a74e36ec36}" classInstanceId="{ce074868-1b6e-489c-be2e-645fe2109de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="State" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{59bd1767-d015-4fd0-af65-9dc41501742e}" classInstanceId="{ce074868-1b6e-489c-be2e-645fe2109de4}">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Country" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{9fefab52-11ce-44f5-9639-57f0d3a53a65}" classInstanceId="&IDC_NumericAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Latitude" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Latitude" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{49cff7cc-b740-4dec-a664-04d9e45c2756}" classInstanceId="&IDC_NumericAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Longitude" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Longitude" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{ba58e371-1f33-4623-9452-5a3d8be64dcf}" classInstanceId="&IDC_NumericAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Altitude" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Altitude" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  StreetAddressLabeler.xml - defines the instance labeler for `Street Address` class
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				
+				
+				<instance id="{ffc7956f-2ed8-4cce-a0ec-687405be7a6f}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- String Component.has source Method Binding -->
+							<targetInstances>
+								<!-- Street Address@get Building Number -->
+								<instanceReference instanceId="{0bc399d6-324d-460a-9875-4ee40c5f7b5d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			
+				<instance id="{6adac879-fd1c-420d-b642-b22a2ef05ac4}" classInstanceId="&IDC_String;">
+					<!-- Build Attribute [TX]: location instance labeler -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<targetInstances>
+								<!-- Building Number -->
+								<instanceReference instanceId="{ffc7956f-2ed8-4cce-a0ec-687405be7a6f}" />
+								<!-- ' ' -->
+								<!-- Compass Direction -->
+								<!-- ' ' -->
+								<!-- Street Name -->
+								<!-- ' ' -->
+								<!-- Street Type -->
+								<!-- '\n' -->
+								<!-- City -->
+								<!-- ', ' -->
+								<!-- State or Province -->
+								<!-- ' ' -->
+								<!-- Postal Code -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

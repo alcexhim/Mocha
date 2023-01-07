@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{e1a28b02-75dd-425e-ae55-b96e6dac4ce0}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<!-- equal to RAMB {c618a62d-a2bd-4e2c-b144-fcc144d33555} (Common Boolean@get True) -->
+				</instance>
+				<instance id="{6b3bd25b-0c43-416d-a653-7acf676f17d8}" classInstanceId="&IDC_EvaluateBooleanExpressionMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="is" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Method Binding parm a Return Attribute Method Binding" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Evaluate_Boolean_Expression_Method__has_source_attribute__Method;">
+							<targetInstances>
+								<!-- Instance@get Parent Class@get Global Identifier -->
+								<instanceReference instanceId="{d56929f4-bdd6-4f1c-a6b2-0b4ee4fcf60d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Evaluate_Boolean_Expression_Method__equal_to_attribute__Method;">
+							<targetInstances>
+								<!-- Return Attribute Method Binding@get Global Identifier -->
+								<instanceReference instanceId="{eeb459f9-c99c-4bc1-badb-5776de229fb4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{e1a28b02-75dd-425e-ae55-b96e6dac4ce0}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Method;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F2E0F0E8-3048-4E67-B523-666332EF9F41}" classInstanceId="&IDC_StringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String_Component__has_source__Method;">
+							<targetInstances>
+								<!-- Common Text@get '@' (BA - Build Attribute Method) static public -->
+								<instanceReference instanceId="{1ca7326b-b6a9-4437-ba1a-20e954da2f2d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -26,16 +26,13 @@ namespace UniversalEditor.Plugins.Mocha.DataFormats.MochaBinary
 		CreateInstance = 0x01,
 		DeleteInstance = 0x02,
 
-		AssignAttribute = 0x04,
-		DeleteAttribute = 0x05,
+		SetAttributeValue = 0x04,
+		DeleteAttributeValue = 0x05,
 
 		CreateRelationship = 0x08,
 		RemoveRelationship = 0x09,
 
 		BeginTenant = 0x0A,
-		EndTenant = 0x8A,
-
-		BeginTransaction = 0x0B,
-		EndTransaction = 0x8B
+		EndTenant = 0x8A
 	}
 }

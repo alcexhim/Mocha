@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  MenuItem.xml - XML definition for the initial Mocha `Menu Item` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{A477DE49-DBBA-46E5-BA81-1C9DC9D95E10}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Menu.has Menu Item -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Menu` -->
+							<targetInstances>
+								<instanceReference instanceId="{06E7806D-9384-4EA5-B5D1-350A51552773}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{55092EA2-D183-4EDA-99B8-2684B77EE704}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{55092EA2-D183-4EDA-99B8-2684B77EE704}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Menu Item.for Menu -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Menu` -->
+							<targetInstances>
+								<instanceReference instanceId="{06E7806D-9384-4EA5-B5D1-350A51552773}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A477DE49-DBBA-46E5-BA81-1C9DC9D95E10}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}" classInstanceId="&IDC_Relationship;">
+					<!-- Menu Item.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{901A5427-6344-40F4-B81C-D905EA152EB9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{901A5427-6344-40F4-B81C-D905EA152EB9}" classInstanceId="&IDC_Relationship;">
+					<!-- Translation.title for Menu Item -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Menu Item` -->
+							<targetInstances>
+								<instanceReference instanceId="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{EC62F6E9-CC14-4330-953B-5267FDF92659}" classInstanceId="&IDC_BooleanAttribute;">
+					<!-- Boolean Attribute: `Begin a Group` -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="BeginAGroup" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Begin a Group" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{0D0B2BAF-982E-4FFF-AA86-5E58594C69FF}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<!-- Extract Single Instance String Component.has Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{65E3C87E-A2F7-4A33-9FA7-781EFA801E02}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{E2E48032-DF8D-45F5-8865-A4A8DE8F28B2}" classInstanceId="&IDC_String;">
+					<!-- Menu Item.instance labeled by String -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{0D0B2BAF-982E-4FFF-AA86-5E58594C69FF}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{1E9D38B9-1B07-4EF9-BAD7-43DEB25AEB83}" superClassId="&IDC_Class;">
+					<!-- Class: Menu Item -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abstract;" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Menu Item" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="{EC62F6E9-CC14-4330-953B-5267FDF92659}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>	
+			</instances>
+		</library>
+	</libraries>
+</mocha>

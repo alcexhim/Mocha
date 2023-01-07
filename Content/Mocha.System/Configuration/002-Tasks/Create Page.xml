@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Create Page.xml - XML definition for the initial Mocha PageBuilder `Create Page` system task instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{e7ed0689-216a-4a70-98fc-44ed41a1bb58}" classInstanceId="{195DDDD7-0B74-4498-BF61-B0549FE05CF3}">
+					<!-- Text Prompt: Title for Create Page -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Page title" />
+							</translationValues>
+						</translation>
+					</translations>
+					<attributeValues>
+						<!-- FIXME: add "Required" attribute value: true -->
+						<!--
+							S-Press:
+							(instance (instanceOf @`Text Prompt`) (id {...})
+								(translations
+									(@`Text Prompt.title for Create Page`
+										(@English "Page title")
+									)
+								)
+								(attributeValues
+									(@required true)
+								)
+							)
+							(instance (superclass @`...` /*implies instanceOf @class*/ ))
+							)
+						-->
+					</attributeValues>
+				</instance>
+				
+				<instance id="{74c6a641-7604-412f-83be-6fa1107e86d3}" classInstanceId="{0A6E2CF2-97B6-4339-B1DA-1DBBFE9806C6}">
+					<relationships>
+						<relationship relationshipInstanceId="{7CD62362-DDCE-4BFC-87B9-B5499B0BC141}">
+							<!-- Prompt Value.has Prompt `Class Instance ID` -->
+							<targetInstances>
+								<instanceReference instanceId="{06210C75-9093-4B3D-ACF2-124C84E95C2A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{512B518E-A892-44AB-AC35-4E9DBCABFF0B}">
+							<!-- Instance Prompt Value.has Instance `Application` -->
+							<targetInstances>
+								<instanceReference instanceId="{b1a29a91-6795-44dc-a47e-bd77d3dcb8db}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{58649c09-c152-42af-a502-a373872b352f}" classInstanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}">
+					<!-- Method Call: create instance `Page` -->
+					<relationships>
+						<relationship relationshipInstanceId="{3D3B601B-4EF0-49F3-AF05-86CEA0F00619}">
+							<!-- Method Call.has Method -->
+							<targetInstances>
+								<instanceReference instanceId="{4E92D64E-AC91-4ABF-8052-96366DF93996}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{765BD0C9-117D-4D0E-88C9-2CEBD4898135}">
+							<!-- Method Call.has Prompt Value -->
+							<targetInstances>
+								<!-- Class for Create Instance -->
+								<instanceReference instanceId="{655669c1-6610-4e1e-b7ff-7928d9b6721c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{8e9dfeed-48a4-4792-a399-7c7a67901e10}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<relationships>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Prompt -->
+							<targetInstances>
+								<!-- Page Title -->
+								<instanceReference instanceId="{e7ed0689-216a-4a70-98fc-44ed41a1bb58}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}">
+							<!-- Task.executes Method Call -->
+							<targetInstances>
+								<!-- create instance `Application` -->
+								<instanceReference instanceId="{58649c09-c152-42af-a502-a373872b352f}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Page" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Creates a new PageBuilder page and opens it in the designer" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

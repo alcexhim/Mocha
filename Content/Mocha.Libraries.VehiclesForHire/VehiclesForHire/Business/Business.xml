@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Business.xml - XML definition for the initial Mocha `Patient` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}" defaultObjectSourceId="{062B57B5-D728-4DF8-903A-AD79D843B5CA}">
+			<instances>
+				<class id="{c44ac347-0c34-47f9-94ed-73987eeadf68}">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="ZeQuaL Syntactic Sugar: Test Class" />
+							</translationValues>
+						</translation>
+					</translations>
+				</class>
+				
+				<instance id="{51330552-013b-4508-b85c-55e71f0d0d66}" classInstanceId="&IDC_ReportObject;">
+					<translations>
+						<translation relationshipInstanceId="{0a630a62-7123-42be-8ee0-021862c76f04}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Business" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Empresa" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<!-- Business -->
+				<instance id="{99e73304-5b43-45d1-9bfd-384b47c0a6de}" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Business" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Empresa" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+								<instanceReference instanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" />
+								<instanceReference instanceId="{05708bcb-cb29-4b34-b952-6859fc7fcbe8}" />
+							</targetInstances>
+						</relationship>
+						<!--
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<instanceReference instanceId="{DFF37594-DFC2-4269-A04B-510385B615A4}" />
+							</targetInstances>
+						</relationship>
+						-->
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<targetInstances>
+								<!-- returns the Text Attribute `Name` on the class instance -->
+								<instanceReference instanceId="{7741ef6b-4ccd-4910-9259-69ac7cf0f20c}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<targetInstances>
+								<instanceReference instanceId="{3a618b3e-44a9-4ca5-8863-fb5050ec0611}" />
+								<instanceReference instanceId="{f12edc47-cd93-40e1-931f-7016bb7a36c7}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<!-- Class `Class`.has Task `Redirect Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{16D35AE0-5F0A-4D06-A14A-8D08E85BFA37}" />
+								<!-- Inspection:View Inspection Events for Business -->
+								<instanceReference instanceId="{a67610bf-5b95-4761-8635-b96a39c7b1a3}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}">
+							<!-- Class `Class`.has default Task `View Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{2BAC6373-6534-4EC3-AB2A-BA85E6CF0B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="{2f01ac02-f8c7-4e01-88a0-575946ca561d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

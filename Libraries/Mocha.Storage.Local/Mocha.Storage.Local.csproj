@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4B8D6D8-3365-49FC-8123-58B3749A5427}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mocha.Storage.Local</RootNamespace>
+    <AssemblyName>Mocha.Storage.Local</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LocalStorageProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Internal\InstanceCollection.cs" />
+    <Compile Include="Internal\RelationshipCollection.cs" />
+    <Compile Include="Internal\AttributeCollection.cs" />
+    <Compile Include="Internal\AttributeKey.cs" />
+    <Compile Include="Internal\AttributeValue.cs" />
+    <Compile Include="Internal\RelationshipValue.cs" />
+    <Compile Include="Internal\LocalStorageTenant.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mocha.Storage\Mocha.Storage.csproj">
+      <Project>{C9A3AE1D-0658-4A70-BC48-9D8DEF9C205B}</Project>
+      <Name>Mocha.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Core\UniversalEditor.Core.csproj">
+      <Project>{2D4737E6-6D95-408A-90DB-8DFF38147E85}</Project>
+      <Name>UniversalEditor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UniversalEditor\Libraries\UniversalEditor.Essential\UniversalEditor.Essential.csproj">
+      <Project>{30467E5C-05BC-4856-AADC-13906EF4CADD}</Project>
+      <Name>UniversalEditor.Essential</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mocha.Core\Mocha.Core.csproj">
+      <Project>{8D3211A6-B2D6-4A26-ABE3-5B57636A4196}</Project>
+      <Name>Mocha.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniversalEditor.Plugins.Mocha\UniversalEditor.Plugins.Mocha.csproj">
+      <Project>{3D0893DC-9961-4EAA-BF6C-604686068D09}</Project>
+      <Name>UniversalEditor.Plugins.Mocha</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Internal\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

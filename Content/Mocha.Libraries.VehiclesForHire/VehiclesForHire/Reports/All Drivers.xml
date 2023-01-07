@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  All Drivers.xml - XML definition for the `All Drivers` report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{e28d6812-de23-4c41-8e80-9a38ac87aa07}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Business (Primary Object Report Field) -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2af35f3f-90d2-4914-a195-d38e37acb750}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: Business (Primary Object Report Field) -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<instanceReference instanceId="{2230e67f-bd34-441f-a2e4-90ed8e7adf02}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9922b75f-0aeb-412c-baca-a1b8e00942de}" classInstanceId="&IDC_StandardReport;">
+					<!-- Standard Report -->
+					<translations>
+						<translation relationshipInstanceId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}">
+							<translationValues> 
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View Drivers" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Ver Conductores" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}">
+							<!-- Report.has instructions TTC -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View all drivers" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Ver todos los conductores" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1DE7B484-F9E3-476A-A9D3-7D2A86B55845}">
+							<!-- Report.has Report Data Source -->
+							<targetInstances>
+								<instanceReference instanceId="{9dada8eb-8ce7-4a85-9a4b-a8848ccf2536}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{EA7C6841-FFE0-4230-95CF-87B3D425DC38}">
+							<!-- Report.has Report Facet -->
+						</relationship>
+						<relationship relationshipInstanceId="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}">
+							<!-- Standard Report.has Report Column -->
+							<targetInstances>
+								<!-- Primary Object -->
+								<instanceReference instanceId="{e28d6812-de23-4c41-8e80-9a38ac87aa07}" />
+								<!-- Assigned to Businesses -->
+								<instanceReference instanceId="{2af35f3f-90d2-4914-a195-d38e37acb750}" />
+								<!-- e2b73459-ca21-4101-a4f2-210c871f76ad -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Report.xml - XML definition for the initial Mocha `Report` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<instance id="{5f230177-c98a-4a50-8fff-a20820efb3b6}" classInstanceId="&IDC_ReturnAttributeMethodBinding;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{4d8ebeac-1fa1-4e0d-af27-2485eb974cff}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4d8ebeac-1fa1-4e0d-af27-2485eb974cff}" classInstanceId="&IDC_GetAttributeMethod;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Verb;" value="get" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{52B65829-4A3F-44FB-BEE8-D9A240F1E9C9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Vehicle Tag Number" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{5eca9b3f-be75-4f6e-8495-781480774833}">
+							<!-- Get Attribute Method.has Attribute -->
+							<targetInstances>
+								<instanceReference instanceId="{4e7f1a23-063b-4a1d-afba-4fbff0d04f2d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__has__Method_Binding;">
+							<targetInstances>
+								<instanceReference instanceId="{5f230177-c98a-4a50-8fff-a20820efb3b6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method__for__Class;">
+							<targetInstances>
+								<!-- Vehicle -->
+								<instanceReference instanceId="{818ed630-6b04-4a0e-9f82-7b9de27b941b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{8d31930a-0c88-4f2b-bf6b-37d19d5254f8}" classInstanceId="&IDC_ReportField;">
+					<!-- Report Field: Vehicle: Year -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Tag Number" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<!-- `Executes Method`.has source Method `Method Binding@get Method for Method Binding parm (GRS)*P*S`-->
+							<targetInstances>
+								<instanceReference instanceId="{5f230177-c98a-4a50-8fff-a20820efb3b6}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Report_Field__for__Report_Object;">
+							<targetInstances>
+								<instanceReference instanceId="{e6b2e135-3a4a-4e9b-90d6-7ba0cfb66a6b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

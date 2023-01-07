@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextAttribute.xml - XML definition for the Mocha `Text Attribute` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!-- Text Attribute -->
+				<instance id="&IDC_TextAttribute;" superClassId="{F9CD7751-EF62-4F7C-8A28-EBE90B8F46AA}" index="4">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Text Attribute" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Text Attribute`.has Attribute `Name` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Attribute`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{6894DC7E-F471-4F5C-88E6-B8016259817F}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="&IDI_Module_MochaBaseSystem;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDA_Name;" classInstanceId="&IDC_TextAttribute;" index="1">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Name" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{A294F77C-8A89-419E-B494-8BFCC80DB634}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="PropertyName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Property Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="TargetURL" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Target URL" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{A1D39058-E934-4DBC-9179-EFAECFDD8B48}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="DefaultRedirectURL" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Default Redirect URL" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{C0DD4A42-F503-4EB3-8034-7C428B1B8803}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="CSSValue" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="CSS Value" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{0F42BCB6-549A-4407-BB91-DD147443F68F}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="CSSClassName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="CSS Class Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{71106B12-1934-4834-B0F6-D894637BAEED}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="RelationshipType" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Relationship Type" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Value;" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Value" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Value" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{93742C80-CDF7-4700-A03B-718F92B2666C}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Code" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Code" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{CAC2B62B-47F1-44F9-8C68-45EC64CE3C92}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="CodeBlob" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Code Blob (DEPRECATED)" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{91E97088-3946-4354-A5D5-84CF3E66D91A}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="BaseURL" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Base URL" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{8E4924CC-F09D-488A-80A6-7000B21510C0}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="ImageURL" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Image URL" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{DA7686B6-3803-4F15-97F6-7F8F3AE16668}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Token" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Token" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{ADE5A3C3-A84E-4798-BC5B-E08F21380208}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="IPAddress" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="IP Address" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Abbreviation;" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Abbreviation" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Abbreviation" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDA_Order;" classInstanceId="&IDC_TextAttribute;" index="7">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Order" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Order" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

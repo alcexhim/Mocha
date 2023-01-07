@@ -68,6 +68,10 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 			{
 				Relationships.Merge(item.Relationships[i]);
 			}
+			for (int i = 0; i < item.LibraryReferences.Count; i++)
+			{
+				LibraryReferences.Add(item.LibraryReferences[i]);
+			}
 		}
 
 		public Guid ID { get; set; }
@@ -75,6 +79,7 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 
 		public MochaInstance.MochaInstanceCollection Instances { get; } = new MochaInstance.MochaInstanceCollection();
 		public MochaRelationship.MochaRelationshipCollection Relationships { get; } = new MochaRelationship.MochaRelationshipCollection();
+		public System.Collections.Generic.List<Guid> LibraryReferences { get; } = new System.Collections.Generic.List<Guid>();
 
 		public Guid DefaultObjectSourceID { get; set; }
 
@@ -95,7 +100,18 @@ namespace UniversalEditor.Plugins.Mocha.ObjectModels.MochaClassLibrary
 			{
 				clone.Relationships.Add(Relationships[i].Clone() as MochaRelationship);
 			}
+			for (int i = 0; i < LibraryReferences.Count; i++)
+			{
+				clone.LibraryReferences.Add(LibraryReferences[i]);
+			}
 			return clone;
+		}
+
+		public MochaInstance FindInstance(Guid id)
+		{
+			if (Instances[id] != null)
+				return Instances[id];
+			return null;
 		}
 	}
 }

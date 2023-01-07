@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9E869AB-D457-4031-8970-8BB66DF1392C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mocha.System</RootNamespace>
+    <AssemblyName>Mocha.System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug\System</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release\System</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Configuration\000-System\001-Prompt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\000-System\000-Base\001-Class.xml" />
+    <Compile Include="Configuration\000-System\000-Base\002-Attribute.xml" />
+    <Compile Include="Configuration\000-System\Library.xml" />
+    <Compile Include="Configuration\000-System\000-Base\003-Relationship.xml" />
+    <Compile Include="Configuration\000-System\000-Base\004-TextAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\005-BooleanAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\006-NumericAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\007-DateAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-001-ExtractSingleInstanceStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-000-StringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-002-InstanceAttributeStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-003-TextConstantStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-004-TranslatableTextConstantStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-006-String.xml" />
+    <Compile Include="Configuration\000-System\000-Base\008-005-ConditionalStringComponent.xml" />
+    <Compile Include="Configuration\000-System\001-Global.xml" />
+    <Compile Include="Configuration\000-System\001-Language.xml" />
+    <Compile Include="Configuration\000-System\001-Instance.xml" />
+    <Compile Include="Configuration\000-System\001-Prompt\001-Prompt.xml" />
+    <Compile Include="Configuration\000-System\001-Prompt\002-ChoicePrompt.xml" />
+    <Compile Include="Configuration\000-System\001-Prompt\003-TextPrompt.xml" />
+    <Compile Include="Configuration\000-System\001-Prompt\004-InstancePrompt.xml" />
+    <Compile Include="Configuration\000-System\001-Prompt\005-ReferencePrompt.xml" />
+    <Compile Include="Configuration\000-System\002-Condition.xml" />
+    <Compile Include="Configuration\000-System\003-Method.xml" />
+    <Compile Include="Configuration\000-System\004-ObjectSource.xml" />
+    <Compile Include="Configuration\000-System\005-Task.xml" />
+    <Compile Include="Configuration\000-System\006-SecurityGroup.xml" />
+    <Compile Include="Configuration\000-System\007-TenantType.xml" />
+  </ItemGroup>
+	<!--
+	-->
+  <ItemGroup>
+    <None Include="UnusedGuids.txt" />
+    <None Include="EmptyTextFile.txt" />
+  </ItemGroup>
+  <Import Project="..\..\Mocha.Compiler.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

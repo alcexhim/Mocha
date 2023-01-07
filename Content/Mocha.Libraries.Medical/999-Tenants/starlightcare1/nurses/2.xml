@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  person.xml - XML definition for the Person subclass
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<!-- starlightcare1 -->
+		<tenant id="{E6EC799B-5F02-4681-B0A0-4863313B2EED}">
+			<instances>
+				<instance id="{13a1084d-8add-4381-bfcd-e95c98c2a83b}" classInstanceId="{04fea3a4-1dd9-4fc3-9b17-35edf0b86d03}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{16edd080-b1df-4d87-9bf5-b5978cc17431}" value="Deane" />
+						<attributeValue attributeInstanceId="{feec53f2-385c-48bf-976a-3e5e42b45c2e}" value="Judy" />
+						<attributeValue attributeInstanceId="{9c00da3c-1dc6-47e0-89b4-3420365e62e2}" value="L" />
+					</attributeValues>
+				</instance>
+				<instance id="{91431f43-1532-4bcd-86e1-d47d1e4eeac6}" classInstanceId="{94a5c856-fc62-4cad-b5fa-1864348e085f}">
+					<relationships>
+						<relationship relationshipInstanceId="{416f02a2-fcad-4f0f-83e6-17165173ed57}">
+							<!-- Person.has Legal Name -->
+							<targetInstances>
+								<instanceReference instanceId="{13a1084d-8add-4381-bfcd-e95c98c2a83b}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{92423583-8029-4a99-a2d5-04676a6db71d}">
+							<!-- Person.has Gender -->
+							<targetInstances>
+								<!--
+									Male:	ba16bfa2-4ad4-4112-84be-a323148064b1
+									Female:	7cfcf101-4421-4a04-8bcc-331984fd2e0b
+								-->
+								<instanceReference instanceId="{ba16bfa2-4ad4-4112-84be-a323148064b1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Debug.xml - XML definition for embedding debugging information in Mocha instances
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="&IDC_InstanceDefinition;" superClassId="&IDC_Class;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Instance Definition" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<!-- File name -->
+								<instanceReference instanceId="{03bf47c7-dc97-43c8-a8c9-c6147bee4e1f}" />
+								<!-- Line number -->
+								<instanceReference instanceId="{822be9b7-531d-4aa1-818a-6e4de1609057}" />
+								<!-- Column number -->
+								<instanceReference instanceId="{0f75c750-e738-4410-9b4e-deb422efc7aa}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{03bf47c7-dc97-43c8-a8c9-c6147bee4e1f}" classInstanceId="&IDC_TextAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="DebugDefinitionFileName" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="File Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{822be9b7-531d-4aa1-818a-6e4de1609057}" classInstanceId="&IDC_NumericAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="DebugDefinitionLineNumber" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Line Number" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{0f75c750-e738-4410-9b4e-deb422efc7aa}" classInstanceId="&IDC_NumericAttribute;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="DebugDefinitionColumnNumber" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{72EF8007-B309-4DDE-A9F3-05BC0F61197F}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Column Number" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<relationship
+					id="&IDR_Instance__has__Instance_Definition;"
+					sourceClassId="&IDC_Instance;"
+					type="has"
+					destinationClassId="&IDC_InstanceDefinition;" />
+			</instances>
+		</library>
+	</libraries>
+</mocha>

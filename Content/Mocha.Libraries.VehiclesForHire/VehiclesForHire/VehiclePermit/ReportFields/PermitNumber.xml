@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  TextConstantStringComponent.xml - XML definition for the Mocha `Literal String Component` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{bb1d56b4-c063-4232-a789-93c8419e2d31}">
+			<instances>
+				<!--
+				{cf3b488b-e726-43fd-bcca-b3cc68bf040c}
+				{21136611-f001-4308-9b32-9b71bbff4ccc}
+				-->
+				<instance id="{b961ea8a-44f0-4d0b-a600-853bce98ca22}" classInstanceId="&IDC_ReportField;">
+					<!-- Report Field: Vehicle Permit: Vehicle Type -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Permit Number" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Report_Field__has_source__Method;">
+							<targetInstances>
+								<instanceReference instanceId="{8c72cfe6-da9a-41d5-af1f-dd473e6f95b1}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Report_Field__for__Report_Object;">
+							<targetInstances>
+								<instanceReference instanceId="{ad04691d-4509-498b-8c68-fa42eead818b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

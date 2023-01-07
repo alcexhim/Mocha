@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  All Businesses.xml - XML definition for the `All Businesses` report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+			
+				<instance id="{b9826117-2221-46a2-a5ad-9649fbde5581}" classInstanceId="&IDC_Page;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<!-- Instance Title -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="My Mocha Developer Page" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{7BE6522A-4BE8-4CD3-8701-C8353F7DF630}">
+							<!-- Page Title -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="My Mocha" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Page__has__Page_Component;">
+							<targetInstances>
+								<instanceReference instanceId="{d730f55b-53ce-40de-a5e4-4dd3fbd4caa1}" />
+								<instanceReference instanceId="{4cb44499-40db-407b-bb34-6f3e967bd2d1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{d730f55b-53ce-40de-a5e4-4dd3fbd4caa1}" classInstanceId="&IDC_HeadingPageComponent;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="{8C528FB0-4063-47B0-BC56-85E387A41BD2}" value="1" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{C5027DC2-53EE-4FC0-9BA6-F2B883F7DAD8}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Developer Dashboard (PageBuilder)" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{4cb44499-40db-407b-bb34-6f3e967bd2d1}" classInstanceId="&IDC_DetailPageComponent;">
+					<translations>
+						<translation relationshipInstanceId="{4a15fa44-fb7b-4e26-8ce2-f36652792b48}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Classes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Detail_Page_Component__has_row_source__Method_Binding;">
+							<targetInstances>
+								<!-- Class@get all Instances where Class parm is = [1$1] `Class` -->
+								<instanceReference instanceId="{9F2A1BE1-A769-4C01-9D42-A5C772221D8E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Detail_Page_Component__has_column_source__Method_Binding;">
+							<targetInstances>
+								<!-- Get Specific Instances: columns for All Classes report -->
+								<instanceReference instanceId="{cd753e3d-3ab6-4009-99d9-ef8b5e0b4f18}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+			</instances>
+		</library>
+	</libraries>
+</mocha>

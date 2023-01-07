@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<tenants>
+		<tenant id="{dc86912e-8bd6-46cb-97de-3bee5826e521}">
+			<instances>
+				<instance id="{92133287-e99c-4c8b-aac9-058fb9668a3e}" classInstanceId="{31574a77-7b4b-439d-a529-8c3bd7ff7fb2}">
+					<!-- Insurance Policy: American Indemnity $1,000,000 CSL -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_EndDate;" value="2024-04-28 00:00" />
+						<attributeValue attributeInstanceId="{82057f6b-c00e-4e6f-b179-d61a999196c7}" value="16592-IA-20240001" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{29a687d8-67a7-4f25-9f18-a60a4d5b3df4}">
+							<targetInstances>
+								<instanceReference instanceId="{49e9e035-37a5-43eb-869e-72f30eb348da}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{66ab8ed1-2162-480d-8c71-6a19297e4891}">
+							<!-- Insurance Policy.has Insurance Coverage -->
+							<targetInstances>
+								<instanceReference instanceId="{d58db208-76c7-4a38-b05c-63e86a5cfe3b}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{d58db208-76c7-4a38-b05c-63e86a5cfe3b}" classInstanceId="{9cbc3c97-bd95-4b00-9086-9e31a8a8be4f}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Value;" value="1000000" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{ecdda4dd-fdd5-441d-82e0-cfbbc2342bf7}">
+							<!-- Insurance Coverage.has Insurance Coverage Type -->
+							<targetInstances>
+								<!-- Combo Single Limit -->
+								<instanceReference instanceId="{25b44841-5c95-45c1-b75f-66daa79705a9}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<integrationIds>
+						<!-- City of Orlando:Vehicle for Hire ASP.NET application -->
+						<integrationId typeId="{e5022461-7c23-487c-877f-a0ae028f6d89}" value="1MCSL" />
+					</integrationIds>
+				</instance>
+			</instances>
+		</tenant>
+	</tenants>
+</mocha>

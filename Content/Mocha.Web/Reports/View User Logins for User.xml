@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  All Businesses.xml - XML definition for the `All Businesses` report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2015-2022 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{1c8cfb35-24a8-4b1f-9b44-7cde72a7168e}">
+			<instances>
+				
+				<instance id="{2c7e2ffd-2d29-4809-a0eb-cc419635ac0b}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: User Login (Primary Object Report Field) -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<!-- User Login -->
+								<instanceReference instanceId="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" />
+								<!-- <instanceReference instanceId="{bf405db3-ef18-4b64-98eb-b54bc2984412}" /> -->
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{fa23ad2f-92b5-4b2c-bb5d-d972bfe8956d}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column: User -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field -->
+							<targetInstances>
+								<!-- User Login : User -->
+								<instanceReference instanceId="{7789f9fe-0241-4ade-b5eb-584ce07c5819}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				
+				
+				<instance id="{330febef-80e5-4fa3-a9b5-4eaba427d385}" classInstanceId="&IDC_StandardReport;">
+					<!-- Standard Report -->
+					<translations>
+						<translation relationshipInstanceId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}">
+							<translationValues> 
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View User Logins for User" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}">
+							<!-- Report.has instructions TTC -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Views login information and history for a given user" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1DE7B484-F9E3-476A-A9D3-7D2A86B55845}">
+							<!-- Report.has Report Data Source -->
+							<targetInstances>
+								<instanceReference instanceId="{993ac1fe-21bf-4050-a4fd-21130370275e}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{EA7C6841-FFE0-4230-95CF-87B3D425DC38}">
+							<!-- Report.has Report Facet -->
+						</relationship>
+						<relationship relationshipInstanceId="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}">
+							<!-- Standard Report.has Report Column -->
+							<targetInstances>
+								<!-- Primary Object -->
+								<instanceReference instanceId="{2c7e2ffd-2d29-4809-a0eb-cc419635ac0b}" />
+								<!-- User -->
+								<instanceReference instanceId="{fa23ad2f-92b5-4b2c-bb5d-d972bfe8956d}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

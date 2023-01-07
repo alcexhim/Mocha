@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Class.xml - XML definition for the initial Mocha `Class` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<!-- Class -->
+				<instance id="&IDC_Class;" superClassId="&IDC_Class;" index="1">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="The class Class is the class of all the classes" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<targetInstances>
+								<instanceReference instanceId="&IDA_Name;" />
+								<instanceReference instanceId="&IDA_Abstract;" />
+								<instanceReference instanceId="{0DD670AF-498D-4FEC-A2CF-20E3E56EB732}" />
+								<instanceReference instanceId="&IDA_Final;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Class`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{DFF37594-DFC2-4269-A04B-510385B615A4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_summary__Report_Field;">
+							<!-- Class `Class`.has summary Report Field `Name`, `Description` -->
+							<targetInstances>
+								<instanceReference instanceId="{4CB5C72A-21A2-4B18-A21D-278EBF5C7B91}" />
+								<instanceReference instanceId="{023FF41D-E77C-4522-A26E-FD9EA65CA38E}" />
+								<instanceReference instanceId="{5F8A264E-D2B8-40A2-B583-A7ED511C9DD9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has_related__Task;">
+							<!-- Class `Class`.has related Task `Redirect Task` -->
+							<targetInstances>
+								<!-- Class: Visualize Class Diagram -->
+								<instanceReference instanceId="{95daaed1-2981-4d37-b80e-b9bb934603f4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}">
+							<!-- Class `Class`.has default Task `View Class` -->
+							<targetInstances>
+								<instanceReference instanceId="{2BAC6373-6534-4EC3-AB2A-BA85E6CF0B6B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Instance__for__Module;">
+							<targetInstances>
+								<!-- Module: Mocha Base System -->
+								<instanceReference instanceId="&IDI_Module_MochaBaseSystem;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{9f247c48-9a11-4822-9d5d-a38a6eae4c4c}" classInstanceId="&IDC_ReportObject;">
+					<translations>
+						<translation relationshipInstanceId="{0a630a62-7123-42be-8ee0-021862c76f04}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class" />
+								<translationValue languageInstanceId="&IDI_Language_Spanish;" value="Clase" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>

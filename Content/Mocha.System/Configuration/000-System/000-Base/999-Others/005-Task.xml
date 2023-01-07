@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  Task.xml - XML definition for the initial Mocha `Language` system class instance
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" superClassId="&IDC_Class;">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Abstract;" value="true" />
+					</attributeValues>
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Task" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Task`.has Attribute -->
+							<targetInstances>
+								<!-- `Name` [Text Attribute] -->
+								<instanceReference instanceId="&IDA_Name;" />
+								<!-- `Open In New Window` [Boolean Attribute] -->
+								<instanceReference instanceId="{4a211f11-c5c3-4b58-a7f4-ed62538c5a3d}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Task`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{2866D5F0-6722-471A-875C-FD99E789AA3A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="&IDC_TaskCategory;" superClassId="&IDC_Enumeration;">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Task Category" />
+							</translationValues>
+						</translation>
+						<!-- Class.has description Translation -->
+						<translation relationshipInstanceId="{3B29DC78-B30A-46AA-9B20-2573239CECD9}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Task Category`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{ff027f7b-fc6d-4ef3-a109-e65ca046f7d2}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D97AE03C-261F-4060-A06D-985E26FA662C}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.has title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has title" />
+						<attributeValue attributeInstanceId="&IDA_Singular;" value="true" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{4E5D363F-6984-4BD5-8E76-AAB598C1B09D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{4E5D363F-6984-4BD5-8E76-AAB598C1B09D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.title for Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.has instructions Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has instructions" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{686DD398-709D-48D6-9229-3C79D617EC23}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{686DD398-709D-48D6-9229-3C79D617EC23}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.instructions for Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="instructions for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{A1264E04-93FD-47C1-BE00-CA42CD0AAD55}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.secured by Security Group -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="secured by" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F93509A7-7DB1-443E-A669-4A34E318C695}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F93509A7-7DB1-443E-A669-4A34E318C695}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Security Group.secures Task  -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="secures" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Security Group` -->
+							<targetInstances>
+								<instanceReference instanceId="{498CCFD4-8D94-4EF4-B947-1D07ECC9342B}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{A1264E04-93FD-47C1-BE00-CA42CD0AAD55}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.executes Method Call -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="executes" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Method Call` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{8FB46A15-DE06-4F50-95EB-3A5AD71C89B6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{8FB46A15-DE06-4F50-95EB-3A5AD71C89B6}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Method Call.executed by Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="executed by" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Method Call` -->
+							<targetInstances>
+								<instanceReference instanceId="{084A6D58-32C9-4A5F-9D2B-86C46F74E522}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B9BF252A-C81B-425E-A925-ED86CEB208AF}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{2866D5F0-6722-471A-875C-FD99E789AA3A}" classInstanceId="&IDC_String;">
+					<!-- Task.instance labeled by String -->
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{B9BF252A-C81B-425E-A925-ED86CEB208AF}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{12AFD8F6-14E3-4248-B890-C013958E6886}" classInstanceId="&IDC_ExtractSingleInstanceStringComponent;">
+					<relationships>
+						<relationship relationshipInstanceId="{5E499753-F50F-4A9E-BF53-DC013820499C}">
+							<targetInstances>
+								<instanceReference instanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{DB43F472-5DDA-4D6D-983E-929A06EF0112}" classInstanceId="&IDC_String;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_String__has__String_Component;">
+							<!-- String.has String Component -->
+							<targetInstances>
+								<instanceReference instanceId="{12AFD8F6-14E3-4248-B890-C013958E6886}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{A6D2BA30-3B73-4915-8D3A-BE8AA0506739}" classInstanceId="{195DDDD7-0B74-4498-BF61-B0549FE05CF3}">
+					<!-- Text Prompt: Report Name for Create Report -->
+					<translations>
+						<translation relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- Prompt.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report Name" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{929B106F-7E3E-4D30-BB84-E450A4FED063}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.has Prompt -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Prompt` -->
+							<targetInstances>
+								<instanceReference instanceId="{EC889225-416A-4F73-B8D1-2A42B37AF43E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{146616A0-A64A-402B-99FB-7548D92E5CBC}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{146616A0-A64A-402B-99FB-7548D92E5CBC}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Prompt.for Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Prompt` -->
+							<targetInstances>
+								<instanceReference instanceId="{EC889225-416A-4F73-B8D1-2A42B37AF43E}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDR_Task__has__Task_Category;" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.has Task Category-->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task Category` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_TaskCategory;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{b9480590-b9a7-4abe-bef1-a16ddfb4792a}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{b9480590-b9a7-4abe-bef1-a16ddfb4792a}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task Category.for Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task Category` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_TaskCategory;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Task__has__Task_Category;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDR_Task__has_preview_action_title__Translation;" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.has preview action title Translation -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has preview action title" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{1200565c-0a8c-41c1-9598-d3c3b1df8695}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{1200565c-0a8c-41c1-9598-d3c3b1df8695}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Translation.preview action titlefor Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="preview action title for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Translation;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Task__has_preview_action_title__Translation;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{D2949AF7-249A-4FFB-9A54-252CD9D06C51}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: UI Task.has Page Component -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `UI Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Page Component` -->
+							<targetInstances>
+								<instanceReference instanceId="{EF4D4027-6904-4773-9013-22CEDC169F00}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{C76E8C98-5C54-48DF-B1F0-637DB84B5989}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{C76E8C98-5C54-48DF-B1F0-637DB84B5989}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Page Component.for UI Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Page Component` -->
+							<targetInstances>
+								<instanceReference instanceId="{EF4D4027-6904-4773-9013-22CEDC169F00}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `UI Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{D2949AF7-249A-4FFB-9A54-252CD9D06C51}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="&IDC_Task;" superClassId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Task`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{2866D5F0-6722-471A-875C-FD99E789AA3A}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+					<translations>
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="UI Task" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{170908E4-E3CD-4854-BB2F-C7815BBD1990}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Tenant_Create" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Tenant" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{9FCF4CA6-F8FA-40CD-B94E-FFED78707A2C}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Tenant_Delete" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Delete Tenant" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{7344A8C9-79B8-433A-AC3A-304590A8C2F6}" classInstanceId="{BFD07772-178C-4885-A6CE-C85076C8461C}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Report_Create" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Create Report" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{A9387898-9DC0-4006-94F1-1FB02EB3ECD7}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Creates a Report to display data in a variety of different formats." />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{929B106F-7E3E-4D30-BB84-E450A4FED063}">
+							<!-- Task.has Parameter -->
+							<targetInstances>
+								<!-- Report Name -->
+								<instanceReference instanceId="{A6D2BA30-3B73-4915-8D3A-BE8AA0506739}" />
+								<!-- Report Type -->
+								<instanceReference instanceId="{021207FD-F9DE-4B26-9CBD-B4E31C1602B6}" />
+								<!-- `Data Source`, `Temporary Report`, `Web Service Enable` -->
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{D8C0D4D4-F8C6-4B92-A2C1-8BF16B16203D}">
+							<!-- .executes Method Call -->
+							<targetInstances>
+								<instanceReference instanceId="{795DD1D3-0744-459D-87BD-62C70F1F5CBA}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{B9C1E04A-FABB-4DEE-A56A-E3AA308237A1}" superClassId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}">
+					<translations>
+						<!-- Class.has title Translation -->
+						<translation relationshipInstanceId="&IDR_Class__has_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Redirect Task" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Class__instance_labeled_by__String;">
+							<!-- Class `Task`.instance labeled by String -->
+							<targetInstances>
+								<instanceReference instanceId="{2866D5F0-6722-471A-875C-FD99E789AA3A}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Class__has__Attribute;">
+							<!-- Class `Redirect Task`.has Attribute -->
+							<targetInstances>
+								<!-- `Target URL` [Text Attribute] -->
+								<instanceReference instanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{04B1F030-3DB1-4EAF-AE8E-88A886CAE299}" classInstanceId="{B9C1E04A-FABB-4DEE-A56A-E3AA308237A1}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="User_Logout" />
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/account/logout" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Log Out" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{8E3AA6C2-BA06-4D50-85A6-908D5397AE02}" classInstanceId="{B9C1E04A-FABB-4DEE-A56A-E3AA308237A1}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="System_Reset" />
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/reset" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Reset System" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				<instance id="{16D35AE0-5F0A-4D06-A14A-8D08E85BFA37}" classInstanceId="{B9C1E04A-FABB-4DEE-A56A-E3AA308237A1}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="Object_Delete" />
+						<attributeValue attributeInstanceId="{970F79A0-9EFE-4E7D-9286-9908C6F06A67}" value="~/objects/#/delete" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Delete Object" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="&IDR_Task__has_preview_action_title__Translation;">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Delete" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Task__has__Task_Category;">
+							<targetInstances>
+								<!-- Instance -->
+								<instanceReference instanceId="{5303969f-dafc-4c1f-916c-f1079c3b19b5}" />
+							</targetInstances>
+						</relationship>
+						<!-- FIXME: add translation for Task.has preview action title Translation -->
+						<!-- (e.g. "Delete" instead of "Delete Class" since our parent Task Category is "Class" -->
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{4f8a0e8e-e139-4cc6-b8cf-a32e67bd192d}" classInstanceId="{B9C1E04A-FABB-4DEE-A56A-E3AA308237A1}">
+					<attributeValues>
+						<attributeValue attributeInstanceId="&IDA_Name;" value="ViewInCodeEditor" />
+						<attributeValue attributeInstanceId="{4a211f11-c5c3-4b58-a7f4-ed62538c5a3d}" value="true" />
+					</attributeValues>
+					<translations>
+						<translation relationshipInstanceId="{D97AE03C-261F-4060-A06D-985E26FA662C}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Open Definition in Code Editor" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Task__has__Task_Category;">
+							<targetInstances>
+								<!-- Instance -->
+								<instanceReference instanceId="{5303969f-dafc-4c1f-916c-f1079c3b19b5}" />
+							</targetInstances>
+						</relationship>
+						<!-- FIXME: add translation for Task.has preview action title Translation -->
+						<!-- (e.g. "Delete" instead of "Delete Class" since our parent Task Category is "Class" -->
+					</relationships>
+				</instance>
+				
+				
+				<instance id="{9f277412-8662-43d3-97a3-71a27667b365}" classInstanceId="&IDC_TaskCategory;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Class" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{a86afe16-bcf7-4602-90ff-8dc3b7493c5b}" classInstanceId="&IDC_TaskCategory;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Report" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="{5303969f-dafc-4c1f-916c-f1079c3b19b5}" classInstanceId="&IDC_TaskCategory;">
+					<translations>
+						<translation relationshipInstanceId="{cbf921ce-6c11-4676-b571-ca7ff124f6e6}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Instance" />
+							</translationValues>
+						</translation>
+					</translations>
+				</instance>
+				
+				<instance id="&IDR_Class__has_related__Task;" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Class.has related Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has related" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{F6D05235-AAA8-4DC0-8D3A-A0F336B39F01}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{F6D05235-AAA8-4DC0-8D3A-A0F336B39F01}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.for Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="&IDR_Class__has_related__Task;" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{CF396DAA-75EA-4148-8468-C66A71F2262D}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Class.has default Task -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="has default" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{FFDFCEB1-1064-41B9-A577-C4975C930694}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{FFDFCEB1-1064-41B9-A577-C4975C930694}" classInstanceId="&IDC_Relationship;">
+					<!-- Relationship: Task.default for Class -->
+					<attributeValues>
+						<attributeValue attributeInstanceId="{71106B12-1934-4834-B0F6-D894637BAEED}" value="default for" />
+					</attributeValues>
+					<relationships>
+						<relationship relationshipInstanceId="{7FB5D234-042E-45CB-B11D-AD72F8D45BD3}">
+							<!-- .has source Class `Task` -->
+							<targetInstances>
+								<instanceReference instanceId="{D4F2564B-2D11-4A5C-8AA9-AF52D4EACC13}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{F220F1C2-0499-4E87-A32E-BDBF80C1F8A4}">
+							<!-- .has destination Class `Class` -->
+							<targetInstances>
+								<instanceReference instanceId="&IDC_Class;" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Relationship__has_sibling__Relationship;">
+							<!-- .has sibling Relationship -->
+							<targetInstances>
+								<instanceReference instanceId="{CF396DAA-75EA-4148-8468-C66A71F2262D}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<relationship id="&IDR_Task__has_initiating__Element;"
+					sourceClassId="&IDC_Task;"
+					type="has initiating"
+					destinationClassId="&IDC_Element;"
+					siblingRelationshipId="&IDR_Element__initiates_for__Task;" />
+				
+				<relationship id="&IDR_Element__initiates_for__Task;"
+					sourceClassId="&IDC_Element;"
+					type="initiates for"
+					destinationClassId="&IDC_Task;"
+					siblingRelationshipId="&IDR_Task__has_initiating__Element;" />
+			</instances>
+		</library>
+	</libraries>
+</mocha>

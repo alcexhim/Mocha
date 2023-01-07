@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9E869AB-D457-4031-8970-8BB66DF1392C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mocha.System</RootNamespace>
+    <AssemblyName>Mocha.System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Debug\System</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Release\System</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Configuration\000-System\002-Prompt\" />
+    <Folder Include="Configuration\000-System\003-PageBuilder\" />
+    <Folder Include="Configuration\000-System\004-Reporting\" />
+    <Folder Include="Configuration\000-System\001-Security\" />
+    <Folder Include="Configuration\000-System\000-Strings\" />
+    <Folder Include="Configuration\000-System\005-File\" />
+    <Folder Include="Configuration\000-System\006-Menu\" />
+    <Folder Include="Configuration\000-System\007-Dashboard\" />
+    <Folder Include="Configuration\000-System\008-Tenant\" />
+    <Folder Include="Configuration\002-Tasks\" />
+    <Folder Include="Configuration\003-Reports\" />
+    <Folder Include="Configuration\004-Tenants\" />
+    <Folder Include="Configuration\002-Tasks\Edit Class\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\" />
+    <Folder Include="CommonText\" />
+    <Folder Include="Configuration\000-System\003-PageBuilder\DetailPageComponent\" />
+    <Folder Include="Configuration\Security\" />
+    <Folder Include="CommonBoolean\" />
+    <Folder Include="DateAndTimeAdjustment\" />
+    <Folder Include="Tasks\" />
+    <Folder Include="Tasks\ViewMethod\" />
+    <Folder Include="Tasks\ViewMethod\ViewBAMethod\" />
+    <Folder Include="Tasks\ViewElement\" />
+    <Folder Include="Configuration\000-System\001-Security\UserLogin\" />
+    <Folder Include="Configuration\000-System\004-Reporting\ReportField\" />
+    <Folder Include="Configuration\000-System\004-Reporting\ReportField\ReportFields\" />
+    <Folder Include="Configuration\000-System\004-Reporting\ReportObject\" />
+    <Folder Include="Configuration\000-System\008-Tenant\Tenant\" />
+    <Folder Include="Configuration\000-System\008-Tenant\Tenant\Relationships\" />
+    <Folder Include="Configuration\000-System\008-Tenant\Tenant\Methods\" />
+    <Folder Include="Class\" />
+    <Folder Include="Class\ReportFields\" />
+    <Folder Include="Configuration\000-System\001-Security\User\" />
+    <Folder Include="Configuration\000-System\001-Security\User\ReportFields\" />
+    <Folder Include="Configuration\000-System\001-Security\User\Methods\" />
+    <Folder Include="Configuration\000-System\001-Security\User\Attributes\" />
+    <Folder Include="Configuration\003-Reports\View Audit Trail\" />
+    <Folder Include="Configuration\000-System\001-Security\AuditLine\" />
+    <Folder Include="Configuration\000-System\001-Security\AuditLine\ReportFields\" />
+    <Folder Include="Dashboards\" />
+    <Folder Include="Dashboards\Developer\" />
+    <Folder Include="Configuration\000-System\004-Reporting\Report\" />
+    <Folder Include="Configuration\000-System\004-Reporting\Report\ReportFields\" />
+    <Folder Include="Class\Methods\" />
+    <Folder Include="Configuration\000-System\Event\" />
+    <Folder Include="Configuration\000-System\Event\Attributes\" />
+    <Folder Include="Configuration\000-System\Event\ReportFields\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\UI\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\UI\Element\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\UI\ElementContent\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Core\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Core\Parameter\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Core\Attribute\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Core\WorkData\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\UI\Validation\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\UI\ValidationClassification\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\UI\Element\Instances\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Integration\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Oop\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Oop\Executable\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Oop\Method\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Core\DateTimeFormat\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\" />
+    <Folder Include="CommonInstanceSet\" />
+    <Folder Include="Configuration\000-System\000-Base\999-Others\Oop\Method\ConditionalSelectAttribute\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\000-System\Library.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\000-Prompt.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\001-PromptQualifier.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\002-ChoicePrompt.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\003-BooleanPrompt.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\003-TextPrompt.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\004-InstancePrompt.xml" />
+    <Compile Include="Configuration\000-System\002-Prompt\005-ReferencePrompt.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\001-Page.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\002-PanelPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\002-ButtonPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\002-ParagraphPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\002-ImagePageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\004-SequentialContainerPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\003-ContainerPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\002-HeadingPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\001-PageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\005-AccordionPageComponent.xml" />
+    <Compile Include="Configuration\000-System\001-Security\006-SecurityGroup.xml" />
+    <Compile Include="Configuration\000-System\001-Security\007-TenantType.xml" />
+    <Compile Include="Configuration\000-System\001-Security\008-LoginDeviceType.xml" />
+    <Compile Include="Configuration\000-System\001-Security\009-LoginAuthenticationType.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\005-TabContainerPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\006-SummaryPageComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\008-000-StringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\008-001-ExtractSingleInstanceStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\008-002-InstanceAttributeStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\008-004-TranslationStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\008-005-ConditionalStringComponent.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\008-006-String.xml" />
+    <Compile Include="Configuration\000-System\005-File\000-File.xml" />
+    <Compile Include="Configuration\000-System\005-File\001-ReportFieldTypes.xml" />
+    <Compile Include="Configuration\000-System\006-Menu\000-Menu.xml" />
+    <Compile Include="Configuration\000-System\006-Menu\001-MenuItem.xml" />
+    <Compile Include="Configuration\000-System\006-Menu\003-MenuItemSeparator.xml" />
+    <Compile Include="Configuration\000-System\006-Menu\002-MenuItemCommand.xml" />
+    <Compile Include="Configuration\000-System\006-Menu\004-MenuItemHeader.xml" />
+    <Compile Include="Configuration\000-System\006-Menu\005-MenuItemInstance.xml" />
+    <Compile Include="Configuration\000-System\007-Dashboard\000-Dashboard.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\000-DataCenter.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\003-SidebarMenuItems.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\002-DefaultTenantConfiguration.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\002-ReportColumn.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\006-ReportObject.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\003-ReportFacet.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\004-ReportDataSource.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\005-ReportColumnOption.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\007-ReportPrompt.xml" />
+    <Compile Include="Configuration\003-Reports\001-StandardReport-AllClasses.xml" />
+    <Compile Include="Configuration\003-Reports\002-StandardReport-FavoriteInstances.xml" />
+    <Compile Include="Configuration\004-Tenants\000-Default.xml" />
+    <Compile Include="Configuration\002-Tasks\000-Create Class.xml" />
+    <Compile Include="Configuration\004-Tenants\003-Pawprints.xml" />
+    <Compile Include="Configuration\002-Tasks\View Report Object.xml" />
+    <Compile Include="Configuration\003-Reports\002-StandardReport-DataSources.xml" />
+    <Compile Include="Configuration\002-Tasks\001-Edit Class.xml" />
+    <Compile Include="Configuration\002-Tasks\Create x509 Public Key.xml" />
+    <Compile Include="Configuration\002-Tasks\Create x509 Private Key Pair.xml" />
+    <Compile Include="Configuration\000-System\001-Security\x509 Public Key.xml" />
+    <Compile Include="Configuration\002-Tasks\Create Application.xml" />
+    <Compile Include="Configuration\002-Tasks\Create Page.xml" />
+    <Compile Include="Configuration\002-Tasks\Test Method Binding.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Global.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\001-Instance.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\001-Language.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Condition.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\002-Filter.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\004-ObjectSource.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\005-Task.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\011-Measurement.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\012-Style.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\014-Icon.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Application.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Module.xml" />
+    <Compile Include="Configuration\000-System\000-Base\003-Relationship.xml" />
+    <Compile Include="Configuration\004-Tenants\000-MegaMenuDeveloper.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\001-Enumeration.xml" />
+    <Compile Include="Configuration\002-Tasks\Visualize Class Diagram.xml" />
+    <Compile Include="Configuration\000-System\000-Strings\StringComponentHasSourceMethod.xml" />
+    <Compile Include="CommonText\CommonText.xml" />
+    <Compile Include="CommonText\CommonText%40getAtSign.xml" />
+    <Compile Include="CommonText\CommonText%40getSingleSpace.xml" />
+    <Compile Include="CommonText\CommonText%40getForwardSlash.xml" />
+    <Compile Include="CommonText\CommonText%40getPeriod.xml" />
+    <Compile Include="CommonText\CommonText%40getOpenBracket.xml" />
+    <Compile Include="CommonText\CommonText%40getCloseBracket.xml" />
+    <Compile Include="CommonText\CommonText%40getCloseParenthesis.xml" />
+    <Compile Include="CommonText\CommonText%40getOpenParenthesis.xml" />
+    <Compile Include="CommonText\CommonText%40getColon.xml" />
+    <Compile Include="CommonText\CommonText%40getDollarSign.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\PromptValues.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\DetailPageComponent\006-DetailPageComponent.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\DetailPageComponent\DefaultColumnSourceMethod.xml" />
+    <Compile Include="Configuration\Security\SecurityDomain.xml" />
+    <Compile Include="Configuration\Security\SecurityDomain%40Anyone.xml" />
+    <Compile Include="Configuration\Security\SecurableObjectSecuredByDomainsFromMethod.xml" />
+    <Compile Include="Configuration\Security\SecurableObject.xml" />
+    <Compile Include="Configuration\Security\SecurityDomain%40AuthenticatedUsers.xml" />
+    <Compile Include="CommonBoolean\CommonBoolean.xml" />
+    <Compile Include="CommonBoolean\CommonBoolean%40getTrue.xml" />
+    <Compile Include="DateAndTimeAdjustment\DateAndTimeAdjustment.xml" />
+    <Compile Include="DateAndTimeAdjustment\DateAndTimeAdjustment%40getDateAndTimeAdjusted.xml" />
+    <Compile Include="Tasks\ViewMethod\DefinitionElement.xml" />
+    <Compile Include="Tasks\ViewElement\DefinitionElement.xml" />
+    <Compile Include="Configuration\000-System\001-Security\UserLogin\UserLogin%40getUser.xml" />
+    <Compile Include="Configuration\000-System\001-Security\UserLogin\UserLogin%40getUserLogin.xml" />
+    <Compile Include="Configuration\000-System\001-Security\UserLogin\UserLoginsDataSource.xml" />
+    <Compile Include="DataSource%40getClass.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\ReportField\ReportFields\SourceMethod.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\ReportField\ReportField.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\ReportField\ReportFields\ReportObject.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\ReportObject\ReportObject%40getTitle.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\ReportObject\ReportObject%40getReportObjectHasTitle.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\001-Languages.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Tenant.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Relationships\TenantHasApplication.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Methods\Tenant%40getLoginPageFooterText.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Methods\Tenant%40getLoginPageHeaderText.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Methods\Tenant%40getLogoImageFileForTenantParm.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Methods\Tenant%40getCurrentTenant.xml" />
+    <Compile Include="Class\ReportFields\Title.xml" />
+    <Compile Include="Class\Class.xml" />
+    <Compile Include="Class\ReportFields\Description.xml" />
+    <Compile Include="Configuration\000-System\001-Security\UserLogin\UserLogin.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\User.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\ReportFields\AccountLockedDisabledExpired.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\Methods\User%40isSystemAccountLockedDisabledExpired.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\Methods\User%40isSystemAccountLocked.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\Methods\User%40isSystemAccountDisabled.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\Attributes\AccountDisabled.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\Attributes\AccountLocked.xml" />
+    <Compile Include="Configuration\003-Reports\View Audit Trail\View Audit Trail.xml" />
+    <Compile Include="Configuration\000-System\001-Security\AuditLine\ReportFields\User.xml" />
+    <Compile Include="Configuration\000-System\001-Security\AuditLine\ReportFields\InstanceThatChanged.xml" />
+    <Compile Include="Configuration\000-System\001-Security\AuditLine\AuditLine.xml" />
+    <Compile Include="Dashboards\Developer\DeveloperDashboard.xml" />
+    <Compile Include="Configuration\000-System\001-Security\User\Attributes\RequireChangePassword.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Relationships\Tenant%40getTenantHasLoginHeaderTranslation.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Relationships\Tenant%40getTenantHasLoginFooterTranslation.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Relationships\Tenant%40getTenantHasLogoImageFile.xml" />
+    <Compile Include="Debug.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\Report\Report.xml" />
+    <Compile Include="Configuration\000-System\004-Reporting\Report\ReportFields\ReportFields.xml" />
+    <Compile Include="Class\Methods\Class%40getAttributesForClassParm.xml" />
+    <Compile Include="Class\Methods\Class%40getClass.xml" />
+    <Compile Include="Class\Methods\Class%40getClassHasAttribute.xml" />
+    <Compile Include="Class\Methods\Class%40getClassHasInstance.xml" />
+    <Compile Include="Class\Methods\Class%40getInstancesForClassParm.xml" />
+    <Compile Include="Configuration\000-System\Event\Attributes\EventMoment.xml" />
+    <Compile Include="Configuration\000-System\Event\Class.xml" />
+    <Compile Include="Configuration\000-System\Event\ReportFields\AllVehicles.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\UI\Element\Element.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\UI\ElementContent\ElementContent.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\UI\ElementContent\ElementContentDisplayOption.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\Parameter\Parameter.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\Attribute\001-Attribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\Attribute\002-TextAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\Attribute\003-BooleanAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\Attribute\004-NumericAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\Attribute\005-DateAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\WorkData\WorkData.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\UI\Validation\Validation.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\UI\ValidationClassification\ValidationClassification.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\UI\Element\Instances\TaskReviewFragment[EL].xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Integration\IntegrationID.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\AccessModifier.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Executable\Executable.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\BuildAttributeMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\CalculateDateMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\EvaluateBooleanExpressionMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\GetAttributeMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\GetInstanceSetBySystemRoutineMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\GetReferencedAttributeMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\GetReferencedInstanceSetMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\GetRelationshipMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\GetSpecificInstanceMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\InstanceOpMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\Method.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\Method%40getPublicSuffix.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\Method%40getStaticSuffix.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\MethodReturningAnAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\ReportFields\ForClass.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\SelectInstanceSetMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\MethodBinding.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\MethodBindingInstanceLabeler.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\MethodBindingParameterAssignment.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\RelatedTasks\ReturnedWorkData\EditReturnedWorkData\Task.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\RelatedTasks\ReturnedWorkData\TaskCategory.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\RelatedTasks\ReturnedWorkData\ViewReturnedWorkData\Task.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\ReturnAttributeMethodBinding\ReturnAttributeMethodBinding.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\ReturnAttributeMethodBinding\ReturnAttributeMethodBinding%40getGlobalIdentifier.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Core\DateTimeFormat\DateTimeFormat.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\MethodBinding%40getMethodBindingForMethod.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\MethodBinding%40getMethodForMethodBindingParm.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\MethodBinding%40getPUMBSuffix.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\MethodBinding%40getRAMBSuffix.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\MethodBinding%40getRSMBSuffix.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Theme.xml" />
+    <Compile Include="CommonInstanceSet\class.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Executable\ExecutableReturningWorkData.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Executable\ExecutableReturningAttribute.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Executable\ExecutableReturningInstanceSet.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Executable\ExecutableReturningElement.xml" />
+    <Compile Include="Configuration\000-System\000-Base\999-Others\Oop\Method\ConditionalSelectAttribute\ConditionalSelectAttributeMethod.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Methods\Tenant%40getLoginPageBackgroundImageFileForTenantParm.xml" />
+    <Compile Include="Configuration\000-System\008-Tenant\Tenant\Relationships\Tenant%40getTenantHasBackgroundImageFile.xml" />
+    <Compile Include="Configuration\000-System\003-PageBuilder\007-ElementPageComponent.xml" />
+    <Compile Include="CommonBoolean\CommonBoolean%40isStringAEqualToStringB.xml" />
+  </ItemGroup>
+	<!--
+	-->
+  <ItemGroup>
+    <None Include="mocha.dtd" />
+    <None Include="Configuration\002-Tasks\Edit Method.xqjs" />
+    <None Include="Configuration\002-Tasks\Edit Standard Report.xqjs" />
+    <None Include="Configuration\002-Tasks\Edit User Preferences.xqjs" />
+    <None Include="Configuration\002-Tasks\Run Report.xqjs" />
+    <None Include="Configuration\002-Tasks\View Class.xqjs" />
+    <None Include="Configuration\002-Tasks\VIew Tenant.xqjs" />
+    <None Include="Configuration\003-Reports\All Classes 2.xml" />
+    <None Include="Configuration\002-Tasks\Edit Translation.xqjs" />
+    <None Include="Configuration\002-Tasks\Edit Class\Definition View.xml" />
+    <None Include="Configuration\002-Tasks\Edit Class\Task.xml" />
+    <None Include="Configuration\000-System\007-Dashboard\ReportDashboardContent.xml" />
+    <None Include="guids.txt" />
+    <None Include="Configuration\000-System\000-Base\999-Others\Oop\Method\ConditionalMethodCase.xml" />
+    <None Include="Configuration\000-System\000-Base\999-Others\Oop\MethodBinding\Methods\MethodBinding%40isMethodBindingParmRAMB.xml" />
+  </ItemGroup>
+  <Import Project="..\..\Mocha.Compiler.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

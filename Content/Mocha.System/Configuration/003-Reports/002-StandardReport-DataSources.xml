@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//
+//  StandardReport-AllObjects.xml - XML definition for the initial Mocha `All Objects` system report
+//
+//  Author:
+//       Michael Becker <alcexhim@gmail.com>
+//
+//  Copyright (c) 2020 Mike Becker's Software
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<mocha xmlns="urn:net.alcetech.schemas.Mocha">
+	<libraries>
+		<library id="{2826E41F-763A-413F-B239-3D9698AB629F}">
+			<instances>
+				<instance id="{2a5af355-9875-4631-81db-902a4395a8e8}" classInstanceId="&IDC_ReturnInstanceSetMethodBinding;">
+					<!-- Return Instance Set Method Binding: return all instances where Class instance = 1$1 (Class) [rsmb] -->
+					<translations>
+						<translation relationshipInstanceId="{940EBFDB-B064-48D7-A55B-873947F4D19A}">
+							<!-- Method Binding.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="return all instances of Data Source" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__for__Method;">
+							<!-- Method Binding.for Method -->
+							<targetInstances>
+								<instanceReference instanceId="{B6509D59-536A-4514-A797-184AF5C835F4}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Method_Binding__has__Parameter_Assignment;">
+							<!-- assign `Class [CL]` to `Data Source@get Data Source(GSI)*P*S` -->
+							<targetInstances>
+								<instanceReference instanceId="{5d955aa8-7e0a-41bc-93a6-09b947070113}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<instance id="{5d955aa8-7e0a-41bc-93a6-09b947070113}" classInstanceId="&IDC_ParameterAssignment;">
+					<relationships>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_to__Parameter;">
+							<targetInstances>
+								<instanceReference instanceId="{53675af2-67e1-425f-b121-6f1d4459179a}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="&IDR_Parameter_Assignment__assigns_from__Method_Binding;">
+							<targetInstances>
+								<!--
+									Class@get Class (GSI)*P*S [rsmb]
+									================================
+									This Get Specific Instance Method returns the class, User Login.
+								-->
+								<instanceReference instanceId="{83fb4e27-1467-4798-b3e1-f97f814cfbbb}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				
+				
+				<instance id="{84b4ba03-d726-491c-b8a1-75ce994937f9}" classInstanceId="{C46FA477-1F9F-4C5E-A232-8BB3CB70B97D}">
+					<!-- Report Data Source: All Data Sources -->
+					<translations>
+						<translation relationshipInstanceId="{0B698B22-1E66-46E2-B152-1259333091F2}">
+							<!-- Report Data Source.has title Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="All Data Sources" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}">
+							<!-- Report Data Source.has description Translation -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Accesses the Report Data Source as its primary object and returns one row per data source. Does not contain any built-in prompts." />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{2D5CB496-5839-46A0-9B94-30D4E2227B56}">
+							<!-- Report Data Source.has source Method -->
+							<targetInstances>
+								<instanceReference instanceId="{2a5af355-9875-4631-81db-902a4395a8e8}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<!--
+				========== REPORT FIELDS ==========
+				-->
+				<instance id="{be300e78-ebc4-4bed-b2d4-cb94ccd8aa1c}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Primary Report Object -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Primary Report Object" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship `Report Data Source.has primary Report Object` -->
+							<targetInstances>
+								<instanceReference instanceId="{19363efd-cdd9-4c17-a7e8-1b39c3240e07}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{ab358b77-83b5-44e0-aae9-6eebe52c6b89}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Description -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Description" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship `Report Data Source.has description Translation` -->
+							<targetInstances>
+								<instanceReference instanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a0a08d4b-d4e1-40c5-a82f-09fe67eec4fc}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Data Source Type -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Data Source Type" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship `Report Data Source.has Report Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a751bc28-fd9e-4678-a150-4b00db505cf1}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Built-in Prompts -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Built-in Prompts" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship `Report Data Source.has Report Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{1fd9a0a4-d35a-4ec9-8669-e81c3770de08}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Permitted Security Groups -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Permitted Security Groups" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship `Report Data Source.has Report Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{948bb3b8-9253-46ac-920f-8fc4e9d65483}" classInstanceId="&IDC_RelationshipReportField;">
+					<!-- Relationship Report Field: Category -->
+					<translations>
+						<translation relationshipInstanceId="{6780BFC2-DBC0-40AE-83EE-BFEF979F0054}">
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Category" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{134B2790-F6DF-4F97-9AB5-9878C4A715E5}">
+							<!-- Relationship Report Field.has target Relationship `Report Data Source.has Report Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{dd0a60fd-7b08-4a2d-b250-c918487e6c29}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<!--
+				========== REPORT COLUMNS ==========
+				-->
+				
+				<instance id="{6aadf659-2dfc-48a0-a240-7cdbed4d1894}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Primary Object Report Field [Singleton]` -->
+							<targetInstances>
+								<instanceReference instanceId="{0D2CC9BE-160D-4D62-A5AE-DAE8AC45DB9B}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{1ee7e5b9-1c39-499f-a304-5955cfff0c52}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Primary Report Object` -->
+							<targetInstances>
+								<instanceReference instanceId="{be300e78-ebc4-4bed-b2d4-cb94ccd8aa1c}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{677f7454-7851-480d-a2a3-5a8efc7b857a}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Description` -->
+							<targetInstances>
+								<instanceReference instanceId="{ab358b77-83b5-44e0-aae9-6eebe52c6b89}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{a7780f80-56d1-4a60-851a-048fdb2aead6}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{a0a08d4b-d4e1-40c5-a82f-09fe67eec4fc}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{357d492b-8831-474b-8c23-dab04fc4b7d4}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{a751bc28-fd9e-4678-a150-4b00db505cf1}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{e2aaff04-2b7d-485c-bdef-d60342c166f3}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{1fd9a0a4-d35a-4ec9-8669-e81c3770de08}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				<instance id="{28d5ee49-b56c-4d5e-9306-26fd272271c6}" classInstanceId="&IDC_ReportColumn;">
+					<!-- Report Column -->
+					<relationships>
+						<relationship relationshipInstanceId="{B9026910-7E91-4EE1-B5F2-D7B740614831}">
+							<!-- Report Column.has Report Field `Data Source Type` -->
+							<targetInstances>
+								<instanceReference instanceId="{948bb3b8-9253-46ac-920f-8fc4e9d65483}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+				
+				<!--
+				========== REPORT DEFINITION ==========
+				-->
+				
+				<instance id="{18a5b056-6fd7-45e0-a710-a9369699a32c}" classInstanceId="&IDC_StandardReport;">
+					<!-- Standard Report: Data Sources -->
+					<translations>
+						<translation relationshipInstanceId="{DF93EFB0-8B5E-49E7-8BC0-553F9E7602F9}">
+							<translationValues> 
+								<translationValue languageInstanceId="&IDI_Language_English;" value="Data Sources" />
+							</translationValues>
+						</translation>
+						<translation relationshipInstanceId="{D5AA18A7-7ACD-4792-B039-6C620A151BAD}">
+							<!-- Report.has instructions TTC -->
+							<translationValues>
+								<translationValue languageInstanceId="&IDI_Language_English;" value="View all data sources available on this tenant" />
+							</translationValues>
+						</translation>
+					</translations>
+					<relationships>
+						<relationship relationshipInstanceId="{1DE7B484-F9E3-476A-A9D3-7D2A86B55845}">
+							<!-- Report.has Report Data Source -->
+							<targetInstances>
+								<instanceReference instanceId="{84b4ba03-d726-491c-b8a1-75ce994937f9}" />
+							</targetInstances>
+						</relationship>
+						<relationship relationshipInstanceId="{7A8F57F1-A4F3-4BAF-84A5-E893FD79447D}">
+							<!-- Standard Report.has Report Column -->
+							<targetInstances>
+								<!-- Primary Object (Data Source) -->
+								<instanceReference instanceId="{6aadf659-2dfc-48a0-a240-7cdbed4d1894}" />
+								<!-- Primary Report Object -->
+								<instanceReference instanceId="{1ee7e5b9-1c39-499f-a304-5955cfff0c52}" />
+								<!-- Description -->
+								<instanceReference instanceId="{677f7454-7851-480d-a2a3-5a8efc7b857a}" />
+								<!-- Data Source Type -->
+								<instanceReference instanceId="{a7780f80-56d1-4a60-851a-048fdb2aead6}" />
+								<!-- Built-in Prompts -->
+								<instanceReference instanceId="{357d492b-8831-474b-8c23-dab04fc4b7d4}" />
+								<!-- Permitted Security Groups -->
+								<instanceReference instanceId="{e2aaff04-2b7d-485c-bdef-d60342c166f3}" />
+								<!-- Category -->
+								<instanceReference instanceId="{28d5ee49-b56c-4d5e-9306-26fd272271c6}" />
+							</targetInstances>
+						</relationship>
+					</relationships>
+				</instance>
+			</instances>
+		</library>
+	</libraries>
+</mocha>
